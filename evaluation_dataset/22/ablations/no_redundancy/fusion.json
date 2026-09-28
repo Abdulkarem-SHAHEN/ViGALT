@@ -1,0 +1,68 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 4586,
+  "token_usage": {
+    "prompt_tokens": 2705,
+    "completion_tokens": 616,
+    "total_tokens": 3321
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"\",\"source\":\"ORIGINAL\",\"action\":\"DROPPED_HALLUCINATION\"},{\"claim_id\":\"c2\",\"text\":\"An L-shaped frame surrounds the head and right side\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"Open shelving is illuminated by cyan LEDs\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"The work surface extends across the foot and right side\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"A laptop sits on the work surface\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c6\",\"text\":\"Storage compartments beneath the mattress are pulled open on the left\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c7\",\"text\":\"Fabric organizer pockets hang from the near side\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"}],\"edit_log\":[\"- Dropped unsupported sofa bed claim per Accuracy (c1)\",\"- Retained the L-shaped frame and cyan-lit shelving claims (c2, c3)\",\"- Retained the work surface, laptop, storage compartments, and organizer pockets (c4–c7)\"],\"final_alt_text\":\"An L-shaped frame surrounds the head and right side. Open shelving is illuminated by cyan LEDs, and a laptop sits on the work surface, which extends across the foot and right side. Storage compartments beneath the mattress are pulled open on the left, and fabric organizer pockets hang from the near side.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "",
+        "source": "ORIGINAL",
+        "action": "DROPPED_HALLUCINATION"
+      },
+      {
+        "claim_id": "c2",
+        "text": "An L-shaped frame surrounds the head and right side",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Open shelving is illuminated by cyan LEDs",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "The work surface extends across the foot and right side",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "A laptop sits on the work surface",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Storage compartments beneath the mattress are pulled open on the left",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c7",
+        "text": "Fabric organizer pockets hang from the near side",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "- Dropped unsupported sofa bed claim per Accuracy (c1)",
+      "- Retained the L-shaped frame and cyan-lit shelving claims (c2, c3)",
+      "- Retained the work surface, laptop, storage compartments, and organizer pockets (c4–c7)"
+    ],
+    "final_alt_text": "An L-shaped frame surrounds the head and right side. Open shelving is illuminated by cyan LEDs, and a laptop sits on the work surface, which extends across the foot and right side. Storage compartments beneath the mattress are pulled open on the left, and fabric organizer pockets hang from the near side."
+  },
+  "final_alt_text": "An L-shaped frame surrounds the head and right side. Open shelving is illuminated by cyan LEDs, and a laptop sits on the work surface, which extends across the foot and right side. Storage compartments beneath the mattress are pulled open on the left, and fabric organizer pockets hang from the near side.",
+  "processed_at": "2026-09-20T11:47:27.614414+00:00"
+}

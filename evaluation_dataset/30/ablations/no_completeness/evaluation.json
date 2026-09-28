@@ -1,0 +1,190 @@
+{
+  "status": "ok",
+  "folder_number": 30,
+  "image_file": "71rBw3HHr1L._AC_SX679_.jpg",
+  "ablation": "no_completeness",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A round mirror has a continuous warm-white illuminated ring just inside the black outer rim. Three icons are near the lower center of the reflective surface.",
+      "relevancy": {
+        "total_claims": 4,
+        "relevant_claims": 4,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "A round mirror",
+            "label": "R",
+            "reason": "The round mirror is the main product shown."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "A continuous warm-white illuminated ring just inside the black outer rim",
+            "label": "R",
+            "reason": "The illuminated ring is an integrated visual feature of the mirror."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "A black outer rim",
+            "label": "R",
+            "reason": "The black rim is part of the mirror's construction."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Three icons near the lower center of the reflective surface",
+            "label": "R",
+            "reason": "The icons are visible integrated controls on the mirror surface."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 4,
+          "relevant_claims": 4,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 1,
+          "relevant_novel_claims": 1,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 1,
+          "avoidable_redundancy_claims": 2,
+          "novelty_rate": 0.25,
+          "raw_novelty_rate": 0.25,
+          "unavoidable_repetition_rate": 0.25,
+          "avoidable_redundancy_rate": 0.5,
+          "redundancy_rate": 0.75
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "A round mirror",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "A continuous warm-white illuminated ring just inside the black outer rim",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "A black outer rim",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Three icons near the lower center of the reflective surface",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "A round mirror",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Item Shape",
+                "value": "Round"
+              },
+              {
+                "field": "title",
+                "value": "STARLEAD Black Mirror-Round-Bathroom-with-Lighting 60 cm, Bluetooth, Anti-fog, Mirror-LED with 3 Light Colours, Dimmable, Memory, IP44, HD Tempered Glass, Non-Metallic Frame"
+              }
+            ],
+            "reason": "The DOM explicitly identifies the item as round, so this repeats an already available product shape without adding information."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "A continuous warm-white illuminated ring just inside the black outer rim",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Choose between warm white light (3000K), neutral white light (4000K) and cool white light (6500K)"
+              },
+              {
+                "field": "feature_bullets[0]",
+                "value": "black coating on the edges"
+              },
+              {
+                "field": "product_details.Frame Color",
+                "value": "Black"
+              }
+            ],
+            "reason": "The DOM establishes available warm-white lighting and black edging, but does not describe a continuous illuminated ring or its placement just inside the rim. Repeating the black rim and light colour is needed to anchor the new spatial lighting configuration."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "A black outer rim",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Frame Color",
+                "value": "Black"
+              },
+              {
+                "field": "feature_bullets[0]",
+                "value": "black coating on the edges, imitates metal frames"
+              }
+            ],
+            "reason": "The DOM already states that the frame/edge coating is black. Calling it an outer rim adds no necessary new semantic information."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Three icons near the lower center of the reflective surface",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[0]",
+                "value": "3 separate buttons for lighting, anti-fog and Bluetooth"
+              }
+            ],
+            "reason": "Although the DOM mentions three buttons, it does not state that they appear as icons, nor does it provide their visual placement near the lower center of the reflective surface."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 3,
+        "subjective_claims": 0,
+        "total_claims": 3,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The mirror is round.",
+            "label": "OBJECTIVE",
+            "reason": "The circular shape of the mirror is directly visible in the image."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The mirror has a continuous warm-white illuminated ring just inside the black outer rim.",
+            "label": "OBJECTIVE",
+            "reason": "A continuous light-colored glowing ring is visibly positioned inside a thin black outer border; its warm-white appearance is visually observable."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "Three icons are near the lower center of the reflective surface.",
+            "label": "OBJECTIVE",
+            "reason": "Three small visible symbols appear together near the lower central area of the mirror surface."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 26,
+        "relevant_novel_claims": 1,
+        "efficiency_per_100_words": 3.8461538461538463
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:59:54.861688+00:00"
+}

@@ -1,0 +1,56 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 4387,
+  "token_usage": {
+    "prompt_tokens": 2313,
+    "completion_tokens": 577,
+    "total_tokens": 2890
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"A mirror is opened into three rectangular panels arranged at angles.\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c2\",\"text\":\"The mirror has black borders.\",\"source\":\"ORIGINAL\",\"action\":\"CORRECTED\"},{\"claim_id\":\"c3\",\"text\":\"Two black hooks extend above the mirror.\",\"source\":\"ORIGINAL\",\"action\":\"CORRECTED\"},{\"claim_id\":\"c4\",\"text\":\"The reflections show front, side, and rear views of a person trimming his hair.\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n1\",\"text\":\"The black rear panel displays the JUSRON brand name and logo.\",\"source\":\"ADDED\",\"action\":\"ADDED\"}],\"edit_log\":[\"Corrected black plastic borders to black borders (c2)\",\"Corrected over-door hooks to hooks (c3)\",\"Added JUSRON brand name and logo on the black rear panel (n1)\"],\"final_alt_text\":\"A mirror is opened into three rectangular panels arranged at angles, with black borders and two black hooks extending above it. The black rear panel displays the JUSRON brand name and logo; reflections show front, side, and rear views of a person trimming his hair.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "A mirror is opened into three rectangular panels arranged at angles.",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "The mirror has black borders.",
+        "source": "ORIGINAL",
+        "action": "CORRECTED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Two black hooks extend above the mirror.",
+        "source": "ORIGINAL",
+        "action": "CORRECTED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "The reflections show front, side, and rear views of a person trimming his hair.",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "The black rear panel displays the JUSRON brand name and logo.",
+        "source": "ADDED",
+        "action": "ADDED"
+      }
+    ],
+    "edit_log": [
+      "Corrected black plastic borders to black borders (c2)",
+      "Corrected over-door hooks to hooks (c3)",
+      "Added JUSRON brand name and logo on the black rear panel (n1)"
+    ],
+    "final_alt_text": "A mirror is opened into three rectangular panels arranged at angles, with black borders and two black hooks extending above it. The black rear panel displays the JUSRON brand name and logo; reflections show front, side, and rear views of a person trimming his hair."
+  },
+  "final_alt_text": "A mirror is opened into three rectangular panels arranged at angles, with black borders and two black hooks extending above it. The black rear panel displays the JUSRON brand name and logo; reflections show front, side, and rear views of a person trimming his hair.",
+  "processed_at": "2026-09-20T11:55:40.725573+00:00"
+}

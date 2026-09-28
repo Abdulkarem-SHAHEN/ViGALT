@@ -1,0 +1,56 @@
+{
+  "status": "ok",
+  "ablation": "no_completeness",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_completeness.txt",
+  "duration_ms": 4165,
+  "token_usage": {
+    "prompt_tokens": 2370,
+    "completion_tokens": 437,
+    "total_tokens": 2807
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"A top is shown worn on a person\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c2\",\"text\":\"\",\"source\":\"ORIGINAL\",\"action\":\"DROPPED_REDUNDANT\"},{\"claim_id\":\"c3\",\"text\":\"Broad short sleeves\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"Straight loose body\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"Visible side slit at the lower left hem\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"}],\"edit_log\":[\"Dropped round crew neckline as avoidable redundancy (c2)\",\"Retained worn-on-person context (c1)\",\"Retained sleeve, body, and hem details (c3, c4, c5)\"],\"final_alt_text\":\"A top is shown worn on a person. It has broad short sleeves, a straight loose body, and a visible side slit at the lower left hem.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "A top is shown worn on a person",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "",
+        "source": "ORIGINAL",
+        "action": "DROPPED_REDUNDANT"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Broad short sleeves",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Straight loose body",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Visible side slit at the lower left hem",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Dropped round crew neckline as avoidable redundancy (c2)",
+      "Retained worn-on-person context (c1)",
+      "Retained sleeve, body, and hem details (c3, c4, c5)"
+    ],
+    "final_alt_text": "A top is shown worn on a person. It has broad short sleeves, a straight loose body, and a visible side slit at the lower left hem."
+  },
+  "final_alt_text": "A top is shown worn on a person. It has broad short sleeves, a straight loose body, and a visible side slit at the lower left hem.",
+  "processed_at": "2026-09-20T10:51:20.267444+00:00"
+}

@@ -1,0 +1,372 @@
+{
+  "status": "ok",
+  "folder_number": 25,
+  "image_file": "71flHJfgSwL._AC_SX679_.jpg",
+  "ablation": "no_accuracy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A wood-grain top is marked by irregular dark distressed streaks. Black vertical legs and frame are visible, with horizontal supports near the floor and diagonal braces along the side frames; a monitor, laptop, keyboard, and mouse are arranged across the surface.",
+      "relevancy": {
+        "total_claims": 10,
+        "relevant_claims": 6,
+        "supplementary_claims": 0,
+        "visual_only_claims": 4,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Wood-grain top",
+            "label": "R",
+            "reason": "Describes the desk's integrated wood-grain tabletop finish."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Irregular dark distressed streaks on the top",
+            "label": "R",
+            "reason": "Describes the distressed dark pattern on the desk surface."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Black vertical legs",
+            "label": "R",
+            "reason": "Describes the desk's black vertical support legs."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Black frame",
+            "label": "R",
+            "reason": "Describes the desk's integrated black metal frame."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Horizontal supports near the floor",
+            "label": "R",
+            "reason": "Describes the desk's lower horizontal frame supports."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Diagonal braces along the side frames",
+            "label": "R",
+            "reason": "Describes the diagonal structural braces integrated into the desk sides."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Monitor on the surface",
+            "label": "V",
+            "reason": "Describes an individual staging prop rather than the desk itself."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "Laptop on the surface",
+            "label": "V",
+            "reason": "Describes an individual staging prop rather than the desk itself."
+          },
+          {
+            "claim_id": "c9",
+            "claim": "Keyboard on the surface",
+            "label": "V",
+            "reason": "Describes an individual staging prop rather than the desk itself."
+          },
+          {
+            "claim_id": "c10",
+            "claim": "Mouse on the surface",
+            "label": "V",
+            "reason": "Describes an individual staging prop rather than the desk itself."
+          }
+        ],
+        "relevancy_score": 42.86
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 10,
+          "relevant_claims": 6,
+          "irrelevant_claims": 4,
+          "raw_novel_claims": 6,
+          "relevant_novel_claims": 2,
+          "irrelevant_novel_claims": 4,
+          "unavoidable_repetition_claims": 4,
+          "avoidable_redundancy_claims": 0,
+          "novelty_rate": 0.2,
+          "raw_novelty_rate": 0.6,
+          "unavoidable_repetition_rate": 0.4,
+          "avoidable_redundancy_rate": 0.0,
+          "redundancy_rate": 0.4
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Wood-grain top",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Irregular dark distressed streaks on the top",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Black vertical legs",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Black frame",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Horizontal supports near the floor",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Diagonal braces along the side frames",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Monitor on the surface",
+            "relevance_code": "V"
+          },
+          {
+            "claim_id": "c8",
+            "claim": "Laptop on the surface",
+            "relevance_code": "V"
+          },
+          {
+            "claim_id": "c9",
+            "claim": "Keyboard on the surface",
+            "relevance_code": "V"
+          },
+          {
+            "claim_id": "c10",
+            "claim": "Mouse on the surface",
+            "relevance_code": "V"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Wood-grain top",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Top Material Type",
+                "value": "Engineered Wood"
+              },
+              {
+                "field": "product_details.Top Color",
+                "value": "Rustic Brown"
+              }
+            ],
+            "reason": "The DOM establishes that the desk has a wood-based, rustic-brown top, but it does not describe a wood-grain appearance. Referring to the top is necessary to locate and make the new grain detail understandable."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Irregular dark distressed streaks on the top",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Distressed Finish Type",
+                "value": "Chipped, Rub Through"
+              },
+              {
+                "field": "product_details.Top Color",
+                "value": "Rustic Brown"
+              },
+              {
+                "field": "product_details.Natural Variation Type",
+                "value": "Colour:"
+              }
+            ],
+            "reason": "The DOM already identifies a distressed finish and a tabletop, while the claim adds the specific visual form of irregular dark streaks and their location. The overlapping distressed-top context is needed to anchor the added appearance detail."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Black vertical legs",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Furniture Leg Material",
+                "value": "Alloy Steel"
+              },
+              {
+                "field": "product_details.Leg Style",
+                "value": "Straight leg"
+              },
+              {
+                "field": "product_details.Colour",
+                "value": "Rustic Brown and Black"
+              }
+            ],
+            "reason": "The DOM establishes straight steel legs and that black is one of the product colors, but does not assign black specifically to the legs. Naming the legs is necessary to ground the new component-specific color detail."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Black frame",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Frame Material Type",
+                "value": "Metal"
+              },
+              {
+                "field": "product_details.Colour",
+                "value": "Rustic Brown and Black"
+              },
+              {
+                "field": "title",
+                "value": "VASAGLE Computer Desk, Table, 50 x 100 x 76 cm, for Office, Bedroom, Living Room, Metal Frame, Rustic Brown and Ink Black LWD41XV1"
+              }
+            ],
+            "reason": "The DOM identifies a metal frame and includes black/ink black among the product colors, but does not explicitly state that the frame is the black component. Repeating the frame reference is needed to attach the new color information to that component."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Horizontal supports near the floor",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Frame Material Type",
+                "value": "Metal"
+              },
+              {
+                "field": "product_details.Base Type",
+                "value": "Metal"
+              }
+            ],
+            "reason": "The DOM describes a metal frame and base but provides no information about horizontal supports or their placement near the floor."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Diagonal braces along the side frames",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Frame Joint Type",
+                "value": "Reinforced corners"
+              },
+              {
+                "field": "product_details.Frame Material Type",
+                "value": "Metal"
+              }
+            ],
+            "reason": "The DOM mentions reinforced corners and a metal frame, but does not describe diagonal braces or side-frame bracing."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Monitor on the surface",
+            "relevance_code": "V",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Recommended Uses For Product",
+                "value": "Working, Writing"
+              }
+            ],
+            "reason": "The DOM does not mention a monitor or any monitor placed on the desk surface."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "Laptop on the surface",
+            "relevance_code": "V",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Recommended Uses For Product",
+                "value": "Working, Writing"
+              }
+            ],
+            "reason": "The DOM does not mention a laptop or any laptop placed on the desk surface."
+          },
+          {
+            "claim_id": "c9",
+            "claim": "Keyboard on the surface",
+            "relevance_code": "V",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Recommended Uses For Product",
+                "value": "Working, Writing"
+              }
+            ],
+            "reason": "The DOM does not mention a keyboard or any keyboard placed on the desk surface."
+          },
+          {
+            "claim_id": "c10",
+            "claim": "Mouse on the surface",
+            "relevance_code": "V",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Recommended Uses For Product",
+                "value": "Working, Writing"
+              }
+            ],
+            "reason": "The DOM does not mention a mouse or any mouse placed on the desk surface."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 6,
+        "subjective_claims": 0,
+        "total_claims": 6,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The tabletop has a wood-grain appearance.",
+            "label": "OBJECTIVE",
+            "reason": "The tabletop visibly shows a brown wood-like grain pattern."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The tabletop is marked by irregular dark distressed streaks.",
+            "label": "OBJECTIVE",
+            "reason": "Irregular dark streaked and worn-looking markings are visibly present across the tabletop surface."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The desk has black vertical legs and a black frame.",
+            "label": "OBJECTIVE",
+            "reason": "The vertical legs and surrounding structural frame are visibly black."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The frame has horizontal supports near the floor.",
+            "label": "OBJECTIVE",
+            "reason": "Horizontal black crossbars are visibly positioned low between the desk legs."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The side frames have diagonal braces.",
+            "label": "OBJECTIVE",
+            "reason": "Diagonal black support bars are visibly present on the side sections of the frame."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "A monitor, laptop, keyboard, and mouse are arranged across the tabletop.",
+            "label": "OBJECTIVE",
+            "reason": "These four items are visibly placed on the tabletop in the image."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 41,
+        "relevant_novel_claims": 2,
+        "efficiency_per_100_words": 4.878048780487805
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:51:40.439970+00:00"
+}

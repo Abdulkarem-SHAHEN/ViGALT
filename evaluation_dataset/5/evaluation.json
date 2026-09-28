@@ -9,7 +9,6 @@
         "relevant_claims": 6,
         "supplementary_claims": 0,
         "visual_only_claims": 0,
-        "relevancy_rate": 1.0,
         "claims": [
           {
             "claim_id": "C1",
@@ -41,7 +40,8 @@
             "claim": "Ribbed waistband at the hem",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 100.0
       },
       "redundancy": {
         "metrics": {
@@ -233,7 +233,6 @@
         "relevant_claims": 7,
         "supplementary_claims": 0,
         "visual_only_claims": 3,
-        "relevancy_rate": 0.7,
         "claims": [
           {
             "claim_id": "C1",
@@ -285,7 +284,8 @@
             "claim": "The other woman wears black pants.",
             "label": "V"
           }
-        ]
+        ],
+        "relevancy_score": 53.85
       },
       "redundancy": {
         "metrics": {

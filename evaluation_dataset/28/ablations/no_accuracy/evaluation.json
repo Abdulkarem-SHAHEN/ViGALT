@@ -1,0 +1,207 @@
+{
+  "status": "ok",
+  "folder_number": 28,
+  "image_file": "81cpwsq3BrL._AC_SX679_.jpg",
+  "ablation": "no_accuracy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A mirror with a narrow border, straight vertical sides, and a dark-colored frame. A separate support extends behind it on the right, holding it upright on the floor.",
+      "relevancy": {
+        "total_claims": 4,
+        "relevant_claims": 4,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "A mirror with a narrow border",
+            "label": "R",
+            "reason": "Describes the mirror's narrow integrated frame."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The mirror has straight vertical sides",
+            "label": "R",
+            "reason": "Describes the mirror's side shape."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The mirror has a dark-colored frame",
+            "label": "R",
+            "reason": "Describes the dark frame attached to the mirror."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "A separate support extends behind the mirror on the right, holding it upright on the floor",
+            "label": "R",
+            "reason": "Describes the mirror's integrated rear floor-support structure."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 4,
+          "relevant_claims": 4,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 2,
+          "relevant_novel_claims": 2,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 1,
+          "avoidable_redundancy_claims": 1,
+          "novelty_rate": 0.5,
+          "raw_novelty_rate": 0.5,
+          "unavoidable_repetition_rate": 0.25,
+          "avoidable_redundancy_rate": 0.25,
+          "redundancy_rate": 0.5
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "A mirror with a narrow border",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The mirror has straight vertical sides",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The mirror has a dark-colored frame",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "A separate support extends behind the mirror on the right, holding it upright on the floor",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "A mirror with a narrow border",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM identifies an arched aluminium/metal frame but does not state or otherwise convey that the border is narrow."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The mirror has straight vertical sides",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "Arched Floor Mirror"
+              },
+              {
+                "field": "product_details.Frame Type",
+                "value": "Arched metal edging"
+              }
+            ],
+            "reason": "The DOM establishes that the mirror is arched, but it does not specify that its vertical sides are straight."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The mirror has a dark-colored frame",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "Ink Black"
+              },
+              {
+                "field": "product_details.Frame Color",
+                "value": "Black"
+              },
+              {
+                "field": "title",
+                "value": "Ink Black LFM035B01"
+              }
+            ],
+            "reason": "The DOM explicitly identifies the frame as black and the product color as ink black. Calling the frame dark-colored adds no needed semantic information."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "A separate support extends behind the mirror on the right, holding it upright on the floor",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Mounting Type",
+                "value": "Floor Mount"
+              },
+              {
+                "field": "product_details.Surface Recommendation",
+                "value": "Freestanding, Wall-mounted"
+              },
+              {
+                "field": "feature_bullets[0]",
+                "value": "Whether it is on the floor or fixed to the wall"
+              }
+            ],
+            "reason": "The DOM already establishes floor-standing/freestanding use, while the claim newly specifies a separate rear support on the right. Repeating that the support holds the mirror upright on the floor is needed to explain the support's function and ground the new structural detail."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 6,
+        "subjective_claims": 0,
+        "total_claims": 6,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The product is a mirror.",
+            "label": "OBJECTIVE",
+            "reason": "A reflective glass surface is clearly visible in the image."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The mirror has a narrow border.",
+            "label": "OBJECTIVE",
+            "reason": "A thin dark frame bordering the reflective surface is directly visible."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The mirror has straight vertical sides.",
+            "label": "OBJECTIVE",
+            "reason": "The left and right edges of the tall mirror are visibly straight and vertical."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The mirror has a dark-colored frame.",
+            "label": "OBJECTIVE",
+            "reason": "The visible frame around the mirror appears black or very dark."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "A separate support extends behind the mirror on the right.",
+            "label": "OBJECTIVE",
+            "reason": "A dark rear support leg is visibly positioned behind and to the right of the mirror."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "The support holds the mirror upright on the floor.",
+            "label": "OBJECTIVE",
+            "reason": "The support and mirror visibly contact the floor and form a freestanding upright arrangement."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 28,
+        "relevant_novel_claims": 2,
+        "efficiency_per_100_words": 7.142857142857142
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:56:38.442625+00:00"
+}

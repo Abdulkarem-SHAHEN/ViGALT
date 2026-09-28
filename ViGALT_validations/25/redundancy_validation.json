@@ -1,0 +1,66 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Desk",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM identifies the product as a computer desk and table, so repeating that it is a desk adds no new visual information or grounding."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Wood-grain top",
+      "label": "NOVEL",
+      "reason": "The DOM identifies the top as engineered wood and rustic brown but does not describe a visible wood-grain pattern; this claim adds the top's visual surface appearance."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Irregular dark distressed streaks on the top",
+      "label": "NOVEL",
+      "reason": "Although the DOM mentions a chipped, rub-through distressed finish, it does not specify irregular dark streaks or their placement on the top; this adds visual pattern and location information."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Horizontal supports near the floor",
+      "label": "NOVEL",
+      "reason": "The DOM describes a metal frame and straight legs but does not identify horizontal supports or their low placement; this adds visible construction and spatial arrangement."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Diagonal braces along the side frames",
+      "label": "NOVEL",
+      "reason": "The DOM does not describe diagonal braces or their position along the side frames; this adds visible structural configuration."
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Monitor arranged across the surface",
+      "label": "NOVEL",
+      "reason": "The DOM does not mention a monitor in the product image; this adds the presence of a monitor and its placement on the desk surface."
+    },
+    {
+      "claim_id": "c7",
+      "claim": "Laptop arranged across the surface",
+      "label": "NOVEL",
+      "reason": "The DOM does not mention a laptop in the product image; this adds the presence of a laptop and its placement on the desk surface."
+    },
+    {
+      "claim_id": "c8",
+      "claim": "Keyboard arranged across the surface",
+      "label": "NOVEL",
+      "reason": "The DOM does not mention a keyboard in the product image; this adds the presence of a keyboard and its placement on the desk surface."
+    },
+    {
+      "claim_id": "c9",
+      "claim": "Mouse arranged across the surface",
+      "label": "NOVEL",
+      "reason": "The DOM does not mention a mouse in the product image; this adds the presence of a mouse and its placement on the desk surface."
+    }
+  ],
+  "summary": {
+    "total_claims": 9,
+    "novel_claims": 8,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.1111111111111111
+  }
+}

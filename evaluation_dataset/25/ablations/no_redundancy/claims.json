@@ -1,0 +1,65 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "25",
+  "product_stem": "25",
+  "alt_text": "A desk with a wood-grain top marked by irregular dark distressed streaks. The desk has black vertical legs and frame, horizontal supports near the floor, and diagonal braces along the side frames. A monitor, laptop, keyboard, and mouse are arranged across the surface.",
+  "final_alt_text": "A desk with a wood-grain top marked by irregular dark distressed streaks. The desk has black vertical legs and frame, horizontal supports near the floor, and diagonal braces along the side frames. A monitor, laptop, keyboard, and mouse are arranged across the surface.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 4068,
+  "token_usage": {
+    "prompt_tokens": 1018,
+    "completion_tokens": 418,
+    "total_tokens": 1436
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"A desk has a wood-grain top\"},{\"claim_id\":\"c2\",\"claim\":\"The desk top has irregular dark distressed streaks\"},{\"claim_id\":\"c3\",\"claim\":\"The desk has black vertical legs\"},{\"claim_id\":\"c4\",\"claim\":\"The desk has a black frame\"},{\"claim_id\":\"c5\",\"claim\":\"The desk has horizontal supports near the floor\"},{\"claim_id\":\"c6\",\"claim\":\"The desk has diagonal braces along the side frames\"},{\"claim_id\":\"c7\",\"claim\":\"A monitor is arranged across the desk surface\"},{\"claim_id\":\"c8\",\"claim\":\"A laptop is arranged across the desk surface\"},{\"claim_id\":\"c9\",\"claim\":\"A keyboard is arranged across the desk surface\"},{\"claim_id\":\"c10\",\"claim\":\"A mouse is arranged across the desk surface\"}],\"total_claims\":10}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "A desk has a wood-grain top"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "The desk top has irregular dark distressed streaks"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "The desk has black vertical legs"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "The desk has a black frame"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "The desk has horizontal supports near the floor"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "The desk has diagonal braces along the side frames"
+      },
+      {
+        "claim_id": "c7",
+        "claim": "A monitor is arranged across the desk surface"
+      },
+      {
+        "claim_id": "c8",
+        "claim": "A laptop is arranged across the desk surface"
+      },
+      {
+        "claim_id": "c9",
+        "claim": "A keyboard is arranged across the desk surface"
+      },
+      {
+        "claim_id": "c10",
+        "claim": "A mouse is arranged across the desk surface"
+      }
+    ],
+    "total_claims": 10
+  },
+  "processed_at": "2026-09-20T11:52:24.555833+00:00"
+}

@@ -1,0 +1,81 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "11",
+  "product_stem": "11",
+  "alt_text": "Dark navy color, long sleeves, and a ribbed crew neckline, cuffs, and waistband are visible. A central space-themed graphic features a white-outlined astronaut holding a multicolored planet, with colorful liquid streaming from the held planet into the pools beneath the astronaut. Stars and ringed planets surround the astronaut, with additional small planets and a moon-like circle above.",
+  "final_alt_text": "Dark navy color, long sleeves, and a ribbed crew neckline, cuffs, and waistband are visible. A central space-themed graphic features a white-outlined astronaut holding a multicolored planet, with colorful liquid streaming from the held planet into the pools beneath the astronaut. Stars and ringed planets surround the astronaut, with additional small planets and a moon-like circle above.",
+  "classification_category": "CLOTHING",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 8387,
+  "token_usage": {
+    "prompt_tokens": 1038,
+    "completion_tokens": 979,
+    "total_tokens": 2017
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"The garment is dark navy.\"},{\"claim_id\":\"c2\",\"claim\":\"The garment has long sleeves.\"},{\"claim_id\":\"c3\",\"claim\":\"The garment has a ribbed crew neckline.\"},{\"claim_id\":\"c4\",\"claim\":\"The garment has ribbed cuffs.\"},{\"claim_id\":\"c5\",\"claim\":\"The garment has a ribbed waistband.\"},{\"claim_id\":\"c6\",\"claim\":\"There is a central space-themed graphic.\"},{\"claim_id\":\"c7\",\"claim\":\"The graphic features a white-outlined astronaut.\"},{\"claim_id\":\"c8\",\"claim\":\"The astronaut holds a multicolored planet.\"},{\"claim_id\":\"c9\",\"claim\":\"Colorful liquid streams from the held planet.\"},{\"claim_id\":\"c10\",\"claim\":\"Pools are beneath the astronaut.\"},{\"claim_id\":\"c11\",\"claim\":\"Stars surround the astronaut.\"},{\"claim_id\":\"c12\",\"claim\":\"Ringed planets surround the astronaut.\"},{\"claim_id\":\"c13\",\"claim\":\"Additional small planets are above the astronaut.\"},{\"claim_id\":\"c14\",\"claim\":\"A moon-like circle is above the astronaut.\"}],\"total_claims\":14}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "The garment is dark navy."
+      },
+      {
+        "claim_id": "c2",
+        "claim": "The garment has long sleeves."
+      },
+      {
+        "claim_id": "c3",
+        "claim": "The garment has a ribbed crew neckline."
+      },
+      {
+        "claim_id": "c4",
+        "claim": "The garment has ribbed cuffs."
+      },
+      {
+        "claim_id": "c5",
+        "claim": "The garment has a ribbed waistband."
+      },
+      {
+        "claim_id": "c6",
+        "claim": "There is a central space-themed graphic."
+      },
+      {
+        "claim_id": "c7",
+        "claim": "The graphic features a white-outlined astronaut."
+      },
+      {
+        "claim_id": "c8",
+        "claim": "The astronaut holds a multicolored planet."
+      },
+      {
+        "claim_id": "c9",
+        "claim": "Colorful liquid streams from the held planet."
+      },
+      {
+        "claim_id": "c10",
+        "claim": "Pools are beneath the astronaut."
+      },
+      {
+        "claim_id": "c11",
+        "claim": "Stars surround the astronaut."
+      },
+      {
+        "claim_id": "c12",
+        "claim": "Ringed planets surround the astronaut."
+      },
+      {
+        "claim_id": "c13",
+        "claim": "Additional small planets are above the astronaut."
+      },
+      {
+        "claim_id": "c14",
+        "claim": "A moon-like circle is above the astronaut."
+      }
+    ],
+    "total_claims": 14
+  },
+  "processed_at": "2026-09-20T11:26:23.249507+00:00"
+}

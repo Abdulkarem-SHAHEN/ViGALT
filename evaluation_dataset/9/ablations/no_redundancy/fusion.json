@@ -1,0 +1,87 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 5672,
+  "token_usage": {
+    "prompt_tokens": 2811,
+    "completion_tokens": 809,
+    "total_tokens": 3620
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"The jacket is shown open\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c2\",\"text\":\"Black outer shell\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"Tan plush lining visible through the body and hood\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n2\",\"text\":\"An attached hood is visible\",\"source\":\"ADDED\",\"action\":\"ADDED\"},{\"claim_id\":\"c4\",\"text\":\"Full-length front zipper\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"Two angled chest pockets\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c6\",\"text\":\"Two vertical lower pockets\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n1\",\"text\":\"The chest and lower pockets have zipper closures with visible pulls\",\"source\":\"ADDED\",\"action\":\"ADDED\"},{\"claim_id\":\"c7\",\"text\":\"Ribbed cuffs\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c8\",\"text\":\"Ribbed hem\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"}],\"edit_log\":[\"Retained all eight accurate original claims.\",\"Added attached hood per Completeness (n2).\",\"Added zipper closures and visible pulls for the chest and lower pockets per Completeness (n1).\",\"Reordered claims from overall appearance to specific features and accents.\"],\"final_alt_text\":\"A jacket is shown open, with a black outer shell and tan plush lining visible through the body and hood. An attached hood is visible, along with a full-length front zipper, two angled chest pockets, and two vertical lower pockets; the chest and lower pockets have zipper closures with visible pulls. It has ribbed cuffs and a ribbed hem.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "The jacket is shown open",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Black outer shell",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Tan plush lining visible through the body and hood",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n2",
+        "text": "An attached hood is visible",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Full-length front zipper",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Two angled chest pockets",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Two vertical lower pockets",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "The chest and lower pockets have zipper closures with visible pulls",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "c7",
+        "text": "Ribbed cuffs",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c8",
+        "text": "Ribbed hem",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Retained all eight accurate original claims.",
+      "Added attached hood per Completeness (n2).",
+      "Added zipper closures and visible pulls for the chest and lower pockets per Completeness (n1).",
+      "Reordered claims from overall appearance to specific features and accents."
+    ],
+    "final_alt_text": "A jacket is shown open, with a black outer shell and tan plush lining visible through the body and hood. An attached hood is visible, along with a full-length front zipper, two angled chest pockets, and two vertical lower pockets; the chest and lower pockets have zipper closures with visible pulls. It has ribbed cuffs and a ribbed hem."
+  },
+  "final_alt_text": "A jacket is shown open, with a black outer shell and tan plush lining visible through the body and hood. An attached hood is visible, along with a full-length front zipper, two angled chest pockets, and two vertical lower pockets; the chest and lower pockets have zipper closures with visible pulls. It has ribbed cuffs and a ribbed hem.",
+  "processed_at": "2026-09-20T10:59:52.286892+00:00"
+}

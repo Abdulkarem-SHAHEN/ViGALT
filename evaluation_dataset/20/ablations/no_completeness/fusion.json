@@ -1,0 +1,74 @@
+{
+  "status": "ok",
+  "ablation": "no_completeness",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_completeness.txt",
+  "duration_ms": 5274,
+  "token_usage": {
+    "prompt_tokens": 2926,
+    "completion_tokens": 772,
+    "total_tokens": 3698
+  },
+  "raw_response": "{\n  \"stage\": \"fusion\",\n  \"master_claims\": [\n    {\n      \"claim_id\": \"c1\",\n      \"text\": \"The chair has a high, rounded back\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c2\",\n      \"text\": \"The chair has integrated curved arms\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c3\",\n      \"text\": \"The chair features vertical channel stitching\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c4\",\n      \"text\": \"The chair has a separate rectangular seat cushion\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c5\",\n      \"text\": \"The chair rests on a white five-spoke wheeled base\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c6\",\n      \"text\": \"The wheeled base has black-and-white casters\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c7\",\n      \"text\": \"A desk is positioned behind the chair\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c8\",\n      \"text\": \"A laptop is positioned behind the chair\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    }\n  ],\n  \"edit_log\": [\n    \"Retained all eight accurate claims (c1-c8)\",\n    \"Ordered chair structure, upholstery, base, and background objects (c1-c8)\",\n    \"Combined the desk and laptop background claims into one sentence (c7-c8)\"\n  ],\n  \"final_alt_text\": \"A chair has a high, rounded back and integrated curved arms, with vertical channel stitching and a separate rectangular seat cushion. It rests on a white five-spoke wheeled base with black-and-white casters; a desk and laptop are positioned behind it.\"\n}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "The chair has a high, rounded back",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "The chair has integrated curved arms",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "The chair features vertical channel stitching",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "The chair has a separate rectangular seat cushion",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "The chair rests on a white five-spoke wheeled base",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "The wheeled base has black-and-white casters",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c7",
+        "text": "A desk is positioned behind the chair",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c8",
+        "text": "A laptop is positioned behind the chair",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Retained all eight accurate claims (c1-c8)",
+      "Ordered chair structure, upholstery, base, and background objects (c1-c8)",
+      "Combined the desk and laptop background claims into one sentence (c7-c8)"
+    ],
+    "final_alt_text": "A chair has a high, rounded back and integrated curved arms, with vertical channel stitching and a separate rectangular seat cushion. It rests on a white five-spoke wheeled base with black-and-white casters; a desk and laptop are positioned behind it."
+  },
+  "final_alt_text": "A chair has a high, rounded back and integrated curved arms, with vertical channel stitching and a separate rectangular seat cushion. It rests on a white five-spoke wheeled base with black-and-white casters; a desk and laptop are positioned behind it.",
+  "processed_at": "2026-09-20T11:42:52.395518+00:00"
+}

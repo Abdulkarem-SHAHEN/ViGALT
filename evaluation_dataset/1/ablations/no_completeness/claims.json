@@ -1,0 +1,33 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "1",
+  "product_stem": "1",
+  "alt_text": "A T-shirt is shown from the front. It has a small gray Under Armour logo on the wearer's upper left chest.",
+  "final_alt_text": "A T-shirt is shown from the front. It has a small gray Under Armour logo on the wearer's upper left chest.",
+  "classification_category": "CLOTHING",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 1362,
+  "token_usage": {
+    "prompt_tokens": 989,
+    "completion_tokens": 61,
+    "total_tokens": 1050
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"T-shirt shown from the front\"},{\"claim_id\":\"c2\",\"claim\":\"Small gray Under Armour logo on the wearer's upper left chest\"}],\"total_claims\":2}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "T-shirt shown from the front"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Small gray Under Armour logo on the wearer's upper left chest"
+      }
+    ],
+    "total_claims": 2
+  },
+  "processed_at": "2026-09-20T10:44:53.370411+00:00"
+}

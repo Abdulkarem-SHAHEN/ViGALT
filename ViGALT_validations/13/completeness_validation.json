@@ -1,0 +1,49 @@
+{
+  "stage": "completeness_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Black T-shirt",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Small white adidas three-stripe logo on the left chest",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Straight lower hem",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "n1",
+      "claim": "Short sleeves",
+      "label": "ADDED",
+      "addition_type": "VISUAL_GAP",
+      "reason": "The shirt visibly has short sleeves."
+    },
+    {
+      "claim_id": "n2",
+      "claim": "Round crew neckline",
+      "label": "ADDED",
+      "addition_type": "VISUAL_GAP",
+      "reason": "A clearly visible round crew neckline is not covered by the existing claims."
+    }
+  ],
+  "summary": {
+    "input_claims": 3,
+    "retained_claims": 3,
+    "added_claims": 2,
+    "added_visual_gap": 2,
+    "added_non_english_text": 0,
+    "added_known_entity": 0,
+    "omission_score": 0.4
+  }
+}

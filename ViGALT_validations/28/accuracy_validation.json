@@ -1,0 +1,52 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "A mirror has a narrow border.",
+      "claim": "A mirror has a narrow border.",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The mirror visibly has a narrow dark border around its reflective surface."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "The mirror has straight vertical sides.",
+      "claim": "The mirror has straight, slightly angled side edges.",
+      "label": "CORRECTED",
+      "error_category": "SPATIAL",
+      "reason": "The side edges are visibly straight but lean slightly rather than running vertically."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "The mirror has a rounded arch across the top.",
+      "claim": "The mirror has a rounded arch across the top.",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The mirror visibly has a rounded arched top."
+    },
+    {
+      "claim_id": "c4",
+      "original_claim": "A separate support extends behind the mirror on the right.",
+      "claim": "A separate support extends behind the mirror on the right.",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A distinct dark support is visibly positioned behind and to the right of the mirror."
+    },
+    {
+      "claim_id": "c5",
+      "original_claim": "The support holds the mirror upright on the floor.",
+      "claim": "The support holds the mirror upright on the floor.",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The support is visibly connected behind the floor-standing mirror, which is upright on the floor."
+    }
+  ],
+  "summary": {
+    "total_claims": 5,
+    "accurate_claims": 4,
+    "corrected_claims": 1,
+    "deleted_claims": 0,
+    "error_rate": 0.2
+  }
+}

@@ -212,9 +212,11 @@ All prompt files live under `prompts/`.
 | `completeness_validator.txt` | 5 — Completeness Validator | JSON |
 | `redundancy_validator.txt` | 6 — Redundancy Validator | JSON |
 | `fuser.txt` | 7 — Fuser | JSON (contains `final_alt_text`) |
-| `evaluators/relevancy.txt` | Post-pipeline evaluation | JSON |
+| `evaluators/relevancy.txt` | Post-pipeline evaluation | JSON (`relevancy_score` = `100×(R+0.5S)/(R+S+2V)`) |
 | `evaluators/redundancy.txt` | Post-pipeline evaluation | JSON |
 | `evaluators/objectivity.txt` | Post-pipeline evaluation | JSON |
+
+Published aggregates in `evaluation_dataset/summary.json` macro-average per-product `relevancy_score` values (via `build_relevancy_block` in `src/viglat/evaluation/utils.py`), using the same formula as the relevancy evaluator prompt.
 | `docs/pipeline_architecture.md` | — | This document |
 
 ---

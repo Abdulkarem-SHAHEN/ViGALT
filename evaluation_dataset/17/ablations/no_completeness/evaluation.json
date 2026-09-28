@@ -1,0 +1,193 @@
+{
+  "status": "ok",
+  "folder_number": 17,
+  "image_file": "715uDPewjxL._AC_SX679_.jpg",
+  "ablation": "no_completeness",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "Four backless, square stools are arranged around the rectangular tabletop. White surfaces with gray marble-like veining are paired with silver-gray rectangular frames.",
+      "relevancy": {
+        "total_claims": 4,
+        "relevant_claims": 4,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Four backless, square stools are arranged around the tabletop.",
+            "label": "R",
+            "reason": "The stools and their arrangement around the table are part of the furniture set's visible layout."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The tabletop is rectangular.",
+            "label": "R",
+            "reason": "The tabletop shape is a visible attribute of the product."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The stools have white surfaces with gray marble-like veining.",
+            "label": "R",
+            "reason": "The stool seat color and marble-like surface pattern are integrated product attributes."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The stools have silver-gray rectangular frames.",
+            "label": "R",
+            "reason": "The stools' frame color and rectangular construction are visible product details."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 4,
+          "relevant_claims": 4,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 1,
+          "relevant_novel_claims": 1,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 3,
+          "avoidable_redundancy_claims": 0,
+          "novelty_rate": 0.25,
+          "raw_novelty_rate": 0.25,
+          "unavoidable_repetition_rate": 0.75,
+          "avoidable_redundancy_rate": 0.0,
+          "redundancy_rate": 0.75
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Four backless, square stools are arranged around the tabletop.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The tabletop is rectangular.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The stools have white surfaces with gray marble-like veining.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The stools have silver-gray rectangular frames.",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Four backless, square stools are arranged around the tabletop.",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "Set of Table and 4 Chairs"
+              },
+              {
+                "field": "product_details.Set Name",
+                "value": "High Bar Table with 4 Chairs"
+              },
+              {
+                "field": "product_details.Seating Capacity",
+                "value": "4"
+              }
+            ],
+            "reason": "The DOM already establishes seating for four, but it does not state that the seats are backless, square stools or that they are arranged around the tabletop. Repeating the count anchors those newly supplied seating and arrangement details to the complete four-seat set."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The tabletop is rectangular.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM provides tabletop dimensions and materials but does not specify the tabletop's geometric shape as rectangular."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The stools have white surfaces with gray marble-like veining.",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "White and Silver Marble"
+              },
+              {
+                "field": "product_details.Furniture Finish",
+                "value": "White Marble and Silver (Metal)"
+              },
+              {
+                "field": "product_details.Top Color",
+                "value": "White"
+              }
+            ],
+            "reason": "The DOM establishes a white marble color/finish for the furniture, but does not identify the stools' surfaces specifically or describe gray marble-like veining. The repeated white color is needed to ground the new stool-specific surface description."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The stools have silver-gray rectangular frames.",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Furniture Finish",
+                "value": "White Marble and Silver (Metal)"
+              },
+              {
+                "field": "product_details.Frame Material Type",
+                "value": "Metal"
+              },
+              {
+                "field": "product_details.Furniture Leg Material",
+                "value": "Metal"
+              }
+            ],
+            "reason": "The DOM states that the furniture has a silver metal finish and metal frame material, but it does not specify that the stools have rectangular frames or identify their frame appearance at the stool level. Repeating the silver-gray framing context anchors the new shape and component-specific information."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 3,
+        "subjective_claims": 0,
+        "total_claims": 3,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "Four backless, square stools are arranged around the rectangular tabletop.",
+            "label": "OBJECTIVE",
+            "reason": "The image visibly shows four stools without backrests, each with a square seat, positioned around a rectangular table."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The surfaces are white with gray marble-like veining.",
+            "label": "OBJECTIVE",
+            "reason": "The tabletops and stool seats visibly have a white surface with gray vein-like markings resembling marble."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The frames are silver-gray and rectangular.",
+            "label": "OBJECTIVE",
+            "reason": "The visible metal frames are silver-gray, and their legs and support bars form rectangular structures."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 22,
+        "relevant_novel_claims": 1,
+        "efficiency_per_100_words": 4.545454545454546
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:38:07.876497+00:00"
+}

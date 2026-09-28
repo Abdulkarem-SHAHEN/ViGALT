@@ -1,0 +1,53 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "21",
+  "product_stem": "21",
+  "alt_text": "Bed with a dark upholstered bed frame with rounded corners, rounded, raised side rails, and a wide headboard that curves around the sides. A cyan LED strip follows the front and right-side edges of the base and rises beside the headboard; a mattress, pillows, and blankets are inside the frame.",
+  "final_alt_text": "Bed with a dark upholstered bed frame with rounded corners, rounded, raised side rails, and a wide headboard that curves around the sides. A cyan LED strip follows the front and right-side edges of the base and rises beside the headboard; a mattress, pillows, and blankets are inside the frame.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 3243,
+  "token_usage": {
+    "prompt_tokens": 1025,
+    "completion_tokens": 311,
+    "total_tokens": 1336
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Dark upholstered bed frame with rounded corners\"},{\"claim_id\":\"c2\",\"claim\":\"Rounded, raised side rails\"},{\"claim_id\":\"c3\",\"claim\":\"Wide headboard that curves around the sides\"},{\"claim_id\":\"c4\",\"claim\":\"A cyan LED strip follows the front and right-side edges of the base and rises beside the headboard\"},{\"claim_id\":\"c5\",\"claim\":\"A mattress is inside the frame\"},{\"claim_id\":\"c6\",\"claim\":\"Pillows are inside the frame\"},{\"claim_id\":\"c7\",\"claim\":\"Blankets are inside the frame\"}],\"total_claims\":7}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Dark upholstered bed frame with rounded corners"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Rounded, raised side rails"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Wide headboard that curves around the sides"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "A cyan LED strip follows the front and right-side edges of the base and rises beside the headboard"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "A mattress is inside the frame"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "Pillows are inside the frame"
+      },
+      {
+        "claim_id": "c7",
+        "claim": "Blankets are inside the frame"
+      }
+    ],
+    "total_claims": 7
+  },
+  "processed_at": "2026-09-20T11:45:30.923501+00:00"
+}

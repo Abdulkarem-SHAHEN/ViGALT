@@ -9,7 +9,6 @@
         "relevant_claims": 8,
         "supplementary_claims": 0,
         "visual_only_claims": 2,
-        "relevancy_rate": 0.8,
         "claims": [
           {
             "claim_id": "C1",
@@ -61,7 +60,8 @@
             "claim": "A laptop positioned behind the chair",
             "label": "V"
           }
-        ]
+        ],
+        "relevancy_score": 66.67
       },
       "redundancy": {
         "metrics": {
@@ -367,7 +367,6 @@
         "relevant_claims": 4,
         "supplementary_claims": 0,
         "visual_only_claims": 7,
-        "relevancy_rate": 0.36363636363636365,
         "claims": [
           {
             "claim_id": "C1",
@@ -424,7 +423,8 @@
             "claim": "The chair sits on the five-star wheeled base",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 22.22
       },
       "redundancy": {
         "metrics": {

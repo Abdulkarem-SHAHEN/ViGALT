@@ -1,0 +1,56 @@
+{
+  "stage": "completeness_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "A mirror has a narrow border.",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c2",
+      "claim": "The mirror has straight vertical sides.",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c3",
+      "claim": "The mirror has a rounded arch across the top.",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c4",
+      "claim": "A separate support extends behind the mirror on the right.",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c5",
+      "claim": "The support holds the mirror upright on the floor.",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "n1",
+      "claim": "The mirror has a dark-colored frame.",
+      "label": "ADDED",
+      "addition_type": "VISUAL_GAP",
+      "reason": "The dark-colored frame is clearly visible around the mirror but its color is not expressed by the existing claims."
+    }
+  ],
+  "summary": {
+    "input_claims": 5,
+    "retained_claims": 5,
+    "added_claims": 1,
+    "added_visual_gap": 1,
+    "added_non_english_text": 0,
+    "added_known_entity": 0,
+    "omission_score": 0.1666666667
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "23",
+  "product_stem": "23",
+  "alt_text": "The bed frame has rounded rectangular tubular frames at the head and foot, with a black finish. Each frame has three vertical rods with ringed ornamental sections, and the footboard includes a lower horizontal rail beneath the mattress.",
+  "final_alt_text": "The bed frame has rounded rectangular tubular frames at the head and foot, with a black finish. Each frame has three vertical rods with ringed ornamental sections, and the footboard includes a lower horizontal rail beneath the mattress.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 2678,
+  "token_usage": {
+    "prompt_tokens": 1008,
+    "completion_tokens": 266,
+    "total_tokens": 1274
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Black rounded rectangular tubular frames at the head and foot of the bed\"},{\"claim_id\":\"c2\",\"claim\":\"Each frame has three vertical rods with ringed ornamental sections\"},{\"claim_id\":\"c3\",\"claim\":\"The footboard has a lower horizontal rail beneath the mattress\"}],\"total_claims\":3}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Black rounded rectangular tubular frames at the head and foot of the bed"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Each frame has three vertical rods with ringed ornamental sections"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "The footboard has a lower horizontal rail beneath the mattress"
+      }
+    ],
+    "total_claims": 3
+  },
+  "processed_at": "2026-09-20T11:48:06.732171+00:00"
+}

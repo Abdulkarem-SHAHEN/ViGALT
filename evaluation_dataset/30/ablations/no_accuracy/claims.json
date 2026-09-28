@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "30",
+  "product_stem": "30",
+  "alt_text": "A continuous warm-white illuminated ring is just inside the black outer rim. Diffuse warm glow radiates from behind the mirror around its outer edge. Three touch-control icons are near the lower center of the reflective surface.",
+  "final_alt_text": "A continuous warm-white illuminated ring is just inside the black outer rim. Diffuse warm glow radiates from behind the mirror around its outer edge. Three touch-control icons are near the lower center of the reflective surface.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 4249,
+  "token_usage": {
+    "prompt_tokens": 1007,
+    "completion_tokens": 472,
+    "total_tokens": 1479
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Continuous warm-white illuminated ring just inside the outer rim\"},{\"claim_id\":\"c2\",\"claim\":\"Black outer rim\"},{\"claim_id\":\"c3\",\"claim\":\"Diffuse warm glow radiates from behind the mirror around its outer edge\"},{\"claim_id\":\"c4\",\"claim\":\"Three touch-control icons near the lower center of the reflective surface\"}],\"total_claims\":4}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Continuous warm-white illuminated ring just inside the outer rim"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Black outer rim"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Diffuse warm glow radiates from behind the mirror around its outer edge"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Three touch-control icons near the lower center of the reflective surface"
+      }
+    ],
+    "total_claims": 4
+  },
+  "processed_at": "2026-09-20T11:59:06.639551+00:00"
+}

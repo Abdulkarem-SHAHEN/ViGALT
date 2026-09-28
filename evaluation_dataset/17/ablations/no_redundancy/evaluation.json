@@ -1,0 +1,277 @@
+{
+  "status": "ok",
+  "folder_number": 17,
+  "image_file": "715uDPewjxL._AC_SX679_.jpg",
+  "ablation": "no_redundancy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "Bar table set with four backless, square stools arranged around a rectangular tabletop. The white surfaces show gray marble-like veining, and the silver-gray rectangular frames have horizontal footrests near the floor.",
+      "relevancy": {
+        "total_claims": 6,
+        "relevant_claims": 6,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Bar table set",
+            "label": "R",
+            "reason": "The image shows a tall table with matching stools as a bar-height dining set."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Four backless, square stools arranged around the tabletop",
+            "label": "R",
+            "reason": "Four backless square stools are shown positioned around and beneath the table."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Rectangular tabletop",
+            "label": "R",
+            "reason": "The main table has a rectangular tabletop."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "White surfaces with gray marble-like veining",
+            "label": "R",
+            "reason": "The tabletop and stool seats have white surfaces marked by gray marble-like veining."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Silver-gray rectangular frames",
+            "label": "R",
+            "reason": "The table and stools have silver-gray metal frames with rectangular outlines."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Horizontal footrests near the floor",
+            "label": "R",
+            "reason": "The stool frames include horizontal lower bars that function as footrests."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 6,
+          "relevant_claims": 6,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 1,
+          "relevant_novel_claims": 1,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 3,
+          "avoidable_redundancy_claims": 2,
+          "novelty_rate": 0.16666666666666666,
+          "raw_novelty_rate": 0.16666666666666666,
+          "unavoidable_repetition_rate": 0.5,
+          "avoidable_redundancy_rate": 0.3333333333333333,
+          "redundancy_rate": 0.8333333333333334
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Bar table set",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Four backless, square stools arranged around the tabletop",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Rectangular tabletop",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "White surfaces with gray marble-like veining",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Silver-gray rectangular frames",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Horizontal footrests near the floor",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Bar table set",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "High Bar Table with Stool for 4 People, Set of Table and 4 Chairs"
+              },
+              {
+                "field": "product_details.Table Design",
+                "value": "Bar Table"
+              },
+              {
+                "field": "product_details.Set Name",
+                "value": "High Bar Table with 4 Chairs"
+              }
+            ],
+            "reason": "The DOM already identifies the product as a bar table sold as a set with chairs. The claim adds no further semantic information."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Four backless, square stools arranged around the tabletop",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "High Bar Table with Stool for 4 People, Set of Table and 4 Chairs"
+              },
+              {
+                "field": "product_details.Seating Capacity",
+                "value": "4"
+              },
+              {
+                "field": "product_details.Set Name",
+                "value": "High Bar Table with 4 Chairs"
+              }
+            ],
+            "reason": "The DOM establishes that the set includes seating for four, but does not describe the seats as backless, square, or arranged around the tabletop. Repeating the count and seating context anchors those new visual details to the four included seats."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Rectangular tabletop",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM provides tabletop dimensions and materials but does not state that the tabletop has a rectangular shape."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "White surfaces with gray marble-like veining",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "White and Silver Marble"
+              },
+              {
+                "field": "product_details.Furniture Finish",
+                "value": "White Marble and Silver (Metal)"
+              },
+              {
+                "field": "product_details.Top Color",
+                "value": "White"
+              }
+            ],
+            "reason": "The DOM already establishes white marble surfaces, but it does not describe gray marble-like veining. Mentioning the white surface is needed to ground the newly supplied veining detail."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Silver-gray rectangular frames",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "Bar Furniture in White Marble and Silver Frame"
+              },
+              {
+                "field": "product_details.Furniture Finish",
+                "value": "White Marble and Silver (Metal)"
+              },
+              {
+                "field": "product_details.Frame Material Type",
+                "value": "Metal"
+              }
+            ],
+            "reason": "The DOM identifies a silver metal frame but does not specify that the frames are rectangular. The repeated color and frame reference anchors the new shape information to the product structure."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Horizontal footrests near the floor",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[3]",
+                "value": "the triangular metal bracket under the table and the crossbar at the bottom can ensure the stability of the bar table"
+              },
+              {
+                "field": "feature_bullets[2]",
+                "value": "your feet can naturally sit on the crossbar of the chair"
+              }
+            ],
+            "reason": "The DOM already describes bottom crossbars that support the user's feet, which semantically conveys footrests positioned low on the chairs. Repeating this adds no necessary new information."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 7,
+        "subjective_claims": 0,
+        "total_claims": 7,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The set includes a table and four stools.",
+            "label": "OBJECTIVE",
+            "reason": "One table and four separate stool-like seats are visibly shown in the image."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The stools are backless.",
+            "label": "OBJECTIVE",
+            "reason": "The four stools visibly have seats and leg frames without any backrests."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The stools have square seats.",
+            "label": "OBJECTIVE",
+            "reason": "The visible stool seat tops have four straight sides of approximately equal length."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The stools are arranged around a rectangular tabletop.",
+            "label": "OBJECTIVE",
+            "reason": "The stools are visibly positioned beneath and around the larger four-sided rectangular table surface."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The table and stool surfaces are white with gray marble-like veining.",
+            "label": "OBJECTIVE",
+            "reason": "The visible top surfaces are predominantly white and display irregular gray vein-like markings."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "The frames are silver-gray and rectangular.",
+            "label": "OBJECTIVE",
+            "reason": "The visible metal-looking structural frames are gray and consist of straight bars forming rectangular outlines."
+          },
+          {
+            "claim_id": "C7",
+            "claim": "The frames have horizontal footrests near the floor.",
+            "label": "OBJECTIVE",
+            "reason": "Horizontal crossbars are visibly positioned low between the legs of the stools and table frame."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 31,
+        "relevant_novel_claims": 1,
+        "efficiency_per_100_words": 3.225806451612903
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:38:40.158742+00:00"
+}

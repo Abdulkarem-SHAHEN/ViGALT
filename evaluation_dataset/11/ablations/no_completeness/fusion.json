@@ -1,0 +1,81 @@
+{
+  "status": "ok",
+  "ablation": "no_completeness",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_completeness.txt",
+  "duration_ms": 5016,
+  "token_usage": {
+    "prompt_tokens": 2993,
+    "completion_tokens": 671,
+    "total_tokens": 3664
+  },
+  "raw_response": "{\n  \"stage\": \"fusion\",\n  \"master_claims\": [\n    {\n      \"claim_id\": \"c1\",\n      \"text\": \"\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"DROPPED_REDUNDANT\"\n    },\n    {\n      \"claim_id\": \"c2\",\n      \"text\": \"Central space-themed graphic\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c3\",\n      \"text\": \"White-outlined astronaut\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c4\",\n      \"text\": \"Multicolored planet held by the astronaut\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c5\",\n      \"text\": \"Stars surrounding the astronaut\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c6\",\n      \"text\": \"Ringed planets surrounding the astronaut\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c7\",\n      \"text\": \"Colorful pools beneath the astronaut\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c8\",\n      \"text\": \"Additional small planets above\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c9\",\n      \"text\": \"Moon-like circle above\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    }\n  ],\n  \"edit_log\": [\n    \"Dropped sweatshirt category as avoidably redundant (c1)\",\n    \"Retained central graphic and astronaut details (c2-c4)\",\n    \"Retained surrounding stars and ringed planets (c5-c6)\",\n    \"Retained pools, small planets, and moon-like circle (c7-c9)\"\n  ],\n  \"final_alt_text\": \"A central space-themed graphic features a white-outlined astronaut holding a multicolored planet, with stars and ringed planets surrounding the astronaut. Colorful pools appear beneath the astronaut, with additional small planets and a moon-like circle above.\"\n}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "",
+        "source": "ORIGINAL",
+        "action": "DROPPED_REDUNDANT"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Central space-themed graphic",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "White-outlined astronaut",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Multicolored planet held by the astronaut",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Stars surrounding the astronaut",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Ringed planets surrounding the astronaut",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c7",
+        "text": "Colorful pools beneath the astronaut",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c8",
+        "text": "Additional small planets above",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c9",
+        "text": "Moon-like circle above",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Dropped sweatshirt category as avoidably redundant (c1)",
+      "Retained central graphic and astronaut details (c2-c4)",
+      "Retained surrounding stars and ringed planets (c5-c6)",
+      "Retained pools, small planets, and moon-like circle (c7-c9)"
+    ],
+    "final_alt_text": "A central space-themed graphic features a white-outlined astronaut holding a multicolored planet, with stars and ringed planets surrounding the astronaut. Colorful pools appear beneath the astronaut, with additional small planets and a moon-like circle above."
+  },
+  "final_alt_text": "A central space-themed graphic features a white-outlined astronaut holding a multicolored planet, with stars and ringed planets surrounding the astronaut. Colorful pools appear beneath the astronaut, with additional small planets and a moon-like circle above.",
+  "processed_at": "2026-09-20T11:27:02.219275+00:00"
+}

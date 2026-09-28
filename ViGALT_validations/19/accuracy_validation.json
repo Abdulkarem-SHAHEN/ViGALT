@@ -1,0 +1,60 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "Coral-pink perforated lattice backrest",
+      "claim": "Coral-pink perforated lattice backrest",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The image clearly shows a coral-pink backrest with multiple openings forming a lattice pattern."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "Rounded seat",
+      "claim": "Rounded seat",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The image clearly shows a rounded, oval-shaped seat."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "A white central column supports the base",
+      "claim": "A white central column supports the base",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A white vertical central column is clearly visible between the seat and the base."
+    },
+    {
+      "claim_id": "c4",
+      "original_claim": "Five-legged white base",
+      "claim": "Five-legged white base",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The image visibly shows a white base with five radiating legs."
+    },
+    {
+      "claim_id": "c5",
+      "original_claim": "Black-and-pink casters on the base",
+      "claim": "Black-and-pink casters on the base",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Black casters with pink accents are clearly visible at the ends of the base legs."
+    },
+    {
+      "claim_id": "c6",
+      "original_claim": "Black adjustment lever beneath the seat on the viewer’s left",
+      "claim": "Black adjustment lever beneath the seat on the viewer’s left",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A black lever is clearly visible beneath the seat on the viewer's left side."
+    }
+  ],
+  "summary": {
+    "total_claims": 6,
+    "accurate_claims": 6,
+    "corrected_claims": 0,
+    "deleted_claims": 0,
+    "error_rate": 0.0
+  }
+}

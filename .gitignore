@@ -11,3 +11,9 @@ dist/
 .DS_Store
 Thumbs.db
 .cursor/
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
+paper/*.fdb_latexmk
+paper/*.fls

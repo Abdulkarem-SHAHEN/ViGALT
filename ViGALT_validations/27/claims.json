@@ -1,0 +1,22 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "A mirror is opened into three rectangular panels arranged at angles."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "The mirror has black plastic borders."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Two black over-door hooks extend above the mirror."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "The reflections show front, side, and rear views of a person trimming his hair."
+    }
+  ],
+  "total_claims": 4
+}

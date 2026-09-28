@@ -1,0 +1,283 @@
+{
+  "status": "ok",
+  "folder_number": 19,
+  "image_file": "51d-GNaHlOL._AC_SX679_.jpg",
+  "ablation": "no_completeness",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A chair with a coral-pink perforated lattice backrest and rounded seat. A white central column supports a five-legged white base with black-and-pink casters, while a black adjustment lever sits beneath the seat on the viewer’s left.",
+      "relevancy": {
+        "total_claims": 6,
+        "relevant_claims": 6,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Coral-pink perforated lattice backrest",
+            "label": "R",
+            "reason": "This describes the chair's pink open lattice backrest."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Rounded seat",
+            "label": "R",
+            "reason": "This describes the rounded upholstered seat of the chair."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "White central column",
+            "label": "R",
+            "reason": "This describes the chair's white central support column."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Five-legged white base",
+            "label": "R",
+            "reason": "This describes the chair's five-spoke white base."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Black-and-pink casters",
+            "label": "R",
+            "reason": "This describes the black casters with pink accents attached to the chair."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Black adjustment lever beneath the seat on the viewer’s left",
+            "label": "R",
+            "reason": "This describes the black adjustment lever integrated beneath the chair seat."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 6,
+          "relevant_claims": 6,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 1,
+          "relevant_novel_claims": 1,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 5,
+          "avoidable_redundancy_claims": 0,
+          "novelty_rate": 0.16666666666666666,
+          "raw_novelty_rate": 0.16666666666666666,
+          "unavoidable_repetition_rate": 0.8333333333333334,
+          "avoidable_redundancy_rate": 0.0,
+          "redundancy_rate": 0.8333333333333334
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Coral-pink perforated lattice backrest",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Rounded seat",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "White central column",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Five-legged white base",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Black-and-pink casters",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Black adjustment lever beneath the seat on the viewer’s left",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Coral-pink perforated lattice backrest",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "Pink Coral"
+              },
+              {
+                "field": "description",
+                "value": "This ergonomic office chair features a curved S-shaped backrest"
+              },
+              {
+                "field": "feature_bullets[1]",
+                "value": "Ergonomic S-shaped backrest provides excellent lumbar support."
+              }
+            ],
+            "reason": "The DOM already identifies a coral-pink chair with a backrest, but it does not describe the backrest as perforated or lattice-like. Repeating the backrest and color anchors the new lattice construction detail to the specific chair component."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Rounded seat",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "description",
+                "value": "Its generously padded seat with high-density foam and covered with breathable mesh provides long-lasting comfort"
+              },
+              {
+                "field": "feature_bullets[2]",
+                "value": "High density foam padded seat with breathable mesh cover."
+              }
+            ],
+            "reason": "The DOM establishes that the chair has a padded seat but does not state that its shape is rounded. Mentioning the seat is necessary to identify which component the new shape information describes."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "White central column",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM provides no information about a central support column or its white color."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Five-legged white base",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[5]",
+                "value": "Desk chair without armrests with a sturdy PP structure and reinforced metal base."
+              },
+              {
+                "field": "product_details.Frame Material Type",
+                "value": "Alloy Steel"
+              }
+            ],
+            "reason": "The DOM mentions a reinforced metal base but does not specify that it has five legs or is white. Referring to the base is necessary to anchor the new leg-count and color details to the relevant component."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Black-and-pink casters",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "description",
+                "value": "Thanks to its adjustable height, 360° rotation and smooth wheels"
+              },
+              {
+                "field": "feature_bullets[4]",
+                "value": "Swivel chair equipped with silent multi-directional casters."
+              },
+              {
+                "field": "product_details.Leg Style",
+                "value": "Wheels"
+              }
+            ],
+            "reason": "The DOM already establishes that the chair has wheels/casters, but it provides no black-and-pink color description. Repeating the caster component is necessary to specify where the new color information applies."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Black adjustment lever beneath the seat on the viewer’s left",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "MEUBLE COSY Ergonomic Office Chair, Swivel Seat, Height Adjustable, Computer Chair, No Armrest, for Home Office, Study and Bedroom, Coral Pink"
+              },
+              {
+                "field": "description",
+                "value": "Thanks to its adjustable height, 360° rotation and smooth wheels"
+              },
+              {
+                "field": "feature_bullets[3]",
+                "value": "Adjustable office chair with a seat height of 44 to 54cm to fit different users."
+              },
+              {
+                "field": "description",
+                "value": "Its generously padded seat with high-density foam and covered with breathable mesh provides long-lasting comfort"
+              }
+            ],
+            "reason": "The DOM states that the chair has adjustable height and a seat, but does not identify an adjustment lever or give its color and viewer-relative location. Mentioning the seat is necessary to locate and ground the new lever detail."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 8,
+        "subjective_claims": 0,
+        "total_claims": 8,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The image shows a chair.",
+            "label": "OBJECTIVE",
+            "reason": "The product is visibly a chair with a seat, backrest, central support, and wheeled base."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The chair has a coral-pink backrest.",
+            "label": "OBJECTIVE",
+            "reason": "The backrest visibly appears coral pink."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The backrest has a perforated lattice pattern.",
+            "label": "OBJECTIVE",
+            "reason": "The backrest visibly consists of intersecting bars with open spaces between them."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The chair has a rounded seat.",
+            "label": "OBJECTIVE",
+            "reason": "The seat's visible outline is rounded and oval-like."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "A white central column connects the seat to the base.",
+            "label": "OBJECTIVE",
+            "reason": "A white vertical column is visibly positioned between the underside of the seat and the base."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "The chair has a five-legged white base.",
+            "label": "OBJECTIVE",
+            "reason": "The base visibly has five white arms extending outward from a central hub."
+          },
+          {
+            "claim_id": "C7",
+            "claim": "The base has black-and-pink casters.",
+            "label": "OBJECTIVE",
+            "reason": "The wheels at the ends of the base arms visibly have black bodies with pink accents."
+          },
+          {
+            "claim_id": "C8",
+            "claim": "A black adjustment lever sits beneath the seat on the viewer's left.",
+            "label": "OBJECTIVE",
+            "reason": "A black lever is visibly protruding from beneath the left side of the seat from the viewer's perspective."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 37,
+        "relevant_novel_claims": 1,
+        "efficiency_per_100_words": 2.7027027027027026
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:41:20.021686+00:00"
+}

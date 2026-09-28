@@ -1,0 +1,68 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "A sofa bed is arranged as a single bed",
+      "claim": "Deleted",
+      "label": "DELETED",
+      "error_category": "NONEXISTENT",
+      "reason": "The image visibly shows a single bed, but it does not establish that the bed is a sofa bed."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "An L-shaped frame surrounds the head and right side",
+      "claim": "An L-shaped frame surrounds the head and right side",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The white bed structure visibly frames the head of the bed and continues along the right side in an L-shaped arrangement."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "Open shelving is illuminated by cyan LEDs",
+      "claim": "Open shelving is illuminated by cyan LEDs",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Open shelves on the right and above the desk are visibly lit with cyan-colored lighting."
+    },
+    {
+      "claim_id": "c4",
+      "original_claim": "A laptop sits on the work surface",
+      "claim": "A laptop sits on the work surface",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "An open laptop is clearly visible on the white work surface at the front right."
+    },
+    {
+      "claim_id": "c5",
+      "original_claim": "The work surface extends across the foot and right side",
+      "claim": "The work surface extends across the foot and right side",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The desk surface visibly spans the foot of the bed and continues toward the right-side shelving unit."
+    },
+    {
+      "claim_id": "c6",
+      "original_claim": "Storage compartments beneath the mattress are pulled open on the left",
+      "claim": "Storage compartments beneath the mattress are pulled open on the left",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Multiple storage drawers beneath the left side and foot area of the bed are visibly extended and open."
+    },
+    {
+      "claim_id": "c7",
+      "original_claim": "Fabric organizer pockets hang from the near side",
+      "claim": "Fabric organizer pockets hang from the near side",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A vertical fabric organizer with multiple pockets is visibly attached to and hanging from the near side of the bed."
+    }
+  ],
+  "summary": {
+    "total_claims": 7,
+    "accurate_claims": 6,
+    "corrected_claims": 0,
+    "deleted_claims": 1,
+    "error_rate": 0.14285714285714285
+  }
+}

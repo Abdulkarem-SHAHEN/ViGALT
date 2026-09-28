@@ -1,0 +1,53 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "9",
+  "product_stem": "9",
+  "alt_text": "The jacket is shown open, with a black outer shell and tan plush lining visible through the body and hood. It has a full-length front zipper, two angled chest pockets, two vertical lower pockets, and a ribbed hem.",
+  "final_alt_text": "The jacket is shown open, with a black outer shell and tan plush lining visible through the body and hood. It has a full-length front zipper, two angled chest pockets, two vertical lower pockets, and a ribbed hem.",
+  "classification_category": "CLOTHING",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 2487,
+  "token_usage": {
+    "prompt_tokens": 1010,
+    "completion_tokens": 235,
+    "total_tokens": 1245
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"The jacket is shown open\"},{\"claim_id\":\"c2\",\"claim\":\"Black outer shell\"},{\"claim_id\":\"c3\",\"claim\":\"Tan plush lining visible through the body and hood\"},{\"claim_id\":\"c4\",\"claim\":\"Full-length front zipper\"},{\"claim_id\":\"c5\",\"claim\":\"Two angled chest pockets\"},{\"claim_id\":\"c6\",\"claim\":\"Two vertical lower pockets\"},{\"claim_id\":\"c7\",\"claim\":\"Ribbed hem\"}],\"total_claims\":7}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "The jacket is shown open"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Black outer shell"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Tan plush lining visible through the body and hood"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Full-length front zipper"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "Two angled chest pockets"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "Two vertical lower pockets"
+      },
+      {
+        "claim_id": "c7",
+        "claim": "Ribbed hem"
+      }
+    ],
+    "total_claims": 7
+  },
+  "processed_at": "2026-09-20T10:59:25.093243+00:00"
+}

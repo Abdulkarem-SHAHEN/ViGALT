@@ -1,0 +1,91 @@
+{
+  "stage": "completeness_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Sofa",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Illuminated vertical strips along both front arm edges",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Circular cup holders built into the armrests",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c4",
+      "claim": "A control panel mounted on the outside of the left arm",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Open compartments beneath and in front of the seating",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c6",
+      "claim": "A blanket in the compartments",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c7",
+      "claim": "A cushion in the compartments",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c8",
+      "claim": "Books in the compartments",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c9",
+      "claim": "One front compartment has its hinged lid raised",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "n1",
+      "claim": "Dark gray vertically ribbed upholstery",
+      "label": "ADDED",
+      "addition_type": "VISUAL_GAP",
+      "reason": "The sofa is visibly covered in dark gray upholstery with a prominent vertical ribbed texture, which is not expressed in the existing claims."
+    },
+    {
+      "claim_id": "n2",
+      "claim": "The right seat is reclined with its footrest extended",
+      "label": "ADDED",
+      "addition_type": "VISUAL_GAP",
+      "reason": "The image clearly shows the right seating section reclined and its footrest raised, a prominent functional feature missing from the existing claims."
+    }
+  ],
+  "summary": {
+    "input_claims": 9,
+    "retained_claims": 9,
+    "added_claims": 2,
+    "added_visual_gap": 2,
+    "added_non_english_text": 0,
+    "added_known_entity": 0,
+    "omission_score": 0.18181818181818182
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "Sofa",
+      "claim": "Sofa",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A sofa is clearly visible in the image, and the claim is unchanged."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "Illuminated vertical strips along both front arm edges",
+      "claim": "Illuminated vertical strips along both front arm edges",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Illuminated strips are visibly present along the front outer edges of both sofa arms."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "Circular cup holders built into the armrests",
+      "claim": "Circular cup holders built into the armrests",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Circular recessed holders are visibly built into both armrests."
+    },
+    {
+      "claim_id": "c4",
+      "original_claim": "A control panel mounted on the outside of the left arm",
+      "claim": "A control panel mounted on the outside of the left arm",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A small control panel is visibly mounted on the exterior side of the sofa's left arm."
+    },
+    {
+      "claim_id": "c5",
+      "original_claim": "Open compartments beneath and in front of the seating",
+      "claim": "Open compartments beneath and in front of the seating",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Open storage compartments are visibly present beneath the seating and in the front ottoman units."
+    },
+    {
+      "claim_id": "c6",
+      "original_claim": "A blanket in the compartments",
+      "claim": "A blanket in the compartments",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A light-colored folded textile, visibly consistent with a blanket, is present in a front storage compartment."
+    },
+    {
+      "claim_id": "c7",
+      "original_claim": "A cushion in the compartments",
+      "claim": "A cushion in the compartments",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A green cushion is visibly stored in a front compartment."
+    },
+    {
+      "claim_id": "c8",
+      "original_claim": "Books in the compartments",
+      "claim": "Books in the compartments",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Several books are visibly stored in the open right-front compartment."
+    },
+    {
+      "claim_id": "c9",
+      "original_claim": "One front compartment has its hinged lid raised",
+      "claim": "One front compartment has its hinged lid raised",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The lid of the right-front storage compartment is visibly raised on its hinge."
+    }
+  ],
+  "summary": {
+    "total_claims": 9,
+    "accurate_claims": 9,
+    "corrected_claims": 0,
+    "deleted_claims": 0,
+    "error_rate": 0.0
+  }
+}

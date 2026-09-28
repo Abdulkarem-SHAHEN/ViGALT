@@ -1,0 +1,193 @@
+{
+  "status": "ok",
+  "folder_number": 7,
+  "image_file": "71jyUStW2dL._AC_SY879_.jpg",
+  "ablation": "no_completeness",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "Intersecting white and dark-blue stripes are present, along with a chest pocket on the wearer’s left with diagonally oriented stripes, a striped front placket, and a gently curved hem.",
+      "relevancy": {
+        "total_claims": 4,
+        "relevant_claims": 4,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Intersecting white and dark-blue stripes are present.",
+            "label": "R",
+            "reason": "The shirt itself has an intersecting white and dark-blue plaid stripe pattern."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "A chest pocket on the wearer’s left has diagonally oriented stripes.",
+            "label": "R",
+            "reason": "The shirt's left chest pocket is integrated into the garment and has diagonally aligned plaid stripes."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The front placket is striped.",
+            "label": "R",
+            "reason": "The garment's front button placket visibly uses a striped plaid section."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The hem is gently curved.",
+            "label": "R",
+            "reason": "The bottom hem of the shirt is visibly curved."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 4,
+          "relevant_claims": 4,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 3,
+          "relevant_novel_claims": 3,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 1,
+          "avoidable_redundancy_claims": 0,
+          "novelty_rate": 0.75,
+          "raw_novelty_rate": 0.75,
+          "unavoidable_repetition_rate": 0.25,
+          "avoidable_redundancy_rate": 0.0,
+          "redundancy_rate": 0.25
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Intersecting white and dark-blue stripes are present.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "A chest pocket on the wearer’s left has diagonally oriented stripes.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The front placket is striped.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The hem is gently curved.",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Intersecting white and dark-blue stripes are present.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Pattern",
+                "value": "Checkered"
+              },
+              {
+                "field": "product_details.Colour",
+                "value": "Grey-blue"
+              }
+            ],
+            "reason": "The DOM identifies a checkered/plaid pattern and a grey-blue colorway, but it does not specify intersecting stripes or the white and dark-blue stripe colors."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "A chest pocket on the wearer’s left has diagonally oriented stripes.",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "JupiterSecret Mens Casual Plaid Cotton Shirt Suit Shirt With Chest Pocket"
+              },
+              {
+                "field": "feature_bullets[1]",
+                "value": "This men's plaid shirt features a classic collar, adjustable cuffs, and an elegant chest pocket."
+              }
+            ],
+            "reason": "The DOM already establishes that the shirt has a chest pocket, while the pocket's wearer-left placement and diagonal stripe orientation are new. Repeating the pocket is necessary to anchor those new visual details to the correct garment feature."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The front placket is striped.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Pattern",
+                "value": "Checkered"
+              },
+              {
+                "field": "feature_bullets[1]",
+                "value": "This men's plaid shirt features a classic collar, adjustable cuffs, and an elegant chest pocket."
+              }
+            ],
+            "reason": "The DOM describes the shirt generally as plaid/checkered but does not state that the front placket itself is striped."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The hem is gently curved.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "No DOM field describes the shirt's hem shape or curvature."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 5,
+        "subjective_claims": 0,
+        "total_claims": 5,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "Intersecting white and dark-blue stripes are present.",
+            "label": "OBJECTIVE",
+            "reason": "The shirt visibly has a plaid pattern made of crossing white and dark-blue stripes."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "There is a chest pocket on the wearer’s left.",
+            "label": "OBJECTIVE",
+            "reason": "A pocket is visibly present on the left side of the wearer’s chest, which appears on the right side of the image."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The chest pocket has diagonally oriented stripes.",
+            "label": "OBJECTIVE",
+            "reason": "The plaid pattern on the visible chest pocket is rotated diagonally relative to the shirt’s main stripe pattern."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The shirt has a striped front placket.",
+            "label": "OBJECTIVE",
+            "reason": "The buttoned front placket is visible and has the same striped plaid pattern."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The shirt has a gently curved hem.",
+            "label": "OBJECTIVE",
+            "reason": "The lower edge of the shirt visibly curves upward slightly at the sides rather than forming a straight horizontal line."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 30,
+        "relevant_novel_claims": 3,
+        "efficiency_per_100_words": 10.0
+      }
+    }
+  },
+  "processed_at": "2026-09-20T10:56:16.511299+00:00"
+}

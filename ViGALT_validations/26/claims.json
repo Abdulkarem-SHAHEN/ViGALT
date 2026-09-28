@@ -1,0 +1,30 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Dining table"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Brown wood-grain top composed of several angular panels"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Central pedestal base"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Broad vertical panels form the pedestal"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Horizontal cross braces connect the vertical panels"
+    },
+    {
+      "claim_id": "c6",
+      "claim": "The table has a central pedestal rather than separate corner legs"
+    }
+  ],
+  "total_claims": 6
+}

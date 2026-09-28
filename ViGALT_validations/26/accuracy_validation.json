@@ -1,0 +1,60 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "Dining table",
+      "claim": "Dining table",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The image visibly shows a dining table surrounded by dining place settings and chairs."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "Brown wood-grain top composed of several angular panels",
+      "claim": "Brown wood-grain top composed of several angular panels",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The tabletop is visibly brown with wood-grain markings and is divided into multiple angular panels."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "Central pedestal base",
+      "claim": "Central pedestal base",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A large central pedestal structure is clearly visible beneath the tabletop."
+    },
+    {
+      "claim_id": "c4",
+      "original_claim": "Broad vertical panels form the pedestal",
+      "claim": "Broad vertical panels form the pedestal",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The pedestal visibly consists of several broad, upright wood panels."
+    },
+    {
+      "claim_id": "c5",
+      "original_claim": "Horizontal cross braces connect the vertical panels",
+      "claim": "Horizontal cross braces connect the vertical panels",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Cross-bracing members are visibly present between and connecting the pedestal panels."
+    },
+    {
+      "claim_id": "c6",
+      "original_claim": "The table has a central pedestal rather than separate corner legs",
+      "claim": "The table has a central pedestal rather than separate corner legs",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The image clearly shows one central pedestal base, with no separate table legs positioned at the tabletop corners."
+    }
+  ],
+  "summary": {
+    "total_claims": 6,
+    "accurate_claims": 6,
+    "corrected_claims": 0,
+    "deleted_claims": 0,
+    "error_rate": 0.0
+  }
+}

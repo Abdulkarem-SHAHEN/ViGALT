@@ -1,0 +1,221 @@
+{
+  "status": "ok",
+  "folder_number": 3,
+  "image_file": "71R0e1+P71L._AC_SX569_.jpg",
+  "ablation": "no_completeness",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A sweater has a light-gray body with repeating vertical zigzag bands filled with small diamond texture and brown contrast panels along the outer lower sleeves. A short front placket opens from the collar and has a dark button near the upper chest.",
+      "relevancy": {
+        "total_claims": 5,
+        "relevant_claims": 5,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "The sweater has a light-gray body",
+            "label": "R",
+            "reason": "It describes the sweater's overall color."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The body has repeating vertical zigzag bands filled with small diamond texture",
+            "label": "R",
+            "reason": "It describes the knit pattern and texture on the sweater body."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Brown contrast panels are along the outer lower sleeves",
+            "label": "R",
+            "reason": "It describes contrasting panels integrated into the sweater sleeves."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "A short front placket opens from the collar",
+            "label": "R",
+            "reason": "It describes the sweater's collar and front placket construction."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "A dark button is near the upper chest",
+            "label": "R",
+            "reason": "It describes visible button hardware on the sweater's upper front."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 5,
+          "relevant_claims": 5,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 3,
+          "relevant_novel_claims": 3,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 2,
+          "avoidable_redundancy_claims": 0,
+          "novelty_rate": 0.6,
+          "raw_novelty_rate": 0.6,
+          "unavoidable_repetition_rate": 0.4,
+          "avoidable_redundancy_rate": 0.0,
+          "redundancy_rate": 0.4
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "The sweater has a light-gray body",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The body has repeating vertical zigzag bands filled with small diamond texture",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Brown contrast panels are along the outer lower sleeves",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "A short front placket opens from the collar",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "A dark button is near the upper chest",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "The sweater has a light-gray body",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "Grey"
+              }
+            ],
+            "reason": "The DOM establishes that the product is grey, but it does not specify the lighter grey shade or explicitly describe the body coloration."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The body has repeating vertical zigzag bands filled with small diamond texture",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Special Features",
+                "value": "Jacquard knit"
+              },
+              {
+                "field": "product_details.Weave Type",
+                "value": "Jacquard"
+              }
+            ],
+            "reason": "The DOM identifies a jacquard knit/weave but does not provide the specific repeating vertical zigzag-band pattern or small diamond texture."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Brown contrast panels are along the outer lower sleeves",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM contains no information about brown contrast panels, their placement, or sleeve color blocking."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "A short front placket opens from the collar",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Stand-up collar with button closure provides wind protection and optimal warmth, while being easy to wear"
+              },
+              {
+                "field": "product_details.Closure Type",
+                "value": "Button"
+              },
+              {
+                "field": "product_details.Neck Style",
+                "value": "Mock Neck"
+              }
+            ],
+            "reason": "The DOM establishes a button closure and collar, while the short front placket is new structural information. Referring to the collar is necessary to anchor where the newly described placket begins."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "A dark button is near the upper chest",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Stand-up collar with button closure provides wind protection and optimal warmth, while being easy to wear"
+              },
+              {
+                "field": "product_details.Closure Type",
+                "value": "Button"
+              }
+            ],
+            "reason": "The DOM already establishes that there is a button closure, but not the button's dark color or upper-chest location. Mentioning the button is necessary to identify the item whose new visual attributes are being conveyed."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 5,
+        "subjective_claims": 0,
+        "total_claims": 5,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The sweater has a light-gray body.",
+            "label": "OBJECTIVE",
+            "reason": "The garment’s main visible color is light gray, which can be directly observed in the image."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The sweater has repeating vertical zigzag bands filled with small diamond texture.",
+            "label": "OBJECTIVE",
+            "reason": "Vertical patterned bands with a repeating diamond-like knit texture are visibly present across the front and sleeves."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The sweater has brown contrast panels along the outer lower sleeves.",
+            "label": "OBJECTIVE",
+            "reason": "Brown patches are visibly positioned on the outer elbow-to-lower-sleeve areas on both sleeves."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "A short front placket opens from the collar.",
+            "label": "OBJECTIVE",
+            "reason": "A short opening and placket extending downward from the collar are directly visible at the upper front of the sweater."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The placket has a dark button near the upper chest.",
+            "label": "OBJECTIVE",
+            "reason": "A dark circular button is visibly attached to the front placket near the upper chest area."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 42,
+        "relevant_novel_claims": 3,
+        "efficiency_per_100_words": 7.142857142857142
+      }
+    }
+  },
+  "processed_at": "2026-09-20T10:50:16.029697+00:00"
+}

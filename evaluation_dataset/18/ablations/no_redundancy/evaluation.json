@@ -1,0 +1,303 @@
+{
+  "status": "ok",
+  "folder_number": 18,
+  "image_file": "61UOEsG7xEL._AC_SX679_.jpg",
+  "ablation": "no_redundancy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A furniture set shows two matching chairs flanking a rectangular table. All three pieces have open slatted surfaces and a warm brown wood-toned finish. The chairs have three horizontal back rails and crossed support legs. The table has crossed legs beneath its slatted top.",
+      "relevancy": {
+        "total_claims": 8,
+        "relevant_claims": 8,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Two matching chairs",
+            "label": "R",
+            "reason": "The product set includes two matching folding chairs."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "A rectangular table",
+            "label": "R",
+            "reason": "The product set includes a rectangular table."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The two chairs flank the table",
+            "label": "R",
+            "reason": "This describes the displayed layout of the furniture pieces in the product set."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "All three pieces have open slatted surfaces",
+            "label": "R",
+            "reason": "The chairs and table have slatted wood seat or tabletop surfaces."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "All three pieces have a warm brown wood-toned finish",
+            "label": "R",
+            "reason": "The furniture pieces share a brown wood-toned finish."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "The chairs have three horizontal back rails",
+            "label": "R",
+            "reason": "Each chair has three horizontal rails across its backrest."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "The chairs have crossed support legs",
+            "label": "R",
+            "reason": "The chairs have crossed folding support-leg construction."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "The table has crossed legs beneath its slatted top",
+            "label": "R",
+            "reason": "The table has crossed folding legs beneath its slatted tabletop."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 8,
+          "relevant_claims": 8,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 5,
+          "relevant_novel_claims": 5,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 0,
+          "avoidable_redundancy_claims": 3,
+          "novelty_rate": 0.625,
+          "raw_novelty_rate": 0.625,
+          "unavoidable_repetition_rate": 0.0,
+          "avoidable_redundancy_rate": 0.375,
+          "redundancy_rate": 0.375
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Two matching chairs",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "A rectangular table",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The two chairs flank the table",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "All three pieces have open slatted surfaces",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "All three pieces have a warm brown wood-toned finish",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "The chairs have three horizontal back rails",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c7",
+            "claim": "The chairs have crossed support legs",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c8",
+            "claim": "The table has crossed legs beneath its slatted top",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Two matching chairs",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Included Components",
+                "value": "2 chairs, Table, Table top"
+              },
+              {
+                "field": "feature_bullets[0]",
+                "value": "3-piece seating set: balcony furniture set consisting of a table and 2 chairs"
+              }
+            ],
+            "reason": "The DOM already states that the set includes two chairs. Calling them matching adds no necessary distinct information for this set."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "A rectangular table",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Included Components",
+                "value": "2 chairs, Table, Table top"
+              },
+              {
+                "field": "product_details.Item Shape",
+                "value": "Rectangular"
+              }
+            ],
+            "reason": "The DOM identifies a table as an included component and gives the item's shape as rectangular, sufficiently conveying this information."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The two chairs flank the table",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Included Components",
+                "value": "2 chairs, Table, Table top"
+              }
+            ],
+            "reason": "The DOM establishes that the set contains two chairs and a table but does not describe their visual arrangement or say that the chairs are positioned on opposite sides of the table."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "All three pieces have open slatted surfaces",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM describes the set as wood furniture but does not state that its table and chairs have open slatted surfaces."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "All three pieces have a warm brown wood-toned finish",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "Brown"
+              },
+              {
+                "field": "product_details.Material Type",
+                "value": "Wood"
+              },
+              {
+                "field": "feature_bullets[3]",
+                "value": "Visual asset: terrace furniture in a simple and natural design; dark oiled finish for an elegant and quality teak look"
+              }
+            ],
+            "reason": "The DOM already specifies brown wood furniture with a dark oiled, teak-like finish. Repeating the wood-toned brown finish adds no necessary information."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "The chairs have three horizontal back rails",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Included Components",
+                "value": "2 chairs, Table, Table top"
+              }
+            ],
+            "reason": "The DOM identifies chairs but contains no information about the number or horizontal orientation of their back rails."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "The chairs have crossed support legs",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Practical folding function: folding table and chairs set"
+              }
+            ],
+            "reason": "Although the DOM says the chairs fold, it does not describe their leg construction as crossed support legs."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "The table has crossed legs beneath its slatted top",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Practical folding function: folding table and chairs set"
+              },
+              {
+                "field": "product_details.Included Components",
+                "value": "2 chairs, Table, Table top"
+              }
+            ],
+            "reason": "The DOM identifies a folding table, but does not state that it has crossed legs or a slatted top."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 6,
+        "subjective_claims": 0,
+        "total_claims": 6,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "A furniture set shows two matching chairs flanking a rectangular table.",
+            "label": "OBJECTIVE",
+            "reason": "The image visibly shows two similarly designed chairs positioned on the left and right sides of a rectangular table."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "All three pieces have open slatted surfaces.",
+            "label": "OBJECTIVE",
+            "reason": "The chair seats and backs and the tabletop visibly consist of spaced wooden slats with open gaps between them."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "All three pieces have a warm brown wood-toned finish.",
+            "label": "OBJECTIVE",
+            "reason": "The pieces visibly have a brown, wood-like surface color; “warm” here describes the observable color tone rather than an inferred material property."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The chairs have three horizontal back rails.",
+            "label": "OBJECTIVE",
+            "reason": "Each chair back visibly has three horizontal slats or rails."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The chairs have crossed support legs.",
+            "label": "OBJECTIVE",
+            "reason": "Crossed X-shaped supports are visibly present beneath each chair seat."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "The table has crossed legs beneath its slatted top.",
+            "label": "OBJECTIVE",
+            "reason": "The table visibly has an X-shaped crossed-leg structure under the slatted tabletop."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 44,
+        "relevant_novel_claims": 5,
+        "efficiency_per_100_words": 11.363636363636363
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:40:17.197902+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "A bed"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Rounded rectangular tubular frames at the head and foot"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Each frame has three vertical rods with ringed ornamental sections"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "The footboard includes a lower horizontal rail beneath the mattress"
+    }
+  ],
+  "total_claims": 4
+}

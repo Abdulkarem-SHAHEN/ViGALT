@@ -1,0 +1,417 @@
+{
+  "status": "ok",
+  "folder_number": 9,
+  "image_file": "71QtRrVG-PL._AC_SX569_.jpg",
+  "ablation": "no_redundancy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A jacket is shown open, with a black outer shell and tan plush lining visible through the body and hood. An attached hood is visible, along with a full-length front zipper, two angled chest pockets, and two vertical lower pockets; the chest and lower pockets have zipper closures with visible pulls. It has ribbed cuffs and a ribbed hem.",
+      "relevancy": {
+        "total_claims": 11,
+        "relevant_claims": 11,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "The jacket is shown open",
+            "label": "R",
+            "reason": "The jacket is visibly worn open at the front."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The jacket has a black outer shell",
+            "label": "R",
+            "reason": "The jacket's exterior is black."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Tan plush lining is visible through the body and hood",
+            "label": "R",
+            "reason": "Tan plush lining is visibly exposed inside the body and hood."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The jacket has an attached hood",
+            "label": "R",
+            "reason": "An integrated hood is visible at the neckline."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "The jacket has a full-length front zipper",
+            "label": "R",
+            "reason": "A zipper runs down the full front opening."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "The jacket has two angled chest pockets",
+            "label": "R",
+            "reason": "Two angled zippered chest pockets are visible on the front."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "The jacket has two vertical lower pockets",
+            "label": "R",
+            "reason": "Two vertical lower front pockets are visible."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "The chest pockets have zipper closures with visible pulls",
+            "label": "R",
+            "reason": "The chest pockets show zipper closures and visible pulls."
+          },
+          {
+            "claim_id": "c9",
+            "claim": "The lower pockets have zipper closures with visible pulls",
+            "label": "R",
+            "reason": "The lower pockets show zipper closures with visible pulls."
+          },
+          {
+            "claim_id": "c10",
+            "claim": "The jacket has ribbed cuffs",
+            "label": "R",
+            "reason": "Ribbed knit cuffs are visible at both sleeves."
+          },
+          {
+            "claim_id": "c11",
+            "claim": "The jacket has a ribbed hem",
+            "label": "R",
+            "reason": "A ribbed knit hem is visible along the bottom of the jacket."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 11,
+          "relevant_claims": 11,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 2,
+          "relevant_novel_claims": 2,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 6,
+          "avoidable_redundancy_claims": 3,
+          "novelty_rate": 0.18181818181818182,
+          "raw_novelty_rate": 0.18181818181818182,
+          "unavoidable_repetition_rate": 0.5454545454545454,
+          "avoidable_redundancy_rate": 0.2727272727272727,
+          "redundancy_rate": 0.8181818181818182
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "The jacket is shown open",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The jacket has a black outer shell",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Tan plush lining is visible through the body and hood",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The jacket has an attached hood",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "The jacket has a full-length front zipper",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "The jacket has two angled chest pockets",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c7",
+            "claim": "The jacket has two vertical lower pockets",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c8",
+            "claim": "The chest pockets have zipper closures with visible pulls",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c9",
+            "claim": "The lower pockets have zipper closures with visible pulls",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c10",
+            "claim": "The jacket has ribbed cuffs",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c11",
+            "claim": "The jacket has a ribbed hem",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "The jacket is shown open",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Closure Type",
+                "value": "Zipper"
+              }
+            ],
+            "reason": "The DOM establishes that the jacket has a zipper closure, but does not state or otherwise represent that it is shown in an open position."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The jacket has a black outer shell",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "Black"
+              },
+              {
+                "field": "feature_bullets[0]",
+                "value": "Exterior: 80% Cotton, 20% Polyester"
+              }
+            ],
+            "reason": "The DOM already identifies the product color as black and distinguishes an exterior material. Stating that the outer shell is black adds no necessary semantic information."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Tan plush lining is visible through the body and hood",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[0]",
+                "value": "The inside is full plush, including the sleeves and hood."
+              },
+              {
+                "field": "product_details.Lining Description",
+                "value": "Fur"
+              }
+            ],
+            "reason": "The DOM already establishes plush/fur lining and lining in the hood, but does not provide its tan color or say it is visibly exposed through the body and hood. Referring to the lining is necessary to anchor those new visual details."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The jacket has an attached hood",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "Xnova Men's Hooded Sweatshirt with Zip Winter Fleece Sweatshirt Warm Thick Sherpa Long Sleeve Tracksuit Vest Man Hoodie"
+              },
+              {
+                "field": "feature_bullets[0]",
+                "value": "The inside is full plush, including the sleeves and hood."
+              },
+              {
+                "field": "feature_bullets[1]",
+                "value": "The fur hood protects the head from cold wind in winter."
+              }
+            ],
+            "reason": "The DOM repeatedly identifies the garment as hooded and describes its hood. The claim supplies no additional necessary information."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "The jacket has a full-length front zipper",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Closure Type",
+                "value": "Zipper"
+              },
+              {
+                "field": "title",
+                "value": "Xnova Men's Hooded Sweatshirt with Zip Winter Fleece Sweatshirt Warm Thick Sherpa Long Sleeve Tracksuit Vest Man Hoodie"
+              }
+            ],
+            "reason": "The DOM establishes a zipper closure but does not specify that it runs the full front length. Mentioning the zipper is necessary to anchor the new full-length front configuration."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "The jacket has two angled chest pockets",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Two deep side zipper pockets and two inner fleece pockets"
+              },
+              {
+                "field": "product_details.Number Of Pockets",
+                "value": "4"
+              },
+              {
+                "field": "product_details.Pocket Description",
+                "value": "Slant Pocket"
+              }
+            ],
+            "reason": "The DOM provides pocket counts and describes side/slant pockets, but does not identify two angled pockets as chest pockets. The repeated pocket quantity is needed to express the newly specified chest-pocket configuration."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "The jacket has two vertical lower pockets",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Two deep side zipper pockets and two inner fleece pockets"
+              },
+              {
+                "field": "product_details.Pocket Description",
+                "value": "Slant Pocket"
+              }
+            ],
+            "reason": "The DOM establishes two side pockets but does not specify that they are lower pockets with a vertical orientation. Referring to the two pockets is needed to anchor those additional positional and directional details."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "The chest pockets have zipper closures with visible pulls",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Two deep side zipper pockets and two inner fleece pockets will keep your belongings safe"
+              }
+            ],
+            "reason": "The DOM already describes zipper pockets, but does not locate them on the chest or state that zipper pulls are visible. Repetition of the zipper-pocket concept is needed to identify what the new location and visible-pull details describe."
+          },
+          {
+            "claim_id": "c9",
+            "claim": "The lower pockets have zipper closures with visible pulls",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Two deep side zipper pockets and two inner fleece pockets will keep your belongings safe"
+              }
+            ],
+            "reason": "The DOM establishes side zipper pockets, but does not state that they are lower pockets or that their zipper pulls are visible. Mentioning zipper closures anchors the new visual detail about the pulls."
+          },
+          {
+            "claim_id": "c10",
+            "claim": "The jacket has ribbed cuffs",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Ribbed elastic cuffs prevent wind from rushing into your jacket"
+              }
+            ],
+            "reason": "The DOM explicitly states that the jacket has ribbed elastic cuffs. The claim adds no necessary information."
+          },
+          {
+            "claim_id": "c11",
+            "claim": "The jacket has a ribbed hem",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM mentions ribbed cuffs but provides no information that the hem is ribbed."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 11,
+        "subjective_claims": 0,
+        "total_claims": 11,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "A jacket is shown open.",
+            "label": "OBJECTIVE",
+            "reason": "The garment is visibly a jacket, and its front zipper is open in the image."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The jacket has a black outer shell.",
+            "label": "OBJECTIVE",
+            "reason": "The exterior of the jacket is visibly black."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The jacket has tan plush lining visible through the body and hood.",
+            "label": "OBJECTIVE",
+            "reason": "Tan lining with a visibly dense, fuzzy-looking surface is exposed along the open body and inside the hood."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The jacket has an attached hood.",
+            "label": "OBJECTIVE",
+            "reason": "A hood is visibly connected to the jacket at the neckline and shoulders."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The jacket has a full-length front zipper.",
+            "label": "OBJECTIVE",
+            "reason": "A zipper is visibly present along the full front opening from the collar area to the hem."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "The jacket has two angled chest pockets.",
+            "label": "OBJECTIVE",
+            "reason": "Two pocket openings are visible symmetrically on the upper front, each angled across the chest."
+          },
+          {
+            "claim_id": "C7",
+            "claim": "The jacket has two vertical lower pockets.",
+            "label": "OBJECTIVE",
+            "reason": "Two vertically oriented pocket openings are visible on the lower front of the jacket."
+          },
+          {
+            "claim_id": "C8",
+            "claim": "The chest pockets have zipper closures with visible pulls.",
+            "label": "OBJECTIVE",
+            "reason": "The upper chest pocket openings show zippers and small contrasting zipper pulls."
+          },
+          {
+            "claim_id": "C9",
+            "claim": "The lower pockets have zipper closures with visible pulls.",
+            "label": "OBJECTIVE",
+            "reason": "The lower vertical pockets visibly have zippers, with zipper pulls visible near their upper ends."
+          },
+          {
+            "claim_id": "C10",
+            "claim": "The jacket has ribbed cuffs.",
+            "label": "OBJECTIVE",
+            "reason": "The sleeve ends visibly have horizontally ribbed knit cuffs."
+          },
+          {
+            "claim_id": "C11",
+            "claim": "The jacket has a ribbed hem.",
+            "label": "OBJECTIVE",
+            "reason": "A ribbed knit band is visibly present along the bottom hem."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 59,
+        "relevant_novel_claims": 2,
+        "efficiency_per_100_words": 3.389830508474576
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:00:27.535018+00:00"
+}

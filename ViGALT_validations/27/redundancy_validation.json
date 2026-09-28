@@ -1,0 +1,36 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "A mirror is opened into three rectangular panels arranged at angles.",
+      "label": "NOVEL",
+      "reason": "The DOM states that the mirror folds in three sections and is rectangular, but it does not provide the visual arrangement of the opened panels at angles."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "The mirror has black plastic borders.",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM already specifies a black frame and plastic frame material, which semantically covers black plastic borders; repeating this adds no new visual grounding or relationship."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Two black over-door hooks extend above the mirror.",
+      "label": "NOVEL",
+      "reason": "The DOM mentions an adjustable retractable hook and hanging use, but does not specify two hooks, their black appearance, or their visual extension above the mirror."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "The reflections show front, side, and rear views of a person trimming his hair.",
+      "label": "NOVEL",
+      "reason": "Although the DOM describes 360-degree viewing and self-haircutting, it does not state that the reflections visibly show front, side, and rear views of a person trimming his hair."
+    }
+  ],
+  "summary": {
+    "total_claims": 4,
+    "novel_claims": 3,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.25
+  }
+}

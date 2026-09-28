@@ -1,0 +1,52 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "Blue-gray shirt",
+      "claim": "Blue-gray shirt",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The shirt is visibly blue-gray in color."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "Intersecting white and dark-blue stripes",
+      "claim": "Intersecting white and dark-blue stripes",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The shirt visibly has intersecting white and dark-blue horizontal and vertical stripes."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "Chest pocket on the wearer’s left with diagonally oriented stripes",
+      "claim": "Chest pocket on the wearer’s left with diagonally oriented stripes",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A chest pocket is visible on the wearer’s left side, and its stripes are visibly oriented diagonally."
+    },
+    {
+      "claim_id": "c4",
+      "original_claim": "Striped front placket",
+      "claim": "Striped front placket",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The front placket is visibly covered by a striped pattern."
+    },
+    {
+      "claim_id": "c5",
+      "original_claim": "Gently curved hem",
+      "claim": "Gently curved hem",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The bottom hem is visibly curved rather than straight."
+    }
+  ],
+  "summary": {
+    "total_claims": 5,
+    "accurate_claims": 5,
+    "corrected_claims": 0,
+    "deleted_claims": 0,
+    "error_rate": 0.0
+  }
+}

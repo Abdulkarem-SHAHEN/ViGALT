@@ -1,0 +1,160 @@
+{
+  "status": "ok",
+  "folder_number": 26,
+  "image_file": "91HSwYvUKtL._AC_SX679_.jpg",
+  "ablation": "no_completeness",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "The table has a brown wood-grain top composed of several angular panels. Its central pedestal base is formed by broad vertical panels connected by horizontal cross braces, rather than separate corner legs.",
+      "relevancy": {
+        "total_claims": 3,
+        "relevant_claims": 3,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "The table has a brown wood-grain top composed of several angular panels.",
+            "label": "R",
+            "reason": "It describes the table's brown wood-grain tabletop and its visible angular panel divisions."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The table has a central pedestal base rather than separate corner legs.",
+            "label": "R",
+            "reason": "It describes the table's integrated central pedestal-style support structure."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The central pedestal base has broad vertical panels connected by horizontal cross braces.",
+            "label": "R",
+            "reason": "It describes visible construction details of the table's pedestal base."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 3,
+          "relevant_claims": 3,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 3,
+          "relevant_novel_claims": 3,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 0,
+          "avoidable_redundancy_claims": 0,
+          "novelty_rate": 1.0,
+          "raw_novelty_rate": 1.0,
+          "unavoidable_repetition_rate": 0.0,
+          "avoidable_redundancy_rate": 0.0,
+          "redundancy_rate": 0.0
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "The table has a brown wood-grain top composed of several angular panels.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The table has a central pedestal base rather than separate corner legs.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The central pedestal base has broad vertical panels connected by horizontal cross braces.",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "The table has a brown wood-grain top composed of several angular panels.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Top Color",
+                "value": "Rustic Brown"
+              },
+              {
+                "field": "product_details.Top Material Type",
+                "value": "Wood"
+              },
+              {
+                "field": "product_details.Furniture Finish",
+                "value": "Wood"
+              }
+            ],
+            "reason": "The DOM establishes a rustic-brown wooden tabletop, but does not describe a visible wood-grain pattern or state that the top is composed of several angular panels. Those structural and surface details are absent."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The table has a central pedestal base rather than separate corner legs.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM identifies the item as a round wooden dining table but provides no information about the base configuration, pedestal construction, or whether it lacks separate corner legs."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The central pedestal base has broad vertical panels connected by horizontal cross braces.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM contains no description of a pedestal base, vertical panels, or horizontal cross braces. This construction detail is not represented."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 5,
+        "subjective_claims": 0,
+        "total_claims": 5,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The table has a brown wood-grain top.",
+            "label": "OBJECTIVE",
+            "reason": "The tabletop's brown color and visible wood-grain pattern can be directly observed in the image."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The top is composed of several angular panels.",
+            "label": "OBJECTIVE",
+            "reason": "Visible seam lines divide the round tabletop into multiple straight-edged, angular sections."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The table has a central pedestal base.",
+            "label": "OBJECTIVE",
+            "reason": "The supporting base is visibly positioned beneath the center of the tabletop rather than at its outer edges."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The pedestal base is formed by broad vertical panels connected by horizontal cross braces.",
+            "label": "OBJECTIVE",
+            "reason": "Broad upright wooden supports and horizontal intersecting brace pieces are visibly present under the tabletop."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The table does not have separate corner legs.",
+            "label": "OBJECTIVE",
+            "reason": "The visible support structure is a central panel base; no individual legs are visible at the tabletop's perimeter or corners."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 32,
+        "relevant_novel_claims": 3,
+        "efficiency_per_100_words": 9.375
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:53:38.769015+00:00"
+}

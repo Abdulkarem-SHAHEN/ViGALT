@@ -1,0 +1,42 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Desk"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Wood-grain top"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Irregular dark distressed streaks on the top"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Horizontal supports near the floor"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Diagonal braces along the side frames"
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Monitor arranged across the surface"
+    },
+    {
+      "claim_id": "c7",
+      "claim": "Laptop arranged across the surface"
+    },
+    {
+      "claim_id": "c8",
+      "claim": "Keyboard arranged across the surface"
+    },
+    {
+      "claim_id": "c9",
+      "claim": "Mouse arranged across the surface"
+    }
+  ],
+  "total_claims": 9
+}

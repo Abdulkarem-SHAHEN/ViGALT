@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-09-28T09:46:15.789335+00:00",
+  "total_jobs": 90,
+  "variants": {
+    "no_accuracy": {
+      "total": 30,
+      "ok": 30,
+      "failed": 0,
+      "skipped": 0,
+      "avg_relevancy_score": 0.89898,
+      "avg_objectivity_score": 0.9903030303030304,
+      "avg_efficiency_per_100_words": 7.086203771163794,
+      "avg_novelty_rate": 0.4276899951899952,
+      "avg_raw_novelty_rate": 0.489508177008177,
+      "avg_avoidable_redundancy_rate": 0.16312289562289564,
+      "avg_unavoidable_repetition_rate": 0.3473689273689274,
+      "avg_redundancy_rate": 0.5104918229918229
+    },
+    "no_completeness": {
+      "total": 30,
+      "ok": 30,
+      "failed": 0,
+      "skipped": 0,
+      "avg_relevancy_score": 0.8728466666666667,
+      "avg_objectivity_score": 0.987367724867725,
+      "avg_efficiency_per_100_words": 7.217682853649218,
+      "avg_novelty_rate": 0.4596031746031746,
+      "avg_raw_novelty_rate": 0.5328174603174604,
+      "avg_avoidable_redundancy_rate": 0.044841269841269835,
+      "avg_unavoidable_repetition_rate": 0.42234126984126985,
+      "avg_redundancy_rate": 0.4671825396825397
+    },
+    "no_redundancy": {
+      "total": 30,
+      "ok": 30,
+      "failed": 0,
+      "skipped": 0,
+      "avg_relevancy_score": 0.89752,
+      "avg_objectivity_score": 0.9929629629629629,
+      "avg_efficiency_per_100_words": 7.054953976624393,
+      "avg_novelty_rate": 0.4109000259000259,
+      "avg_raw_novelty_rate": 0.4750991600991601,
+      "avg_avoidable_redundancy_rate": 0.2252074777074777,
+      "avg_unavoidable_repetition_rate": 0.2996933621933622,
+      "avg_redundancy_rate": 0.5249008399008399
+    }
+  },
+  "overall": {
+    "ok": 90,
+    "failed": 0,
+    "skipped": 0
+  }
+}

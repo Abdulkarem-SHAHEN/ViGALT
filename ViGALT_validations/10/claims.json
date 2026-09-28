@@ -1,0 +1,30 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Turquoise-blue rash guard body"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "White upper sections"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Navy-blue bands around the sleeve hems"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "A large white flowing wave or dragon-like graphic spans the front"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Turquoise-bound crew neckline"
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Straight hem"
+    }
+  ],
+  "total_claims": 6
+}

@@ -9,7 +9,6 @@
         "relevant_claims": 7,
         "supplementary_claims": 0,
         "visual_only_claims": 0,
-        "relevancy_rate": 1.0,
         "claims": [
           {
             "claim_id": "C1",
@@ -46,7 +45,8 @@
             "claim": "White mattress with a lightly quilted cover on the sleeping surface",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 100.0
       },
       "redundancy": {
         "metrics": {
@@ -275,7 +275,6 @@
         "relevant_claims": 1,
         "supplementary_claims": 0,
         "visual_only_claims": 11,
-        "relevancy_rate": 0.08333333333333333,
         "claims": [
           {
             "claim_id": "C1",
@@ -337,7 +336,8 @@
             "claim": "The curtains are pale.",
             "label": "V"
           }
-        ]
+        ],
+        "relevancy_score": 4.35
       },
       "redundancy": {
         "metrics": {

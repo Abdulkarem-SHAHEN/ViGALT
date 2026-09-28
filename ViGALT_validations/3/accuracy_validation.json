@@ -1,0 +1,60 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "Light-gray sweater body",
+      "claim": "Light-gray sweater body",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The sweater body is visibly light gray."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "Repeating vertical zigzag bands filled with small diamond texture",
+      "claim": "Repeating vertical zigzag bands filled with small diamond texture",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The front and sleeves visibly show repeating vertical zigzag bands with a small diamond-like textured fill."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "Brown contrast panels along the outer lower sleeves",
+      "claim": "Brown contrast panels along the outer lower sleeves",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Brown panels are visibly present along the outer lower portions of both sleeves."
+    },
+    {
+      "claim_id": "c4",
+      "original_claim": "Raised collar",
+      "claim": "Raised collar",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A visibly raised ribbed collar surrounds the neckline."
+    },
+    {
+      "claim_id": "c5",
+      "original_claim": "Short front placket opening from the collar",
+      "claim": "Short front placket opening from the collar",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A short front placket visibly extends downward from the collar opening."
+    },
+    {
+      "claim_id": "c6",
+      "original_claim": "Dark button near the upper chest",
+      "claim": "Dark button near the upper chest",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A dark button is visibly located near the upper chest on the front placket."
+    }
+  ],
+  "summary": {
+    "total_claims": 6,
+    "accurate_claims": 6,
+    "corrected_claims": 0,
+    "deleted_claims": 0,
+    "error_rate": 0.0
+  }
+}

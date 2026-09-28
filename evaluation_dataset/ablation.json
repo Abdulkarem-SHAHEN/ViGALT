@@ -1,0 +1,1068 @@
+{
+  "generated_at": "2026-09-28T09:46:45.447624+00:00",
+  "products_analyzed": 30,
+  "product_ids": [
+    1,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    2,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    3,
+    30,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "runs": {
+    "expected": 90,
+    "status_ok": 90,
+    "status_other": 0
+  },
+  "completeness": {
+    "products_with_added_claims": 27,
+    "total_added_claims": 48,
+    "avg_added_claims_per_product": 1.6,
+    "added_lost_in_no_completeness": 48,
+    "fraction_added_lost": 1.0,
+    "products_with_fewer_claims_no_completeness": 24,
+    "avg_delta_claims_no_completeness": -1.3666666666666667,
+    "avg_delta_words_no_completeness": -9.466666666666667,
+    "clothing_avg_delta_claims": -1.6666666666666667,
+    "clothing_avg_delta_words": -10.933333333333334,
+    "furniture_avg_delta_claims": -1.0666666666666667,
+    "furniture_avg_delta_words": -8.0,
+    "top_completeness_examples": [
+      {
+        "product_id": 11,
+        "category": "clothing",
+        "added_claims": 4,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 4,
+        "delta_claims": -5,
+        "delta_words": -12,
+        "baseline_claims": 13,
+        "no_completeness_claims": 8,
+        "added_claim_texts": [
+          "Dark navy color",
+          "Long sleeves",
+          "Ribbed crew neckline, cuffs, and waistband",
+          "Colorful liquid streaming from the held planet into the pools"
+        ]
+      },
+      {
+        "product_id": 5,
+        "category": "clothing",
+        "added_claims": 4,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 4,
+        "delta_claims": 0,
+        "delta_words": -7,
+        "baseline_claims": 6,
+        "no_completeness_claims": 6,
+        "added_claim_texts": [
+          "Attached hood",
+          "Full-length front zipper",
+          "Pink color",
+          "Pink awareness ribbon graphics"
+        ]
+      },
+      {
+        "product_id": 8,
+        "category": "clothing",
+        "added_claims": 3,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 3,
+        "delta_claims": -2,
+        "delta_words": -35,
+        "baseline_claims": 9,
+        "no_completeness_claims": 7,
+        "added_claim_texts": [
+          "Black T-shirt",
+          "Orange and yellow diagonal stripes above the green banner",
+          "The cream controller graphic has multiple colored buttons"
+        ]
+      },
+      {
+        "product_id": 20,
+        "category": "furniture",
+        "added_claims": 3,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 3,
+        "delta_claims": -2,
+        "delta_words": -25,
+        "baseline_claims": 10,
+        "no_completeness_claims": 8,
+        "added_claim_texts": [
+          "The chair is upholstered in white",
+          "A separate rectangular white cushion is placed against the backrest",
+          "A black adjustment lever extends beneath the seat on the left side"
+        ]
+      },
+      {
+        "product_id": 7,
+        "category": "clothing",
+        "added_claims": 3,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 3,
+        "delta_claims": -3,
+        "delta_words": -14,
+        "baseline_claims": 7,
+        "no_completeness_claims": 4,
+        "added_claim_texts": [
+          "Long sleeves",
+          "Pointed turn-down collar",
+          "White buttons down the front"
+        ]
+      }
+    ],
+    "per_product": [
+      {
+        "product_id": 1,
+        "category": "clothing",
+        "added_claims": 2,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 2,
+        "delta_claims": -2,
+        "delta_words": -5,
+        "baseline_claims": 4,
+        "no_completeness_claims": 2,
+        "added_claim_texts": [
+          "Short sleeves",
+          "Crew neckline"
+        ]
+      },
+      {
+        "product_id": 10,
+        "category": "clothing",
+        "added_claims": 2,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 2,
+        "delta_claims": -1,
+        "delta_words": -9,
+        "baseline_claims": 8,
+        "no_completeness_claims": 7,
+        "added_claim_texts": [
+          "Short sleeves",
+          "Quiksilver logo on the left sleeve"
+        ]
+      },
+      {
+        "product_id": 11,
+        "category": "clothing",
+        "added_claims": 4,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 4,
+        "delta_claims": -5,
+        "delta_words": -12,
+        "baseline_claims": 13,
+        "no_completeness_claims": 8,
+        "added_claim_texts": [
+          "Dark navy color",
+          "Long sleeves",
+          "Ribbed crew neckline, cuffs, and waistband",
+          "Colorful liquid streaming from the held planet into the pools"
+        ]
+      },
+      {
+        "product_id": 12,
+        "category": "clothing",
+        "added_claims": 1,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 1,
+        "delta_claims": -2,
+        "delta_words": -5,
+        "baseline_claims": 10,
+        "no_completeness_claims": 8,
+        "added_claim_texts": [
+          "Disney Pixar Cars logo on the trousers"
+        ]
+      },
+      {
+        "product_id": 13,
+        "category": "clothing",
+        "added_claims": 2,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 2,
+        "delta_claims": -2,
+        "delta_words": -9,
+        "baseline_claims": 4,
+        "no_completeness_claims": 2,
+        "added_claim_texts": [
+          "Short sleeves",
+          "Round crew neckline"
+        ]
+      },
+      {
+        "product_id": 14,
+        "category": "clothing",
+        "added_claims": 1,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 1,
+        "delta_claims": -1,
+        "delta_words": -3,
+        "baseline_claims": 10,
+        "no_completeness_claims": 9,
+        "added_claim_texts": [
+          "Short sleeves on the shirt"
+        ]
+      },
+      {
+        "product_id": 15,
+        "category": "clothing",
+        "added_claims": 0,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 0,
+        "delta_claims": 0,
+        "delta_words": 0,
+        "baseline_claims": 5,
+        "no_completeness_claims": 5,
+        "added_claim_texts": []
+      },
+      {
+        "product_id": 16,
+        "category": "furniture",
+        "added_claims": 2,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 2,
+        "delta_claims": -3,
+        "delta_words": -16,
+        "baseline_claims": 11,
+        "no_completeness_claims": 8,
+        "added_claim_texts": [
+          "Dark gray vertically ribbed upholstery",
+          "The right seat is reclined with its footrest extended"
+        ]
+      },
+      {
+        "product_id": 17,
+        "category": "furniture",
+        "added_claims": 0,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 0,
+        "delta_claims": 1,
+        "delta_words": 0,
+        "baseline_claims": 3,
+        "no_completeness_claims": 4,
+        "added_claim_texts": []
+      },
+      {
+        "product_id": 18,
+        "category": "furniture",
+        "added_claims": 1,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 1,
+        "delta_claims": -3,
+        "delta_words": -7,
+        "baseline_claims": 8,
+        "no_completeness_claims": 5,
+        "added_claim_texts": [
+          "The furniture has a warm brown wood-toned finish"
+        ]
+      },
+      {
+        "product_id": 19,
+        "category": "furniture",
+        "added_claims": 1,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 1,
+        "delta_claims": 0,
+        "delta_words": -5,
+        "baseline_claims": 6,
+        "no_completeness_claims": 6,
+        "added_claim_texts": [
+          "Pale pink perforated mesh seat"
+        ]
+      },
+      {
+        "product_id": 2,
+        "category": "clothing",
+        "added_claims": 1,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 1,
+        "delta_claims": -1,
+        "delta_words": -2,
+        "baseline_claims": 5,
+        "no_completeness_claims": 4,
+        "added_claim_texts": [
+          "V-neckline"
+        ]
+      },
+      {
+        "product_id": 20,
+        "category": "furniture",
+        "added_claims": 3,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 3,
+        "delta_claims": -2,
+        "delta_words": -25,
+        "baseline_claims": 10,
+        "no_completeness_claims": 8,
+        "added_claim_texts": [
+          "The chair is upholstered in white",
+          "A separate rectangular white cushion is placed against the backrest",
+          "A black adjustment lever extends beneath the seat on the left side"
+        ]
+      },
+      {
+        "product_id": 21,
+        "category": "furniture",
+        "added_claims": 1,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 1,
+        "delta_claims": -1,
+        "delta_words": -5,
+        "baseline_claims": 7,
+        "no_completeness_claims": 6,
+        "added_claim_texts": [
+          "Dark upholstered bed frame with rounded corners"
+        ]
+      },
+      {
+        "product_id": 22,
+        "category": "furniture",
+        "added_claims": 0,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 0,
+        "delta_claims": 0,
+        "delta_words": 1,
+        "baseline_claims": 7,
+        "no_completeness_claims": 7,
+        "added_claim_texts": []
+      },
+      {
+        "product_id": 23,
+        "category": "furniture",
+        "added_claims": 1,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 1,
+        "delta_claims": -1,
+        "delta_words": -8,
+        "baseline_claims": 4,
+        "no_completeness_claims": 3,
+        "added_claim_texts": [
+          "The bed frame has a black finish"
+        ]
+      },
+      {
+        "product_id": 24,
+        "category": "furniture",
+        "added_claims": 2,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 2,
+        "delta_claims": -1,
+        "delta_words": -14,
+        "baseline_claims": 7,
+        "no_completeness_claims": 6,
+        "added_claim_texts": [
+          "White-painted bed frame",
+          "Solid back panel behind the sleeping surface"
+        ]
+      },
+      {
+        "product_id": 25,
+        "category": "furniture",
+        "added_claims": 1,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 1,
+        "delta_claims": -2,
+        "delta_words": -4,
+        "baseline_claims": 10,
+        "no_completeness_claims": 8,
+        "added_claim_texts": [
+          "Black vertical legs and frame"
+        ]
+      },
+      {
+        "product_id": 26,
+        "category": "furniture",
+        "added_claims": 1,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 1,
+        "delta_claims": -2,
+        "delta_words": 1,
+        "baseline_claims": 5,
+        "no_completeness_claims": 3,
+        "added_claim_texts": [
+          "Round tabletop"
+        ]
+      },
+      {
+        "product_id": 27,
+        "category": "furniture",
+        "added_claims": 1,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 1,
+        "delta_claims": -2,
+        "delta_words": -13,
+        "baseline_claims": 6,
+        "no_completeness_claims": 4,
+        "added_claim_texts": [
+          "The black rear panel displays the JUSRON brand name and logo."
+        ]
+      },
+      {
+        "product_id": 28,
+        "category": "furniture",
+        "added_claims": 1,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 1,
+        "delta_claims": -2,
+        "delta_words": -5,
+        "baseline_claims": 5,
+        "no_completeness_claims": 3,
+        "added_claim_texts": [
+          "The mirror has a dark-colored frame."
+        ]
+      },
+      {
+        "product_id": 29,
+        "category": "furniture",
+        "added_claims": 1,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 1,
+        "delta_claims": 3,
+        "delta_words": -8,
+        "baseline_claims": 4,
+        "no_completeness_claims": 7,
+        "added_claim_texts": [
+          "A narrow visible edge outlines the mirror's perimeter."
+        ]
+      },
+      {
+        "product_id": 3,
+        "category": "clothing",
+        "added_claims": 2,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 2,
+        "delta_claims": -2,
+        "delta_words": -16,
+        "baseline_claims": 7,
+        "no_completeness_claims": 5,
+        "added_claim_texts": [
+          "Ribbed knit cuffs at the sleeve ends",
+          "Ribbed knit hem along the bottom edge"
+        ]
+      },
+      {
+        "product_id": 30,
+        "category": "furniture",
+        "added_claims": 1,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 1,
+        "delta_claims": -1,
+        "delta_words": -12,
+        "baseline_claims": 5,
+        "no_completeness_claims": 4,
+        "added_claim_texts": [
+          "Diffuse warm glow radiates from behind the mirror around its outer edge"
+        ]
+      },
+      {
+        "product_id": 4,
+        "category": "clothing",
+        "added_claims": 2,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 2,
+        "delta_claims": -1,
+        "delta_words": -12,
+        "baseline_claims": 5,
+        "no_completeness_claims": 4,
+        "added_claim_texts": [
+          "Black color",
+          "Visible side slit at the lower right hem"
+        ]
+      },
+      {
+        "product_id": 5,
+        "category": "clothing",
+        "added_claims": 4,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 4,
+        "delta_claims": 0,
+        "delta_words": -7,
+        "baseline_claims": 6,
+        "no_completeness_claims": 6,
+        "added_claim_texts": [
+          "Attached hood",
+          "Full-length front zipper",
+          "Pink color",
+          "Pink awareness ribbon graphics"
+        ]
+      },
+      {
+        "product_id": 6,
+        "category": "clothing",
+        "added_claims": 2,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 2,
+        "delta_claims": -2,
+        "delta_words": -22,
+        "baseline_claims": 7,
+        "no_completeness_claims": 5,
+        "added_claim_texts": [
+          "Gray shirt body",
+          "A black cuff is visible at the end of the sleeve on the right side of the image"
+        ]
+      },
+      {
+        "product_id": 7,
+        "category": "clothing",
+        "added_claims": 3,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 3,
+        "delta_claims": -3,
+        "delta_words": -14,
+        "baseline_claims": 7,
+        "no_completeness_claims": 4,
+        "added_claim_texts": [
+          "Long sleeves",
+          "Pointed turn-down collar",
+          "White buttons down the front"
+        ]
+      },
+      {
+        "product_id": 8,
+        "category": "clothing",
+        "added_claims": 3,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 3,
+        "delta_claims": -2,
+        "delta_words": -35,
+        "baseline_claims": 9,
+        "no_completeness_claims": 7,
+        "added_claim_texts": [
+          "Black T-shirt",
+          "Orange and yellow diagonal stripes above the green banner",
+          "The cream controller graphic has multiple colored buttons"
+        ]
+      },
+      {
+        "product_id": 9,
+        "category": "clothing",
+        "added_claims": 2,
+        "added_kept_in_no_completeness": 0,
+        "added_lost_in_no_completeness": 2,
+        "delta_claims": -1,
+        "delta_words": -13,
+        "baseline_claims": 8,
+        "no_completeness_claims": 7,
+        "added_claim_texts": [
+          "The chest and lower pockets have zipper closures with visible pulls",
+          "An attached hood is visible"
+        ]
+      }
+    ]
+  },
+  "accuracy": {
+    "products_with_interventions": 7,
+    "total_corrected": 8,
+    "total_deleted": 1,
+    "per_product": [
+      {
+        "product_id": 14,
+        "interventions": [
+          {
+            "type": "CORRECTED",
+            "claim_id": "c1",
+            "original_claim": "Two-piece pajama set",
+            "corrected_claim": "Two-piece outfit consisting of a shirt and shorts"
+          }
+        ],
+        "baseline_alt_text": "A two-piece outfit consisting of a shirt and shorts is shown worn. The burgundy shirt has short sleeves, narrow navy vertical stripes, yellow “BARÇA” lettering across the shirt's chest, football graphics, and an FC Barcelona crest. The matching navy shorts have vertical yellow “BARÇA” lettering on one leg and an FC Barcelona crest on the other leg.",
+        "no_accuracy_alt_text": "Burgundy shirt with narrow navy vertical stripes and short sleeves, yellow “BARÇA” lettering across the shirt's chest, football graphics, and an FC Barcelona crest. Matching navy shorts have vertical yellow “BARÇA” lettering on one leg and an FC Barcelona crest on the other leg."
+      },
+      {
+        "product_id": 22,
+        "interventions": [
+          {
+            "type": "DELETED",
+            "claim_id": "c1",
+            "original_claim": "A sofa bed is arranged as a single bed"
+          }
+        ],
+        "baseline_alt_text": "An L-shaped frame surrounds the head and right side, with open shelving illuminated by cyan LEDs. A work surface extends across the foot and right side, with a laptop sitting on it. Storage compartments beneath the mattress are pulled open on the left, and fabric organizer pockets hang from the near side.",
+        "no_accuracy_alt_text": "A sofa bed is arranged as a single bed. An L-shaped frame surrounds the head and right side, with open shelving illuminated by cyan LEDs. The work surface extends across the foot and right side, and a laptop sits on the work surface. Storage compartments beneath the mattress are pulled open on the left, and fabric organizer pockets hang from the near side."
+      },
+      {
+        "product_id": 27,
+        "interventions": [
+          {
+            "type": "CORRECTED",
+            "claim_id": "c2",
+            "original_claim": "The mirror has black plastic borders.",
+            "corrected_claim": "The mirror has black borders."
+          },
+          {
+            "type": "CORRECTED",
+            "claim_id": "c3",
+            "original_claim": "Two black over-door hooks extend above the mirror.",
+            "corrected_claim": "Two black hooks extend above the mirror."
+          }
+        ],
+        "baseline_alt_text": "A mirror is opened into three rectangular panels arranged at angles. It has black borders and two black hooks extending above it. The reflections show front, side, and rear views of a person trimming his hair, and the black rear panel displays the JUSRON brand name and logo.",
+        "no_accuracy_alt_text": "A mirror is opened into three rectangular panels arranged at angles. Two black over-door hooks extend above the mirror. The black rear panel displays the JUSRON brand name and logo. The reflections show front, side, and rear views of a person trimming his hair."
+      },
+      {
+        "product_id": 28,
+        "interventions": [
+          {
+            "type": "CORRECTED",
+            "claim_id": "c2",
+            "original_claim": "The mirror has straight vertical sides.",
+            "corrected_claim": "The mirror has straight, slightly angled side edges."
+          }
+        ],
+        "baseline_alt_text": "A mirror has a narrow border and a dark-colored frame, with straight, slightly angled side edges. A separate support extends behind the mirror on the right and holds it upright on the floor",
+        "no_accuracy_alt_text": "A mirror with a narrow border, straight vertical sides, and a dark-colored frame. A separate support extends behind it on the right, holding it upright on the floor."
+      },
+      {
+        "product_id": 30,
+        "interventions": [
+          {
+            "type": "CORRECTED",
+            "claim_id": "c1",
+            "original_claim": "Round bathroom mirror",
+            "corrected_claim": "Round mirror"
+          },
+          {
+            "type": "CORRECTED",
+            "claim_id": "c4",
+            "original_claim": "Three touch-control icons near the lower center of the reflective surface",
+            "corrected_claim": "Three icons near the lower center of the reflective surface"
+          }
+        ],
+        "baseline_alt_text": "Round mirror with a continuous warm-white illuminated ring just inside the black outer rim. Diffuse warm glow radiates from behind the mirror around its outer edge, and three icons appear near the lower center of the reflective surface.",
+        "no_accuracy_alt_text": "A continuous warm-white illuminated ring is just inside the black outer rim. Diffuse warm glow radiates from behind the mirror around its outer edge. Three touch-control icons are near the lower center of the reflective surface."
+      },
+      {
+        "product_id": 5,
+        "interventions": [
+          {
+            "type": "CORRECTED",
+            "claim_id": "c1",
+            "original_claim": "Sweatshirt",
+            "corrected_claim": "Zip-up hooded sweatshirt"
+          }
+        ],
+        "baseline_alt_text": "Zip-up hooded sweatshirt in pink. It has pink awareness ribbon graphics, with a small graphic on the left chest and a much larger version of the graphic centered across the back, plus a large divided hand pocket on the front. Ribbed cuffs on the sleeves and a ribbed waistband at the hem finish the garment.",
+        "no_accuracy_alt_text": "Pink awareness ribbon graphics appear as a small graphic on the left chest and a much larger version of the graphic centered across the back. An attached hood, full-length front zipper, large divided hand pocket on the front, ribbed cuffs on the sleeves, and ribbed waistband at the hem are visible."
+      },
+      {
+        "product_id": 6,
+        "interventions": [
+          {
+            "type": "CORRECTED",
+            "claim_id": "c2",
+            "original_claim": "Black contrasting collar",
+            "corrected_claim": "Gray collar with a black inner collar"
+          }
+        ],
+        "baseline_alt_text": "Gray shirt body with a gray collar and a black inner collar. Black buttons are arranged down the center front, with a rounded lower edge and narrow cuffs at the ends of the sleeves. A black cuff is visible at the end of the sleeve on the right side of the image.",
+        "no_accuracy_alt_text": "The gray shirt body has a black contrasting collar and black buttons arranged down the center front. Its rounded lower edge and narrow cuffs at the ends of the sleeves are visible, including a black cuff at the end of the sleeve on the right side of the image."
+      }
+    ]
+  },
+  "redundancy": {
+    "products_with_pipeline_avoidable": 25,
+    "total_pipeline_avoidable_labels": 28,
+    "avg_delta_avoidable_rate_no_redundancy": 0.04763625263625263,
+    "avg_delta_claims_no_redundancy": 0.6,
+    "avg_delta_words_no_redundancy": 0.6,
+    "products_increased_avoidable_rate": 14,
+    "top_redundancy_examples": [
+      {
+        "product_id": 4,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.4,
+        "delta_claims": 0,
+        "delta_words": -4
+      },
+      {
+        "product_id": 17,
+        "pipeline_avoidable_count": 2,
+        "delta_avoidable_redundancy_rate": 0.3333333333333333,
+        "delta_claims": 3,
+        "delta_words": 9
+      },
+      {
+        "product_id": 28,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.2,
+        "delta_claims": 0,
+        "delta_words": 4
+      },
+      {
+        "product_id": 15,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.16666666666666666,
+        "delta_claims": 1,
+        "delta_words": 3
+      },
+      {
+        "product_id": 26,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.16666666666666666,
+        "delta_claims": 1,
+        "delta_words": 4
+      },
+      {
+        "product_id": 6,
+        "pipeline_avoidable_count": 2,
+        "delta_avoidable_redundancy_rate": 0.14285714285714285,
+        "delta_claims": 0,
+        "delta_words": 1
+      },
+      {
+        "product_id": 14,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.1,
+        "delta_claims": 0,
+        "delta_words": -4
+      },
+      {
+        "product_id": 25,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.1,
+        "delta_claims": 0,
+        "delta_words": 5
+      }
+    ],
+    "per_product": [
+      {
+        "product_id": 1,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": -0.25,
+        "delta_claims": 0,
+        "delta_words": 2
+      },
+      {
+        "product_id": 10,
+        "pipeline_avoidable_count": 0,
+        "delta_avoidable_redundancy_rate": -0.125,
+        "delta_claims": 0,
+        "delta_words": 1
+      },
+      {
+        "product_id": 11,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.07692307692307693,
+        "delta_claims": 0,
+        "delta_words": 1
+      },
+      {
+        "product_id": 12,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.09090909090909091,
+        "delta_claims": 1,
+        "delta_words": 3
+      },
+      {
+        "product_id": 13,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.09999999999999998,
+        "delta_claims": 1,
+        "delta_words": 1
+      },
+      {
+        "product_id": 14,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.1,
+        "delta_claims": 0,
+        "delta_words": -4
+      },
+      {
+        "product_id": 15,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.16666666666666666,
+        "delta_claims": 1,
+        "delta_words": 3
+      },
+      {
+        "product_id": 16,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.0,
+        "delta_claims": 0,
+        "delta_words": 0
+      },
+      {
+        "product_id": 17,
+        "pipeline_avoidable_count": 2,
+        "delta_avoidable_redundancy_rate": 0.3333333333333333,
+        "delta_claims": 3,
+        "delta_words": 9
+      },
+      {
+        "product_id": 18,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.0,
+        "delta_claims": 0,
+        "delta_words": 3
+      },
+      {
+        "product_id": 19,
+        "pipeline_avoidable_count": 0,
+        "delta_avoidable_redundancy_rate": 0.0,
+        "delta_claims": 0,
+        "delta_words": -5
+      },
+      {
+        "product_id": 2,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": -0.2,
+        "delta_claims": 0,
+        "delta_words": 1
+      },
+      {
+        "product_id": 20,
+        "pipeline_avoidable_count": 0,
+        "delta_avoidable_redundancy_rate": -0.009090909090909094,
+        "delta_claims": 1,
+        "delta_words": 4
+      },
+      {
+        "product_id": 21,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.0,
+        "delta_claims": 0,
+        "delta_words": 2
+      },
+      {
+        "product_id": 22,
+        "pipeline_avoidable_count": 0,
+        "delta_avoidable_redundancy_rate": 0.0,
+        "delta_claims": 0,
+        "delta_words": 0
+      },
+      {
+        "product_id": 23,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.0,
+        "delta_claims": 0,
+        "delta_words": -1
+      },
+      {
+        "product_id": 24,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.0,
+        "delta_claims": 0,
+        "delta_words": -2
+      },
+      {
+        "product_id": 25,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.1,
+        "delta_claims": 0,
+        "delta_words": 5
+      },
+      {
+        "product_id": 26,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.16666666666666666,
+        "delta_claims": 1,
+        "delta_words": 4
+      },
+      {
+        "product_id": 27,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": -0.023809523809523808,
+        "delta_claims": 1,
+        "delta_words": -3
+      },
+      {
+        "product_id": 28,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.2,
+        "delta_claims": 0,
+        "delta_words": 4
+      },
+      {
+        "product_id": 29,
+        "pipeline_avoidable_count": 0,
+        "delta_avoidable_redundancy_rate": 0.0,
+        "delta_claims": 2,
+        "delta_words": 2
+      },
+      {
+        "product_id": 3,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.0892857142857143,
+        "delta_claims": 1,
+        "delta_words": 2
+      },
+      {
+        "product_id": 30,
+        "pipeline_avoidable_count": 2,
+        "delta_avoidable_redundancy_rate": 0.0,
+        "delta_claims": 0,
+        "delta_words": 2
+      },
+      {
+        "product_id": 4,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.4,
+        "delta_claims": 0,
+        "delta_words": -4
+      },
+      {
+        "product_id": 5,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.08333333333333334,
+        "delta_claims": 2,
+        "delta_words": 1
+      },
+      {
+        "product_id": 6,
+        "pipeline_avoidable_count": 2,
+        "delta_avoidable_redundancy_rate": 0.14285714285714285,
+        "delta_claims": 0,
+        "delta_words": 1
+      },
+      {
+        "product_id": 7,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": -0.0357142857142857,
+        "delta_claims": 1,
+        "delta_words": -1
+      },
+      {
+        "product_id": 8,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.0,
+        "delta_claims": 0,
+        "delta_words": -21
+      },
+      {
+        "product_id": 9,
+        "pipeline_avoidable_count": 1,
+        "delta_avoidable_redundancy_rate": 0.022727272727272707,
+        "delta_claims": 3,
+        "delta_words": 8
+      }
+    ]
+  },
+  "secondary_metrics": {
+    "baseline": {
+      "novelty_rate": 0.36122229622229624,
+      "efficiency_per_100_words": 5.940363333333334,
+      "redundancy_rate": 0.59009805009805,
+      "avoidable_redundancy_rate": 0.17757122507122508,
+      "relevancy_score": 90.10333333333332,
+      "unavoidable_repetition_rate": 0.41252682502682503,
+      "total_claims": 6.866666666666666,
+      "objectivity_score": 0.9770875420875421,
+      "raw_novelty_rate": 0.4099019499019499,
+      "word_count": 44.7
+    },
+    "no_accuracy": {
+      "novelty_rate": 0.4276899951899952,
+      "efficiency_per_100_words": 7.086203771163794,
+      "redundancy_rate": 0.5104918229918229,
+      "avoidable_redundancy_rate": 0.16312289562289564,
+      "relevancy_score": 89.898,
+      "unavoidable_repetition_rate": 0.3473689273689274,
+      "total_claims": 7.0,
+      "objectivity_score": 0.9903030303030304,
+      "raw_novelty_rate": 0.489508177008177,
+      "word_count": 43.9
+    },
+    "no_completeness": {
+      "novelty_rate": 0.4596031746031746,
+      "efficiency_per_100_words": 7.217682853649218,
+      "redundancy_rate": 0.4671825396825397,
+      "avoidable_redundancy_rate": 0.044841269841269835,
+      "relevancy_score": 87.28466666666667,
+      "unavoidable_repetition_rate": 0.42234126984126985,
+      "total_claims": 5.5,
+      "objectivity_score": 0.987367724867725,
+      "raw_novelty_rate": 0.5328174603174604,
+      "word_count": 35.233333333333334
+    },
+    "no_redundancy": {
+      "novelty_rate": 0.4109000259000259,
+      "efficiency_per_100_words": 7.054953976624393,
+      "redundancy_rate": 0.5249008399008399,
+      "avoidable_redundancy_rate": 0.2252074777074777,
+      "relevancy_score": 89.752,
+      "unavoidable_repetition_rate": 0.2996933621933622,
+      "total_claims": 7.466666666666667,
+      "objectivity_score": 0.9929629629629629,
+      "raw_novelty_rate": 0.4750991600991601,
+      "word_count": 45.3
+    }
+  },
+  "qualitative_examples": {
+    "1": {
+      "completeness_added_claims": [
+        "Short sleeves",
+        "Crew neckline"
+      ],
+      "baseline_alt_text": "A T-shirt shown from the front, with short sleeves and a crew neckline. A small gray Under Armour logo is on the wearer's upper left chest.",
+      "no_completeness_alt_text": "A T-shirt is shown from the front. It has a small gray Under Armour logo on the wearer's upper left chest.",
+      "no_accuracy_alt_text": "T-shirt shown from the front, with short sleeves and a crew neckline. A small gray Under Armour logo is on the wearer's upper left chest."
+    },
+    "6": {
+      "completeness_added_claims": [
+        "Gray shirt body",
+        "A black cuff is visible at the end of the sleeve on the right side of the image"
+      ],
+      "baseline_alt_text": "Gray shirt body with a gray collar and a black inner collar. Black buttons are arranged down the center front, with a rounded lower edge and narrow cuffs at the ends of the sleeves. A black cuff is visible at the end of the sleeve on the right side of the image.",
+      "no_completeness_alt_text": "Gray collar with a black inner collar. Black buttons are arranged down the center front. The lower edge is rounded, and narrow cuffs are at the ends of the sleeves.",
+      "no_accuracy_alt_text": "The gray shirt body has a black contrasting collar and black buttons arranged down the center front. Its rounded lower edge and narrow cuffs at the ends of the sleeves are visible, including a black cuff at the end of the sleeve on the right side of the image."
+    },
+    "7": {
+      "completeness_added_claims": [
+        "Long sleeves",
+        "Pointed turn-down collar",
+        "White buttons down the front"
+      ],
+      "baseline_alt_text": "Intersecting white and dark-blue stripes are visible. Visible features include a pointed turn-down collar, long sleeves, a chest pocket on the wearer’s left with diagonally oriented stripes, and a striped front placket with white buttons down the front. The hem is gently curved.",
+      "no_completeness_alt_text": "Intersecting white and dark-blue stripes are present, along with a chest pocket on the wearer’s left with diagonally oriented stripes, a striped front placket, and a gently curved hem.",
+      "no_accuracy_alt_text": "Intersecting white and dark-blue stripes are visible. Long sleeves and a pointed turn-down collar are visible, along with a chest pocket on the wearer’s left with diagonally oriented stripes, a striped front placket, and white buttons down the front. A gently curved hem is visible."
+    },
+    "11": {
+      "completeness_added_claims": [
+        "Dark navy color",
+        "Long sleeves",
+        "Ribbed crew neckline, cuffs, and waistband",
+        "Colorful liquid streaming from the held planet into the pools"
+      ],
+      "baseline_alt_text": "Dark navy color, long sleeves, and a ribbed crew neckline, cuffs, and waistband are visible. A central space-themed graphic shows a white-outlined astronaut holding a multicolored planet, with colorful liquid streaming into pools beneath. Stars, ringed planets, additional small planets, and a moon-like circle surround the astronaut.",
+      "no_completeness_alt_text": "A central space-themed graphic features a white-outlined astronaut holding a multicolored planet, with stars and ringed planets surrounding the astronaut. Colorful pools appear beneath the astronaut, with additional small planets and a moon-like circle above.",
+      "no_accuracy_alt_text": "Dark navy color, long sleeves, and a ribbed crew neckline, cuffs, and waistband are visible. A central space-themed graphic features a white-outlined astronaut holding a multicolored planet, with colorful liquid streaming from the held planet into the pools beneath the astronaut. Stars and ringed planets surround the astronaut, with additional small planets and a moon-like circle above."
+    },
+    "22": {
+      "completeness_added_claims": [],
+      "baseline_alt_text": "An L-shaped frame surrounds the head and right side, with open shelving illuminated by cyan LEDs. A work surface extends across the foot and right side, with a laptop sitting on it. Storage compartments beneath the mattress are pulled open on the left, and fabric organizer pockets hang from the near side.",
+      "no_completeness_alt_text": "An L-shaped frame surrounds the head and right side, with open shelving illuminated by cyan LEDs. The work surface extends across the foot and right side, with a laptop sitting on it, while storage compartments beneath the mattress are pulled open on the left and fabric organizer pockets hang from the near side.",
+      "no_accuracy_alt_text": "A sofa bed is arranged as a single bed. An L-shaped frame surrounds the head and right side, with open shelving illuminated by cyan LEDs. The work surface extends across the foot and right side, and a laptop sits on the work surface. Storage compartments beneath the mattress are pulled open on the left, and fabric organizer pockets hang from the near side."
+    },
+    "28": {
+      "completeness_added_claims": [
+        "The mirror has a dark-colored frame."
+      ],
+      "baseline_alt_text": "A mirror has a narrow border and a dark-colored frame, with straight, slightly angled side edges. A separate support extends behind the mirror on the right and holds it upright on the floor",
+      "no_completeness_alt_text": "A mirror has a narrow border and straight, slightly angled side edges. A separate support extends behind the mirror on the right, holding it upright on the floor.",
+      "no_accuracy_alt_text": "A mirror with a narrow border, straight vertical sides, and a dark-colored frame. A separate support extends behind it on the right, holding it upright on the floor."
+    }
+  }
+}

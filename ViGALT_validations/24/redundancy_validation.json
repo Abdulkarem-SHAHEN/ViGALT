@@ -1,0 +1,54 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Bed",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM repeatedly identifies the product as a bed, and this claim adds no visual attribute, relationship, or grounding information."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Peaked roof-shaped frame",
+      "label": "NOVEL",
+      "reason": "The DOM describes a house-shaped or cabin-style bed, but this claim adds the specific peaked roof form of the visible frame."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Four corner posts",
+      "label": "NOVEL",
+      "reason": "The DOM does not specify the presence or count of four corner posts; this adds a visible structural detail."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Raised guard panels made of vertical slats along the sides and foot end",
+      "label": "NOVEL",
+      "reason": "Although the DOM mentions a safety fence or anti-fall edge, it does not describe the panels' vertical-slat construction or their placement along the sides and foot end."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Opening at the front",
+      "label": "NOVEL",
+      "reason": "The DOM does not describe an opening in the front guard structure; this adds a visible spatial configuration."
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Low-set sleeping surface",
+      "label": "NOVEL",
+      "reason": "The DOM provides dimensions and a ground-to-item distance but does not characterize the sleeping surface as low-set; this adds a visual relationship between the bed and its sleeping surface."
+    },
+    {
+      "claim_id": "c7",
+      "claim": "White mattress with a lightly quilted cover",
+      "label": "NOVEL",
+      "reason": "The DOM indicates that a mattress is included and lists the product as white, but it does not specify that the mattress itself is white or that its cover is lightly quilted; the cover texture adds new visual information."
+    }
+  ],
+  "summary": {
+    "total_claims": 7,
+    "novel_claims": 6,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.14285714285714285
+  }
+}

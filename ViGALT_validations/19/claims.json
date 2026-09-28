@@ -1,0 +1,30 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Coral-pink perforated lattice backrest"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Rounded seat"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "A white central column supports the base"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Five-legged white base"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Black-and-pink casters on the base"
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Black adjustment lever beneath the seat on the viewer’s left"
+    }
+  ],
+  "total_claims": 6
+}

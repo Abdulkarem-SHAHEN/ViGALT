@@ -9,7 +9,6 @@
         "relevant_claims": 6,
         "supplementary_claims": 0,
         "visual_only_claims": 4,
-        "relevancy_rate": 0.6,
         "claims": [
           {
             "claim_id": "C1",
@@ -61,7 +60,8 @@
             "claim": "Mouse arranged across the surface",
             "label": "V"
           }
-        ]
+        ],
+        "relevancy_score": 42.86
       },
       "redundancy": {
         "metrics": {
@@ -320,7 +320,6 @@
         "relevant_claims": 4,
         "supplementary_claims": 0,
         "visual_only_claims": 8,
-        "relevancy_rate": 0.3333333333333333,
         "claims": [
           {
             "claim_id": "C1",
@@ -382,7 +381,8 @@
             "claim": "White background",
             "label": "V"
           }
-        ]
+        ],
+        "relevancy_score": 20.0
       },
       "redundancy": {
         "metrics": {

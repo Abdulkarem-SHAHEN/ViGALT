@@ -1,0 +1,206 @@
+{
+  "status": "ok",
+  "folder_number": 23,
+  "image_file": "81v2MWCaIyL._AC_SX679_.jpg",
+  "ablation": "no_redundancy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A bed has rounded rectangular tubular frames at the head and foot with a black finish. Each frame has three vertical rods with ringed ornamental sections, and the footboard includes a lower horizontal rail beneath the mattress.",
+      "relevancy": {
+        "total_claims": 4,
+        "relevant_claims": 4,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Bed",
+            "label": "R",
+            "reason": "This identifies the furniture product shown."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Rounded rectangular tubular frames at the head and foot with a black finish",
+            "label": "R",
+            "reason": "This describes the bed's integrated black tubular headboard and footboard frames."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Each frame has three vertical rods with ringed ornamental sections",
+            "label": "R",
+            "reason": "This describes the bed's vertical metal rods and decorative ringed details."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The footboard includes a lower horizontal rail beneath the mattress",
+            "label": "R",
+            "reason": "This describes a visible structural detail of the bed's footboard."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 4,
+          "relevant_claims": 4,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 0,
+          "relevant_novel_claims": 0,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 3,
+          "avoidable_redundancy_claims": 1,
+          "novelty_rate": 0.0,
+          "raw_novelty_rate": 0.0,
+          "unavoidable_repetition_rate": 0.75,
+          "avoidable_redundancy_rate": 0.25,
+          "redundancy_rate": 1.0
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Bed",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Rounded rectangular tubular frames at the head and foot with a black finish",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Each frame has three vertical rods with ringed ornamental sections",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The footboard includes a lower horizontal rail beneath the mattress",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Bed",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "Zinus Florence Bed Base 90 x 190 cm with Metal Slats – Sturdy Metal Frame and Headboard – Height 35 cm for Storage – Easy Assembly – Black"
+              },
+              {
+                "field": "description",
+                "value": "The Florence metal bed frame combines vintage elegance with functionality."
+              }
+            ],
+            "reason": "The DOM already clearly identifies the product as a bed base/metal bed frame. Saying only \"Bed\" adds no further semantic information."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Rounded rectangular tubular frames at the head and foot with a black finish",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "Zinus Florence Bed Base 90 x 190 cm with Metal Slats – Sturdy Metal Frame and Headboard – Height 35 cm for Storage – Easy Assembly – Black"
+              },
+              {
+                "field": "feature_bullets[0]",
+                "value": "This black metal bed frame with decorated headboard and footboard brings sophistication and retro charm"
+              },
+              {
+                "field": "product_details.Colour",
+                "value": "Black"
+              }
+            ],
+            "reason": "The DOM already establishes a black metal frame with headboard and footboard, but it does not specify the rounded rectangular tubular form. Repeating the head-and-foot frame context is needed to anchor the newly supplied shape description to the relevant parts of the bed."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Each frame has three vertical rods with ringed ornamental sections",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[0]",
+                "value": "This black metal bed frame with decorated headboard and footboard brings sophistication and retro charm"
+              },
+              {
+                "field": "description",
+                "value": "Its black finish and classic design headboard/footboard add a timeless touch."
+              }
+            ],
+            "reason": "The DOM indicates decorative/classic headboard and footboard elements but does not state that each has three vertical rods or ringed ornamental sections. Referring to the frames is needed to identify which existing bed structures the new rod and ornament details describe."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The footboard includes a lower horizontal rail beneath the mattress",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[0]",
+                "value": "This black metal bed frame with decorated headboard and footboard brings sophistication and retro charm"
+              },
+              {
+                "field": "description",
+                "value": "Its black finish and classic design headboard/footboard add a timeless touch."
+              }
+            ],
+            "reason": "The DOM establishes that the bed has a footboard but does not mention a lower horizontal rail or its position beneath the mattress. Repeating \"footboard\" is necessary to ground the new rail detail on the correct bed component."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 5,
+        "subjective_claims": 0,
+        "total_claims": 5,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "A bed has rounded rectangular tubular frames at the head and foot.",
+            "label": "OBJECTIVE",
+            "reason": "The headboard and footboard visibly consist of dark tubular frames with rounded upper corners and rectangular overall outlines."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The frames have a black finish.",
+            "label": "OBJECTIVE",
+            "reason": "The tubular headboard and footboard surfaces visibly appear black or very dark."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "Each frame has three vertical rods.",
+            "label": "OBJECTIVE",
+            "reason": "Three vertical rods are visibly positioned within both the headboard and footboard frames."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The vertical rods have ringed ornamental sections.",
+            "label": "OBJECTIVE",
+            "reason": "The rods visibly include enlarged decorative ring-like or turned sections."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The footboard includes a lower horizontal rail beneath the mattress.",
+            "label": "OBJECTIVE",
+            "reason": "A horizontal bar is visibly present across the lower portion of the footboard below the mattress."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 37,
+        "relevant_novel_claims": 0,
+        "efficiency_per_100_words": 0.0
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:49:13.042173+00:00"
+}

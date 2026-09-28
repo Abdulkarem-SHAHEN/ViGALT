@@ -1,0 +1,63 @@
+{
+  "stage": "completeness_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "A sofa bed is arranged as a single bed",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c2",
+      "claim": "An L-shaped frame surrounds the head and right side",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Open shelving is illuminated by cyan LEDs",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c4",
+      "claim": "A laptop sits on the work surface",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c5",
+      "claim": "The work surface extends across the foot and right side",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Storage compartments beneath the mattress are pulled open on the left",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c7",
+      "claim": "Fabric organizer pockets hang from the near side",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    }
+  ],
+  "summary": {
+    "input_claims": 7,
+    "retained_claims": 7,
+    "added_claims": 0,
+    "added_visual_gap": 0,
+    "added_non_english_text": 0,
+    "added_known_entity": 0,
+    "omission_score": 0.0
+  }
+}

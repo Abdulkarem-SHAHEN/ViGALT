@@ -1,0 +1,13 @@
+\section{Introduction}
+Online shopping relies on images to convey shape, color, material, and fit, which creates a barrier for Blind and Low-Vision (BLV) users who browse with screen readers. Alternative text (alt text) is ``descriptive text that conveys the meaning of an image in digital content'' \cite{whatalttext}; it is the main channel through which a BLV shopper can access what a product photograph shows.
+
+In practice, e-commerce alt text is frequently insufficient. Many sites duplicate the product title, paste fragments of the description, or, at best, run a generic image captioner. Because large marketplaces let third-party sellers supply their own metadata, alt-text quality also varies widely between listings. This matters because BLV shoppers specifically want appearance attributes such as color, logo, shape, and size \cite{wang2021}, and generic alt text does not support the decision to buy or not.
+
+Vision Language Models (VLMs) can now describe images fluently, but good alt text depends on the image's context and purpose \cite{nngroup2024}: the same image may need a completely different description depending on where it appears and what the user is trying to do \cite{stangl2021}. W3C guidance makes the same point and adds that if nearby text already conveys the visual information, repeating it in the text alternative is redundant \cite{w3cimages,w3cinformative}. On a product page, the title and attribute list already tell the user that an item is, say, a black women's sweater. The useful question is therefore not ``what is in this image?'' but ``what visual information is still missing from this page?''
+
+We introduce \sys (Visual Gap-Aware ALT Text Generation), a multi-stage pipeline that answers that question. \sys extracts the product page's Document Object Model (DOM) into structured context with a deterministic parser; all subsequent generation, validation, and rewriting steps are performed by Large Language Models (LLMs). Our contributions are:
+\begin{itemize}
+\item a gap-aware generation pipeline that decomposes a candidate description into atomic claims and checks them with three parallel validators (redundancy, accuracy, completeness) before a constrained fuser writes the final alt text;
+\item a paired, claim-level comparison against a reproduced context-aware baseline \cite{mohanbabu2024} under a controlled model backend, with Wilcoxon signed-rank tests and Holm correction;
+\item a fusion-stage ablation that isolates what each validator contributes to the final text.
+\end{itemize}

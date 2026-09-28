@@ -1,0 +1,65 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "25",
+  "product_stem": "25",
+  "alt_text": "A wood-grain top is marked by irregular dark distressed streaks. Black vertical legs and frame are visible, with horizontal supports near the floor and diagonal braces along the side frames; a monitor, laptop, keyboard, and mouse are arranged across the surface.",
+  "final_alt_text": "A wood-grain top is marked by irregular dark distressed streaks. Black vertical legs and frame are visible, with horizontal supports near the floor and diagonal braces along the side frames; a monitor, laptop, keyboard, and mouse are arranged across the surface.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 2929,
+  "token_usage": {
+    "prompt_tokens": 1015,
+    "completion_tokens": 305,
+    "total_tokens": 1320
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Wood-grain top\"},{\"claim_id\":\"c2\",\"claim\":\"Irregular dark distressed streaks on the top\"},{\"claim_id\":\"c3\",\"claim\":\"Black vertical legs\"},{\"claim_id\":\"c4\",\"claim\":\"Black frame\"},{\"claim_id\":\"c5\",\"claim\":\"Horizontal supports near the floor\"},{\"claim_id\":\"c6\",\"claim\":\"Diagonal braces along the side frames\"},{\"claim_id\":\"c7\",\"claim\":\"Monitor on the surface\"},{\"claim_id\":\"c8\",\"claim\":\"Laptop on the surface\"},{\"claim_id\":\"c9\",\"claim\":\"Keyboard on the surface\"},{\"claim_id\":\"c10\",\"claim\":\"Mouse on the surface\"}],\"total_claims\":10}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Wood-grain top"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Irregular dark distressed streaks on the top"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Black vertical legs"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Black frame"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "Horizontal supports near the floor"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "Diagonal braces along the side frames"
+      },
+      {
+        "claim_id": "c7",
+        "claim": "Monitor on the surface"
+      },
+      {
+        "claim_id": "c8",
+        "claim": "Laptop on the surface"
+      },
+      {
+        "claim_id": "c9",
+        "claim": "Keyboard on the surface"
+      },
+      {
+        "claim_id": "c10",
+        "claim": "Mouse on the surface"
+      }
+    ],
+    "total_claims": 10
+  },
+  "processed_at": "2026-09-20T11:51:12.067185+00:00"
+}

@@ -1,0 +1,86 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 6015,
+  "token_usage": {
+    "prompt_tokens": 2873,
+    "completion_tokens": 793,
+    "total_tokens": 3666
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"Desk\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c2\",\"text\":\"Wood-grain top\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"Irregular dark distressed streaks on the top\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n1\",\"text\":\"Black vertical legs and frame\",\"source\":\"ADDED\",\"action\":\"ADDED\"},{\"claim_id\":\"c4\",\"text\":\"Horizontal supports near the floor\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"Diagonal braces along the side frames\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c6\",\"text\":\"Monitor arranged across the surface\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c7\",\"text\":\"Laptop arranged across the surface\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c8\",\"text\":\"Keyboard arranged across the surface\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c9\",\"text\":\"Mouse arranged across the surface\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"}],\"edit_log\":[\"Retained all nine original claims per Accuracy.\",\"Added black vertical legs and frame per Completeness (n1).\",\"Grouped desk structure before the monitor, laptop, keyboard, and mouse for screen-reader order.\"],\"final_alt_text\":\"A desk with a wood-grain top marked by irregular dark distressed streaks. The desk has black vertical legs and frame, horizontal supports near the floor, and diagonal braces along the side frames. A monitor, laptop, keyboard, and mouse are arranged across the surface.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Desk",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Wood-grain top",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Irregular dark distressed streaks on the top",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "Black vertical legs and frame",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Horizontal supports near the floor",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Diagonal braces along the side frames",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Monitor arranged across the surface",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c7",
+        "text": "Laptop arranged across the surface",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c8",
+        "text": "Keyboard arranged across the surface",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c9",
+        "text": "Mouse arranged across the surface",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Retained all nine original claims per Accuracy.",
+      "Added black vertical legs and frame per Completeness (n1).",
+      "Grouped desk structure before the monitor, laptop, keyboard, and mouse for screen-reader order."
+    ],
+    "final_alt_text": "A desk with a wood-grain top marked by irregular dark distressed streaks. The desk has black vertical legs and frame, horizontal supports near the floor, and diagonal braces along the side frames. A monitor, laptop, keyboard, and mouse are arranged across the surface."
+  },
+  "final_alt_text": "A desk with a wood-grain top marked by irregular dark distressed streaks. The desk has black vertical legs and frame, horizontal supports near the floor, and diagonal braces along the side frames. A monitor, laptop, keyboard, and mouse are arranged across the surface.",
+  "processed_at": "2026-09-20T11:52:20.483856+00:00"
+}

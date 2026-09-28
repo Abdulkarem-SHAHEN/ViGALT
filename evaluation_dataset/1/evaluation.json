@@ -9,7 +9,6 @@
         "relevant_claims": 4,
         "supplementary_claims": 0,
         "visual_only_claims": 0,
-        "relevancy_rate": 1.0,
         "claims": [
           {
             "claim_id": "C1",
@@ -31,7 +30,8 @@
             "claim": "Small gray Under Armour logo on the wearer's upper left chest",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 100.0
       },
       "redundancy": {
         "metrics": {
@@ -183,7 +183,6 @@
         "relevant_claims": 5,
         "supplementary_claims": 0,
         "visual_only_claims": 1,
-        "relevancy_rate": 0.8333333333333334,
         "claims": [
           {
             "claim_id": "C1",
@@ -215,7 +214,8 @@
             "claim": "Plain white background",
             "label": "V"
           }
-        ]
+        ],
+        "relevancy_score": 71.43
       },
       "redundancy": {
         "metrics": {

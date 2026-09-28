@@ -17,5 +17,8 @@ dependencies = [
     "python-dotenv>=1.0.0",
 ]
 
+[project.optional-dependencies]
+viz = ["matplotlib>=3.8", "seaborn>=0.13"]
+
 [tool.setuptools.packages.find]
 where = ["src"]

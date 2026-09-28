@@ -1,0 +1,70 @@
+{
+  "stage": "completeness_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Bed",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Rounded, raised side rails",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Wide headboard that curves around the sides",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Cyan LED strip follows the front and right-side edges of the base and rises beside the headboard",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Mattress inside the frame",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Pillows inside the frame",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c7",
+      "claim": "Blankets inside the frame",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "n1",
+      "claim": "Dark upholstered bed frame with rounded corners",
+      "label": "ADDED",
+      "addition_type": "VISUAL_GAP",
+      "reason": "The image clearly shows a dark upholstered frame surrounding the mattress, including rounded front corners, which is not expressed by the existing claims."
+    }
+  ],
+  "summary": {
+    "input_claims": 7,
+    "retained_claims": 7,
+    "added_claims": 1,
+    "added_visual_gap": 1,
+    "added_non_english_text": 0,
+    "added_known_entity": 0,
+    "omission_score": 0.125
+  }
+}

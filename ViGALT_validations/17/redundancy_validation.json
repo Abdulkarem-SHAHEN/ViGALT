@@ -1,0 +1,48 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Bar table set",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM explicitly identifies the product as a high bar table with four chairs and a set of table and chairs. Repeating that product category adds no visual grounding or new relationship."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Four backless, square stools arranged around the tabletop",
+      "label": "NOVEL",
+      "reason": "Although the DOM states a seating capacity of four and identifies four chairs, it does not specify that they are backless, square, or arranged around the tabletop. These are visual configuration details."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Rectangular tabletop",
+      "label": "NOVEL",
+      "reason": "The DOM provides tabletop dimensions and identifies a bar table but does not state the tabletop's rectangular shape. This adds a visual shape description."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "White surfaces with gray marble-like veining",
+      "label": "NOVEL",
+      "reason": "The DOM states white marble coloring and a white top, but does not describe the visible gray marble-like veining across the surfaces. The veining adds visual appearance information."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Silver-gray rectangular frames",
+      "label": "NOVEL",
+      "reason": "The DOM identifies a silver metal frame, but does not specify the frames' rectangular visual construction. The rectangular frame geometry adds a new visible structural detail."
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Horizontal footrests near the floor",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM already describes crossbars at the bottom of the table and chairs and states that feet can rest on a chair crossbar. The claim restates this lower horizontal support function without adding necessary visual grounding or disambiguation."
+    }
+  ],
+  "summary": {
+    "total_claims": 6,
+    "novel_claims": 4,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 2,
+    "redundancy_score": 0.3333333333333333
+  }
+}

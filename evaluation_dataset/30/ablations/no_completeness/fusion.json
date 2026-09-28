@@ -1,0 +1,50 @@
+{
+  "status": "ok",
+  "ablation": "no_completeness",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_completeness.txt",
+  "duration_ms": 3580,
+  "token_usage": {
+    "prompt_tokens": 2280,
+    "completion_tokens": 398,
+    "total_tokens": 2678
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"Round mirror\",\"source\":\"ORIGINAL\",\"action\":\"CORRECTED\"},{\"claim_id\":\"c2\",\"text\":\"\",\"source\":\"ORIGINAL\",\"action\":\"DROPPED_REDUNDANT\"},{\"claim_id\":\"c3\",\"text\":\"Continuous warm-white illuminated ring just inside the black outer rim\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"Three icons near the lower center of the reflective surface\",\"source\":\"ORIGINAL\",\"action\":\"CORRECTED\"}],\"edit_log\":[\"Corrected bathroom mirror to round mirror (c1)\",\"Dropped black outer rim as redundant (c2)\",\"Removed touch-control functionality from the icon claim (c4)\"],\"final_alt_text\":\"A round mirror has a continuous warm-white illuminated ring just inside the black outer rim. Three icons are near the lower center of the reflective surface.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Round mirror",
+        "source": "ORIGINAL",
+        "action": "CORRECTED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "",
+        "source": "ORIGINAL",
+        "action": "DROPPED_REDUNDANT"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Continuous warm-white illuminated ring just inside the black outer rim",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Three icons near the lower center of the reflective surface",
+        "source": "ORIGINAL",
+        "action": "CORRECTED"
+      }
+    ],
+    "edit_log": [
+      "Corrected bathroom mirror to round mirror (c1)",
+      "Dropped black outer rim as redundant (c2)",
+      "Removed touch-control functionality from the icon claim (c4)"
+    ],
+    "final_alt_text": "A round mirror has a continuous warm-white illuminated ring just inside the black outer rim. Three icons are near the lower center of the reflective surface."
+  },
+  "final_alt_text": "A round mirror has a continuous warm-white illuminated ring just inside the black outer rim. Three icons are near the lower center of the reflective surface.",
+  "processed_at": "2026-09-20T11:59:35.638817+00:00"
+}

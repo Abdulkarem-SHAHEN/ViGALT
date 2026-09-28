@@ -1,0 +1,187 @@
+{
+  "status": "ok",
+  "folder_number": 13,
+  "image_file": "71QtF8Gj33L._AC_SX679_.jpg",
+  "ablation": "no_accuracy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "Small white adidas three-stripe logo on the left chest, with short sleeves, a round crew neckline, and a straight lower hem.",
+      "relevancy": {
+        "total_claims": 4,
+        "relevant_claims": 4,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Small white adidas three-stripe logo on the left chest",
+            "label": "R",
+            "reason": "This describes the small white Adidas logo printed on the shirt's left chest."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Short sleeves",
+            "label": "R",
+            "reason": "This describes the shirt's short-sleeve construction."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Round crew neckline",
+            "label": "R",
+            "reason": "This describes the shirt's round crew-neck collar."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Straight lower hem",
+            "label": "R",
+            "reason": "This describes the shirt's straight lower hem."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 4,
+          "relevant_claims": 4,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 2,
+          "relevant_novel_claims": 2,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 0,
+          "avoidable_redundancy_claims": 2,
+          "novelty_rate": 0.5,
+          "raw_novelty_rate": 0.5,
+          "unavoidable_repetition_rate": 0.0,
+          "avoidable_redundancy_rate": 0.5,
+          "redundancy_rate": 0.5
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Small white adidas three-stripe logo on the left chest",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Short sleeves",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Round crew neckline",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Straight lower hem",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Small white adidas three-stripe logo on the left chest",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "Black / White"
+              },
+              {
+                "field": "product_details.Brand Name",
+                "value": "adidas"
+              }
+            ],
+            "reason": "The DOM identifies the adidas brand and black/white colorway, but does not specify a three-stripe logo, its size, white color, or placement on the left chest."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Short sleeves",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Sleeve Type",
+                "value": "Short Sleeve"
+              },
+              {
+                "field": "product_details.Style Name",
+                "value": "Short Sleeve T-Shirt"
+              }
+            ],
+            "reason": "The DOM explicitly states that the shirt has short sleeves. Repeating this adds no necessary information."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Round crew neckline",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets",
+                "value": "Crew neck."
+              },
+              {
+                "field": "product_details.Neck Style",
+                "value": "Round Neck"
+              }
+            ],
+            "reason": "The DOM already explicitly provides both crew neck and round-neck information, so the claim adds no necessary information."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Straight lower hem",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM contains no information about the shape or construction of the lower hem."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 4,
+        "subjective_claims": 0,
+        "total_claims": 4,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "A small white adidas three-stripe logo appears on the left chest.",
+            "label": "OBJECTIVE",
+            "reason": "A small white three-stripe adidas-style logo is visibly present on the wearer's left chest area."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The shirt has short sleeves.",
+            "label": "OBJECTIVE",
+            "reason": "The sleeves visibly end above the elbows."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The shirt has a round crew neckline.",
+            "label": "OBJECTIVE",
+            "reason": "The neckline is visibly round and close-fitting around the base of the neck."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The shirt has a straight lower hem.",
+            "label": "OBJECTIVE",
+            "reason": "The visible bottom edge of the shirt appears straight across the torso."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 21,
+        "relevant_novel_claims": 2,
+        "efficiency_per_100_words": 9.523809523809524
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:30:25.938010+00:00"
+}

@@ -18,6 +18,53 @@ IMAGE_EXTENSIONS = (".jpg", ".jpeg", ".png", ".webp", ".gif")
 RELEVANT_CODES = frozenset({"R", "S"})
 IRRELEVANT_CODES = frozenset({"V"})
 
+RELEVANCY_STAGING_WEIGHT = 0.5
+RELEVANCY_VIOLATION_LAMBDA = 2
+
+
+def claim_relevancy_label(claim: dict) -> str:
+    """R/S/V label from a claim dict (supports ``label`` or ``relevance_code``)."""
+    raw = claim.get("label")
+    if raw is None:
+        raw = claim.get("relevance_code")
+    return str(raw or "").strip().upper()
+
+
+def count_relevancy_labels(claims: list[dict]) -> tuple[int, int, int]:
+    r = s = v = 0
+    for claim in claims:
+        code = claim_relevancy_label(claim)
+        if code == "R":
+            r += 1
+        elif code == "S":
+            s += 1
+        elif code == "V":
+            v += 1
+    return r, s, v
+
+
+def compute_relevancy_score(r: int, s: int, v: int) -> float | None:
+    """Weighted relevancy score on 0–100 scale (matches prompts/evaluators/relevancy.txt)."""
+    denominator = r + s + RELEVANCY_VIOLATION_LAMBDA * v
+    if denominator == 0:
+        return None
+    raw = 100.0 * (r + RELEVANCY_STAGING_WEIGHT * s) / denominator
+    return round(raw, 2)
+
+
+def build_relevancy_block(claims: list[dict]) -> dict:
+    total = len(claims)
+    r, s, v = count_relevancy_labels(claims)
+    relevant = r + s
+    return {
+        "total_claims": total,
+        "relevant_claims": relevant,
+        "supplementary_claims": s,
+        "visual_only_claims": v,
+        "relevancy_score": compute_relevancy_score(r, s, v),
+        "claims": claims,
+    }
+
 
 def configure_stdout() -> None:
     try:

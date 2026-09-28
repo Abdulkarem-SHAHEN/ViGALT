@@ -1,0 +1,26 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Blue-gray shirt"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Intersecting white and dark-blue stripes"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Chest pocket on the wearer’s left with diagonally oriented stripes"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Striped front placket"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Gently curved hem"
+    }
+  ],
+  "total_claims": 5
+}

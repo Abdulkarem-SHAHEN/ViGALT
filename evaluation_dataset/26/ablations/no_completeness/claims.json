@@ -1,0 +1,37 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "26",
+  "product_stem": "26",
+  "alt_text": "The table has a brown wood-grain top composed of several angular panels. Its central pedestal base is formed by broad vertical panels connected by horizontal cross braces, rather than separate corner legs.",
+  "final_alt_text": "The table has a brown wood-grain top composed of several angular panels. Its central pedestal base is formed by broad vertical panels connected by horizontal cross braces, rather than separate corner legs.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 4157,
+  "token_usage": {
+    "prompt_tokens": 1001,
+    "completion_tokens": 443,
+    "total_tokens": 1444
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"The table has a brown wood-grain top composed of several angular panels.\"},{\"claim_id\":\"c2\",\"claim\":\"The table has a central pedestal base rather than separate corner legs.\"},{\"claim_id\":\"c3\",\"claim\":\"The central pedestal base has broad vertical panels connected by horizontal cross braces.\"}],\"total_claims\":3}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "The table has a brown wood-grain top composed of several angular panels."
+      },
+      {
+        "claim_id": "c2",
+        "claim": "The table has a central pedestal base rather than separate corner legs."
+      },
+      {
+        "claim_id": "c3",
+        "claim": "The central pedestal base has broad vertical panels connected by horizontal cross braces."
+      }
+    ],
+    "total_claims": 3
+  },
+  "processed_at": "2026-09-20T11:53:24.582719+00:00"
+}

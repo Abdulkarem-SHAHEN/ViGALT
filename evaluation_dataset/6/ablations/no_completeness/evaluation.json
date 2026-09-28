@@ -1,0 +1,232 @@
+{
+  "status": "ok",
+  "folder_number": 6,
+  "image_file": "71bvy99CHpL._AC_SX679_.jpg",
+  "ablation": "no_completeness",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "Gray collar with a black inner collar. Black buttons are arranged down the center front. The lower edge is rounded, and narrow cuffs are at the ends of the sleeves.",
+      "relevancy": {
+        "total_claims": 5,
+        "relevant_claims": 5,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Gray collar",
+            "label": "R",
+            "reason": "The shirt has a gray outer collar."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Black inner collar",
+            "label": "R",
+            "reason": "The collar interior is visibly black."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Black buttons arranged down the center front",
+            "label": "R",
+            "reason": "Black buttons run down the shirt's center front placket."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Rounded lower edge",
+            "label": "R",
+            "reason": "The shirt has a rounded hemline at the bottom."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Narrow cuffs at the ends of the sleeves",
+            "label": "R",
+            "reason": "The sleeves end in narrow cuff sections."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 5,
+          "relevant_claims": 5,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 3,
+          "relevant_novel_claims": 3,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 2,
+          "avoidable_redundancy_claims": 0,
+          "novelty_rate": 0.6,
+          "raw_novelty_rate": 0.6,
+          "unavoidable_repetition_rate": 0.4,
+          "avoidable_redundancy_rate": 0.0,
+          "redundancy_rate": 0.4
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Gray collar",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Black inner collar",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Black buttons arranged down the center front",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Rounded lower edge",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Narrow cuffs at the ends of the sleeves",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Gray collar",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "Grey"
+              },
+              {
+                "field": "product_details.Collar Style",
+                "value": "Classic"
+              }
+            ],
+            "reason": "The DOM identifies the product as grey and states that it has a classic collar, but it does not specify the collar's colour."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Black inner collar",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Collar Style",
+                "value": "Classic"
+              },
+              {
+                "field": "product_details.Colour",
+                "value": "Grey"
+              }
+            ],
+            "reason": "The DOM mentions a classic collar and an overall grey product colour, but contains no information about an inner collar or its being black."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Black buttons arranged down the center front",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Closure Type",
+                "value": "Button"
+              },
+              {
+                "field": "description",
+                "value": "Contrast buttons and adjustable cuffs add character to this refined shirt."
+              }
+            ],
+            "reason": "The DOM already establishes that the shirt has buttons, but does not give their black colour or describe their center-front arrangement. Referring to the buttons is necessary to anchor those new visual details."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Rounded lower edge",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Hemline Form",
+                "value": "Straight"
+              }
+            ],
+            "reason": "The DOM provides a hemline form but does not represent a rounded lower edge; it instead lists the hemline as straight."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Narrow cuffs at the ends of the sleeves",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Cuff Style",
+                "value": "French Cuff"
+              },
+              {
+                "field": "description",
+                "value": "Contrast buttons and adjustable cuffs add character to this refined shirt."
+              }
+            ],
+            "reason": "The DOM establishes that the shirt has cuffs, including adjustable/French-cuff information, but does not state that they are narrow. Mentioning cuffs is needed to locate and make the new width detail understandable."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 6,
+        "subjective_claims": 0,
+        "total_claims": 6,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The collar is gray.",
+            "label": "OBJECTIVE",
+            "reason": "The collar's gray outer surface is directly visible in the image."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The inner collar is black.",
+            "label": "OBJECTIVE",
+            "reason": "A black contrasting inner collar band is visibly shown inside the neckline."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The buttons are black.",
+            "label": "OBJECTIVE",
+            "reason": "The visible front buttons appear black in the image."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The buttons are arranged down the center front.",
+            "label": "OBJECTIVE",
+            "reason": "The buttons are visibly positioned along the shirt's central front placket."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The lower edge is rounded.",
+            "label": "OBJECTIVE",
+            "reason": "The shirt hem visibly curves downward at the front sides rather than forming a straight horizontal edge."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "Narrow cuffs are at the ends of the sleeves.",
+            "label": "OBJECTIVE",
+            "reason": "The sleeve ends visibly have cuff sections that are narrower than the main sleeve portions."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 30,
+        "relevant_novel_claims": 3,
+        "efficiency_per_100_words": 10.0
+      }
+    }
+  },
+  "processed_at": "2026-09-20T10:54:38.438492+00:00"
+}

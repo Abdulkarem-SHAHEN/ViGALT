@@ -1,0 +1,208 @@
+{
+  "status": "ok",
+  "folder_number": 4,
+  "image_file": "71maVO4tSzL._AC_SX569_.jpg",
+  "ablation": "no_accuracy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A top is shown worn on a person. The top is black, with broad short sleeves, a straight loose body, and visible side slits at the lower left and lower right hems.",
+      "relevancy": {
+        "total_claims": 4,
+        "relevant_claims": 4,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Black top",
+            "label": "R",
+            "reason": "This identifies the garment and its visible black color."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Broad short sleeves",
+            "label": "R",
+            "reason": "This describes the top's wide, short sleeve construction."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Straight loose body",
+            "label": "R",
+            "reason": "This describes the garment's loose, straight-fitting body shape."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Visible side slits at the lower left and lower right hems",
+            "label": "R",
+            "reason": "This describes side-slit construction at the garment's lower hem."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 4,
+          "relevant_claims": 4,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 3,
+          "relevant_novel_claims": 3,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 0,
+          "avoidable_redundancy_claims": 1,
+          "novelty_rate": 0.75,
+          "raw_novelty_rate": 0.75,
+          "unavoidable_repetition_rate": 0.0,
+          "avoidable_redundancy_rate": 0.25,
+          "redundancy_rate": 0.25
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Black top",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Broad short sleeves",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Straight loose body",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Visible side slits at the lower left and lower right hems",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Black top",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "Black-1"
+              },
+              {
+                "field": "product_details.Shirt Form Type",
+                "value": "T-Shirt"
+              }
+            ],
+            "reason": "The DOM already identifies the product as a black T-shirt/top. Repeating that it is a black top adds no necessary semantic information."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Broad short sleeves",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Sleeve Type",
+                "value": "Short Sleeve"
+              },
+              {
+                "field": "description",
+                "value": "short sleeves with dropped shoulders"
+              }
+            ],
+            "reason": "The DOM establishes that the sleeves are short, but it does not state that the sleeves themselves are broad or wide. Sleeve breadth is therefore new semantic information."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Straight loose body",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Fitting type",
+                "value": "Loose Fit"
+              },
+              {
+                "field": "description",
+                "value": "loose, lightweight"
+              },
+              {
+                "field": "feature_bullets[0]",
+                "value": "ultra-wide fit"
+              }
+            ],
+            "reason": "The DOM already describes a loose fit, but it does not describe the body silhouette as straight. The straight-body information is absent from the DOM."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Visible side slits at the lower left and lower right hems",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Its minimalist design with a side slit makes it a modern and versatile staple."
+              }
+            ],
+            "reason": "The DOM mentions a side slit generally, but does not specify visible slits on both the lower left and lower right hems. The bilateral placement and hem-level detail are absent."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 6,
+        "subjective_claims": 0,
+        "total_claims": 6,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "A top is shown worn on a person.",
+            "label": "OBJECTIVE",
+            "reason": "The image visibly shows a person wearing the garment."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The top is black.",
+            "label": "OBJECTIVE",
+            "reason": "The garment's visible color is black."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The top has broad short sleeves.",
+            "label": "OBJECTIVE",
+            "reason": "The sleeves visibly extend to around the elbows and have a wide cut."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The top has a straight body.",
+            "label": "OBJECTIVE",
+            "reason": "The garment hangs in a largely straight silhouette from the chest toward the hem."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The top has a loose body.",
+            "label": "OBJECTIVE",
+            "reason": "The visible fabric hangs away from the wearer's torso rather than closely following the body."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "The top has visible side slits at the lower left and lower right hems.",
+            "label": "OBJECTIVE",
+            "reason": "Open slit details are visibly present at both lower side seams of the garment."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 32,
+        "relevant_novel_claims": 3,
+        "efficiency_per_100_words": 9.375
+      }
+    }
+  },
+  "processed_at": "2026-09-20T10:51:13.095047+00:00"
+}

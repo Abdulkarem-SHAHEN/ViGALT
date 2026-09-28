@@ -1,0 +1,63 @@
+{
+  "stage": "completeness_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Coral-pink perforated lattice backrest",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Rounded seat",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c3",
+      "claim": "A white central column supports the base",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Five-legged white base",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Black-and-pink casters on the base",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Black adjustment lever beneath the seat on the viewer’s left",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "n1",
+      "claim": "Pale pink perforated mesh seat",
+      "label": "ADDED",
+      "addition_type": "VISUAL_GAP",
+      "reason": "The seat is visibly covered in pale pink perforated mesh, a prominent feature not expressed by the existing rounded-seat claim."
+    }
+  ],
+  "summary": {
+    "input_claims": 6,
+    "retained_claims": 6,
+    "added_claims": 1,
+    "added_visual_gap": 1,
+    "added_non_english_text": 0,
+    "added_known_entity": 0,
+    "omission_score": 0.14285714285714285
+  }
+}

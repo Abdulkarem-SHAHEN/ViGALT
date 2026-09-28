@@ -1,0 +1,91 @@
+{
+  "stage": "completeness_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Tracksuit",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Bright red hoodie",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Black trousers",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Lightning McQueen’s face on the hoodie",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Blue eyes on the hoodie",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Number 95 on the hoodie",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c7",
+      "claim": "Yellow “VROOM! VROOM!” lettering on the hoodie",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c8",
+      "claim": "White side stripes on the trousers",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c9",
+      "claim": "Gray ankle cuffs on the trousers",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c10",
+      "claim": "Gray drawstring on the trousers",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "n1",
+      "claim": "Disney Pixar Cars logo on the trousers",
+      "label": "ADDED",
+      "addition_type": "KNOWN_ENTITY",
+      "reason": "The Disney Pixar Cars logo is clearly visible on the upper right side of the trousers."
+    }
+  ],
+  "summary": {
+    "input_claims": 10,
+    "retained_claims": 10,
+    "added_claims": 1,
+    "added_visual_gap": 0,
+    "added_non_english_text": 0,
+    "added_known_entity": 1,
+    "omission_score": 0.0909090909
+  }
+}

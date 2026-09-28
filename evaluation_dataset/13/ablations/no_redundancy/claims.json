@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "13",
+  "product_stem": "13",
+  "alt_text": "A black T-shirt with short sleeves and a round crew neckline. It has a small white adidas three-stripe logo on the left chest and a straight lower hem.",
+  "final_alt_text": "A black T-shirt with short sleeves and a round crew neckline. It has a small white adidas three-stripe logo on the left chest and a straight lower hem.",
+  "classification_category": "CLOTHING",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 1727,
+  "token_usage": {
+    "prompt_tokens": 997,
+    "completion_tokens": 133,
+    "total_tokens": 1130
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Black T-shirt\"},{\"claim_id\":\"c2\",\"claim\":\"Short sleeves\"},{\"claim_id\":\"c3\",\"claim\":\"Round crew neckline\"},{\"claim_id\":\"c4\",\"claim\":\"Small white adidas three-stripe logo on the left chest\"},{\"claim_id\":\"c5\",\"claim\":\"Straight lower hem\"}],\"total_claims\":5}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Black T-shirt"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Short sleeves"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Round crew neckline"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Small white adidas three-stripe logo on the left chest"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "Straight lower hem"
+      }
+    ],
+    "total_claims": 5
+  },
+  "processed_at": "2026-09-20T11:30:48.525124+00:00"
+}

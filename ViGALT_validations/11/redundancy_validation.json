@@ -1,0 +1,66 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Sweatshirt",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM explicitly identifies the product as a sweatshirt. Repeating that product category adds no visual grounding or new visual information."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Central space-themed graphic",
+      "label": "NOVEL",
+      "reason": "The DOM mentions a universe theme but does not specify a graphic positioned centrally on the garment. This claim adds the graphic's central spatial placement and its space-themed visual composition."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "White-outlined astronaut",
+      "label": "NOVEL",
+      "reason": "The DOM does not identify an astronaut or describe its white outline. This adds the graphic subject and its outlined appearance."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Multicolored planet held by the astronaut",
+      "label": "NOVEL",
+      "reason": "Although the DOM mentions a universe theme, it does not describe a multicolored planet being held by an astronaut. This adds a specific visual object and relationship within the graphic."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Stars surrounding the astronaut",
+      "label": "NOVEL",
+      "reason": "The DOM does not mention stars or their arrangement around an astronaut. This adds new visual elements and a spatial relationship."
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Ringed planets surrounding the astronaut",
+      "label": "NOVEL",
+      "reason": "The DOM does not describe ringed planets or their placement around an astronaut. This adds new visual elements and their spatial arrangement."
+    },
+    {
+      "claim_id": "c7",
+      "claim": "Colorful pools beneath the astronaut",
+      "label": "NOVEL",
+      "reason": "The DOM does not mention pools beneath the astronaut. This adds a new colorful visual element and its position relative to the astronaut."
+    },
+    {
+      "claim_id": "c8",
+      "claim": "Additional small planets above",
+      "label": "NOVEL",
+      "reason": "The DOM does not describe small planets positioned above another graphic element. This adds new objects and a spatial relationship."
+    },
+    {
+      "claim_id": "c9",
+      "claim": "Moon-like circle above",
+      "label": "NOVEL",
+      "reason": "The DOM does not identify a moon-like circular element or its position above the graphic. This adds a distinct visual element and spatial placement."
+    }
+  ],
+  "summary": {
+    "total_claims": 9,
+    "novel_claims": 8,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.1111111111
+  }
+}

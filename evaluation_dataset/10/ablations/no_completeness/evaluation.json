@@ -1,0 +1,268 @@
+{
+  "status": "ok",
+  "folder_number": 10,
+  "image_file": "511Xxi6WIpL._AC_SX679_.jpg",
+  "ablation": "no_completeness",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A rash guard with a turquoise-blue body, white upper sections, and navy-blue bands around the sleeve hems. A large white flowing wave or dragon-like graphic spans the front, with a turquoise-bound crew neckline and a straight hem.",
+      "relevancy": {
+        "total_claims": 7,
+        "relevant_claims": 7,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Rash guard",
+            "label": "R",
+            "reason": "This identifies the garment type shown."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Turquoise-blue body",
+            "label": "R",
+            "reason": "This describes the garment's main turquoise-blue front body."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "White upper sections",
+            "label": "R",
+            "reason": "This describes the white fabric across the upper chest and shoulders."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Navy-blue bands around the sleeve hems",
+            "label": "R",
+            "reason": "This describes the dark navy bands integrated around both sleeve hems."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Large white flowing wave or dragon-like graphic spanning the front",
+            "label": "R",
+            "reason": "This describes the large white dragon-like flowing graphic printed across the front."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Turquoise-bound crew neckline",
+            "label": "R",
+            "reason": "This describes the turquoise trim around the crew neckline."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Straight hem",
+            "label": "R",
+            "reason": "This describes the garment's straight lower hem."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 7,
+          "relevant_claims": 7,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 6,
+          "relevant_novel_claims": 6,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 0,
+          "avoidable_redundancy_claims": 1,
+          "novelty_rate": 0.8571428571428571,
+          "raw_novelty_rate": 0.8571428571428571,
+          "unavoidable_repetition_rate": 0.0,
+          "avoidable_redundancy_rate": 0.14285714285714285,
+          "redundancy_rate": 0.14285714285714285
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Rash guard",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Turquoise-blue body",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "White upper sections",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Navy-blue bands around the sleeve hems",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Large white flowing wave or dragon-like graphic spanning the front",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Turquoise-bound crew neckline",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Straight hem",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Rash guard",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Swimwear Form Type",
+                "value": "Rash Guard"
+              },
+              {
+                "field": "product_details.Swimwear Top Form",
+                "value": "Rash Guard Top"
+              }
+            ],
+            "reason": "The DOM explicitly identifies the product as a rash guard/rash guard top. The claim adds no additional distinguishing information."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Turquoise-blue body",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "description",
+                "value": "Colour: blue."
+              }
+            ],
+            "reason": "The DOM provides only a general blue color and does not specify a turquoise-blue shade or that this color applies to the garment body."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "White upper sections",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM does not describe white sections or the color placement on the upper part of the garment."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Navy-blue bands around the sleeve hems",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Sleeve Type",
+                "value": "Short Sleeve"
+              }
+            ],
+            "reason": "Although the DOM establishes that the garment has short sleeves, it does not describe navy-blue bands or any sleeve-hem color treatment."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Large white flowing wave or dragon-like graphic spanning the front",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "description",
+                "value": "Stylish printed design, crisp pattern, vibrant colors."
+              },
+              {
+                "field": "feature_bullets[3]",
+                "value": "This anti-UV men's swimsuit features an original print that stands out from classic models."
+              }
+            ],
+            "reason": "The DOM mentions a print in general but does not identify a large white wave- or dragon-like graphic, its placement on the front, or its extent."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Turquoise-bound crew neckline",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "description",
+                "value": "Colour: blue."
+              }
+            ],
+            "reason": "The DOM does not describe a crew neckline, turquoise binding, or the neckline's color treatment."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Straight hem",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM contains no information about the shape or construction of the garment hem."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 0.8571428571428571,
+        "objective_claims": 6,
+        "subjective_claims": 1,
+        "total_claims": 7,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The garment is a rash guard.",
+            "label": "SUBJECTIVE",
+            "reason": "This identifies the garment by a functional product category, which cannot be reliably verified from its visible appearance alone."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The garment has a turquoise-blue main body.",
+            "label": "OBJECTIVE",
+            "reason": "The torso portion is visibly turquoise-blue in the image."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The garment has white upper sections.",
+            "label": "OBJECTIVE",
+            "reason": "White fabric is visibly present across the upper chest and shoulder areas."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The sleeve hems have navy-blue bands.",
+            "label": "OBJECTIVE",
+            "reason": "Dark navy-blue horizontal bands are visibly positioned around both short sleeve hems."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "A large white flowing wave or dragon-like graphic spans the front.",
+            "label": "OBJECTIVE",
+            "reason": "A large white stylized graphic with curved, flowing forms is visibly printed across the front of the garment."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "The garment has a turquoise-bound crew neckline.",
+            "label": "OBJECTIVE",
+            "reason": "The neckline is visibly round and edged with turquoise-blue trim."
+          },
+          {
+            "claim_id": "C7",
+            "claim": "The garment has a straight hem.",
+            "label": "OBJECTIVE",
+            "reason": "The lower edge of the garment appears horizontally straight in the image."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 37,
+        "relevant_novel_claims": 6,
+        "efficiency_per_100_words": 16.216216216216218
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:01:44.056494+00:00"
+}

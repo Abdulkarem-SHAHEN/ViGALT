@@ -1,0 +1,300 @@
+{
+  "status": "ok",
+  "folder_number": 5,
+  "image_file": "61qXgbMoA1L._AC_SX679_.jpg",
+  "ablation": "no_redundancy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "Pink zip-up hooded sweatshirt with pink awareness ribbon graphics. It has a small graphic on the left chest and a much larger version of the graphic centered across the back, with a full-length front zipper and a large divided hand pocket on the front. Ribbed cuffs finish the sleeves, and a ribbed waistband finishes the hem.",
+      "relevancy": {
+        "total_claims": 8,
+        "relevant_claims": 8,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Pink zip-up hooded sweatshirt",
+            "label": "R",
+            "reason": "Describes the garment's color, garment type, hood, and front zipper."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Pink awareness ribbon graphics",
+            "label": "R",
+            "reason": "Describes the pink ribbon graphics printed on the sweatshirt."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Small graphic on the left chest",
+            "label": "R",
+            "reason": "Describes the placement and size of the front chest graphic."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Much larger version of the graphic centered across the back",
+            "label": "R",
+            "reason": "Describes the larger ribbon graphic placement on the back."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Full-length front zipper",
+            "label": "R",
+            "reason": "Describes the garment's visible full-length front closure."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Large divided hand pocket on the front",
+            "label": "R",
+            "reason": "Describes the integrated front hand pocket construction."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Ribbed cuffs finish the sleeves",
+            "label": "R",
+            "reason": "Describes the ribbed cuff detail on the sleeves."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "Ribbed waistband finishes the hem",
+            "label": "R",
+            "reason": "Describes the ribbed band at the garment hem."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 8,
+          "relevant_claims": 8,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 4,
+          "relevant_novel_claims": 4,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 2,
+          "avoidable_redundancy_claims": 2,
+          "novelty_rate": 0.5,
+          "raw_novelty_rate": 0.5,
+          "unavoidable_repetition_rate": 0.25,
+          "avoidable_redundancy_rate": 0.25,
+          "redundancy_rate": 0.5
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Pink zip-up hooded sweatshirt",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Pink awareness ribbon graphics",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Small graphic on the left chest",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Much larger version of the graphic centered across the back",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Full-length front zipper",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Large divided hand pocket on the front",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Ribbed cuffs finish the sleeves",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c8",
+            "claim": "Ribbed waistband finishes the hem",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Pink zip-up hooded sweatshirt",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "Générique 2026 October Pink Women's Hooded Sweatshirt - October Pink Women's Mid-Season Jacket Autumn Zip Sweatshirt Oversized Sweatshirts Winter Warm"
+              },
+              {
+                "field": "product_details.Colour",
+                "value": "Pink"
+              },
+              {
+                "field": "product_details.Neck Style",
+                "value": "Hooded Neck"
+              }
+            ],
+            "reason": "The DOM already identifies the product as a pink women's hooded sweatshirt and describes it as a zip sweatshirt. The claim adds no necessary semantic detail."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Pink awareness ribbon graphics",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[0]",
+                "value": "\"Pink October\": A trendy hoodie with pink ribbon that both supports this charity cause and shows a style that is both trendy and committed."
+              }
+            ],
+            "reason": "The DOM already states that the hoodie has a pink ribbon associated with the Pink October charity cause. Calling these ribbon graphics does not add necessary information."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Small graphic on the left chest",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM mentions a chest pocket but contains no information about a graphic, its small size, or its placement on the left chest."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Much larger version of the graphic centered across the back",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM provides no information about a back graphic, a larger version of any graphic, or centered placement across the back."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Full-length front zipper",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "Générique 2026 October Pink Women's Hooded Sweatshirt - October Pink Women's Mid-Season Jacket Autumn Zip Sweatshirt Oversized Sweatshirts Winter Warm"
+              }
+            ],
+            "reason": "The DOM establishes that this is a zip sweatshirt, while the claim newly specifies that the zipper is full-length and on the front. Referring to the zipper is necessary to make the new length and placement information understandable."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Large divided hand pocket on the front",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[3]",
+                "value": "Practical hood and pockets: With an adjustable hood and chest pocket, it perfectly combines style and functionality for everyday use."
+              }
+            ],
+            "reason": "The DOM establishes that the garment has a pocket, but the claim adds the distinct details that it is a large, divided hand pocket on the front. Mentioning the pocket is necessary to anchor those new structural details."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Ribbed cuffs finish the sleeves",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM contains no information about ribbing, sleeve cuffs, or how the sleeves are finished."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "Ribbed waistband finishes the hem",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM contains no information about a ribbed waistband or the finish of the garment hem."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 10,
+        "subjective_claims": 0,
+        "total_claims": 10,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The sweatshirt is pink.",
+            "label": "OBJECTIVE",
+            "reason": "The garment's pink color is directly visible in the image."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The sweatshirt is zip-up.",
+            "label": "OBJECTIVE",
+            "reason": "A zipper running down the front of the garment is visibly shown."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The sweatshirt has a hood.",
+            "label": "OBJECTIVE",
+            "reason": "A hood is clearly visible at the neckline, especially in the back view."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The sweatshirt has pink awareness ribbon graphics.",
+            "label": "OBJECTIVE",
+            "reason": "Pink ribbon-shaped graphics are visibly printed on the chest and back; the ribbon form is directly observable."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "There is a small graphic on the left chest.",
+            "label": "OBJECTIVE",
+            "reason": "A smaller ribbon graphic is visibly positioned on the wearer's left chest area."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "A much larger version of the graphic is centered across the back.",
+            "label": "OBJECTIVE",
+            "reason": "The back view visibly shows a larger ribbon graphic placed centrally on the back."
+          },
+          {
+            "claim_id": "C7",
+            "claim": "The sweatshirt has a full-length front zipper.",
+            "label": "OBJECTIVE",
+            "reason": "The visible zipper extends from the neckline to the bottom hem on the front."
+          },
+          {
+            "claim_id": "C8",
+            "claim": "The sweatshirt has a large divided hand pocket on the front.",
+            "label": "OBJECTIVE",
+            "reason": "The front view visibly shows a large kangaroo-style pocket with openings on both sides and a central division created by the zipper."
+          },
+          {
+            "claim_id": "C9",
+            "claim": "The sleeves have ribbed cuffs.",
+            "label": "OBJECTIVE",
+            "reason": "The cuff areas at the sleeve ends have visibly gathered, ribbed-looking bands."
+          },
+          {
+            "claim_id": "C10",
+            "claim": "The hem has a ribbed waistband.",
+            "label": "OBJECTIVE",
+            "reason": "A distinct ribbed-looking band is visibly present along the bottom hem."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 56,
+        "relevant_novel_claims": 4,
+        "efficiency_per_100_words": 7.142857142857142
+      }
+    }
+  },
+  "processed_at": "2026-09-20T10:53:39.370375+00:00"
+}

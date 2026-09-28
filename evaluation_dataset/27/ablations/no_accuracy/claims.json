@@ -1,0 +1,53 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "27",
+  "product_stem": "27",
+  "alt_text": "A mirror is opened into three rectangular panels arranged at angles. Two black over-door hooks extend above the mirror. The black rear panel displays the JUSRON brand name and logo. The reflections show front, side, and rear views of a person trimming his hair.",
+  "final_alt_text": "A mirror is opened into three rectangular panels arranged at angles. Two black over-door hooks extend above the mirror. The black rear panel displays the JUSRON brand name and logo. The reflections show front, side, and rear views of a person trimming his hair.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 5191,
+  "token_usage": {
+    "prompt_tokens": 1017,
+    "completion_tokens": 593,
+    "total_tokens": 1610
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"The mirror is opened into three rectangular panels arranged at angles.\"},{\"claim_id\":\"c2\",\"claim\":\"Two black over-door hooks extend above the mirror.\"},{\"claim_id\":\"c3\",\"claim\":\"The rear panel is black.\"},{\"claim_id\":\"c4\",\"claim\":\"The JUSRON brand name is displayed on the rear panel.\"},{\"claim_id\":\"c5\",\"claim\":\"The JUSRON logo is displayed on the rear panel.\"},{\"claim_id\":\"c6\",\"claim\":\"The reflections show front, side, and rear views of a person.\"},{\"claim_id\":\"c7\",\"claim\":\"The person is trimming his hair.\"}],\"total_claims\":7}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "The mirror is opened into three rectangular panels arranged at angles."
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Two black over-door hooks extend above the mirror."
+      },
+      {
+        "claim_id": "c3",
+        "claim": "The rear panel is black."
+      },
+      {
+        "claim_id": "c4",
+        "claim": "The JUSRON brand name is displayed on the rear panel."
+      },
+      {
+        "claim_id": "c5",
+        "claim": "The JUSRON logo is displayed on the rear panel."
+      },
+      {
+        "claim_id": "c6",
+        "claim": "The reflections show front, side, and rear views of a person."
+      },
+      {
+        "claim_id": "c7",
+        "claim": "The person is trimming his hair."
+      }
+    ],
+    "total_claims": 7
+  },
+  "processed_at": "2026-09-20T11:54:20.856527+00:00"
+}

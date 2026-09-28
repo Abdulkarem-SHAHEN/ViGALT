@@ -1,0 +1,56 @@
+{
+  "stage": "completeness_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "White T-shirt",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Round crew neckline",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Short sleeves",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Large black “I” in the front graphic",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Red heart to the right of the large black “I” in the front graphic",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c6",
+      "claim": "The word “BARCELONA” in black capital letters beneath the large black “I” and red heart in the front graphic",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    }
+  ],
+  "summary": {
+    "input_claims": 6,
+    "retained_claims": 6,
+    "added_claims": 0,
+    "added_visual_gap": 0,
+    "added_non_english_text": 0,
+    "added_known_entity": 0,
+    "omission_score": 0.0
+  }
+}

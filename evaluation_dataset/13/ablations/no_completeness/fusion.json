@@ -1,0 +1,44 @@
+{
+  "status": "ok",
+  "ablation": "no_completeness",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_completeness.txt",
+  "duration_ms": 3279,
+  "token_usage": {
+    "prompt_tokens": 2062,
+    "completion_tokens": 368,
+    "total_tokens": 2430
+  },
+  "raw_response": "{\n  \"stage\": \"fusion\",\n  \"master_claims\": [\n    {\n      \"claim_id\": \"c1\",\n      \"text\": \"\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"DROPPED_REDUNDANT\"\n    },\n    {\n      \"claim_id\": \"c2\",\n      \"text\": \"Small white adidas three-stripe logo on the left chest\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c3\",\n      \"text\": \"Straight lower hem\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    }\n  ],\n  \"edit_log\": [\n    \"Dropped black T-shirt description as avoidably redundant (c1)\",\n    \"Retained small white adidas three-stripe logo on the left chest (c2)\",\n    \"Retained straight lower hem (c3)\"\n  ],\n  \"final_alt_text\": \"A small white adidas three-stripe logo is on the left chest. The shirt has a straight lower hem.\"\n}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "",
+        "source": "ORIGINAL",
+        "action": "DROPPED_REDUNDANT"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Small white adidas three-stripe logo on the left chest",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Straight lower hem",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Dropped black T-shirt description as avoidably redundant (c1)",
+      "Retained small white adidas three-stripe logo on the left chest (c2)",
+      "Retained straight lower hem (c3)"
+    ],
+    "final_alt_text": "A small white adidas three-stripe logo is on the left chest. The shirt has a straight lower hem."
+  },
+  "final_alt_text": "A small white adidas three-stripe logo is on the left chest. The shirt has a straight lower hem.",
+  "processed_at": "2026-09-20T11:30:32.224476+00:00"
+}

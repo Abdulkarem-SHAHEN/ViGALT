@@ -1,0 +1,34 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Two matching chairs"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "A rectangular table"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "The chairs flank the table"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "All three pieces have open slatted surfaces"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "The chairs have three horizontal back rails"
+    },
+    {
+      "claim_id": "c6",
+      "claim": "The chairs have crossed support legs"
+    },
+    {
+      "claim_id": "c7",
+      "claim": "The table has crossed legs beneath its slatted top"
+    }
+  ],
+  "total_claims": 7
+}

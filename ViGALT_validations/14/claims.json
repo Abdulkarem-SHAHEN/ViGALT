@@ -1,0 +1,42 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Two-piece pajama set"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Burgundy shirt"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Narrow navy vertical stripes on the shirt"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Yellow “BARÇA” lettering across the shirt's chest"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Football graphics on the shirt"
+    },
+    {
+      "claim_id": "c6",
+      "claim": "FC Barcelona crest on the shirt"
+    },
+    {
+      "claim_id": "c7",
+      "claim": "Matching navy shorts"
+    },
+    {
+      "claim_id": "c8",
+      "claim": "Vertical yellow “BARÇA” lettering on one leg of the shorts"
+    },
+    {
+      "claim_id": "c9",
+      "claim": "FC Barcelona crest on the other leg of the shorts"
+    }
+  ],
+  "total_claims": 9
+}

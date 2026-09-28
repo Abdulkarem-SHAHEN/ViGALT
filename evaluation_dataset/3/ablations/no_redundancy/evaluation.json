@@ -1,0 +1,310 @@
+{
+  "status": "ok",
+  "folder_number": 3,
+  "image_file": "71R0e1+P71L._AC_SX569_.jpg",
+  "ablation": "no_redundancy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A sweater has a light-gray body with repeating vertical zigzag bands filled with small diamond texture. Brown contrast panels run along the outer lower sleeves, with ribbed knit cuffs at the sleeve ends. The raised collar opens into a short front placket with a dark button near the upper chest, and a ribbed knit hem runs along the bottom edge.",
+      "relevancy": {
+        "total_claims": 8,
+        "relevant_claims": 8,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Light-gray sweater body",
+            "label": "R",
+            "reason": "Describes the sweater's overall visible color and product body."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Repeating vertical zigzag bands filled with small diamond texture",
+            "label": "R",
+            "reason": "Describes the visible knit pattern and texture on the sweater."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Brown contrast panels along the outer lower sleeves",
+            "label": "R",
+            "reason": "Describes the brown contrast elbow-area panels integrated into the sleeves."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Ribbed knit cuffs at the sleeve ends",
+            "label": "R",
+            "reason": "Describes the ribbed cuff construction of the sweater."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Raised collar",
+            "label": "R",
+            "reason": "Describes the sweater's standing collar configuration."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Short front placket",
+            "label": "R",
+            "reason": "Describes the short front closure placket on the garment."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Dark button near the upper chest",
+            "label": "R",
+            "reason": "Describes a visible button integrated into the front placket."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "Ribbed knit hem along the bottom edge",
+            "label": "R",
+            "reason": "Describes the ribbed hem construction at the sweater's bottom edge."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 8,
+          "relevant_claims": 8,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 5,
+          "relevant_novel_claims": 5,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 0,
+          "avoidable_redundancy_claims": 3,
+          "novelty_rate": 0.625,
+          "raw_novelty_rate": 0.625,
+          "unavoidable_repetition_rate": 0.0,
+          "avoidable_redundancy_rate": 0.375,
+          "redundancy_rate": 0.375
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Light-gray sweater body",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Repeating vertical zigzag bands filled with small diamond texture",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Brown contrast panels along the outer lower sleeves",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Ribbed knit cuffs at the sleeve ends",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Raised collar",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Short front placket",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Dark button near the upper chest",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c8",
+            "claim": "Ribbed knit hem along the bottom edge",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Light-gray sweater body",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "Grey"
+              },
+              {
+                "field": "product_details.Sweater Form",
+                "value": "Sweater Pullover"
+              }
+            ],
+            "reason": "The DOM already identifies the product as a grey sweater. Describing its body as light-gray adds no necessary distinct semantic information."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Repeating vertical zigzag bands filled with small diamond texture",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Special Features",
+                "value": "Jacquard knit"
+              },
+              {
+                "field": "product_details.Weave Type",
+                "value": "Jacquard"
+              }
+            ],
+            "reason": "The DOM specifies a jacquard knit/weave but does not describe repeating vertical zigzag bands, diamond texture, or their arrangement."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Brown contrast panels along the outer lower sleeves",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM contains no information about brown contrast panels or their placement on the lower outer sleeves."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Ribbed knit cuffs at the sleeve ends",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "ribbed cuffs retain heat while creating a fitted silhouette"
+              }
+            ],
+            "reason": "The feature bullet already states that the garment has ribbed cuffs. The sleeve-end location is inherent to cuffs, so the claim adds no necessary information."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Raised collar",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Stand-up collar with button closure"
+              },
+              {
+                "field": "product_details.Neck Style",
+                "value": "Mock Neck"
+              }
+            ],
+            "reason": "A stand-up collar and mock neck already convey a raised collar, so this repeats DOM information without adding necessary detail."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Short front placket",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Closure Type",
+                "value": "Button"
+              },
+              {
+                "field": "feature_bullets[1]",
+                "value": "Stand-up collar with button closure"
+              }
+            ],
+            "reason": "The DOM establishes that there is a button closure, but it does not specify a front placket or that the placket is short."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Dark button near the upper chest",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Closure Type",
+                "value": "Button"
+              },
+              {
+                "field": "feature_bullets[1]",
+                "value": "Stand-up collar with button closure"
+              }
+            ],
+            "reason": "Although the DOM states that the garment has a button closure, it does not provide the button's dark color or its upper-chest placement."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "Ribbed knit hem along the bottom edge",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM mentions ribbed cuffs but provides no information about a ribbed hem at the bottom edge."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 8,
+        "subjective_claims": 0,
+        "total_claims": 8,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The sweater has a light-gray body.",
+            "label": "OBJECTIVE",
+            "reason": "The garment's main body is visibly light gray in the image."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The body has repeating vertical zigzag bands filled with a small diamond-like texture.",
+            "label": "OBJECTIVE",
+            "reason": "The repeating vertical knit bands and their small raised geometric surface pattern are visible on the front and sleeves."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "Brown contrast panels appear along the outer lower sleeves.",
+            "label": "OBJECTIVE",
+            "reason": "Brown patches are visibly placed on the outer elbow/lower-sleeve areas on both sleeves."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The sleeve ends have ribbed knit cuffs.",
+            "label": "OBJECTIVE",
+            "reason": "The cuffs visibly have horizontal ribbing distinct from the sleeve knit."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The sweater has a raised collar.",
+            "label": "OBJECTIVE",
+            "reason": "A tall collar visibly stands up around the neckline."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "The collar opens into a short front placket.",
+            "label": "OBJECTIVE",
+            "reason": "A short vertical opening and overlapping placket are visibly present below the collar."
+          },
+          {
+            "claim_id": "C7",
+            "claim": "A dark button appears near the upper chest.",
+            "label": "OBJECTIVE",
+            "reason": "A single dark round button is visibly located on the upper front placket."
+          },
+          {
+            "claim_id": "C8",
+            "claim": "A ribbed knit hem runs along the bottom edge.",
+            "label": "OBJECTIVE",
+            "reason": "The lower edge of the sweater visibly has a band of horizontal ribbing."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 60,
+        "relevant_novel_claims": 5,
+        "efficiency_per_100_words": 8.333333333333332
+      }
+    }
+  },
+  "processed_at": "2026-09-20T10:50:46.250380+00:00"
+}

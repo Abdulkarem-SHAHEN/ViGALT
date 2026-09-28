@@ -1,0 +1,63 @@
+{
+  "status": "ok",
+  "ablation": "no_completeness",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_completeness.txt",
+  "duration_ms": 6363,
+  "token_usage": {
+    "prompt_tokens": 2532,
+    "completion_tokens": 778,
+    "total_tokens": 3310
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"\",\"source\":\"ORIGINAL\",\"action\":\"DROPPED_REDUNDANT\"},{\"claim_id\":\"c2\",\"text\":\"Brown wood-grain top composed of several angular panels\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"Central pedestal base\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"Broad vertical panels form the pedestal\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"Horizontal cross braces connect the vertical panels\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c6\",\"text\":\"The table has a central pedestal rather than separate corner legs\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"}],\"edit_log\":[\"Dropped the redundant dining table category claim (c1)\",\"Retained the brown angular-panel tabletop description (c2)\",\"Retained the pedestal construction and cross-brace details (c3, c4, c5)\",\"Retained the central-pedestal contrast with separate corner legs (c6)\"],\"final_alt_text\":\"The table has a brown wood-grain top composed of several angular panels. Its central pedestal base is formed by broad vertical panels connected by horizontal cross braces, rather than separate corner legs.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "",
+        "source": "ORIGINAL",
+        "action": "DROPPED_REDUNDANT"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Brown wood-grain top composed of several angular panels",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Central pedestal base",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Broad vertical panels form the pedestal",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Horizontal cross braces connect the vertical panels",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "The table has a central pedestal rather than separate corner legs",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Dropped the redundant dining table category claim (c1)",
+      "Retained the brown angular-panel tabletop description (c2)",
+      "Retained the pedestal construction and cross-brace details (c3, c4, c5)",
+      "Retained the central-pedestal contrast with separate corner legs (c6)"
+    ],
+    "final_alt_text": "The table has a brown wood-grain top composed of several angular panels. Its central pedestal base is formed by broad vertical panels connected by horizontal cross braces, rather than separate corner legs."
+  },
+  "final_alt_text": "The table has a brown wood-grain top composed of several angular panels. Its central pedestal base is formed by broad vertical panels connected by horizontal cross braces, rather than separate corner legs.",
+  "processed_at": "2026-09-20T11:53:20.422562+00:00"
+}

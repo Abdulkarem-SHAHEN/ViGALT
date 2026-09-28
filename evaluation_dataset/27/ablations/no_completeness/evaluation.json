@@ -1,0 +1,212 @@
+{
+  "status": "ok",
+  "folder_number": 27,
+  "image_file": "61r1Xkm9NuL._AC_SX679_.jpg",
+  "ablation": "no_completeness",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A mirror is opened into three rectangular panels arranged at angles, with black borders and two black hooks extending above it. The reflections show front, side, and rear views of a person trimming his hair.",
+      "relevancy": {
+        "total_claims": 4,
+        "relevant_claims": 3,
+        "supplementary_claims": 0,
+        "visual_only_claims": 1,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "A mirror is opened into three rectangular panels arranged at angles",
+            "label": "R",
+            "reason": "This describes the product's three-panel configuration and angled layout."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The mirror has black borders",
+            "label": "R",
+            "reason": "This describes the black trim integrated around the mirror panels."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Two black hooks extend above the mirror",
+            "label": "R",
+            "reason": "This describes the product's attached black hanging hooks."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The reflections show front, side, and rear views of a person trimming his hair",
+            "label": "V",
+            "reason": "This focuses on the depicted person's grooming activity and reflection content rather than the mirror itself."
+          }
+        ],
+        "relevancy_score": 60.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 4,
+          "relevant_claims": 3,
+          "irrelevant_claims": 1,
+          "raw_novel_claims": 0,
+          "relevant_novel_claims": 0,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 3,
+          "avoidable_redundancy_claims": 1,
+          "novelty_rate": 0.0,
+          "raw_novelty_rate": 0.0,
+          "unavoidable_repetition_rate": 0.75,
+          "avoidable_redundancy_rate": 0.25,
+          "redundancy_rate": 1.0
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "A mirror is opened into three rectangular panels arranged at angles",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The mirror has black borders",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Two black hooks extend above the mirror",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The reflections show front, side, and rear views of a person trimming his hair",
+            "relevance_code": "V"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "A mirror is opened into three rectangular panels arranged at angles",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "Cosmetic Mirror Foldable in 3 Sections"
+              },
+              {
+                "field": "product_details.Item Shape",
+                "value": "Rectangular"
+              }
+            ],
+            "reason": "The DOM already identifies a foldable mirror with three sections and a rectangular shape. Repeating the three-panel mirror structure is necessary to anchor the new visual information that the panels are opened and positioned at angles."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The mirror has black borders",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "Black Blk"
+              },
+              {
+                "field": "product_details.Frame Color",
+                "value": "Black"
+              }
+            ],
+            "reason": "The DOM already specifies that the mirror's colour and frame colour are black. The claim adds no necessary semantic information beyond that existing description."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Two black hooks extend above the mirror",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[0]",
+                "value": "the 360-degree mirror features an adjustable retractable hook that can be attached to a door, wall, bathroom, closet, or placed side by side on a table"
+              },
+              {
+                "field": "product_details.Colour",
+                "value": "Black Blk"
+              }
+            ],
+            "reason": "The DOM establishes that the mirror has a hook and is black, while the claim adds the visually specific number of hooks and their position above the mirror. Referring to hooks is necessary to anchor those new details to the documented hanging mechanism."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The reflections show front, side, and rear views of a person trimming his hair",
+            "relevance_code": "V",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "360-degree viewing angle, which can easily see all angles of the head and face"
+              },
+              {
+                "field": "feature_bullets[1]",
+                "value": "The hairdressing mirror can transform you into your own hairdresser"
+              },
+              {
+                "field": "feature_bullets[3]",
+                "value": "meticulous hair repair"
+              }
+            ],
+            "reason": "The DOM describes all-angle head viewing and hairdressing use, but does not describe reflections depicting front, side, and rear views or a person actively trimming hair. The overlapping viewing and hair-care concepts are needed to ground the new depiction-specific information."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 6,
+        "subjective_claims": 0,
+        "total_claims": 6,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The mirror is opened into three rectangular panels.",
+            "label": "OBJECTIVE",
+            "reason": "Three rectangular mirror panels are visibly shown in an unfolded configuration."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The panels are arranged at angles.",
+            "label": "OBJECTIVE",
+            "reason": "The panels visibly meet at non-flat angles rather than lying in a single plane."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The mirror has black borders.",
+            "label": "OBJECTIVE",
+            "reason": "Black edging is directly visible around the panels."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "Two black hooks extend above the mirror.",
+            "label": "OBJECTIVE",
+            "reason": "Two black hook-shaped components are visibly positioned above the panels."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The reflections show front, side, and rear views of a person.",
+            "label": "OBJECTIVE",
+            "reason": "The separate mirror panels visibly show the person's face/front-facing view, side profile, and back of the head."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "The person is trimming his hair.",
+            "label": "OBJECTIVE",
+            "reason": "The person visibly holds an electric hair clipper against the back of the head, making hair trimming directly observable."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 35,
+        "relevant_novel_claims": 0,
+        "efficiency_per_100_words": 0.0
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:55:33.326704+00:00"
+}

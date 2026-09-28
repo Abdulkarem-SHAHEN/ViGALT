@@ -1,0 +1,80 @@
+{
+  "status": "ok",
+  "ablation": "no_completeness",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_completeness.txt",
+  "duration_ms": 6036,
+  "token_usage": {
+    "prompt_tokens": 3114,
+    "completion_tokens": 858,
+    "total_tokens": 3972
+  },
+  "raw_response": "{\n  \"stage\": \"fusion\",\n  \"master_claims\": [\n    {\n      \"claim_id\": \"c1\",\n      \"text\": \"Two-piece outfit consisting of a shirt and shorts\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"CORRECTED\"\n    },\n    {\n      \"claim_id\": \"c2\",\n      \"text\": \"Burgundy shirt\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c3\",\n      \"text\": \"Narrow navy vertical stripes on the shirt\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c4\",\n      \"text\": \"Yellow “BARÇA” lettering across the shirt's chest\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c5\",\n      \"text\": \"Football graphics on the shirt\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c6\",\n      \"text\": \"FC Barcelona crest on the shirt\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c7\",\n      \"text\": \"Matching navy shorts\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c8\",\n      \"text\": \"Vertical yellow “BARÇA” lettering on one leg of the shorts\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c9\",\n      \"text\": \"FC Barcelona crest on the other leg of the shorts\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    }\n  ],\n  \"edit_log\": [\n    \"- Corrected “Two-piece pajama set” to “Two-piece outfit consisting of a shirt and shorts” (c1).\",\n    \"- Retained the corrected outfit description despite the redundancy verdict because it provides a visual correction (c1).\",\n    \"- Grouped shirt details and shorts details into separate sentences for screen-reader order.\"\n  ],\n  \"final_alt_text\": \"A two-piece outfit consisting of a shirt and shorts is shown worn. The burgundy shirt has narrow navy vertical stripes, yellow “BARÇA” lettering across the shirt's chest, football graphics, and an FC Barcelona crest. Matching navy shorts have vertical yellow “BARÇA” lettering on one leg and an FC Barcelona crest on the other leg.\"\n}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Two-piece outfit consisting of a shirt and shorts",
+        "source": "ORIGINAL",
+        "action": "CORRECTED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Burgundy shirt",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Narrow navy vertical stripes on the shirt",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Yellow “BARÇA” lettering across the shirt's chest",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Football graphics on the shirt",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "FC Barcelona crest on the shirt",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c7",
+        "text": "Matching navy shorts",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c8",
+        "text": "Vertical yellow “BARÇA” lettering on one leg of the shorts",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c9",
+        "text": "FC Barcelona crest on the other leg of the shorts",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "- Corrected “Two-piece pajama set” to “Two-piece outfit consisting of a shirt and shorts” (c1).",
+      "- Retained the corrected outfit description despite the redundancy verdict because it provides a visual correction (c1).",
+      "- Grouped shirt details and shorts details into separate sentences for screen-reader order."
+    ],
+    "final_alt_text": "A two-piece outfit consisting of a shirt and shorts is shown worn. The burgundy shirt has narrow navy vertical stripes, yellow “BARÇA” lettering across the shirt's chest, football graphics, and an FC Barcelona crest. Matching navy shorts have vertical yellow “BARÇA” lettering on one leg and an FC Barcelona crest on the other leg."
+  },
+  "final_alt_text": "A two-piece outfit consisting of a shirt and shorts is shown worn. The burgundy shirt has narrow navy vertical stripes, yellow “BARÇA” lettering across the shirt's chest, football graphics, and an FC Barcelona crest. Matching navy shorts have vertical yellow “BARÇA” lettering on one leg and an FC Barcelona crest on the other leg.",
+  "processed_at": "2026-09-20T11:31:46.478373+00:00"
+}

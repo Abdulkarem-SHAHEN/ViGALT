@@ -1,0 +1,68 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 5431,
+  "token_usage": {
+    "prompt_tokens": 2505,
+    "completion_tokens": 626,
+    "total_tokens": 3131
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"Dining table\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c2\",\"text\":\"Brown wood-grain top composed of several angular panels\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"Central pedestal base\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"Broad vertical panels form the pedestal\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"Horizontal cross braces connect the vertical panels\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c6\",\"text\":\"The table has a central pedestal rather than separate corner legs\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n1\",\"text\":\"Round tabletop\",\"source\":\"ADDED\",\"action\":\"ADDED\"}],\"edit_log\":[\"Added round tabletop per Completeness (n1)\",\"Ordered tabletop details before pedestal structure\",\"Combined retained claims into two grammatically complete sentences\"],\"final_alt_text\":\"A dining table has a round, brown wood-grain top composed of several angular panels. Its base is a central pedestal formed by broad vertical panels connected by horizontal cross braces, rather than separate corner legs.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Dining table",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Brown wood-grain top composed of several angular panels",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Central pedestal base",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Broad vertical panels form the pedestal",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Horizontal cross braces connect the vertical panels",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "The table has a central pedestal rather than separate corner legs",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "Round tabletop",
+        "source": "ADDED",
+        "action": "ADDED"
+      }
+    ],
+    "edit_log": [
+      "Added round tabletop per Completeness (n1)",
+      "Ordered tabletop details before pedestal structure",
+      "Combined retained claims into two grammatically complete sentences"
+    ],
+    "final_alt_text": "A dining table has a round, brown wood-grain top composed of several angular panels. Its base is a central pedestal formed by broad vertical panels connected by horizontal cross braces, rather than separate corner legs."
+  },
+  "final_alt_text": "A dining table has a round, brown wood-grain top composed of several angular panels. Its base is a central pedestal formed by broad vertical panels connected by horizontal cross braces, rather than separate corner legs.",
+  "processed_at": "2026-09-20T11:53:47.210186+00:00"
+}

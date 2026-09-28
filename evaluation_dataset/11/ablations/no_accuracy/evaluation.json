@@ -1,0 +1,451 @@
+{
+  "status": "ok",
+  "folder_number": 11,
+  "image_file": "71VaJFAh2NL._AC_SX679_.jpg",
+  "ablation": "no_accuracy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "Dark navy color, long sleeves, and a ribbed crew neckline, cuffs, and waistband are visible. A central space-themed graphic features a white-outlined astronaut holding a multicolored planet, with colorful liquid streaming from the held planet into the pools beneath the astronaut. Stars and ringed planets surround the astronaut, with additional small planets and a moon-like circle above.",
+      "relevancy": {
+        "total_claims": 14,
+        "relevant_claims": 14,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "The garment is dark navy.",
+            "label": "R",
+            "reason": "Dark navy is the sweatshirt's visible overall color."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The garment has long sleeves.",
+            "label": "R",
+            "reason": "Long sleeves are a visible garment construction feature."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The garment has a ribbed crew neckline.",
+            "label": "R",
+            "reason": "The sweatshirt has a ribbed crew neck collar."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The garment has ribbed cuffs.",
+            "label": "R",
+            "reason": "Ribbed cuffs are visible at both sleeve ends."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "The garment has a ribbed waistband.",
+            "label": "R",
+            "reason": "A ribbed band forms the sweatshirt's lower hem."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "There is a central space-themed graphic.",
+            "label": "R",
+            "reason": "A space-themed illustration is printed centrally on the sweatshirt."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "The graphic features a white-outlined astronaut.",
+            "label": "R",
+            "reason": "The central printed graphic includes a white-outlined astronaut."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "The astronaut holds a multicolored planet.",
+            "label": "R",
+            "reason": "The astronaut in the garment graphic holds a multicolored round planet-like object."
+          },
+          {
+            "claim_id": "c9",
+            "claim": "Colorful liquid streams from the held planet.",
+            "label": "R",
+            "reason": "Colorful streams extend downward from the object held in the printed astronaut graphic."
+          },
+          {
+            "claim_id": "c10",
+            "claim": "Pools are beneath the astronaut.",
+            "label": "R",
+            "reason": "The garment graphic shows colorful pool-like rings beneath the astronaut."
+          },
+          {
+            "claim_id": "c11",
+            "claim": "Stars surround the astronaut.",
+            "label": "R",
+            "reason": "Small star-like marks surround the astronaut within the printed graphic."
+          },
+          {
+            "claim_id": "c12",
+            "claim": "Ringed planets surround the astronaut.",
+            "label": "R",
+            "reason": "Ringed planet illustrations appear around the astronaut in the print."
+          },
+          {
+            "claim_id": "c13",
+            "claim": "Additional small planets are above the astronaut.",
+            "label": "R",
+            "reason": "Small planet-like elements are printed above the astronaut."
+          },
+          {
+            "claim_id": "c14",
+            "claim": "A moon-like circle is above the astronaut.",
+            "label": "R",
+            "reason": "A small moon-like circular graphic appears above the astronaut."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 14,
+          "relevant_claims": 14,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 8,
+          "relevant_novel_claims": 8,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 2,
+          "avoidable_redundancy_claims": 4,
+          "novelty_rate": 0.5714285714285714,
+          "raw_novelty_rate": 0.5714285714285714,
+          "unavoidable_repetition_rate": 0.14285714285714285,
+          "avoidable_redundancy_rate": 0.2857142857142857,
+          "redundancy_rate": 0.42857142857142855
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "The garment is dark navy.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The garment has long sleeves.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The garment has a ribbed crew neckline.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The garment has ribbed cuffs.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "The garment has a ribbed waistband.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "There is a central space-themed graphic.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c7",
+            "claim": "The graphic features a white-outlined astronaut.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c8",
+            "claim": "The astronaut holds a multicolored planet.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c9",
+            "claim": "Colorful liquid streams from the held planet.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c10",
+            "claim": "Pools are beneath the astronaut.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c11",
+            "claim": "Stars surround the astronaut.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c12",
+            "claim": "Ringed planets surround the astronaut.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c13",
+            "claim": "Additional small planets are above the astronaut.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c14",
+            "claim": "A moon-like circle is above the astronaut.",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "The garment is dark navy.",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "Universe/Dark Blue"
+              }
+            ],
+            "reason": "The DOM already identifies the garment color as dark blue, which sufficiently conveys dark navy in this context. Repeating the color adds no necessary information."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The garment has long sleeves.",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Sleeve Type",
+                "value": "Long Sleeve"
+              },
+              {
+                "field": "product_details.Sleeve Length Description",
+                "value": "Long Sleeve"
+              }
+            ],
+            "reason": "Long sleeves are explicitly stated in the DOM, so the claim adds no new semantic information."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The garment has a ribbed crew neckline.",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Neck Style",
+                "value": "Round Neck"
+              },
+              {
+                "field": "product_details.Weave Type",
+                "value": "Rib"
+              },
+              {
+                "field": "feature_bullets[1]",
+                "value": "Classic and comfortable design: round neckline for easy on and off. The elasticated ribbed cuffs and hem ensure a perfect fit and freedom of movement, ideal for active children during play or sports."
+              }
+            ],
+            "reason": "The DOM establishes a round/crew neckline but does not state that the neckline itself is ribbed. Repeating the neckline type is needed to anchor the new ribbed detail to that specific garment feature."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The garment has ribbed cuffs.",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Classic and comfortable design: round neckline for easy on and off. The elasticated ribbed cuffs and hem ensure a perfect fit and freedom of movement, ideal for active children during play or sports."
+              }
+            ],
+            "reason": "The DOM explicitly states that the cuffs are elasticated and ribbed, so this claim adds no necessary information."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "The garment has a ribbed waistband.",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Classic and comfortable design: round neckline for easy on and off. The elasticated ribbed cuffs and hem ensure a perfect fit and freedom of movement, ideal for active children during play or sports."
+              }
+            ],
+            "reason": "The DOM explicitly describes the hem, corresponding to the waistband area, as ribbed. Repeating this feature adds no necessary information."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "There is a central space-themed graphic.",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "Universe/Dark Blue"
+              },
+              {
+                "field": "feature_bullets[2]",
+                "value": "CUTE PATTERNS We designed many cute cartoon patterns for boys sweatshirt, suitable for children's preferences, including dinosaurs, engineering vehicles and the universe."
+              }
+            ],
+            "reason": "The DOM establishes a universe/space-themed cartoon pattern but does not identify it as centrally placed. Repeating the theme is necessary to anchor the new central-placement information to the graphic."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "The graphic features a white-outlined astronaut.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[2]",
+                "value": "CUTE PATTERNS We designed many cute cartoon patterns for boys sweatshirt, suitable for children's preferences, including dinosaurs, engineering vehicles and the universe."
+              }
+            ],
+            "reason": "The DOM mentions universe-themed patterns generally but contains no astronaut or white-outline detail."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "The astronaut holds a multicolored planet.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM provides no information about an astronaut, a held planet, or the planet's multicolored appearance."
+          },
+          {
+            "claim_id": "c9",
+            "claim": "Colorful liquid streams from the held planet.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM contains no information about liquid streams, their colors, or their connection to a planet in the graphic."
+          },
+          {
+            "claim_id": "c10",
+            "claim": "Pools are beneath the astronaut.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM contains no information about pools or their placement beneath an astronaut."
+          },
+          {
+            "claim_id": "c11",
+            "claim": "Stars surround the astronaut.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[2]",
+                "value": "CUTE PATTERNS We designed many cute cartoon patterns for boys sweatshirt, suitable for children's preferences, including dinosaurs, engineering vehicles and the universe."
+              }
+            ],
+            "reason": "A universe theme is stated generally, but the DOM does not specify stars, an astronaut, or the spatial arrangement of stars around the astronaut."
+          },
+          {
+            "claim_id": "c12",
+            "claim": "Ringed planets surround the astronaut.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[2]",
+                "value": "CUTE PATTERNS We designed many cute cartoon patterns for boys sweatshirt, suitable for children's preferences, including dinosaurs, engineering vehicles and the universe."
+              }
+            ],
+            "reason": "The DOM mentions a universe-themed pattern generally but does not describe ringed planets, an astronaut, or their arrangement."
+          },
+          {
+            "claim_id": "c13",
+            "claim": "Additional small planets are above the astronaut.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[2]",
+                "value": "CUTE PATTERNS We designed many cute cartoon patterns for boys sweatshirt, suitable for children's preferences, including dinosaurs, engineering vehicles and the universe."
+              }
+            ],
+            "reason": "The DOM does not identify any planets, an astronaut, or planets positioned above the astronaut."
+          },
+          {
+            "claim_id": "c14",
+            "claim": "A moon-like circle is above the astronaut.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[2]",
+                "value": "CUTE PATTERNS We designed many cute cartoon patterns for boys sweatshirt, suitable for children's preferences, including dinosaurs, engineering vehicles and the universe."
+              }
+            ],
+            "reason": "The DOM does not describe a moon-like circle, an astronaut, or the circle's position above the astronaut."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 9,
+        "subjective_claims": 0,
+        "total_claims": 9,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The garment is dark navy.",
+            "label": "OBJECTIVE",
+            "reason": "The dark navy color is directly visible in the image."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The garment has long sleeves.",
+            "label": "OBJECTIVE",
+            "reason": "The sleeves visibly extend from the shoulders to the cuffs."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The garment has a ribbed crew neckline.",
+            "label": "OBJECTIVE",
+            "reason": "A round crew neckline with visibly ribbed trim is shown."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The garment has ribbed cuffs and waistband.",
+            "label": "OBJECTIVE",
+            "reason": "The sleeve ends and lower hem visibly have ribbed bands."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "A central space-themed graphic is present.",
+            "label": "OBJECTIVE",
+            "reason": "A graphic depicting recognizable space-related imagery is visibly centered on the front."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "The graphic features a white-outlined astronaut holding a multicolored planet.",
+            "label": "OBJECTIVE",
+            "reason": "The central figure is visibly outlined in white and depicted as an astronaut holding a planet with multiple colors."
+          },
+          {
+            "claim_id": "C7",
+            "claim": "Colorful liquid streams from the held planet into pools beneath the astronaut.",
+            "label": "OBJECTIVE",
+            "reason": "Colored flowing shapes visibly extend downward from the planet toward illustrated circular pools below the figure."
+          },
+          {
+            "claim_id": "C8",
+            "claim": "Stars and ringed planets surround the astronaut.",
+            "label": "OBJECTIVE",
+            "reason": "Small star-like dots and lines, along with planets shown with rings, are visibly arranged around the astronaut."
+          },
+          {
+            "claim_id": "C9",
+            "claim": "Additional small planets and a moon-like circle appear above the astronaut.",
+            "label": "OBJECTIVE",
+            "reason": "Small circular celestial illustrations, including planet-like circles and a cratered moon-like circle, are visibly positioned above the astronaut."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 57,
+        "relevant_novel_claims": 8,
+        "efficiency_per_100_words": 14.035087719298245
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:26:54.194169+00:00"
+}

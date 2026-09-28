@@ -1,0 +1,66 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Sofa",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM repeatedly identifies the product as a sofa, and this standalone label adds no visual grounding or new relationship."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Illuminated vertical strips along both front arm edges",
+      "label": "NOVEL",
+      "reason": "The DOM mentions LED lighting but does not specify illuminated vertical strips or their placement along both front arm edges; the claim adds the visual form and spatial location."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Circular cup holders built into the armrests",
+      "label": "NOVEL",
+      "reason": "The DOM does not mention cup holders, their circular shape, or their integration into the armrests; the claim adds new visible construction details."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "A control panel mounted on the outside of the left arm",
+      "label": "NOVEL",
+      "reason": "Although the DOM mentions USB/Type-C charging, it does not identify a control panel or specify its mounting on the outside of the left arm; the claim adds its visible placement and configuration."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Open compartments beneath and in front of the seating",
+      "label": "NOVEL",
+      "reason": "The DOM mentions storage features such as drawers and a storage bench but does not describe open compartments beneath and in front of the seating; the claim adds their visible openness and spatial arrangement."
+    },
+    {
+      "claim_id": "c6",
+      "claim": "A blanket in the compartments",
+      "label": "NOVEL",
+      "reason": "The DOM does not mention a blanket or show it as stored in the compartments; the claim adds the visible item and its location."
+    },
+    {
+      "claim_id": "c7",
+      "claim": "A cushion in the compartments",
+      "label": "NOVEL",
+      "reason": "The DOM does not mention a cushion stored in the compartments; the claim adds the visible item and its location."
+    },
+    {
+      "claim_id": "c8",
+      "claim": "Books in the compartments",
+      "label": "NOVEL",
+      "reason": "The DOM mentions that the storage can hold books, but it does not state that books are visibly present in the compartments; the claim adds an observed item and its spatial placement."
+    },
+    {
+      "claim_id": "c9",
+      "claim": "One front compartment has its hinged lid raised",
+      "label": "NOVEL",
+      "reason": "The DOM does not describe a hinged lid or its raised position on a front compartment; the claim adds a visible opening mechanism, state, and location."
+    }
+  ],
+  "summary": {
+    "total_claims": 9,
+    "novel_claims": 8,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.1111111111111111
+  }
+}

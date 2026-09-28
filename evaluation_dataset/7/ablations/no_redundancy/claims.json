@@ -1,0 +1,57 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "7",
+  "product_stem": "7",
+  "alt_text": "A blue-gray shirt with intersecting white and dark-blue stripes. It has long sleeves, a pointed turn-down collar, a chest pocket on the wearer’s left with diagonally oriented stripes, a striped front placket, white buttons down the front, and a gently curved hem.",
+  "final_alt_text": "A blue-gray shirt with intersecting white and dark-blue stripes. It has long sleeves, a pointed turn-down collar, a chest pocket on the wearer’s left with diagonally oriented stripes, a striped front placket, white buttons down the front, and a gently curved hem.",
+  "classification_category": "CLOTHING",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 2591,
+  "token_usage": {
+    "prompt_tokens": 1020,
+    "completion_tokens": 259,
+    "total_tokens": 1279
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Blue-gray shirt\"},{\"claim_id\":\"c2\",\"claim\":\"Intersecting white and dark-blue stripes\"},{\"claim_id\":\"c3\",\"claim\":\"Long sleeves\"},{\"claim_id\":\"c4\",\"claim\":\"Pointed turn-down collar\"},{\"claim_id\":\"c5\",\"claim\":\"Chest pocket on the wearer’s left with diagonally oriented stripes\"},{\"claim_id\":\"c6\",\"claim\":\"Striped front placket\"},{\"claim_id\":\"c7\",\"claim\":\"White buttons down the front\"},{\"claim_id\":\"c8\",\"claim\":\"Gently curved hem\"}],\"total_claims\":8}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Blue-gray shirt"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Intersecting white and dark-blue stripes"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Long sleeves"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Pointed turn-down collar"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "Chest pocket on the wearer’s left with diagonally oriented stripes"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "Striped front placket"
+      },
+      {
+        "claim_id": "c7",
+        "claim": "White buttons down the front"
+      },
+      {
+        "claim_id": "c8",
+        "claim": "Gently curved hem"
+      }
+    ],
+    "total_claims": 8
+  },
+  "processed_at": "2026-09-20T10:56:27.202878+00:00"
+}

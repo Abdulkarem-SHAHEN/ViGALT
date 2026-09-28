@@ -1,0 +1,30 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Black T-shirt",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM already identifies the product as a T-shirt and specifies its colour as Black / White, which covers the black T-shirt description. Repeating those product type and colour details adds no visual grounding or new relationship."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Small white adidas three-stripe logo on the left chest",
+      "label": "NOVEL",
+      "reason": "Although the DOM identifies the adidas brand and the black/white colour combination, it does not describe the logo's three-stripe graphic, small size, or left-chest placement. These visual design and spatial details are new semantic information."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Straight lower hem",
+      "label": "NOVEL",
+      "reason": "The DOM describes the shirt type, fit, sleeves, and neckline but does not specify the shape of the lower hem. The straight hem is a new visible construction detail."
+    }
+  ],
+  "summary": {
+    "total_claims": 3,
+    "novel_claims": 2,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.3333333333333333
+  }
+}

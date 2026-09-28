@@ -1,0 +1,87 @@
+{
+  "status": "ok",
+  "ablation": "no_accuracy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_accuracy.txt",
+  "duration_ms": 8573,
+  "token_usage": {
+    "prompt_tokens": 2622,
+    "completion_tokens": 1082,
+    "total_tokens": 3704
+  },
+  "raw_response": "{\n  \"stage\": \"fusion\",\n  \"master_claims\": [\n    {\n      \"claim_id\": \"c1\",\n      \"text\": \"\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"DROPPED_REDUNDANT\"\n    },\n    {\n      \"claim_id\": \"c2\",\n      \"text\": \"Small graphic on the left chest\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c3\",\n      \"text\": \"Much larger version of the graphic centered across the back\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c4\",\n      \"text\": \"Large divided hand pocket on the front\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c5\",\n      \"text\": \"Ribbed cuffs on the sleeves\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c6\",\n      \"text\": \"Ribbed waistband at the hem\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"n1\",\n      \"text\": \"Attached hood\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    },\n    {\n      \"claim_id\": \"n2\",\n      \"text\": \"Full-length front zipper\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    },\n    {\n      \"claim_id\": \"n3\",\n      \"text\": \"Pink color\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    },\n    {\n      \"claim_id\": \"n4\",\n      \"text\": \"Pink awareness ribbon graphics\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    }\n  ],\n  \"edit_log\": [\n    \"Dropped sweatshirt per Redundancy (c1)\",\n    \"Added pink color per Completeness (n3)\",\n    \"Added attached hood and full-length front zipper per Completeness (n1, n2)\",\n    \"Added pink awareness ribbon graphics per Completeness (n4)\"\n  ],\n  \"final_alt_text\": \"Pink awareness ribbon graphics appear as a small graphic on the left chest and a much larger version of the graphic centered across the back. An attached hood, full-length front zipper, large divided hand pocket on the front, ribbed cuffs on the sleeves, and ribbed waistband at the hem are visible.\"\n}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "",
+        "source": "ORIGINAL",
+        "action": "DROPPED_REDUNDANT"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Small graphic on the left chest",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Much larger version of the graphic centered across the back",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Large divided hand pocket on the front",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Ribbed cuffs on the sleeves",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Ribbed waistband at the hem",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "Attached hood",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "n2",
+        "text": "Full-length front zipper",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "n3",
+        "text": "Pink color",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "n4",
+        "text": "Pink awareness ribbon graphics",
+        "source": "ADDED",
+        "action": "ADDED"
+      }
+    ],
+    "edit_log": [
+      "Dropped sweatshirt per Redundancy (c1)",
+      "Added pink color per Completeness (n3)",
+      "Added attached hood and full-length front zipper per Completeness (n1, n2)",
+      "Added pink awareness ribbon graphics per Completeness (n4)"
+    ],
+    "final_alt_text": "Pink awareness ribbon graphics appear as a small graphic on the left chest and a much larger version of the graphic centered across the back. An attached hood, full-length front zipper, large divided hand pocket on the front, ribbed cuffs on the sleeves, and ribbed waistband at the hem are visible."
+  },
+  "final_alt_text": "Pink awareness ribbon graphics appear as a small graphic on the left chest and a much larger version of the graphic centered across the back. An attached hood, full-length front zipper, large divided hand pocket on the front, ribbed cuffs on the sleeves, and ribbed waistband at the hem are visible.",
+  "processed_at": "2026-09-20T10:52:15.943634+00:00"
+}

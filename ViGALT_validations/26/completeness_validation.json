@@ -1,0 +1,63 @@
+{
+  "stage": "completeness_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Dining table",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Brown wood-grain top composed of several angular panels",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Central pedestal base",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Broad vertical panels form the pedestal",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Horizontal cross braces connect the vertical panels",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c6",
+      "claim": "The table has a central pedestal rather than separate corner legs",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "n1",
+      "claim": "Round tabletop",
+      "label": "ADDED",
+      "addition_type": "VISUAL_GAP",
+      "reason": "The table visibly has a broad round tabletop, a prominent shape not expressed by the existing claims."
+    }
+  ],
+  "summary": {
+    "input_claims": 6,
+    "retained_claims": 6,
+    "added_claims": 1,
+    "added_visual_gap": 1,
+    "added_non_english_text": 0,
+    "added_known_entity": 0,
+    "omission_score": 0.14285714285714285
+  }
+}

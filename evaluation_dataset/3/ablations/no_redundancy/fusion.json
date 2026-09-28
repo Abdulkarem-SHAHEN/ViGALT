@@ -1,0 +1,73 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 5503,
+  "token_usage": {
+    "prompt_tokens": 2565,
+    "completion_tokens": 726,
+    "total_tokens": 3291
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"Light-gray sweater body\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c2\",\"text\":\"Repeating vertical zigzag bands filled with small diamond texture\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"Brown contrast panels along the outer lower sleeves\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n1\",\"text\":\"Ribbed knit cuffs at the sleeve ends\",\"source\":\"ADDED\",\"action\":\"ADDED\"},{\"claim_id\":\"c4\",\"text\":\"Raised collar\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"Short front placket opening from the collar\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c6\",\"text\":\"Dark button near the upper chest\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n2\",\"text\":\"Ribbed knit hem along the bottom edge\",\"source\":\"ADDED\",\"action\":\"ADDED\"}],\"edit_log\":[\"Retained all six Accuracy claims unchanged.\",\"Added ribbed knit cuffs at the sleeve ends (n1) and a ribbed knit hem along the bottom edge (n2).\"],\"final_alt_text\":\"A sweater has a light-gray body with repeating vertical zigzag bands filled with small diamond texture. Brown contrast panels run along the outer lower sleeves, with ribbed knit cuffs at the sleeve ends. The raised collar opens into a short front placket with a dark button near the upper chest, and a ribbed knit hem runs along the bottom edge.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Light-gray sweater body",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Repeating vertical zigzag bands filled with small diamond texture",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Brown contrast panels along the outer lower sleeves",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "Ribbed knit cuffs at the sleeve ends",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Raised collar",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Short front placket opening from the collar",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Dark button near the upper chest",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n2",
+        "text": "Ribbed knit hem along the bottom edge",
+        "source": "ADDED",
+        "action": "ADDED"
+      }
+    ],
+    "edit_log": [
+      "Retained all six Accuracy claims unchanged.",
+      "Added ribbed knit cuffs at the sleeve ends (n1) and a ribbed knit hem along the bottom edge (n2)."
+    ],
+    "final_alt_text": "A sweater has a light-gray body with repeating vertical zigzag bands filled with small diamond texture. Brown contrast panels run along the outer lower sleeves, with ribbed knit cuffs at the sleeve ends. The raised collar opens into a short front placket with a dark button near the upper chest, and a ribbed knit hem runs along the bottom edge."
+  },
+  "final_alt_text": "A sweater has a light-gray body with repeating vertical zigzag bands filled with small diamond texture. Brown contrast panels run along the outer lower sleeves, with ribbed knit cuffs at the sleeve ends. The raised collar opens into a short front placket with a dark button near the upper chest, and a ribbed knit hem runs along the bottom edge.",
+  "processed_at": "2026-09-20T10:50:24.539528+00:00"
+}

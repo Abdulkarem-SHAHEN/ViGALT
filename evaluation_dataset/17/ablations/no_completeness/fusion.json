@@ -1,0 +1,61 @@
+{
+  "status": "ok",
+  "ablation": "no_completeness",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_completeness.txt",
+  "duration_ms": 5365,
+  "token_usage": {
+    "prompt_tokens": 2575,
+    "completion_tokens": 679,
+    "total_tokens": 3254
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"\",\"source\":\"ORIGINAL\",\"action\":\"DROPPED_REDUNDANT\"},{\"claim_id\":\"c2\",\"text\":\"Four backless, square stools arranged around the tabletop\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"Rectangular tabletop\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"White surfaces with gray marble-like veining\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"Silver-gray rectangular frames\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c6\",\"text\":\"\",\"source\":\"ORIGINAL\",\"action\":\"DROPPED_REDUNDANT\"}],\"edit_log\":[\"Dropped redundant bar table set claim (c1)\",\"Dropped redundant horizontal footrests claim (c6)\"],\"final_alt_text\":\"Four backless, square stools are arranged around the rectangular tabletop. White surfaces with gray marble-like veining are paired with silver-gray rectangular frames.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "",
+        "source": "ORIGINAL",
+        "action": "DROPPED_REDUNDANT"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Four backless, square stools arranged around the tabletop",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Rectangular tabletop",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "White surfaces with gray marble-like veining",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Silver-gray rectangular frames",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "",
+        "source": "ORIGINAL",
+        "action": "DROPPED_REDUNDANT"
+      }
+    ],
+    "edit_log": [
+      "Dropped redundant bar table set claim (c1)",
+      "Dropped redundant horizontal footrests claim (c6)"
+    ],
+    "final_alt_text": "Four backless, square stools are arranged around the rectangular tabletop. White surfaces with gray marble-like veining are paired with silver-gray rectangular frames."
+  },
+  "final_alt_text": "Four backless, square stools are arranged around the rectangular tabletop. White surfaces with gray marble-like veining are paired with silver-gray rectangular frames.",
+  "processed_at": "2026-09-20T11:37:48.167199+00:00"
+}

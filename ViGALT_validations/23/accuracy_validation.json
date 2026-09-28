@@ -1,0 +1,44 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "A bed",
+      "claim": "A bed",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A bed is clearly visible in the image."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "Rounded rectangular tubular frames at the head and foot",
+      "claim": "Rounded rectangular tubular frames at the head and foot",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The headboard and footboard visibly have rounded rectangular black tubular frames."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "Each frame has three vertical rods with ringed ornamental sections",
+      "claim": "Each frame has three vertical rods with ringed ornamental sections",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Both the headboard and footboard visibly show three vertical rods, each with ringed ornamental sections."
+    },
+    {
+      "claim_id": "c4",
+      "original_claim": "The footboard includes a lower horizontal rail beneath the mattress",
+      "claim": "The footboard includes a lower horizontal rail beneath the mattress",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A horizontal rail is clearly visible along the lower part of the footboard beneath the mattress."
+    }
+  ],
+  "summary": {
+    "total_claims": 4,
+    "accurate_claims": 4,
+    "corrected_claims": 0,
+    "deleted_claims": 0,
+    "error_rate": 0.0
+  }
+}

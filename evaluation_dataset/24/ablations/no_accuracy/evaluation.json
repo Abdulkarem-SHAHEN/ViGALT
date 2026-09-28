@@ -1,0 +1,310 @@
+{
+  "status": "ok",
+  "folder_number": 24,
+  "image_file": "71xTC9gSxAL._AC_SX679_.jpg",
+  "ablation": "no_accuracy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A white-painted bed frame has a peaked roof-shaped frame, four corner posts, and raised guard panels made of vertical slats along the sides and foot end. The frame has a solid back panel behind the sleeping surface and an opening at the front. The low-set sleeping surface contains a white mattress with a lightly quilted cover.",
+      "relevancy": {
+        "total_claims": 8,
+        "relevant_claims": 8,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "White-painted bed frame",
+            "label": "R",
+            "reason": "This describes the white finish of the bed frame itself."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Peaked roof-shaped frame",
+            "label": "R",
+            "reason": "This describes the bed's integrated house-shaped upper frame."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Four corner posts",
+            "label": "R",
+            "reason": "This describes structural posts that are part of the bed frame."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Raised guard panels made of vertical slats along the sides and foot end",
+            "label": "R",
+            "reason": "This describes the bed's built-in slatted guard panels."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Solid back panel behind the sleeping surface",
+            "label": "R",
+            "reason": "This refers to a structural panel of the bed."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Opening at the front",
+            "label": "R",
+            "reason": "This describes the access opening in the bed's front guard structure."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Low-set sleeping surface",
+            "label": "R",
+            "reason": "This describes the position of the bed's sleeping surface."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "White mattress with a lightly quilted cover",
+            "label": "R",
+            "reason": "This describes the mattress shown as part of the product presentation."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 8,
+          "relevant_claims": 8,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 4,
+          "relevant_novel_claims": 4,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 2,
+          "avoidable_redundancy_claims": 2,
+          "novelty_rate": 0.5,
+          "raw_novelty_rate": 0.5,
+          "unavoidable_repetition_rate": 0.25,
+          "avoidable_redundancy_rate": 0.25,
+          "redundancy_rate": 0.5
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "White-painted bed frame",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Peaked roof-shaped frame",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Four corner posts",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Raised guard panels made of vertical slats along the sides and foot end",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Solid back panel behind the sleeping surface",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Opening at the front",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Low-set sleeping surface",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c8",
+            "claim": "White mattress with a lightly quilted cover",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "White-painted bed frame",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "White"
+              },
+              {
+                "field": "product_details.Finish Type",
+                "value": "Painted"
+              }
+            ],
+            "reason": "The DOM already states that the bed is white with a painted finish. Repeating this adds no new semantic information."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Peaked roof-shaped frame",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "House-Shaped Children's Bed"
+              },
+              {
+                "field": "feature_bullets",
+                "value": "With its wooden cabin silhouette"
+              },
+              {
+                "field": "product_details.Item Shape",
+                "value": "House look"
+              }
+            ],
+            "reason": "The DOM already identifies the bed as house-shaped with a cabin silhouette, which sufficiently conveys the roof-shaped frame design. The claim adds no necessary distinct information."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Four corner posts",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM does not state that the frame has four corner posts."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Raised guard panels made of vertical slats along the sides and foot end",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets",
+                "value": "The fence edging serves as effective protection against night falls"
+              },
+              {
+                "field": "product_details.Other Special Features of the Product",
+                "value": "With anti-fall edge"
+              }
+            ],
+            "reason": "The DOM establishes that the bed has safety fencing or an anti-fall edge. Repeating that guard concept is necessary to anchor the new information about the panels' vertical-slat construction and their placement along the sides and foot end."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Solid back panel behind the sleeping surface",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM contains no information about a solid back panel or its location behind the sleeping surface."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Opening at the front",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM does not describe a front opening in the bed frame or safety fence."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Low-set sleeping surface",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM provides overall dimensions and a ground-to-item distance, but does not state that the sleeping surface is low-set."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "White mattress with a lightly quilted cover",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "Cabin Bed with Anti-Allergic Cold Foam Mattress"
+              },
+              {
+                "field": "feature_bullets",
+                "value": "Cold foam mattress included"
+              },
+              {
+                "field": "product_details.Included Components",
+                "value": "1 x Cot, 1 x standard slatted base, Mattresses"
+              }
+            ],
+            "reason": "The DOM already establishes that a mattress is included. Referring to the mattress is necessary to make the new visual details—its white color and lightly quilted cover—understandable."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 9,
+        "subjective_claims": 0,
+        "total_claims": 9,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The bed frame is white-painted.",
+            "label": "OBJECTIVE",
+            "reason": "The frame has a visibly white surface; its painted finish is visually apparent from the uniform coating."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The bed frame has a peaked roof-shaped frame.",
+            "label": "OBJECTIVE",
+            "reason": "The upper structure visibly consists of sloping rails that meet at peaks, forming a house- or roof-like outline."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The bed frame has four corner posts.",
+            "label": "OBJECTIVE",
+            "reason": "Vertical posts are visibly positioned at the bed's four corners, though some are partly obscured by perspective."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "Raised guard panels made of vertical slats run along the sides and foot end.",
+            "label": "OBJECTIVE",
+            "reason": "Elevated white rails with repeated vertical slats are directly visible along the bed's side and end."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The frame has a solid back panel behind the sleeping surface.",
+            "label": "OBJECTIVE",
+            "reason": "A continuous white panel is visibly present at the rear of the sleeping area behind the mattress and toys."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "The frame has an opening at the front.",
+            "label": "OBJECTIVE",
+            "reason": "A gap in the front guard rail is visibly shown, providing an open entry area."
+          },
+          {
+            "claim_id": "C7",
+            "claim": "The sleeping surface is low-set.",
+            "label": "OBJECTIVE",
+            "reason": "The mattress platform is visibly positioned close to the floor relative to the height of the bed frame and posts."
+          },
+          {
+            "claim_id": "C8",
+            "claim": "The sleeping surface contains a white mattress.",
+            "label": "OBJECTIVE",
+            "reason": "A white rectangular mattress is directly visible inside the bed, and an inset also depicts it."
+          },
+          {
+            "claim_id": "C9",
+            "claim": "The mattress has a lightly quilted cover.",
+            "label": "OBJECTIVE",
+            "reason": "The mattress cover visibly shows subtle stitched or textured quilting across its white surface."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 56,
+        "relevant_novel_claims": 4,
+        "efficiency_per_100_words": 7.142857142857142
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:49:49.595097+00:00"
+}

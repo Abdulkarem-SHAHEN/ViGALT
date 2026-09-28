@@ -1,0 +1,61 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "8",
+  "product_stem": "8",
+  "alt_text": "Black T-shirt with a crew neckline and short sleeves. Its front has large orange “NIVEAU” lettering above a cream video-game controller with multiple colored buttons, a cream “40,” multicolored stars, orange and yellow diagonal stripes above a green banner reading “DÉBLOQUÉ,” meaning “unlocked.”",
+  "final_alt_text": "Black T-shirt with a crew neckline and short sleeves. Its front has large orange “NIVEAU” lettering above a cream video-game controller with multiple colored buttons, a cream “40,” multicolored stars, orange and yellow diagonal stripes above a green banner reading “DÉBLOQUÉ,” meaning “unlocked.”",
+  "classification_category": "CLOTHING",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 3597,
+  "token_usage": {
+    "prompt_tokens": 1030,
+    "completion_tokens": 349,
+    "total_tokens": 1379
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Black T-shirt\"},{\"claim_id\":\"c2\",\"claim\":\"Crew neckline\"},{\"claim_id\":\"c3\",\"claim\":\"Short sleeves\"},{\"claim_id\":\"c4\",\"claim\":\"Large orange “NIVEAU” lettering on the front, above the controller\"},{\"claim_id\":\"c5\",\"claim\":\"A cream video-game controller with multiple colored buttons on the front\"},{\"claim_id\":\"c6\",\"claim\":\"A cream “40” on the front\"},{\"claim_id\":\"c7\",\"claim\":\"Multicolored stars on the front\"},{\"claim_id\":\"c8\",\"claim\":\"Orange and yellow diagonal stripes on the front, above the green banner\"},{\"claim_id\":\"c9\",\"claim\":\"A green banner on the front reading “DÉBLOQUÉ,” meaning “unlocked”\"}],\"total_claims\":9}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Black T-shirt"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Crew neckline"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Short sleeves"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Large orange “NIVEAU” lettering on the front, above the controller"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "A cream video-game controller with multiple colored buttons on the front"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "A cream “40” on the front"
+      },
+      {
+        "claim_id": "c7",
+        "claim": "Multicolored stars on the front"
+      },
+      {
+        "claim_id": "c8",
+        "claim": "Orange and yellow diagonal stripes on the front, above the green banner"
+      },
+      {
+        "claim_id": "c9",
+        "claim": "A green banner on the front reading “DÉBLOQUÉ,” meaning “unlocked”"
+      }
+    ],
+    "total_claims": 9
+  },
+  "processed_at": "2026-09-20T10:57:06.244714+00:00"
+}

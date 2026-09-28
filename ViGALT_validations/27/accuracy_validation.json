@@ -1,0 +1,44 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "A mirror is opened into three rectangular panels arranged at angles.",
+      "claim": "A mirror is opened into three rectangular panels arranged at angles.",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The image visibly shows a three-panel mirror opened in a multi-panel angled configuration."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "The mirror has black plastic borders.",
+      "claim": "The mirror has black borders.",
+      "label": "CORRECTED",
+      "error_category": "ATTRIBUTE_OR_OCR",
+      "reason": "Black borders are clearly visible, but the plastic material cannot be confirmed from the image alone."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "Two black over-door hooks extend above the mirror.",
+      "claim": "Two black hooks extend above the mirror.",
+      "label": "CORRECTED",
+      "error_category": "ATTRIBUTE_OR_OCR",
+      "reason": "Two black hook-like pieces visibly extend above the mirror, but their specific over-door function is not unambiguously verifiable from the image."
+    },
+    {
+      "claim_id": "c4",
+      "original_claim": "The reflections show front, side, and rear views of a person trimming his hair.",
+      "claim": "The reflections show front, side, and rear views of a person trimming his hair.",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The mirror reflections visibly show the person's front, side, and rear head views while he uses clippers to trim his hair."
+    }
+  ],
+  "summary": {
+    "total_claims": 4,
+    "accurate_claims": 2,
+    "corrected_claims": 2,
+    "deleted_claims": 0,
+    "error_rate": 0.5
+  }
+}

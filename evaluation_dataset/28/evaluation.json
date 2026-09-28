@@ -9,7 +9,6 @@
         "relevant_claims": 5,
         "supplementary_claims": 0,
         "visual_only_claims": 0,
-        "relevancy_rate": 1.0,
         "claims": [
           {
             "claim_id": "C1",
@@ -36,7 +35,8 @@
             "claim": "The support holds the mirror upright on the floor.",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 100.0
       },
       "redundancy": {
         "metrics": {
@@ -228,7 +228,6 @@
         "relevant_claims": 1,
         "supplementary_claims": 0,
         "visual_only_claims": 12,
-        "relevancy_rate": 0.07692307692307693,
         "claims": [
           {
             "claim_id": "C1",
@@ -295,7 +294,8 @@
             "claim": "Sunlight casts shadows across the room",
             "label": "V"
           }
-        ]
+        ],
+        "relevancy_score": 4.0
       },
       "redundancy": {
         "metrics": {

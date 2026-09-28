@@ -1,0 +1,70 @@
+{
+  "stage": "completeness_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Two matching chairs",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c2",
+      "claim": "A rectangular table",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c3",
+      "claim": "The chairs flank the table",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c4",
+      "claim": "All three pieces have open slatted surfaces",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c5",
+      "claim": "The chairs have three horizontal back rails",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c6",
+      "claim": "The chairs have crossed support legs",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c7",
+      "claim": "The table has crossed legs beneath its slatted top",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "n1",
+      "claim": "The furniture has a warm brown wood-toned finish",
+      "label": "ADDED",
+      "addition_type": "VISUAL_GAP",
+      "reason": "The warm brown wood-toned appearance is clearly visible across the chairs and table and is not covered by the existing claims."
+    }
+  ],
+  "summary": {
+    "input_claims": 7,
+    "retained_claims": 7,
+    "added_claims": 1,
+    "added_visual_gap": 1,
+    "added_non_english_text": 0,
+    "added_known_entity": 0,
+    "omission_score": 0.125
+  }
+}

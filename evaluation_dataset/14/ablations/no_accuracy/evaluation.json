@@ -1,0 +1,366 @@
+{
+  "status": "ok",
+  "folder_number": 14,
+  "image_file": "71zEteMnk7L._AC_SX679_.jpg",
+  "ablation": "no_accuracy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "Burgundy shirt with narrow navy vertical stripes and short sleeves, yellow “BARÇA” lettering across the shirt's chest, football graphics, and an FC Barcelona crest. Matching navy shorts have vertical yellow “BARÇA” lettering on one leg and an FC Barcelona crest on the other leg.",
+      "relevancy": {
+        "total_claims": 9,
+        "relevant_claims": 9,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Burgundy shirt",
+            "label": "R",
+            "reason": "The product includes a burgundy shirt."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Narrow navy vertical stripes on the shirt",
+            "label": "R",
+            "reason": "Narrow navy vertical stripes are visible on the shirt."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Short sleeves on the shirt",
+            "label": "R",
+            "reason": "The shirt has short sleeves."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Yellow “BARÇA” lettering across the shirt's chest",
+            "label": "R",
+            "reason": "Yellow BARÇA lettering is printed across the shirt chest."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Football graphics on the shirt",
+            "label": "R",
+            "reason": "A football graphic is visible on the shirt chest."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "An FC Barcelona crest on the shirt",
+            "label": "R",
+            "reason": "An FC Barcelona crest is displayed on the shirt chest."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Matching navy shorts",
+            "label": "R",
+            "reason": "The product includes navy shorts matching the shirt."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "Vertical yellow “BARÇA” lettering on one leg of the shorts",
+            "label": "R",
+            "reason": "Vertical yellow BARÇA lettering appears on one shorts leg."
+          },
+          {
+            "claim_id": "c9",
+            "claim": "An FC Barcelona crest on the other leg of the shorts",
+            "label": "R",
+            "reason": "An FC Barcelona crest appears on the other shorts leg."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 9,
+          "relevant_claims": 9,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 8,
+          "relevant_novel_claims": 8,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 0,
+          "avoidable_redundancy_claims": 1,
+          "novelty_rate": 0.8888888888888888,
+          "raw_novelty_rate": 0.8888888888888888,
+          "unavoidable_repetition_rate": 0.0,
+          "avoidable_redundancy_rate": 0.1111111111111111,
+          "redundancy_rate": 0.1111111111111111
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Burgundy shirt",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Narrow navy vertical stripes on the shirt",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Short sleeves on the shirt",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Yellow “BARÇA” lettering across the shirt's chest",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Football graphics on the shirt",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "An FC Barcelona crest on the shirt",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Matching navy shorts",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c8",
+            "claim": "Vertical yellow “BARÇA” lettering on one leg of the shorts",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c9",
+            "claim": "An FC Barcelona crest on the other leg of the shorts",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Burgundy shirt",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "Burgundy/Navy Barcelona"
+              },
+              {
+                "field": "product_details.Included Components",
+                "value": "1x Short Sleeve Pyjamas, 1x Matching Short Pajama Bottoms"
+              }
+            ],
+            "reason": "The DOM gives the set's combined burgundy/navy colorway and confirms a short-sleeve top, but it does not assign burgundy specifically to the shirt."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Narrow navy vertical stripes on the shirt",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Pattern",
+                "value": "Striped"
+              },
+              {
+                "field": "product_details.Colour",
+                "value": "Burgundy/Navy Barcelona"
+              }
+            ],
+            "reason": "The DOM identifies a striped burgundy/navy set, but does not specify that the stripes are narrow, navy, vertical, or located on the shirt."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Short sleeves on the shirt",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[2]",
+                "value": "These two-piece men's pyjamas include a short-sleeved crew neck t-shirt and men's shorts with adjustable drawstring."
+              },
+              {
+                "field": "product_details.Sleeve Type",
+                "value": "Short Sleeve"
+              }
+            ],
+            "reason": "The DOM explicitly states that the set includes a short-sleeved T-shirt, so this adds no new semantic information."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Yellow “BARÇA” lettering across the shirt's chest",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Subject Character",
+                "value": "Barcelona"
+              },
+              {
+                "field": "description",
+                "value": "Available in styles inspired by iconic Real Madrid and FC Barcelona clubs."
+              }
+            ],
+            "reason": "Although the DOM establishes a Barcelona-themed set, it does not mention yellow BARÇA lettering, its placement across the chest, or that it appears on the shirt."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Football graphics on the shirt",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "description",
+                "value": "Bring a touch of fun and football spirit to your summer wardrobe with these men's pyjama sets designed for passionate fans."
+              },
+              {
+                "field": "feature_bullets[0]",
+                "value": "Dive into the world of FC Barcelona football with this men's cotton pajama set inspired by the iconic club."
+              }
+            ],
+            "reason": "The DOM describes a football- and FC Barcelona-inspired set, but does not specify football graphics or establish that such graphics appear on the shirt."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "An FC Barcelona crest on the shirt",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Subject Character",
+                "value": "Barcelona"
+              },
+              {
+                "field": "description",
+                "value": "Available in styles inspired by iconic Real Madrid and FC Barcelona clubs."
+              }
+            ],
+            "reason": "The DOM identifies the Barcelona theme but does not state that an FC Barcelona crest is present or locate one on the shirt."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Matching navy shorts",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "Burgundy/Navy Barcelona"
+              },
+              {
+                "field": "product_details.Included Components",
+                "value": "1x Short Sleeve Pyjamas, 1x Matching Short Pajama Bottoms"
+              }
+            ],
+            "reason": "The DOM confirms matching short pajama bottoms and gives a burgundy/navy colorway for the set, but does not assign navy specifically to the shorts."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "Vertical yellow “BARÇA” lettering on one leg of the shorts",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Subject Character",
+                "value": "Barcelona"
+              },
+              {
+                "field": "product_details.Bottom Style",
+                "value": "Short"
+              }
+            ],
+            "reason": "The DOM identifies Barcelona-themed shorts as part of the set, but does not mention yellow BARÇA lettering, its vertical orientation, or its placement on a shorts leg."
+          },
+          {
+            "claim_id": "c9",
+            "claim": "An FC Barcelona crest on the other leg of the shorts",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Subject Character",
+                "value": "Barcelona"
+              },
+              {
+                "field": "product_details.Bottom Style",
+                "value": "Short"
+              }
+            ],
+            "reason": "The DOM establishes Barcelona-themed short bottoms, but does not specify an FC Barcelona crest or locate a crest on either leg."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 9,
+        "subjective_claims": 0,
+        "total_claims": 9,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The shirt is burgundy.",
+            "label": "OBJECTIVE",
+            "reason": "The shirt's predominant red-burgundy color is directly visible in the image."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The shirt has narrow navy vertical stripes.",
+            "label": "OBJECTIVE",
+            "reason": "Thin dark navy stripes running vertically down the shirt are directly visible."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The shirt has short sleeves.",
+            "label": "OBJECTIVE",
+            "reason": "The sleeves visibly end above the model's elbows."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "Yellow “BARÇA” lettering appears across the shirt's chest.",
+            "label": "OBJECTIVE",
+            "reason": "Large yellow BARÇA text is visibly printed across the chest."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The shirt has football graphics.",
+            "label": "OBJECTIVE",
+            "reason": "A yellow graphic depicting a stylized football is visibly shown on the upper chest."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "The shirt has an FC Barcelona crest.",
+            "label": "OBJECTIVE",
+            "reason": "A crest visibly bearing the letters FCB appears on the upper chest and can be identified as the FC Barcelona crest from its visible design."
+          },
+          {
+            "claim_id": "C7",
+            "claim": "The shorts are navy.",
+            "label": "OBJECTIVE",
+            "reason": "The shorts visibly appear dark navy blue."
+          },
+          {
+            "claim_id": "C8",
+            "claim": "Vertical yellow “BARÇA” lettering appears on one leg of the shorts.",
+            "label": "OBJECTIVE",
+            "reason": "Large yellow BARÇA text is visibly arranged vertically on the viewer's left shorts leg."
+          },
+          {
+            "claim_id": "C9",
+            "claim": "An FC Barcelona crest appears on the other leg of the shorts.",
+            "label": "OBJECTIVE",
+            "reason": "A crest bearing the letters FCB is visibly shown on the viewer's right shorts leg and can be identified by its visible design."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 44,
+        "relevant_novel_claims": 8,
+        "efficiency_per_100_words": 18.181818181818183
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:31:37.427286+00:00"
+}

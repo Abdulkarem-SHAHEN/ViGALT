@@ -9,7 +9,6 @@
         "relevant_claims": 5,
         "supplementary_claims": 0,
         "visual_only_claims": 0,
-        "relevancy_rate": 1.0,
         "claims": [
           {
             "claim_id": "C1",
@@ -36,7 +35,8 @@
             "claim": "A visible side slit is at the lower right hem",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 100.0
       },
       "redundancy": {
         "metrics": {
@@ -212,7 +212,6 @@
         "relevant_claims": 1,
         "supplementary_claims": 0,
         "visual_only_claims": 3,
-        "relevancy_rate": 0.25,
         "claims": [
           {
             "claim_id": "C1",
@@ -234,7 +233,8 @@
             "claim": "Beige shoulder bag",
             "label": "V"
           }
-        ]
+        ],
+        "relevancy_score": 14.29
       },
       "redundancy": {
         "metrics": {

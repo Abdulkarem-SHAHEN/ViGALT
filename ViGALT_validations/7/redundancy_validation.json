@@ -1,0 +1,42 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Blue-gray shirt",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM lists the product colour as Grey-blue, which is semantically equivalent to blue-gray. Repeating the colour and shirt identity adds no new visual grounding or relationship."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Intersecting white and dark-blue stripes",
+      "label": "NOVEL",
+      "reason": "The DOM identifies the pattern as checkered but does not specify the intersecting stripe colours as white and dark blue. This claim adds visual detail about the pattern's colour composition."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Chest pocket on the wearer’s left with diagonally oriented stripes",
+      "label": "UNAVOIDABLE_REPETITION",
+      "reason": "The DOM already identifies a chest pocket, but repeating that component is necessary to anchor the novel detail that the pocket is on the wearer's left and has diagonally oriented stripes; without the pocket reference, the stripe orientation would lack its visual object and location."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Striped front placket",
+      "label": "NOVEL",
+      "reason": "Although the DOM identifies a checkered pattern, it does not describe the front placket or its stripe arrangement. The claim adds a new visible construction detail and locates the pattern on that component."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Gently curved hem",
+      "label": "NOVEL",
+      "reason": "The DOM does not describe the hem shape. This claim adds the visible construction detail that the shirt's lower edge is gently curved."
+    }
+  ],
+  "summary": {
+    "total_claims": 5,
+    "novel_claims": 3,
+    "unavoidable_repetition_claims": 1,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.2
+  }
+}

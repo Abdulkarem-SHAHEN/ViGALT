@@ -1,0 +1,49 @@
+{
+  "stage": "completeness_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically.",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c2",
+      "claim": "The mirror is above a vessel sink.",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c3",
+      "claim": "The mirror is positioned between two vertical wall sconces.",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c4",
+      "claim": "The mirror is in a bathroom vanity area.",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "n1",
+      "claim": "A narrow visible edge outlines the mirror's perimeter.",
+      "label": "ADDED",
+      "addition_type": "VISUAL_GAP",
+      "reason": "A thin edge is visibly outlined around the mirror and is not expressed by the existing claims."
+    }
+  ],
+  "summary": {
+    "input_claims": 4,
+    "retained_claims": 4,
+    "added_claims": 1,
+    "added_visual_gap": 1,
+    "added_non_english_text": 0,
+    "added_known_entity": 0,
+    "omission_score": 0.2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "A mirror has a narrow border.",
+      "label": "NOVEL",
+      "reason": "The DOM identifies an arched metal frame or edging but does not specify that the border is narrow. The claim adds a visual description of the frame's width."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "The mirror has straight vertical sides.",
+      "label": "NOVEL",
+      "reason": "Although the DOM describes the mirror as arched or semicircular, it does not state that its side edges are straight and vertical. This adds a distinct aspect of the mirror's visible shape."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "The mirror has a rounded arch across the top.",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM already describes the mirror and frame as arched and the item shape as semicircular. Repeating the rounded arch does not add visual grounding, disambiguation, or a distinct new fact."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "A separate support extends behind the mirror on the right.",
+      "label": "NOVEL",
+      "reason": "The DOM states that the mirror is freestanding or floor-mounted but does not identify a separate support, its position behind the mirror, or its placement on the right. The claim adds visible construction and spatial information."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "The support holds the mirror upright on the floor.",
+      "label": "NOVEL",
+      "reason": "The DOM covers floor mounting and freestanding use, but it does not describe a support or the support's functional relationship to keeping the mirror upright. The claim adds that visible support relationship."
+    }
+  ],
+  "summary": {
+    "total_claims": 5,
+    "novel_claims": 4,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.2
+  }
+}

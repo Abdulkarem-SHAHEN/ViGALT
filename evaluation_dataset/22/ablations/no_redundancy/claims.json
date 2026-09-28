@@ -1,0 +1,53 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "22",
+  "product_stem": "22",
+  "alt_text": "An L-shaped frame surrounds the head and right side. Open shelving is illuminated by cyan LEDs, and a laptop sits on the work surface, which extends across the foot and right side. Storage compartments beneath the mattress are pulled open on the left, and fabric organizer pockets hang from the near side.",
+  "final_alt_text": "An L-shaped frame surrounds the head and right side. Open shelving is illuminated by cyan LEDs, and a laptop sits on the work surface, which extends across the foot and right side. Storage compartments beneath the mattress are pulled open on the left, and fabric organizer pockets hang from the near side.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 3529,
+  "token_usage": {
+    "prompt_tokens": 1023,
+    "completion_tokens": 336,
+    "total_tokens": 1359
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"An L-shaped frame surrounds the head and right side.\"},{\"claim_id\":\"c2\",\"claim\":\"Open shelving is present.\"},{\"claim_id\":\"c3\",\"claim\":\"Cyan LEDs illuminate the open shelving.\"},{\"claim_id\":\"c4\",\"claim\":\"A laptop sits on the work surface.\"},{\"claim_id\":\"c5\",\"claim\":\"The work surface extends across the foot and right side.\"},{\"claim_id\":\"c6\",\"claim\":\"Storage compartments beneath the mattress are pulled open on the left.\"},{\"claim_id\":\"c7\",\"claim\":\"Fabric organizer pockets hang from the near side.\"}],\"total_claims\":7}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "An L-shaped frame surrounds the head and right side."
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Open shelving is present."
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Cyan LEDs illuminate the open shelving."
+      },
+      {
+        "claim_id": "c4",
+        "claim": "A laptop sits on the work surface."
+      },
+      {
+        "claim_id": "c5",
+        "claim": "The work surface extends across the foot and right side."
+      },
+      {
+        "claim_id": "c6",
+        "claim": "Storage compartments beneath the mattress are pulled open on the left."
+      },
+      {
+        "claim_id": "c7",
+        "claim": "Fabric organizer pockets hang from the near side."
+      }
+    ],
+    "total_claims": 7
+  },
+  "processed_at": "2026-09-20T11:47:31.146300+00:00"
+}

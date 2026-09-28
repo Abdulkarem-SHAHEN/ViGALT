@@ -1,0 +1,38 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "The chair has a high, rounded back"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "The chair has integrated curved arms"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "The chair features vertical channel stitching"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "The chair has a separate rectangular seat cushion"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "The chair rests on a white five-spoke wheeled base"
+    },
+    {
+      "claim_id": "c6",
+      "claim": "The wheeled base has black-and-white casters"
+    },
+    {
+      "claim_id": "c7",
+      "claim": "A desk is positioned behind the chair"
+    },
+    {
+      "claim_id": "c8",
+      "claim": "A laptop is positioned behind the chair"
+    }
+  ],
+  "total_claims": 8
+}

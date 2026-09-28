@@ -1,0 +1,56 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 5554,
+  "token_usage": {
+    "prompt_tokens": 2240,
+    "completion_tokens": 655,
+    "total_tokens": 2895
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"A bed\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c2\",\"text\":\"Rounded rectangular tubular frames at the head and foot\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"Each frame has three vertical rods with ringed ornamental sections\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"The footboard includes a lower horizontal rail beneath the mattress\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n1\",\"text\":\"The bed frame has a black finish\",\"source\":\"ADDED\",\"action\":\"ADDED\"}],\"edit_log\":[\"Retained all four original claims per Accuracy.\",\"Added black finish per Completeness (n1).\",\"Placed the added color claim with the bed silhouette and healed the prose for sentence completeness.\"] ,\"final_alt_text\":\"A bed has rounded rectangular tubular frames at the head and foot with a black finish. Each frame has three vertical rods with ringed ornamental sections, and the footboard includes a lower horizontal rail beneath the mattress.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "A bed",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Rounded rectangular tubular frames at the head and foot",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Each frame has three vertical rods with ringed ornamental sections",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "The footboard includes a lower horizontal rail beneath the mattress",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "The bed frame has a black finish",
+        "source": "ADDED",
+        "action": "ADDED"
+      }
+    ],
+    "edit_log": [
+      "Retained all four original claims per Accuracy.",
+      "Added black finish per Completeness (n1).",
+      "Placed the added color claim with the bed silhouette and healed the prose for sentence completeness."
+    ],
+    "final_alt_text": "A bed has rounded rectangular tubular frames at the head and foot with a black finish. Each frame has three vertical rods with ringed ornamental sections, and the footboard includes a lower horizontal rail beneath the mattress."
+  },
+  "final_alt_text": "A bed has rounded rectangular tubular frames at the head and foot with a black finish. Each frame has three vertical rods with ringed ornamental sections, and the footboard includes a lower horizontal rail beneath the mattress.",
+  "processed_at": "2026-09-20T11:48:53.492750+00:00"
+}

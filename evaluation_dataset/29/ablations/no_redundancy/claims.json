@@ -1,0 +1,49 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "29",
+  "product_stem": "29",
+  "alt_text": "A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically. A narrow visible edge outlines the mirror's perimeter. The mirror is above a vessel sink and positioned between two vertical wall sconces in a bathroom vanity area.",
+  "final_alt_text": "A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically. A narrow visible edge outlines the mirror's perimeter. The mirror is above a vessel sink and positioned between two vertical wall sconces in a bathroom vanity area.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 3814,
+  "token_usage": {
+    "prompt_tokens": 1015,
+    "completion_tokens": 396,
+    "total_tokens": 1411
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"The mirror has a broad rounded top, curved sides, and a tapered lower end.\"},{\"claim_id\":\"c2\",\"claim\":\"The mirror is installed vertically.\"},{\"claim_id\":\"c3\",\"claim\":\"A narrow visible edge outlines the mirror's perimeter.\"},{\"claim_id\":\"c4\",\"claim\":\"The mirror is above a vessel sink.\"},{\"claim_id\":\"c5\",\"claim\":\"The mirror is positioned between two vertical wall sconces.\"},{\"claim_id\":\"c6\",\"claim\":\"The mirror is in a bathroom vanity area.\"}],\"total_claims\":6}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "The mirror has a broad rounded top, curved sides, and a tapered lower end."
+      },
+      {
+        "claim_id": "c2",
+        "claim": "The mirror is installed vertically."
+      },
+      {
+        "claim_id": "c3",
+        "claim": "A narrow visible edge outlines the mirror's perimeter."
+      },
+      {
+        "claim_id": "c4",
+        "claim": "The mirror is above a vessel sink."
+      },
+      {
+        "claim_id": "c5",
+        "claim": "The mirror is positioned between two vertical wall sconces."
+      },
+      {
+        "claim_id": "c6",
+        "claim": "The mirror is in a bathroom vanity area."
+      }
+    ],
+    "total_claims": 6
+  },
+  "processed_at": "2026-09-20T11:58:34.319539+00:00"
+}

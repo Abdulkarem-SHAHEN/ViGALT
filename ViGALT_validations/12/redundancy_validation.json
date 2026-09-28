@@ -1,0 +1,72 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Tracksuit",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM explicitly identifies the product as a tracksuit and a complete tracksuit set, so this claim adds no semantic information."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Bright red hoodie",
+      "label": "NOVEL",
+      "reason": "The DOM identifies a hoodie and mentions bright colors but does not specify that the hoodie is bright red; the claim adds the hoodie’s specific visual color."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Black trousers",
+      "label": "NOVEL",
+      "reason": "The DOM identifies trousers as part of the set but does not specify their black color, so this adds a new visual attribute."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Lightning McQueen’s face on the hoodie",
+      "label": "NOVEL",
+      "reason": "The DOM mentions a large Lightning McQueen or Martin print but does not specify that it depicts Lightning McQueen’s face or that the face is located on the hoodie."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Blue eyes on the hoodie",
+      "label": "NOVEL",
+      "reason": "The DOM does not mention blue eyes or this facial detail, so the claim adds new visual information about the hoodie graphic."
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Number 95 on the hoodie",
+      "label": "NOVEL",
+      "reason": "The DOM does not mention the number 95, so this adds a new graphic detail on the hoodie."
+    },
+    {
+      "claim_id": "c7",
+      "claim": "Yellow “VROOM! VROOM!” lettering on the hoodie",
+      "label": "NOVEL",
+      "reason": "The DOM does not specify this lettering or its yellow color, so the claim adds new text and color details to the hoodie graphic."
+    },
+    {
+      "claim_id": "c8",
+      "claim": "White side stripes on the trousers",
+      "label": "NOVEL",
+      "reason": "The DOM does not mention side stripes or their white color, so this adds new visual construction and pattern information about the trousers."
+    },
+    {
+      "claim_id": "c9",
+      "claim": "Gray ankle cuffs on the trousers",
+      "label": "NOVEL",
+      "reason": "The DOM does not mention ankle cuffs or their gray color, so the claim adds new visible construction and color information."
+    },
+    {
+      "claim_id": "c10",
+      "claim": "Gray drawstring on the trousers",
+      "label": "NOVEL",
+      "reason": "The DOM does not mention a drawstring or its gray color, so the claim adds a new visible garment detail."
+    }
+  ],
+  "summary": {
+    "total_claims": 10,
+    "novel_claims": 9,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.1
+  }
+}

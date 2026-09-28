@@ -1,0 +1,264 @@
+{
+  "status": "ok",
+  "folder_number": 21,
+  "image_file": "71ZScCnweOL._AC_SX679_.jpg",
+  "ablation": "no_completeness",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "Rounded, raised side rails and a wide headboard that curves around the sides are visible. A cyan LED strip follows the front and right-side edges of the base and rises beside the headboard. A mattress, pillows, and blankets are shown inside the frame.",
+      "relevancy": {
+        "total_claims": 6,
+        "relevant_claims": 3,
+        "supplementary_claims": 0,
+        "visual_only_claims": 3,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Rounded, raised side rails",
+            "label": "R",
+            "reason": "The bed frame has rounded, raised rails along its sides."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "A wide headboard that curves around the sides",
+            "label": "R",
+            "reason": "The headboard is part of the bed frame and curves down around the sides."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "A cyan LED strip follows the front and right-side edges of the base and rises beside the headboard",
+            "label": "R",
+            "reason": "The cyan LED lighting is an integrated visual feature of the bed base and headboard edge."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "A mattress is inside the frame",
+            "label": "V",
+            "reason": "The mattress is a separately described bedding item rather than a feature of the bed frame."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Pillows are inside the frame",
+            "label": "V",
+            "reason": "The pillows are individually identified staging bedding rather than part of the furniture product."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Blankets are inside the frame",
+            "label": "V",
+            "reason": "The blankets are separately described staging bedding rather than part of the furniture product."
+          }
+        ],
+        "relevancy_score": 33.33
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 6,
+          "relevant_claims": 3,
+          "irrelevant_claims": 3,
+          "raw_novel_claims": 4,
+          "relevant_novel_claims": 1,
+          "irrelevant_novel_claims": 3,
+          "unavoidable_repetition_claims": 2,
+          "avoidable_redundancy_claims": 0,
+          "novelty_rate": 0.16666666666666666,
+          "raw_novelty_rate": 0.6666666666666666,
+          "unavoidable_repetition_rate": 0.3333333333333333,
+          "avoidable_redundancy_rate": 0.0,
+          "redundancy_rate": 0.3333333333333333
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Rounded, raised side rails",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "A wide headboard that curves around the sides",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "A cyan LED strip follows the front and right-side edges of the base and rises beside the headboard",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "A mattress is inside the frame",
+            "relevance_code": "V"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Pillows are inside the frame",
+            "relevance_code": "V"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Blankets are inside the frame",
+            "relevance_code": "V"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Rounded, raised side rails",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "description",
+                "value": "The unique ergonomic design of the curved bed adds infinite comfort."
+              },
+              {
+                "field": "feature_bullets[3]",
+                "value": "This bed features a unique curved design."
+              }
+            ],
+            "reason": "The DOM describes the bed generally as curved, but does not identify rounded, raised side rails."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "A wide headboard that curves around the sides",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "description",
+                "value": "The unique ergonomic design of the curved bed adds infinite comfort to your nighttime reading or movie moments."
+              },
+              {
+                "field": "feature_bullets[3]",
+                "value": "This bed features a unique curved design that adds a modern touch to the bedroom. The well-designed headboard provides great support so you can lean back comfortably."
+              }
+            ],
+            "reason": "The DOM already establishes that the bed has a headboard and an overall curved design. Repeating those anchors is necessary to make the new visual information—that the headboard is wide and curves around the sides—understandable."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "A cyan LED strip follows the front and right-side edges of the base and rises beside the headboard",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "The bed is surrounded by LED lights, controlled by a 24-key remote control."
+              },
+              {
+                "field": "product_details.Special Features",
+                "value": "LED Mood Light"
+              },
+              {
+                "field": "title",
+                "value": "KOMHTOM Double Padded Bed with LED Mood Light, Flat Bed with Wooden Slatted Base, Unique Modern Design, PU (without Mattress) (Black, 140 x 200 cm)"
+              }
+            ],
+            "reason": "The DOM establishes that the bed has LED lighting, but not its cyan color or exact routing along particular base edges and beside the headboard. Referring to the LED strip is necessary to anchor the new placement and color details."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "A mattress is inside the frame",
+            "relevance_code": "V",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "KOMHTOM Double Padded Bed with LED Mood Light, Flat Bed with Wooden Slatted Base, Unique Modern Design, PU (without Mattress) (Black, 140 x 200 cm)"
+              }
+            ],
+            "reason": "The DOM mentions the mattress concept only to state that the product is without a mattress; it does not already provide the claimed information that a mattress is inside the frame."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Pillows are inside the frame",
+            "relevance_code": "V",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM contains no information about pillows being present or positioned inside the frame."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Blankets are inside the frame",
+            "relevance_code": "V",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM contains no information about blankets being present or positioned inside the frame."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 0.8888888888888888,
+        "objective_claims": 8,
+        "subjective_claims": 1,
+        "total_claims": 9,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The bed frame has rounded side rails.",
+            "label": "OBJECTIVE",
+            "reason": "The side rails visibly have rounded, tubular-looking edges in the image."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The side rails are raised.",
+            "label": "OBJECTIVE",
+            "reason": "The side rails visibly extend upward around the mattress area."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The bed has a wide headboard.",
+            "label": "OBJECTIVE",
+            "reason": "The headboard visibly spans the width of the bed frame."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The headboard curves around the sides.",
+            "label": "OBJECTIVE",
+            "reason": "The headboard's outer edges visibly curve downward and continue along the sides of the bed."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "A cyan LED strip follows the front and right-side edges of the base.",
+            "label": "SUBJECTIVE",
+            "reason": "A cyan glowing strip is visible along these edges, but its specific LED technology cannot be verified from the image alone."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "The cyan light strip rises beside the headboard.",
+            "label": "OBJECTIVE",
+            "reason": "A cyan glowing strip is visibly seen extending upward at the right side beside the headboard."
+          },
+          {
+            "claim_id": "C7",
+            "claim": "A mattress is shown inside the frame.",
+            "label": "OBJECTIVE",
+            "reason": "A mattress is visibly placed within the bed frame."
+          },
+          {
+            "claim_id": "C8",
+            "claim": "Pillows are shown inside the frame.",
+            "label": "OBJECTIVE",
+            "reason": "Multiple pillows are visibly arranged on the mattress within the bed frame."
+          },
+          {
+            "claim_id": "C9",
+            "claim": "Blankets are shown inside the frame.",
+            "label": "OBJECTIVE",
+            "reason": "Layered bedding and blankets are visibly draped across the mattress within the frame."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 43,
+        "relevant_novel_claims": 1,
+        "efficiency_per_100_words": 2.3255813953488373
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:45:18.952863+00:00"
+}

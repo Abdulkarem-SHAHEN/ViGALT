@@ -9,7 +9,6 @@
         "relevant_claims": 10,
         "supplementary_claims": 0,
         "visual_only_claims": 0,
-        "relevancy_rate": 1.0,
         "claims": [
           {
             "claim_id": "C1",
@@ -61,7 +60,8 @@
             "claim": "The shorts have an FC Barcelona crest on the other leg.",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 100.0
       },
       "redundancy": {
         "metrics": {
@@ -393,7 +393,6 @@
         "relevant_claims": 9,
         "supplementary_claims": 0,
         "visual_only_claims": 2,
-        "relevancy_rate": 0.8181818181818182,
         "claims": [
           {
             "claim_id": "C1",
@@ -450,7 +449,8 @@
             "claim": "The FC Barcelona crest on the right of the shorts",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 69.23
       },
       "redundancy": {
         "metrics": {

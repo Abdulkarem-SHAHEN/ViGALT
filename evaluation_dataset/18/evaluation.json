@@ -9,7 +9,6 @@
         "relevant_claims": 8,
         "supplementary_claims": 0,
         "visual_only_claims": 0,
-        "relevancy_rate": 1.0,
         "claims": [
           {
             "claim_id": "C1",
@@ -51,7 +50,8 @@
             "claim": "The table has crossed legs beneath its slatted top",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 100.0
       },
       "redundancy": {
         "metrics": {
@@ -290,7 +290,6 @@
         "relevant_claims": 4,
         "supplementary_claims": 0,
         "visual_only_claims": 1,
-        "relevancy_rate": 0.8,
         "claims": [
           {
             "claim_id": "C1",
@@ -317,7 +316,8 @@
             "claim": "The set is displayed against a white background",
             "label": "V"
           }
-        ]
+        ],
+        "relevancy_score": 66.67
       },
       "redundancy": {
         "metrics": {

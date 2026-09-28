@@ -9,7 +9,6 @@
         "relevant_claims": 13,
         "supplementary_claims": 0,
         "visual_only_claims": 0,
-        "relevancy_rate": 1.0,
         "claims": [
           {
             "claim_id": "C1",
@@ -76,7 +75,8 @@
             "claim": "A moon-like circle surrounding the astronaut",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 100.0
       },
       "redundancy": {
         "metrics": {
@@ -415,7 +415,6 @@
         "relevant_claims": 6,
         "supplementary_claims": 0,
         "visual_only_claims": 0,
-        "relevancy_rate": 1.0,
         "claims": [
           {
             "claim_id": "C1",
@@ -447,7 +446,8 @@
             "claim": "Colorful space-themed graphic on the chest depicting an astronaut standing on a ringed platform and surrounded by planets, moons, stars, and other celestial objects",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 100.0
       },
       "redundancy": {
         "metrics": {

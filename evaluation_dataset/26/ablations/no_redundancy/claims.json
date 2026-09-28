@@ -1,0 +1,49 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "26",
+  "product_stem": "26",
+  "alt_text": "A dining table has a round, brown wood-grain top composed of several angular panels. Its base is a central pedestal formed by broad vertical panels connected by horizontal cross braces, rather than separate corner legs.",
+  "final_alt_text": "A dining table has a round, brown wood-grain top composed of several angular panels. Its base is a central pedestal formed by broad vertical panels connected by horizontal cross braces, rather than separate corner legs.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 3595,
+  "token_usage": {
+    "prompt_tokens": 1005,
+    "completion_tokens": 386,
+    "total_tokens": 1391
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Dining table\"},{\"claim_id\":\"c2\",\"claim\":\"Round, brown wood-grain top composed of several angular panels\"},{\"claim_id\":\"c3\",\"claim\":\"Central pedestal base\"},{\"claim_id\":\"c4\",\"claim\":\"Broad vertical panels forming the base\"},{\"claim_id\":\"c5\",\"claim\":\"Horizontal cross braces connecting the vertical panels\"},{\"claim_id\":\"c6\",\"claim\":\"No separate corner legs\"}],\"total_claims\":6}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Dining table"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Round, brown wood-grain top composed of several angular panels"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Central pedestal base"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Broad vertical panels forming the base"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "Horizontal cross braces connecting the vertical panels"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "No separate corner legs"
+      }
+    ],
+    "total_claims": 6
+  },
+  "processed_at": "2026-09-20T11:53:50.810871+00:00"
+}

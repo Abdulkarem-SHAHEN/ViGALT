@@ -1,0 +1,49 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "17",
+  "product_stem": "17",
+  "alt_text": "Bar table set with four backless, square stools arranged around a rectangular tabletop. The white surfaces show gray marble-like veining, and the silver-gray rectangular frames have horizontal footrests near the floor.",
+  "final_alt_text": "Bar table set with four backless, square stools arranged around a rectangular tabletop. The white surfaces show gray marble-like veining, and the silver-gray rectangular frames have horizontal footrests near the floor.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 3716,
+  "token_usage": {
+    "prompt_tokens": 1004,
+    "completion_tokens": 378,
+    "total_tokens": 1382
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Bar table set\"},{\"claim_id\":\"c2\",\"claim\":\"Four backless, square stools arranged around the tabletop\"},{\"claim_id\":\"c3\",\"claim\":\"Rectangular tabletop\"},{\"claim_id\":\"c4\",\"claim\":\"White surfaces with gray marble-like veining\"},{\"claim_id\":\"c5\",\"claim\":\"Silver-gray rectangular frames\"},{\"claim_id\":\"c6\",\"claim\":\"Horizontal footrests near the floor\"}],\"total_claims\":6}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Bar table set"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Four backless, square stools arranged around the tabletop"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Rectangular tabletop"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "White surfaces with gray marble-like veining"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "Silver-gray rectangular frames"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "Horizontal footrests near the floor"
+      }
+    ],
+    "total_claims": 6
+  },
+  "processed_at": "2026-09-20T11:38:18.566278+00:00"
+}

@@ -1,0 +1,69 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "12",
+  "product_stem": "12",
+  "alt_text": "A tracksuit with a bright red hoodie and black trousers. The hoodie features Lightning McQueen’s face, blue eyes, number 95, and yellow “VROOM! VROOM!” lettering; the trousers have white side stripes, a Disney Pixar Cars logo, gray ankle cuffs, and a gray drawstring.",
+  "final_alt_text": "A tracksuit with a bright red hoodie and black trousers. The hoodie features Lightning McQueen’s face, blue eyes, number 95, and yellow “VROOM! VROOM!” lettering; the trousers have white side stripes, a Disney Pixar Cars logo, gray ankle cuffs, and a gray drawstring.",
+  "classification_category": "CLOTHING",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 4163,
+  "token_usage": {
+    "prompt_tokens": 1026,
+    "completion_tokens": 487,
+    "total_tokens": 1513
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Tracksuit\"},{\"claim_id\":\"c2\",\"claim\":\"Bright red hoodie\"},{\"claim_id\":\"c3\",\"claim\":\"Black trousers\"},{\"claim_id\":\"c4\",\"claim\":\"Lightning McQueen’s face on the hoodie\"},{\"claim_id\":\"c5\",\"claim\":\"Blue eyes on the hoodie\"},{\"claim_id\":\"c6\",\"claim\":\"Number 95 on the hoodie\"},{\"claim_id\":\"c7\",\"claim\":\"Yellow “VROOM! VROOM!” lettering on the hoodie\"},{\"claim_id\":\"c8\",\"claim\":\"White side stripes on the trousers\"},{\"claim_id\":\"c9\",\"claim\":\"Disney Pixar Cars logo on the trousers\"},{\"claim_id\":\"c10\",\"claim\":\"Gray ankle cuffs on the trousers\"},{\"claim_id\":\"c11\",\"claim\":\"Gray drawstring on the trousers\"}],\"total_claims\":11}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Tracksuit"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Bright red hoodie"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Black trousers"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Lightning McQueen’s face on the hoodie"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "Blue eyes on the hoodie"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "Number 95 on the hoodie"
+      },
+      {
+        "claim_id": "c7",
+        "claim": "Yellow “VROOM! VROOM!” lettering on the hoodie"
+      },
+      {
+        "claim_id": "c8",
+        "claim": "White side stripes on the trousers"
+      },
+      {
+        "claim_id": "c9",
+        "claim": "Disney Pixar Cars logo on the trousers"
+      },
+      {
+        "claim_id": "c10",
+        "claim": "Gray ankle cuffs on the trousers"
+      },
+      {
+        "claim_id": "c11",
+        "claim": "Gray drawstring on the trousers"
+      }
+    ],
+    "total_claims": 11
+  },
+  "processed_at": "2026-09-20T11:29:39.906953+00:00"
+}

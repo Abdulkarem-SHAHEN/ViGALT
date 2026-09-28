@@ -1,0 +1,48 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Turquoise-blue rash guard body",
+      "label": "NOVEL",
+      "reason": "The DOM identifies the garment as a blue rash guard but does not specify a turquoise-blue shade or that this color forms the body of the garment; the claim adds visual color and placement information."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "White upper sections",
+      "label": "NOVEL",
+      "reason": "The DOM mentions a printed design and vibrant colors but does not identify white upper sections of the garment; this adds a specific color-blocking and spatial appearance detail."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Navy-blue bands around the sleeve hems",
+      "label": "NOVEL",
+      "reason": "The DOM identifies short sleeves but does not describe navy-blue bands at their hems; the claim adds the bands' color, configuration, and location."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "A large white flowing wave or dragon-like graphic spans the front",
+      "label": "NOVEL",
+      "reason": "Although the DOM states that the garment has a printed design, it does not specify a large white wave or dragon-like graphic or that it spans the front; the claim adds the graphic's appearance and spatial extent."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Turquoise-bound crew neckline",
+      "label": "NOVEL",
+      "reason": "The DOM does not describe the neckline shape or its turquoise binding; the claim adds both the crew-neck construction and contrasting trim."
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Straight hem",
+      "label": "NOVEL",
+      "reason": "The DOM does not provide the hem shape, so the claim adds a visible construction detail."
+    }
+  ],
+  "summary": {
+    "total_claims": 6,
+    "novel_claims": 6,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 0,
+    "redundancy_score": 0.0
+  }
+}

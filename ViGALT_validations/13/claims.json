@@ -1,0 +1,18 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Black T-shirt"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Small white adidas three-stripe logo on the left chest"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Straight lower hem"
+    }
+  ],
+  "total_claims": 3
+}

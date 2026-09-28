@@ -1,0 +1,68 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "Two matching chairs",
+      "claim": "Two matching chairs",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Two visually matching wooden chairs are clearly visible, one on each side of the table."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "A rectangular table",
+      "claim": "A rectangular table",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A rectangular table is clearly visible in the center of the image."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "The chairs flank the table",
+      "claim": "The chairs flank the table",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "One chair is positioned on each side of the table, visibly flanking it."
+    },
+    {
+      "claim_id": "c4",
+      "original_claim": "All three pieces have open slatted surfaces",
+      "claim": "All three pieces have open slatted surfaces",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Both chairs visibly have slatted seats, and the table visibly has a slatted tabletop."
+    },
+    {
+      "claim_id": "c5",
+      "original_claim": "The chairs have three horizontal back rails",
+      "claim": "The chairs have three horizontal back rails",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Each chair visibly has three horizontal rails across its back."
+    },
+    {
+      "claim_id": "c6",
+      "original_claim": "The chairs have crossed support legs",
+      "claim": "The chairs have crossed support legs",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Both chairs visibly have intersecting, crossed support legs."
+    },
+    {
+      "claim_id": "c7",
+      "original_claim": "The table has crossed legs beneath its slatted top",
+      "claim": "The table has crossed legs beneath its slatted top",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The table visibly has crossed legs beneath its slatted tabletop."
+    }
+  ],
+  "summary": {
+    "total_claims": 7,
+    "accurate_claims": 7,
+    "corrected_claims": 0,
+    "deleted_claims": 0,
+    "error_rate": 0.0
+  }
+}

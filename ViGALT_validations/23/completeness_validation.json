@@ -1,0 +1,49 @@
+{
+  "stage": "completeness_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "A bed",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Rounded rectangular tubular frames at the head and foot",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Each frame has three vertical rods with ringed ornamental sections",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c4",
+      "claim": "The footboard includes a lower horizontal rail beneath the mattress",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "n1",
+      "claim": "The bed frame has a black finish",
+      "label": "ADDED",
+      "addition_type": "VISUAL_GAP",
+      "reason": "The headboard and footboard are visibly finished in black, which is not expressed by the existing claims."
+    }
+  ],
+  "summary": {
+    "input_claims": 4,
+    "retained_claims": 4,
+    "added_claims": 1,
+    "added_visual_gap": 1,
+    "added_non_english_text": 0,
+    "added_known_entity": 0,
+    "omission_score": 0.2
+  }
+}

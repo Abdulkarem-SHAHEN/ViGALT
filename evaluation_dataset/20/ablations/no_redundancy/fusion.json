@@ -1,0 +1,93 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 7059,
+  "token_usage": {
+    "prompt_tokens": 3006,
+    "completion_tokens": 1171,
+    "total_tokens": 4177
+  },
+  "raw_response": "{\n  \"stage\": \"fusion\",\n  \"master_claims\": [\n    {\n      \"claim_id\": \"c1\",\n      \"text\": \"The chair has a high, rounded back\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c2\",\n      \"text\": \"The chair has integrated curved arms\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"n1\",\n      \"text\": \"The chair is upholstered in white\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    },\n    {\n      \"claim_id\": \"c3\",\n      \"text\": \"The chair features vertical channel stitching\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c4\",\n      \"text\": \"The chair has a separate rectangular seat cushion\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"n2\",\n      \"text\": \"A separate rectangular white cushion is placed against the backrest\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    },\n    {\n      \"claim_id\": \"c5\",\n      \"text\": \"The chair rests on a white five-spoke wheeled base\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c6\",\n      \"text\": \"The wheeled base has black-and-white casters\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"n3\",\n      \"text\": \"A black adjustment lever extends beneath the seat on the left side\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    },\n    {\n      \"claim_id\": \"c7\",\n      \"text\": \"A desk is positioned behind the chair\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c8\",\n      \"text\": \"A laptop is positioned behind the chair\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    }\n  ],\n  \"edit_log\": [\n    \"Retained all eight Accuracy-validated claims\",\n    \"Added white upholstery (n1)\",\n    \"Added separate rectangular white backrest cushion (n2)\",\n    \"Added black adjustment lever beneath the seat (n3)\"\n  ],\n  \"final_alt_text\": \"The chair has a high, rounded back and integrated curved arms, featuring vertical channel stitching and a separate rectangular seat cushion. It is upholstered in white and has a separate rectangular white cushion placed against the backrest; it rests on a white five-spoke wheeled base with black-and-white casters and a black adjustment lever extending beneath the seat on the left side. A desk and laptop are positioned behind it.\"\n}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "The chair has a high, rounded back",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "The chair has integrated curved arms",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "The chair is upholstered in white",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "The chair features vertical channel stitching",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "The chair has a separate rectangular seat cushion",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n2",
+        "text": "A separate rectangular white cushion is placed against the backrest",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "The chair rests on a white five-spoke wheeled base",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "The wheeled base has black-and-white casters",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n3",
+        "text": "A black adjustment lever extends beneath the seat on the left side",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "c7",
+        "text": "A desk is positioned behind the chair",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c8",
+        "text": "A laptop is positioned behind the chair",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Retained all eight Accuracy-validated claims",
+      "Added white upholstery (n1)",
+      "Added separate rectangular white backrest cushion (n2)",
+      "Added black adjustment lever beneath the seat (n3)"
+    ],
+    "final_alt_text": "The chair has a high, rounded back and integrated curved arms, featuring vertical channel stitching and a separate rectangular seat cushion. It is upholstered in white and has a separate rectangular white cushion placed against the backrest; it rests on a white five-spoke wheeled base with black-and-white casters and a black adjustment lever extending beneath the seat on the left side. A desk and laptop are positioned behind it."
+  },
+  "final_alt_text": "The chair has a high, rounded back and integrated curved arms, featuring vertical channel stitching and a separate rectangular seat cushion. It is upholstered in white and has a separate rectangular white cushion placed against the backrest; it rests on a white five-spoke wheeled base with black-and-white casters and a black adjustment lever extending beneath the seat on the left side. A desk and laptop are positioned behind it.",
+  "processed_at": "2026-09-20T11:43:35.361841+00:00"
+}

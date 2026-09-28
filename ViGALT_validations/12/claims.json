@@ -1,0 +1,46 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Tracksuit"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Bright red hoodie"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Black trousers"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Lightning McQueen’s face on the hoodie"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Blue eyes on the hoodie"
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Number 95 on the hoodie"
+    },
+    {
+      "claim_id": "c7",
+      "claim": "Yellow “VROOM! VROOM!” lettering on the hoodie"
+    },
+    {
+      "claim_id": "c8",
+      "claim": "White side stripes on the trousers"
+    },
+    {
+      "claim_id": "c9",
+      "claim": "Gray ankle cuffs on the trousers"
+    },
+    {
+      "claim_id": "c10",
+      "claim": "Gray drawstring on the trousers"
+    }
+  ],
+  "total_claims": 10
+}

@@ -1,0 +1,74 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 4585,
+  "token_usage": {
+    "prompt_tokens": 2645,
+    "completion_tokens": 649,
+    "total_tokens": 3294
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"Two matching chairs\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c2\",\"text\":\"A rectangular table\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"The chairs flank the table\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"All three pieces have open slatted surfaces\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"The chairs have three horizontal back rails\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c6\",\"text\":\"The chairs have crossed support legs\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c7\",\"text\":\"The table has crossed legs beneath its slatted top\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n1\",\"text\":\"The furniture has a warm brown wood-toned finish\",\"source\":\"ADDED\",\"action\":\"ADDED\"}],\"edit_log\":[\"Retained all seven accurate original claims.\",\"Added warm brown wood-toned finish per Completeness (n1).\",\"Grouped the chairs, table, overall finish, and structural details into screen-reader order.\"],\"final_alt_text\":\"A furniture set shows two matching chairs flanking a rectangular table. All three pieces have open slatted surfaces and a warm brown wood-toned finish. The chairs have three horizontal back rails and crossed support legs. The table has crossed legs beneath its slatted top.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Two matching chairs",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "A rectangular table",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "The chairs flank the table",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "All three pieces have open slatted surfaces",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "The chairs have three horizontal back rails",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "The chairs have crossed support legs",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c7",
+        "text": "The table has crossed legs beneath its slatted top",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "The furniture has a warm brown wood-toned finish",
+        "source": "ADDED",
+        "action": "ADDED"
+      }
+    ],
+    "edit_log": [
+      "Retained all seven accurate original claims.",
+      "Added warm brown wood-toned finish per Completeness (n1).",
+      "Grouped the chairs, table, overall finish, and structural details into screen-reader order."
+    ],
+    "final_alt_text": "A furniture set shows two matching chairs flanking a rectangular table. All three pieces have open slatted surfaces and a warm brown wood-toned finish. The chairs have three horizontal back rails and crossed support legs. The table has crossed legs beneath its slatted top."
+  },
+  "final_alt_text": "A furniture set shows two matching chairs flanking a rectangular table. All three pieces have open slatted surfaces and a warm brown wood-toned finish. The chairs have three horizontal back rails and crossed support legs. The table has crossed legs beneath its slatted top.",
+  "processed_at": "2026-09-20T11:39:55.037589+00:00"
+}

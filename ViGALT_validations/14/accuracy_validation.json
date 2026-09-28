@@ -1,0 +1,84 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "Two-piece pajama set",
+      "claim": "Two-piece outfit consisting of a shirt and shorts",
+      "label": "CORRECTED",
+      "error_category": "ATTRIBUTE_OR_OCR",
+      "reason": "A shirt and shorts are visibly present, but the image does not establish that they are pajamas."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "Burgundy shirt",
+      "claim": "Burgundy shirt",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The image visibly shows a burgundy short-sleeved shirt."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "Narrow navy vertical stripes on the shirt",
+      "claim": "Narrow navy vertical stripes on the shirt",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Narrow navy vertical stripes are clearly visible across the burgundy shirt."
+    },
+    {
+      "claim_id": "c4",
+      "original_claim": "Yellow “BARÇA” lettering across the shirt's chest",
+      "claim": "Yellow “BARÇA” lettering across the shirt's chest",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Large yellow BARÇA lettering is visibly positioned across the shirt chest."
+    },
+    {
+      "claim_id": "c5",
+      "original_claim": "Football graphics on the shirt",
+      "claim": "Football graphics on the shirt",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A football graphic and football-related crest imagery are visibly printed on the shirt."
+    },
+    {
+      "claim_id": "c6",
+      "original_claim": "FC Barcelona crest on the shirt",
+      "claim": "FC Barcelona crest on the shirt",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The FC Barcelona crest is clearly visible on the upper right side of the shirt."
+    },
+    {
+      "claim_id": "c7",
+      "original_claim": "Matching navy shorts",
+      "claim": "Matching navy shorts",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Navy shorts are visibly worn with the shirt and coordinate with its navy details."
+    },
+    {
+      "claim_id": "c8",
+      "original_claim": "Vertical yellow “BARÇA” lettering on one leg of the shorts",
+      "claim": "Vertical yellow “BARÇA” lettering on one leg of the shorts",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Vertical yellow BARÇA lettering is clearly visible on one shorts leg."
+    },
+    {
+      "claim_id": "c9",
+      "original_claim": "FC Barcelona crest on the other leg of the shorts",
+      "claim": "FC Barcelona crest on the other leg of the shorts",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "An FC Barcelona crest is clearly visible on the opposite shorts leg."
+    }
+  ],
+  "summary": {
+    "total_claims": 9,
+    "accurate_claims": 8,
+    "corrected_claims": 1,
+    "deleted_claims": 0,
+    "error_rate": 0.1111111111111111
+  }
+}

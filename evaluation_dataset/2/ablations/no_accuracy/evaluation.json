@@ -1,0 +1,229 @@
+{
+  "status": "ok",
+  "folder_number": 2,
+  "image_file": "713rXvLCbzL._AC_SX466_.jpg",
+  "ablation": "no_accuracy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A T-shirt is shown worn on a person, with a straight body extending to the upper hips and short sleeves ending above the elbows. It has a V-neckline and an irregular white outlined heart on the upper right chest.",
+      "relevancy": {
+        "total_claims": 5,
+        "relevant_claims": 5,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "A T-shirt is worn on a person",
+            "label": "R",
+            "reason": "The image shows the T-shirt worn by a model."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The T-shirt has a straight body extending to the upper hips",
+            "label": "R",
+            "reason": "The shirt’s body falls straight to the upper-hip area."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The T-shirt has short sleeves ending above the elbows",
+            "label": "R",
+            "reason": "The garment has short sleeves that end well above the elbows."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The T-shirt has a V-neckline",
+            "label": "R",
+            "reason": "A V-shaped neckline is visible on the shirt."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "An irregular white outlined heart is on the upper right chest",
+            "label": "R",
+            "reason": "A white outlined heart graphic appears on the upper chest at the image right."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 5,
+          "relevant_claims": 5,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 2,
+          "relevant_novel_claims": 2,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 2,
+          "avoidable_redundancy_claims": 1,
+          "novelty_rate": 0.4,
+          "raw_novelty_rate": 0.4,
+          "unavoidable_repetition_rate": 0.4,
+          "avoidable_redundancy_rate": 0.2,
+          "redundancy_rate": 0.6
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "A T-shirt is worn on a person",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The T-shirt has a straight body extending to the upper hips",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The T-shirt has short sleeves ending above the elbows",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The T-shirt has a V-neckline",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "An irregular white outlined heart is on the upper right chest",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "A T-shirt is worn on a person",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM identifies the item as a T-shirt but does not state or otherwise represent that it is being worn by a person."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The T-shirt has a straight body extending to the upper hips",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "main_image_alt",
+                "value": "relaxed fit"
+              },
+              {
+                "field": "product_details.Style Name",
+                "value": "Tunic"
+              }
+            ],
+            "reason": "The DOM provides a relaxed fit and a tunic style name, but does not specify a straight body shape or that the garment extends to the upper hips."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The T-shirt has short sleeves ending above the elbows",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "Gyabnw Women's V-Neck Short Sleeve Heart Print T-Shirt"
+              },
+              {
+                "field": "feature_bullets[1]",
+                "value": "Women's T-shirt with short sleeves and V-neckline."
+              }
+            ],
+            "reason": "Short sleeves are already stated, but the new information is their endpoint above the elbows. Repeating the sleeve type anchors that endpoint to the garment's sleeves."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The T-shirt has a V-neckline",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "Gyabnw Women's V-Neck Short Sleeve Heart Print T-Shirt"
+              },
+              {
+                "field": "product_details.Neck Style",
+                "value": "V-Neck"
+              },
+              {
+                "field": "feature_bullets[1]",
+                "value": "Women's T-shirt with short sleeves and V-neckline."
+              }
+            ],
+            "reason": "The DOM explicitly and repeatedly identifies the T-shirt as having a V-neck/V-neckline, and the claim adds no further semantic detail."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "An irregular white outlined heart is on the upper right chest",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "Gyabnw Women's V-Neck Short Sleeve Heart Print T-Shirt"
+              },
+              {
+                "field": "feature_bullets[1]",
+                "value": "simple heart print"
+              },
+              {
+                "field": "main_image_alt",
+                "value": "Small printed heart"
+              }
+            ],
+            "reason": "The DOM establishes that there is a heart print, while the claim adds its irregular white outlined appearance and upper-right-chest placement. Referring to the heart is necessary to anchor those new visual and positional details."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 5,
+        "subjective_claims": 0,
+        "total_claims": 5,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "A T-shirt is shown worn on a person.",
+            "label": "OBJECTIVE",
+            "reason": "The image visibly shows a person wearing a short-sleeved T-shirt-style top."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The shirt has a straight body extending to the upper hips.",
+            "label": "OBJECTIVE",
+            "reason": "The garment's torso shape and its visible length relative to the wearer's hips can be observed in the image."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The shirt has short sleeves ending above the elbows.",
+            "label": "OBJECTIVE",
+            "reason": "The sleeve length and the visible position of the sleeve ends relative to the elbows are directly observable."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The shirt has a V-neckline.",
+            "label": "OBJECTIVE",
+            "reason": "The V-shaped opening at the neck is clearly visible."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "An irregular white outlined heart appears on the upper right chest.",
+            "label": "OBJECTIVE",
+            "reason": "A white heart-shaped outline with an uneven hand-drawn appearance is visibly printed on the upper chest area on the image's right side."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 39,
+        "relevant_novel_claims": 2,
+        "efficiency_per_100_words": 5.128205128205128
+      }
+    }
+  },
+  "processed_at": "2026-09-20T10:48:26.483655+00:00"
+}

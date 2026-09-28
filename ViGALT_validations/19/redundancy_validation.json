@@ -1,0 +1,48 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Coral-pink perforated lattice backrest",
+      "label": "NOVEL",
+      "reason": "The DOM identifies the chair as coral pink and describes an S-shaped backrest, but it does not specify a perforated lattice construction. The lattice pattern is new visual information."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Rounded seat",
+      "label": "NOVEL",
+      "reason": "The DOM describes a padded, mesh-covered seat but does not state that the seat is rounded. The rounded shape adds new visual information."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "A white central column supports the base",
+      "label": "NOVEL",
+      "reason": "The DOM mentions a reinforced metal base and swivel function but does not identify a central column, its white color, or its supporting relationship to the base. These are new visual details."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Five-legged white base",
+      "label": "NOVEL",
+      "reason": "The DOM indicates a wheeled base and reinforced metal construction but does not specify five legs or a white base. The leg count and base color add new visual information."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Black-and-pink casters on the base",
+      "label": "NOVEL",
+      "reason": "The DOM mentions smooth wheels or casters but does not provide their black-and-pink coloration. The color and its visible association with the base add new information."
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Black adjustment lever beneath the seat on the viewer’s left",
+      "label": "NOVEL",
+      "reason": "The DOM states that the chair has adjustable height but does not identify a lever, its black color, or its position beneath the seat on the viewer’s left. These visual and spatial details are new."
+    }
+  ],
+  "summary": {
+    "total_claims": 6,
+    "novel_claims": 6,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 0,
+    "redundancy_score": 0.0
+  }
+}

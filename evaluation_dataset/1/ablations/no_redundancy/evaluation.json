@@ -1,0 +1,208 @@
+{
+  "status": "ok",
+  "folder_number": 1,
+  "image_file": "513U83g30sL._AC_SX679_.jpg",
+  "ablation": "no_redundancy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A white T-shirt shown from the front, with short sleeves and a crew neckline. It has a small gray Under Armour logo on the wearer's upper left chest.",
+      "relevancy": {
+        "total_claims": 4,
+        "relevant_claims": 4,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "White T-shirt shown from the front",
+            "label": "R",
+            "reason": "It identifies the white T-shirt and its front-facing product view."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Short sleeves",
+            "label": "R",
+            "reason": "It describes the shirt's sleeve configuration."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Crew neckline",
+            "label": "R",
+            "reason": "It describes the garment's neckline."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Small gray Under Armour logo on the wearer's upper left chest",
+            "label": "R",
+            "reason": "It describes the small gray logo placed on the shirt's upper left chest."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 4,
+          "relevant_claims": 4,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 2,
+          "relevant_novel_claims": 2,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 0,
+          "avoidable_redundancy_claims": 2,
+          "novelty_rate": 0.5,
+          "raw_novelty_rate": 0.5,
+          "unavoidable_repetition_rate": 0.0,
+          "avoidable_redundancy_rate": 0.5,
+          "redundancy_rate": 0.5
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "White T-shirt shown from the front",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Short sleeves",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Crew neckline",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Small gray Under Armour logo on the wearer's upper left chest",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "White T-shirt shown from the front",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "White/Gray"
+              },
+              {
+                "field": "product_details.Shirt Form Type",
+                "value": "T-Shirt"
+              }
+            ],
+            "reason": "The DOM identifies the product as a White/Gray T-shirt, but does not state that the displayed view is from the front."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Short sleeves",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Sleeve Type",
+                "value": "Short Sleeve"
+              },
+              {
+                "field": "product_details.Sleeve Length Description",
+                "value": "Short Sleeve"
+              },
+              {
+                "field": "description",
+                "value": "The short-sleeved T-shirt"
+              }
+            ],
+            "reason": "The DOM explicitly states that the T-shirt has short sleeves, so the claim adds no new semantic information."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Crew neckline",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Neck Style",
+                "value": "Crew Neck"
+              }
+            ],
+            "reason": "The DOM explicitly specifies a crew neck, which semantically matches a crew neckline."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Small gray Under Armour logo on the wearer's upper left chest",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "brand",
+                "value": "Under Armour"
+              },
+              {
+                "field": "product_details.Brand Name",
+                "value": "Under Armour"
+              }
+            ],
+            "reason": "Although the DOM identifies Under Armour as the brand, it does not provide the logo's presence, small size, gray color, or placement on the upper left chest."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 6,
+        "subjective_claims": 0,
+        "total_claims": 6,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The T-shirt is white.",
+            "label": "OBJECTIVE",
+            "reason": "The garment appears white in the image, which is directly visually observable."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The T-shirt is shown from the front.",
+            "label": "OBJECTIVE",
+            "reason": "The visible front torso, neckline, sleeves, and chest logo indicate a front-facing view."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The T-shirt has short sleeves.",
+            "label": "OBJECTIVE",
+            "reason": "Both sleeves visibly end above where long sleeves would extend, making their short length observable."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The T-shirt has a crew neckline.",
+            "label": "OBJECTIVE",
+            "reason": "The image visibly shows a round, close-fitting neckline characteristic of a crew neck."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The T-shirt has a small gray Under Armour logo.",
+            "label": "OBJECTIVE",
+            "reason": "A small gray Under Armour symbol is visibly printed on the chest area."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "The logo is on the wearer's upper left chest.",
+            "label": "OBJECTIVE",
+            "reason": "In the front-facing garment view, the visible logo is positioned on the wearer's left side near the upper chest."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 28,
+        "relevant_novel_claims": 2,
+        "efficiency_per_100_words": 7.142857142857142
+      }
+    }
+  },
+  "processed_at": "2026-09-20T10:45:26.553629+00:00"
+}

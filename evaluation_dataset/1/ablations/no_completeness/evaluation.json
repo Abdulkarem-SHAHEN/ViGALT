@@ -1,0 +1,128 @@
+{
+  "status": "ok",
+  "folder_number": 1,
+  "image_file": "513U83g30sL._AC_SX679_.jpg",
+  "ablation": "no_completeness",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A T-shirt is shown from the front. It has a small gray Under Armour logo on the wearer's upper left chest.",
+      "relevancy": {
+        "total_claims": 2,
+        "relevant_claims": 2,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "T-shirt shown from the front",
+            "label": "R",
+            "reason": "This identifies the garment and its front-facing presentation."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Small gray Under Armour logo on the wearer's upper left chest",
+            "label": "R",
+            "reason": "This describes the small gray logo placed on the shirt's upper left chest."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 2,
+          "relevant_claims": 2,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 0,
+          "relevant_novel_claims": 0,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 2,
+          "avoidable_redundancy_claims": 0,
+          "novelty_rate": 0.0,
+          "raw_novelty_rate": 0.0,
+          "unavoidable_repetition_rate": 1.0,
+          "avoidable_redundancy_rate": 0.0,
+          "redundancy_rate": 1.0
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "T-shirt shown from the front",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Small gray Under Armour logo on the wearer's upper left chest",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "T-shirt shown from the front",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "Under Armour Tech 2.0 T-Shirt - SS21"
+              },
+              {
+                "field": "product_details.Shirt Form Type",
+                "value": "T-Shirt"
+              }
+            ],
+            "reason": "The DOM already identifies the product as a T-shirt, but does not state its displayed orientation. Repeating the garment type anchors the new front-view information to the product."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Small gray Under Armour logo on the wearer's upper left chest",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "brand",
+                "value": "Under Armour"
+              },
+              {
+                "field": "product_details.Brand Name",
+                "value": "Under Armour"
+              }
+            ],
+            "reason": "The DOM identifies the brand as Under Armour but contains no information about a visible logo, its size, color, or chest placement. Naming Under Armour is needed to identify and ground the newly described logo."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 2,
+        "subjective_claims": 0,
+        "total_claims": 2,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "A T-shirt is shown from the front.",
+            "label": "OBJECTIVE",
+            "reason": "The image visibly shows the front side of a short-sleeved T-shirt."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "It has a small gray Under Armour logo on the wearer's upper left chest.",
+            "label": "OBJECTIVE",
+            "reason": "A small gray Under Armour symbol is visibly present on the upper left chest area from the wearer's perspective."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 21,
+        "relevant_novel_claims": 0,
+        "efficiency_per_100_words": 0.0
+      }
+    }
+  },
+  "processed_at": "2026-09-20T10:45:04.209709+00:00"
+}

@@ -1,0 +1,60 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "Shirt",
+      "claim": "Shirt",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The image clearly shows a shirt."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "Black contrasting collar",
+      "claim": "Gray collar with a black inner collar",
+      "label": "CORRECTED",
+      "error_category": "ATTRIBUTE_OR_OCR",
+      "reason": "The visible outer collar is gray, while the inner collar area is black."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "Black buttons arranged down the center front",
+      "claim": "Black buttons arranged down the center front",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Multiple black buttons are visibly arranged along the shirt's center front."
+    },
+    {
+      "claim_id": "c4",
+      "original_claim": "Rounded lower edge",
+      "claim": "Rounded lower edge",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The shirt's lower hem is visibly curved and rounded at the sides."
+    },
+    {
+      "claim_id": "c5",
+      "original_claim": "Long sleeves",
+      "claim": "Long sleeves",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The image clearly shows sleeves extending from the shoulders to the wrists."
+    },
+    {
+      "claim_id": "c6",
+      "original_claim": "Narrow cuffs at the ends of the sleeves",
+      "claim": "Narrow cuffs at the ends of the sleeves",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Cuff sections are visibly present at the sleeve ends, including a narrow gray cuff on the left sleeve."
+    }
+  ],
+  "summary": {
+    "total_claims": 6,
+    "accurate_claims": 5,
+    "corrected_claims": 1,
+    "deleted_claims": 0,
+    "error_rate": 0.1667
+  }
+}

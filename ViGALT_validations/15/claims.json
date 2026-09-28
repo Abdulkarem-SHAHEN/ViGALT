@@ -1,0 +1,30 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "White T-shirt"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Round crew neckline"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Short sleeves"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Large black “I” in the front graphic"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Red heart to the right of the large black “I” in the front graphic"
+    },
+    {
+      "claim_id": "c6",
+      "claim": "The word “BARCELONA” in black capital letters beneath the large black “I” and red heart in the front graphic"
+    }
+  ],
+  "total_claims": 6
+}

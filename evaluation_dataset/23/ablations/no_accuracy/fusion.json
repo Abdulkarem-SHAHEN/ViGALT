@@ -1,0 +1,57 @@
+{
+  "status": "ok",
+  "ablation": "no_accuracy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_accuracy.txt",
+  "duration_ms": 5407,
+  "token_usage": {
+    "prompt_tokens": 2213,
+    "completion_tokens": 599,
+    "total_tokens": 2812
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"\",\"source\":\"ORIGINAL\",\"action\":\"DROPPED_REDUNDANT\"},{\"claim_id\":\"c2\",\"text\":\"Rounded rectangular tubular frames at the head and foot\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n1\",\"text\":\"The bed frame has a black finish\",\"source\":\"ADDED\",\"action\":\"ADDED\"},{\"claim_id\":\"c3\",\"text\":\"Each frame has three vertical rods with ringed ornamental sections\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"The footboard includes a lower horizontal rail beneath the mattress\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"}],\"edit_log\":[\"Dropped redundant bed claim per Redundancy (c1)\",\"Retained rounded rectangular tubular frames per Redundancy (c2)\",\"Added black finish per Completeness (n1)\",\"Retained rod details and lower footboard rail per Redundancy (c3, c4)\"],\"final_alt_text\":\"The bed frame has rounded rectangular tubular frames at the head and foot, with a black finish. Each frame has three vertical rods with ringed ornamental sections, and the footboard includes a lower horizontal rail beneath the mattress.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "",
+        "source": "ORIGINAL",
+        "action": "DROPPED_REDUNDANT"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Rounded rectangular tubular frames at the head and foot",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "The bed frame has a black finish",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Each frame has three vertical rods with ringed ornamental sections",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "The footboard includes a lower horizontal rail beneath the mattress",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Dropped redundant bed claim per Redundancy (c1)",
+      "Retained rounded rectangular tubular frames per Redundancy (c2)",
+      "Added black finish per Completeness (n1)",
+      "Retained rod details and lower footboard rail per Redundancy (c3, c4)"
+    ],
+    "final_alt_text": "The bed frame has rounded rectangular tubular frames at the head and foot, with a black finish. Each frame has three vertical rods with ringed ornamental sections, and the footboard includes a lower horizontal rail beneath the mattress."
+  },
+  "final_alt_text": "The bed frame has rounded rectangular tubular frames at the head and foot, with a black finish. Each frame has three vertical rods with ringed ornamental sections, and the footboard includes a lower horizontal rail beneath the mattress.",
+  "processed_at": "2026-09-20T11:48:04.051062+00:00"
+}

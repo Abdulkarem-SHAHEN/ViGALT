@@ -1,0 +1,53 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "24",
+  "product_stem": "24",
+  "alt_text": "A bed with a white-painted, peaked roof-shaped frame, four corner posts, and raised guard panels made of vertical slats along the sides and foot end. A solid back panel is behind the low-set sleeping surface, with an opening at the front. The sleeping surface contains a white mattress with a lightly quilted cover.",
+  "final_alt_text": "A bed with a white-painted, peaked roof-shaped frame, four corner posts, and raised guard panels made of vertical slats along the sides and foot end. A solid back panel is behind the low-set sleeping surface, with an opening at the front. The sleeping surface contains a white mattress with a lightly quilted cover.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 4974,
+  "token_usage": {
+    "prompt_tokens": 1029,
+    "completion_tokens": 527,
+    "total_tokens": 1556
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"White-painted, peaked roof-shaped bed frame\"},{\"claim_id\":\"c2\",\"claim\":\"Four corner posts\"},{\"claim_id\":\"c3\",\"claim\":\"Raised guard panels made of vertical slats along the sides and foot end\"},{\"claim_id\":\"c4\",\"claim\":\"Solid back panel behind the low-set sleeping surface\"},{\"claim_id\":\"c5\",\"claim\":\"An opening at the front\"},{\"claim_id\":\"c6\",\"claim\":\"Low-set sleeping surface\"},{\"claim_id\":\"c7\",\"claim\":\"White mattress with a lightly quilted cover\"}],\"total_claims\":7}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "White-painted, peaked roof-shaped bed frame"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Four corner posts"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Raised guard panels made of vertical slats along the sides and foot end"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Solid back panel behind the low-set sleeping surface"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "An opening at the front"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "Low-set sleeping surface"
+      },
+      {
+        "claim_id": "c7",
+        "claim": "White mattress with a lightly quilted cover"
+      }
+    ],
+    "total_claims": 7
+  },
+  "processed_at": "2026-09-20T11:50:36.536733+00:00"
+}

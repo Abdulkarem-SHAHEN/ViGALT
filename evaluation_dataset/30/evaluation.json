@@ -9,7 +9,6 @@
         "relevant_claims": 5,
         "supplementary_claims": 0,
         "visual_only_claims": 0,
-        "relevancy_rate": 1.0,
         "claims": [
           {
             "claim_id": "C1",
@@ -36,7 +35,8 @@
             "claim": "Three icons near the lower center of the reflective surface",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 100.0
       },
       "redundancy": {
         "metrics": {
@@ -228,7 +228,6 @@
         "relevant_claims": 4,
         "supplementary_claims": 0,
         "visual_only_claims": 8,
-        "relevancy_rate": 0.3333333333333333,
         "claims": [
           {
             "claim_id": "C1",
@@ -290,7 +289,8 @@
             "claim": "Small items in the tray",
             "label": "V"
           }
-        ]
+        ],
+        "relevancy_score": 20.0
       },
       "redundancy": {
         "metrics": {

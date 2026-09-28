@@ -1,0 +1,410 @@
+{
+  "status": "ok",
+  "folder_number": 12,
+  "image_file": "61maUree5pL._AC_SY741_.jpg",
+  "ablation": "no_redundancy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A tracksuit with a bright red hoodie and black trousers. The hoodie features Lightning McQueen’s face, blue eyes, number 95, and yellow “VROOM! VROOM!” lettering; the trousers have white side stripes, a Disney Pixar Cars logo, gray ankle cuffs, and a gray drawstring.",
+      "relevancy": {
+        "total_claims": 11,
+        "relevant_claims": 11,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Tracksuit",
+            "label": "R",
+            "reason": "This identifies the two-piece hoodie and trousers product set."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Bright red hoodie",
+            "label": "R",
+            "reason": "This describes the hoodie's visible color and garment type."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Black trousers",
+            "label": "R",
+            "reason": "This describes the visible color and type of the lower garment."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Lightning McQueen’s face on the hoodie",
+            "label": "R",
+            "reason": "This describes the character face graphic printed on the hoodie."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Blue eyes on the hoodie",
+            "label": "R",
+            "reason": "This describes a visible color detail within the hoodie's character graphic."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Number 95 on the hoodie",
+            "label": "R",
+            "reason": "This refers to an on-product graphic detail on the hoodie."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Yellow “VROOM! VROOM!” lettering on the hoodie",
+            "label": "R",
+            "reason": "This describes visible printed text and its color on the hoodie."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "White side stripes on the trousers",
+            "label": "R",
+            "reason": "This describes the contrasting striped detailing along the trousers' sides."
+          },
+          {
+            "claim_id": "c9",
+            "claim": "Disney Pixar Cars logo on the trousers",
+            "label": "R",
+            "reason": "This describes the visible logo graphic printed on the trousers."
+          },
+          {
+            "claim_id": "c10",
+            "claim": "Gray ankle cuffs on the trousers",
+            "label": "R",
+            "reason": "This describes the contrasting cuff color at the trouser ankles."
+          },
+          {
+            "claim_id": "c11",
+            "claim": "Gray drawstring on the trousers",
+            "label": "R",
+            "reason": "This describes the visible drawstring at the trouser waistband."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 11,
+          "relevant_claims": 11,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 9,
+          "relevant_novel_claims": 9,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 1,
+          "avoidable_redundancy_claims": 1,
+          "novelty_rate": 0.8181818181818182,
+          "raw_novelty_rate": 0.8181818181818182,
+          "unavoidable_repetition_rate": 0.09090909090909091,
+          "avoidable_redundancy_rate": 0.09090909090909091,
+          "redundancy_rate": 0.18181818181818182
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Tracksuit",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Bright red hoodie",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Black trousers",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Lightning McQueen’s face on the hoodie",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Blue eyes on the hoodie",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Number 95 on the hoodie",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Yellow “VROOM! VROOM!” lettering on the hoodie",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c8",
+            "claim": "White side stripes on the trousers",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c9",
+            "claim": "Disney Pixar Cars logo on the trousers",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c10",
+            "claim": "Gray ankle cuffs on the trousers",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c11",
+            "claim": "Gray drawstring on the trousers",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Tracksuit",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "Disney Boys Boys Cars Tracksuit Jogging Hoodie and Trousers Lightning McQueen or Martin 18 Months - 8 Years"
+              },
+              {
+                "field": "feature_bullets[1]",
+                "value": "Children's jogging set with hoodie and trousers - complete tracksuit including a hoodie and matching jogging bottoms"
+              }
+            ],
+            "reason": "The DOM explicitly identifies the product as a tracksuit. Repeating only that product type adds no new information."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Bright red hoodie",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "complete tracksuit including a hoodie and matching jogging bottoms"
+              },
+              {
+                "field": "feature_bullets[3]",
+                "value": "Large Lightning McQueen or Martin print with bright colors"
+              }
+            ],
+            "reason": "The DOM establishes that the set includes a hoodie and mentions bright colors generally, but it does not specify that the hoodie is bright red."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Black trousers",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "complete tracksuit including a hoodie and matching jogging bottoms"
+              }
+            ],
+            "reason": "The DOM identifies matching jogging bottoms/trousers but provides no information that they are black."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Lightning McQueen’s face on the hoodie",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "Disney Boys Boys Cars Tracksuit Jogging Hoodie and Trousers Lightning McQueen or Martin 18 Months - 8 Years"
+              },
+              {
+                "field": "feature_bullets[3]",
+                "value": "Large Lightning McQueen or Martin print with bright colors"
+              }
+            ],
+            "reason": "The DOM already establishes a Lightning McQueen or Martin print, but not that the depicted element is Lightning McQueen's face or that it is on the hoodie. Repeating the character identity anchors the newly supplied facial depiction and garment placement."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Blue eyes on the hoodie",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "complete tracksuit including a hoodie and matching jogging bottoms"
+              }
+            ],
+            "reason": "The DOM states that a hoodie is included but contains no information about blue eyes or their placement on it."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Number 95 on the hoodie",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "complete tracksuit including a hoodie and matching jogging bottoms"
+              },
+              {
+                "field": "feature_bullets[3]",
+                "value": "Large Lightning McQueen or Martin print with bright colors"
+              }
+            ],
+            "reason": "The DOM mentions a character print and a hoodie, but does not mention the number 95."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Yellow “VROOM! VROOM!” lettering on the hoodie",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "complete tracksuit including a hoodie and matching jogging bottoms"
+              },
+              {
+                "field": "feature_bullets[3]",
+                "value": "Large Lightning McQueen or Martin print with bright colors"
+              }
+            ],
+            "reason": "The DOM mentions bright colors and a Cars character print, but does not specify yellow lettering, the wording “VROOM! VROOM!”, or its placement on the hoodie."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "White side stripes on the trousers",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "complete tracksuit including a hoodie and matching jogging bottoms"
+              }
+            ],
+            "reason": "The DOM identifies trousers/jogging bottoms but does not describe white side stripes."
+          },
+          {
+            "claim_id": "c9",
+            "claim": "Disney Pixar Cars logo on the trousers",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "brand",
+                "value": "Disney"
+              },
+              {
+                "field": "feature_bullets[0]",
+                "value": "Official Disney Cars Boys Tracksuit"
+              },
+              {
+                "field": "feature_bullets[1]",
+                "value": "complete tracksuit including a hoodie and matching jogging bottoms"
+              }
+            ],
+            "reason": "The DOM establishes Disney Cars branding and the presence of trousers, but does not state that a Disney Pixar Cars logo appears on the trousers."
+          },
+          {
+            "claim_id": "c10",
+            "claim": "Gray ankle cuffs on the trousers",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "complete tracksuit including a hoodie and matching jogging bottoms"
+              }
+            ],
+            "reason": "The DOM provides no information about ankle cuffs or their gray color."
+          },
+          {
+            "claim_id": "c11",
+            "claim": "Gray drawstring on the trousers",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "complete tracksuit including a hoodie and matching jogging bottoms"
+              },
+              {
+                "field": "feature_bullets[2]",
+                "value": "Pleasant soft fabric with elastic waistband for a comfortable fit"
+              }
+            ],
+            "reason": "Although the DOM mentions trousers and an elastic waistband, it does not mention a drawstring or specify that it is gray."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 9,
+        "subjective_claims": 0,
+        "total_claims": 9,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The image shows a tracksuit with a bright red hoodie and black trousers.",
+            "label": "OBJECTIVE",
+            "reason": "The two-piece outfit, the red color of the hooded top, and the black color of the trousers are directly visible."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The hoodie features Lightning McQueen’s face.",
+            "label": "OBJECTIVE",
+            "reason": "A recognizable cartoon race-car face graphic is visibly printed on the front of the hoodie."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The hoodie graphic has blue eyes.",
+            "label": "OBJECTIVE",
+            "reason": "The eyes in the visible character graphic are blue."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The hoodie features the number 95.",
+            "label": "OBJECTIVE",
+            "reason": "The number 95 is visibly printed on the character graphic."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The hoodie has yellow “VROOM! VROOM!” lettering.",
+            "label": "OBJECTIVE",
+            "reason": "Yellow text reading “VROOM! VROOM!” is visibly printed above the character graphic."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "The trousers have white side stripes.",
+            "label": "OBJECTIVE",
+            "reason": "White segmented stripes are visibly present along the outer sides of both trouser legs."
+          },
+          {
+            "claim_id": "C7",
+            "claim": "The trousers have a Disney Pixar Cars logo.",
+            "label": "OBJECTIVE",
+            "reason": "A visible logo on the upper trouser leg includes the recognizable Cars branding and Disney/Pixar text."
+          },
+          {
+            "claim_id": "C8",
+            "claim": "The trousers have gray ankle cuffs.",
+            "label": "OBJECTIVE",
+            "reason": "Gray cuff bands are visibly present at the bottoms of both trouser legs."
+          },
+          {
+            "claim_id": "C9",
+            "claim": "The trousers have a gray drawstring.",
+            "label": "OBJECTIVE",
+            "reason": "Gray drawstring ends are visibly shown at the waistband."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 44,
+        "relevant_novel_claims": 9,
+        "efficiency_per_100_words": 20.454545454545457
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:30:04.684233+00:00"
+}

@@ -1,0 +1,110 @@
+{
+  "status": "ok",
+  "folder_number": 13,
+  "image_file": "71QtF8Gj33L._AC_SX679_.jpg",
+  "ablation": "no_completeness",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A small white adidas three-stripe logo is on the left chest. The shirt has a straight lower hem.",
+      "relevancy": {
+        "total_claims": 2,
+        "relevant_claims": 2,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "A small white adidas three-stripe logo is on the left chest",
+            "label": "R",
+            "reason": "The shirt visibly has a small white Adidas logo on its left chest."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The shirt has a straight lower hem",
+            "label": "R",
+            "reason": "The straight lower hem is a visible construction detail of the shirt."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 2,
+          "relevant_claims": 2,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 2,
+          "relevant_novel_claims": 2,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 0,
+          "avoidable_redundancy_claims": 0,
+          "novelty_rate": 1.0,
+          "raw_novelty_rate": 1.0,
+          "unavoidable_repetition_rate": 0.0,
+          "avoidable_redundancy_rate": 0.0,
+          "redundancy_rate": 0.0
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "A small white adidas three-stripe logo is on the left chest",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The shirt has a straight lower hem",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "A small white adidas three-stripe logo is on the left chest",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM identifies the adidas brand and black/white colourway but does not state that a three-stripe logo is present, its size or colour, or its left-chest placement."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The shirt has a straight lower hem",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM provides fit, neckline, sleeve, material, and pattern details, but contains no information about the lower hem shape."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 2,
+        "subjective_claims": 0,
+        "total_claims": 2,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "A small white adidas three-stripe logo is on the left chest.",
+            "label": "OBJECTIVE",
+            "reason": "A small white three-stripe Adidas mark is visibly present on the wearer’s left chest area, and its color, relative size, and position can be directly observed."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The shirt has a straight lower hem.",
+            "label": "OBJECTIVE",
+            "reason": "The shirt’s bottom edge is visible and appears horizontally straight across the lower torso."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 18,
+        "relevant_novel_claims": 2,
+        "efficiency_per_100_words": 11.11111111111111
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:30:40.583308+00:00"
+}

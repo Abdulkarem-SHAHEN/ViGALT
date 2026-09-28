@@ -1,0 +1,87 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 7459,
+  "token_usage": {
+    "prompt_tokens": 2688,
+    "completion_tokens": 912,
+    "total_tokens": 3600
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"Zip-up hooded sweatshirt\",\"source\":\"ORIGINAL\",\"action\":\"CORRECTED\"},{\"claim_id\":\"n1\",\"text\":\"\",\"source\":\"ADDED\",\"action\":\"MERGED\"},{\"claim_id\":\"n3\",\"text\":\"Pink color\",\"source\":\"ADDED\",\"action\":\"ADDED\"},{\"claim_id\":\"n4\",\"text\":\"Pink awareness ribbon graphics\",\"source\":\"ADDED\",\"action\":\"ADDED\"},{\"claim_id\":\"c2\",\"text\":\"Small graphic on the left chest\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"Much larger version of the graphic centered across the back\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n2\",\"text\":\"Full-length front zipper\",\"source\":\"ADDED\",\"action\":\"ADDED\"},{\"claim_id\":\"c4\",\"text\":\"Large divided hand pocket on the front\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"Ribbed cuffs on the sleeves\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c6\",\"text\":\"Ribbed waistband at the hem\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"}],\"edit_log\":[\"Corrected sweatshirt to zip-up hooded sweatshirt (c1)\",\"Merged attached hood into the corrected hooded sweatshirt description (n1)\",\"Added pink color and pink awareness ribbon graphics (n3, n4)\",\"Added full-length front zipper (n2)\"],\"final_alt_text\":\"Pink zip-up hooded sweatshirt with pink awareness ribbon graphics. It has a small graphic on the left chest and a much larger version of the graphic centered across the back, with a full-length front zipper and a large divided hand pocket on the front. Ribbed cuffs finish the sleeves, and a ribbed waistband finishes the hem.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Zip-up hooded sweatshirt",
+        "source": "ORIGINAL",
+        "action": "CORRECTED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "",
+        "source": "ADDED",
+        "action": "MERGED"
+      },
+      {
+        "claim_id": "n3",
+        "text": "Pink color",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "n4",
+        "text": "Pink awareness ribbon graphics",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Small graphic on the left chest",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Much larger version of the graphic centered across the back",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n2",
+        "text": "Full-length front zipper",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Large divided hand pocket on the front",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Ribbed cuffs on the sleeves",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Ribbed waistband at the hem",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Corrected sweatshirt to zip-up hooded sweatshirt (c1)",
+      "Merged attached hood into the corrected hooded sweatshirt description (n1)",
+      "Added pink color and pink awareness ribbon graphics (n3, n4)",
+      "Added full-length front zipper (n2)"
+    ],
+    "final_alt_text": "Pink zip-up hooded sweatshirt with pink awareness ribbon graphics. It has a small graphic on the left chest and a much larger version of the graphic centered across the back, with a full-length front zipper and a large divided hand pocket on the front. Ribbed cuffs finish the sleeves, and a ribbed waistband finishes the hem."
+  },
+  "final_alt_text": "Pink zip-up hooded sweatshirt with pink awareness ribbon graphics. It has a small graphic on the left chest and a much larger version of the graphic centered across the back, with a full-length front zipper and a large divided hand pocket on the front. Ribbed cuffs finish the sleeves, and a ribbed waistband finishes the hem.",
+  "processed_at": "2026-09-20T10:53:11.510568+00:00"
+}

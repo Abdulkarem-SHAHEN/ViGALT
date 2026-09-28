@@ -1,0 +1,60 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "T-shirt",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The product title and main image alt already identify the item as a T-shirt. Repeating the product type adds no visual grounding or new information."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Crew neckline",
+      "label": "NOVEL",
+      "reason": "The DOM identifies the item as a T-shirt but does not specify its neckline style. This adds the visual construction detail that the neckline is crew-shaped."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Short sleeves",
+      "label": "NOVEL",
+      "reason": "The DOM mentions sleeves in relation to stitching but does not state their length. This adds the visual garment-construction detail that the sleeves are short."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Large orange “NIVEAU” lettering on the front, above a cream video-game controller",
+      "label": "NOVEL",
+      "reason": "The DOM mentions a vintage console and joystick design but does not provide the specific orange NIVEAU lettering, its large size and front placement, the cream controller, or the above/below spatial relationship."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Cream video-game controller on the front",
+      "label": "NOVEL",
+      "reason": "Although the DOM broadly mentions a console and joystick design, it does not specify a cream video-game controller or its front placement. These are new visual details."
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Cream “40” on the front",
+      "label": "NOVEL",
+      "reason": "The DOM title includes the number 40, but it does not describe its cream appearance or placement on the front. Those visual attributes add new information."
+    },
+    {
+      "claim_id": "c7",
+      "claim": "Multicolored stars on the front",
+      "label": "NOVEL",
+      "reason": "The DOM does not mention stars, their multiple colors, or their front placement. This adds a new decorative visual element."
+    },
+    {
+      "claim_id": "c8",
+      "claim": "Green banner on the front reading “DÉBLOQUÉ,” meaning “unlocked”",
+      "label": "NOVEL",
+      "reason": "The DOM includes the concept of unlocked in the title, but does not describe a green banner, its front placement, or the visual presentation of the DÉBLOQUÉ text. The banner and its appearance add new visual information."
+    }
+  ],
+  "summary": {
+    "total_claims": 8,
+    "novel_claims": 7,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.125
+  }
+}

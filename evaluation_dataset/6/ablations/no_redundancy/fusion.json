@@ -1,0 +1,74 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 5156,
+  "token_usage": {
+    "prompt_tokens": 2528,
+    "completion_tokens": 669,
+    "total_tokens": 3197
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"Shirt\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n1\",\"text\":\"Gray shirt body\",\"source\":\"ADDED\",\"action\":\"ADDED\"},{\"claim_id\":\"c2\",\"text\":\"Gray collar with a black inner collar\",\"source\":\"ORIGINAL\",\"action\":\"CORRECTED\"},{\"claim_id\":\"c3\",\"text\":\"Black buttons arranged down the center front\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"Rounded lower edge\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"Long sleeves\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c6\",\"text\":\"Narrow cuffs at the ends of the sleeves\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n2\",\"text\":\"A black cuff is visible at the end of the sleeve on the right side of the image\",\"source\":\"ADDED\",\"action\":\"ADDED\"}],\"edit_log\":[\"- Corrected black contrasting collar to gray collar with a black inner collar (c2)\",\"- Added gray shirt body per Completeness (n1)\",\"- Added black cuff on the right-side sleeve per Completeness (n2)\"],\"final_alt_text\":\"A shirt with a gray body and a gray collar with a black inner collar, black buttons arranged down the center front, and a rounded lower edge. It has long sleeves ending in narrow cuffs, including a black cuff visible at the end of the sleeve on the right side of the image.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Shirt",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "Gray shirt body",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Gray collar with a black inner collar",
+        "source": "ORIGINAL",
+        "action": "CORRECTED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Black buttons arranged down the center front",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Rounded lower edge",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Long sleeves",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Narrow cuffs at the ends of the sleeves",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n2",
+        "text": "A black cuff is visible at the end of the sleeve on the right side of the image",
+        "source": "ADDED",
+        "action": "ADDED"
+      }
+    ],
+    "edit_log": [
+      "- Corrected black contrasting collar to gray collar with a black inner collar (c2)",
+      "- Added gray shirt body per Completeness (n1)",
+      "- Added black cuff on the right-side sleeve per Completeness (n2)"
+    ],
+    "final_alt_text": "A shirt with a gray body and a gray collar with a black inner collar, black buttons arranged down the center front, and a rounded lower edge. It has long sleeves ending in narrow cuffs, including a black cuff visible at the end of the sleeve on the right side of the image."
+  },
+  "final_alt_text": "A shirt with a gray body and a gray collar with a black inner collar, black buttons arranged down the center front, and a rounded lower edge. It has long sleeves ending in narrow cuffs, including a black cuff visible at the end of the sleeve on the right side of the image.",
+  "processed_at": "2026-09-20T10:54:46.603498+00:00"
+}

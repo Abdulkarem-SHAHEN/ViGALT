@@ -1,0 +1,68 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 5246,
+  "token_usage": {
+    "prompt_tokens": 2536,
+    "completion_tokens": 706,
+    "total_tokens": 3242
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"Coral-pink perforated lattice backrest\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c2\",\"text\":\"Rounded seat\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"A white central column supports the base\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"Five-legged white base\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"Black-and-pink casters on the base\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c6\",\"text\":\"Black adjustment lever beneath the seat on the viewer’s left\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n1\",\"text\":\"Pale pink perforated mesh seat\",\"source\":\"ADDED\",\"action\":\"ADDED\"}],\"edit_log\":[\"Retained all six original claims per Accuracy.\",\"Added pale pink perforated mesh seat per Completeness (n1).\",\"Grouped the mesh seat with the rounded seat and organized the remaining features from upper structure to base and lever.\"],\"final_alt_text\":\"Coral-pink perforated lattice backrest and rounded seat with pale pink perforated mesh. A white central column supports a five-legged white base with black-and-pink casters. A black adjustment lever sits beneath the seat on the viewer’s left.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Coral-pink perforated lattice backrest",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Rounded seat",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "A white central column supports the base",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Five-legged white base",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Black-and-pink casters on the base",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Black adjustment lever beneath the seat on the viewer’s left",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "Pale pink perforated mesh seat",
+        "source": "ADDED",
+        "action": "ADDED"
+      }
+    ],
+    "edit_log": [
+      "Retained all six original claims per Accuracy.",
+      "Added pale pink perforated mesh seat per Completeness (n1).",
+      "Grouped the mesh seat with the rounded seat and organized the remaining features from upper structure to base and lever."
+    ],
+    "final_alt_text": "Coral-pink perforated lattice backrest and rounded seat with pale pink perforated mesh. A white central column supports a five-legged white base with black-and-pink casters. A black adjustment lever sits beneath the seat on the viewer’s left."
+  },
+  "final_alt_text": "Coral-pink perforated lattice backrest and rounded seat with pale pink perforated mesh. A white central column supports a five-legged white base with black-and-pink casters. A black adjustment lever sits beneath the seat on the viewer’s left.",
+  "processed_at": "2026-09-20T11:41:28.277343+00:00"
+}

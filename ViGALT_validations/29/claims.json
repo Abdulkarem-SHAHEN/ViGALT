@@ -1,0 +1,22 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "The mirror is above a vessel sink."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "The mirror is positioned between two vertical wall sconces."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "The mirror is in a bathroom vanity area."
+    }
+  ],
+  "total_claims": 4
+}

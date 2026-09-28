@@ -1,0 +1,65 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "9",
+  "product_stem": "9",
+  "alt_text": "The jacket is shown open, with a black outer shell and tan plush lining visible through the body and hood. An attached hood is visible, along with a full-length front zipper, two angled chest pockets, and two vertical lower pockets; the chest and lower pockets have zipper closures with visible pulls. It has a ribbed hem.",
+  "final_alt_text": "The jacket is shown open, with a black outer shell and tan plush lining visible through the body and hood. An attached hood is visible, along with a full-length front zipper, two angled chest pockets, and two vertical lower pockets; the chest and lower pockets have zipper closures with visible pulls. It has a ribbed hem.",
+  "classification_category": "CLOTHING",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 3753,
+  "token_usage": {
+    "prompt_tokens": 1030,
+    "completion_tokens": 454,
+    "total_tokens": 1484
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"The jacket is shown open\"},{\"claim_id\":\"c2\",\"claim\":\"The jacket has a black outer shell\"},{\"claim_id\":\"c3\",\"claim\":\"Tan plush lining is visible through the body and hood\"},{\"claim_id\":\"c4\",\"claim\":\"The jacket has an attached hood\"},{\"claim_id\":\"c5\",\"claim\":\"The jacket has a full-length front zipper\"},{\"claim_id\":\"c6\",\"claim\":\"The jacket has two angled chest pockets\"},{\"claim_id\":\"c7\",\"claim\":\"The jacket has two vertical lower pockets\"},{\"claim_id\":\"c8\",\"claim\":\"The chest pockets have zipper closures with visible pulls\"},{\"claim_id\":\"c9\",\"claim\":\"The lower pockets have zipper closures with visible pulls\"},{\"claim_id\":\"c10\",\"claim\":\"The jacket has a ribbed hem\"}],\"total_claims\":10}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "The jacket is shown open"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "The jacket has a black outer shell"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Tan plush lining is visible through the body and hood"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "The jacket has an attached hood"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "The jacket has a full-length front zipper"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "The jacket has two angled chest pockets"
+      },
+      {
+        "claim_id": "c7",
+        "claim": "The jacket has two vertical lower pockets"
+      },
+      {
+        "claim_id": "c8",
+        "claim": "The chest pockets have zipper closures with visible pulls"
+      },
+      {
+        "claim_id": "c9",
+        "claim": "The lower pockets have zipper closures with visible pulls"
+      },
+      {
+        "claim_id": "c10",
+        "claim": "The jacket has a ribbed hem"
+      }
+    ],
+    "total_claims": 10
+  },
+  "processed_at": "2026-09-20T10:58:49.889498+00:00"
+}

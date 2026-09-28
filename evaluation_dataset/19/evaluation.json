@@ -9,7 +9,6 @@
         "relevant_claims": 6,
         "supplementary_claims": 0,
         "visual_only_claims": 0,
-        "relevancy_rate": 1.0,
         "claims": [
           {
             "claim_id": "C1",
@@ -41,7 +40,8 @@
             "claim": "Black adjustment lever beneath the seat on the viewer’s left",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 100.0
       },
       "redundancy": {
         "metrics": {
@@ -265,7 +265,6 @@
         "relevant_claims": 6,
         "supplementary_claims": 0,
         "visual_only_claims": 1,
-        "relevancy_rate": 0.8571428571428571,
         "claims": [
           {
             "claim_id": "C1",
@@ -302,7 +301,8 @@
             "claim": "Plain white background",
             "label": "V"
           }
-        ]
+        ],
+        "relevancy_score": 75.0
       },
       "redundancy": {
         "metrics": {

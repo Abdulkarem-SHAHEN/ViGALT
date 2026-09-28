@@ -9,7 +9,6 @@
         "relevant_claims": 3,
         "supplementary_claims": 1,
         "visual_only_claims": 1,
-        "relevancy_rate": 0.75,
         "claims": [
           {
             "claim_id": "C1",
@@ -31,7 +30,8 @@
             "claim": "A narrow visible edge outlines the mirror's perimeter.",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 50.0
       },
       "redundancy": {
         "metrics": {
@@ -193,7 +193,6 @@
         "relevant_claims": 5,
         "supplementary_claims": 0,
         "visual_only_claims": 13,
-        "relevancy_rate": 0.2777777777777778,
         "claims": [
           {
             "claim_id": "C1",
@@ -285,7 +284,8 @@
             "claim": "Pink flowers in the vase on the right of the sink",
             "label": "V"
           }
-        ]
+        ],
+        "relevancy_score": 16.13
       },
       "redundancy": {
         "metrics": {

@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "28",
+  "product_stem": "28",
+  "alt_text": "A mirror with a narrow border, straight vertical sides, and a dark-colored frame. A separate support extends behind it on the right, holding it upright on the floor.",
+  "final_alt_text": "A mirror with a narrow border, straight vertical sides, and a dark-colored frame. A separate support extends behind it on the right, holding it upright on the floor.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 3020,
+  "token_usage": {
+    "prompt_tokens": 998,
+    "completion_tokens": 344,
+    "total_tokens": 1342
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"A mirror with a narrow border\"},{\"claim_id\":\"c2\",\"claim\":\"The mirror has straight vertical sides\"},{\"claim_id\":\"c3\",\"claim\":\"The mirror has a dark-colored frame\"},{\"claim_id\":\"c4\",\"claim\":\"A separate support extends behind the mirror on the right, holding it upright on the floor\"}],\"total_claims\":4}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "A mirror with a narrow border"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "The mirror has straight vertical sides"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "The mirror has a dark-colored frame"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "A separate support extends behind the mirror on the right, holding it upright on the floor"
+      }
+    ],
+    "total_claims": 4
+  },
+  "processed_at": "2026-09-20T11:56:24.417265+00:00"
+}

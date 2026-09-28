@@ -1,0 +1,92 @@
+{
+  "status": "ok",
+  "ablation": "no_accuracy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_accuracy.txt",
+  "duration_ms": 13320,
+  "token_usage": {
+    "prompt_tokens": 2972,
+    "completion_tokens": 1539,
+    "total_tokens": 4511
+  },
+  "raw_response": "{\n  \"stage\": \"fusion\",\n  \"master_claims\": [\n    {\n      \"claim_id\": \"c1\",\n      \"text\": \"\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"DROPPED_REDUNDANT\"\n    },\n    {\n      \"claim_id\": \"c2\",\n      \"text\": \"Crew neckline\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c3\",\n      \"text\": \"Short sleeves\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c4\",\n      \"text\": \"Large orange “NIVEAU” lettering on the front, above a cream video-game controller\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c5\",\n      \"text\": \"Cream video-game controller on the front\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c6\",\n      \"text\": \"Cream “40” on the front\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c7\",\n      \"text\": \"Multicolored stars on the front\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c8\",\n      \"text\": \"Green banner on the front reading “DÉBLOQUÉ,” meaning “unlocked”\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"n1\",\n      \"text\": \"Black T-shirt\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    },\n    {\n      \"claim_id\": \"n2\",\n      \"text\": \"Orange and yellow diagonal stripes above the green banner\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    },\n    {\n      \"claim_id\": \"n3\",\n      \"text\": \"The cream controller graphic has multiple colored buttons\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    }\n  ],\n  \"edit_log\": [\n    \"- Dropped the redundant T-shirt claim per Redundancy (c1)\",\n    \"- Added the black shirt color, diagonal stripes, and colored controller buttons per Completeness (n1-n3)\",\n    \"- Ordered garment details before front graphic details and consolidated overlapping controller wording\"\n  ],\n  \"final_alt_text\": \"Black T-shirt with a crew neckline and short sleeves. Its front has large orange “NIVEAU” lettering above a cream video-game controller with multiple colored buttons, a cream “40,” multicolored stars, orange and yellow diagonal stripes above a green banner reading “DÉBLOQUÉ,” meaning “unlocked.”\"\n}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "",
+        "source": "ORIGINAL",
+        "action": "DROPPED_REDUNDANT"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Crew neckline",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Short sleeves",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Large orange “NIVEAU” lettering on the front, above a cream video-game controller",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Cream video-game controller on the front",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Cream “40” on the front",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c7",
+        "text": "Multicolored stars on the front",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c8",
+        "text": "Green banner on the front reading “DÉBLOQUÉ,” meaning “unlocked”",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "Black T-shirt",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "n2",
+        "text": "Orange and yellow diagonal stripes above the green banner",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "n3",
+        "text": "The cream controller graphic has multiple colored buttons",
+        "source": "ADDED",
+        "action": "ADDED"
+      }
+    ],
+    "edit_log": [
+      "- Dropped the redundant T-shirt claim per Redundancy (c1)",
+      "- Added the black shirt color, diagonal stripes, and colored controller buttons per Completeness (n1-n3)",
+      "- Ordered garment details before front graphic details and consolidated overlapping controller wording"
+    ],
+    "final_alt_text": "Black T-shirt with a crew neckline and short sleeves. Its front has large orange “NIVEAU” lettering above a cream video-game controller with multiple colored buttons, a cream “40,” multicolored stars, orange and yellow diagonal stripes above a green banner reading “DÉBLOQUÉ,” meaning “unlocked.”"
+  },
+  "final_alt_text": "Black T-shirt with a crew neckline and short sleeves. Its front has large orange “NIVEAU” lettering above a cream video-game controller with multiple colored buttons, a cream “40,” multicolored stars, orange and yellow diagonal stripes above a green banner reading “DÉBLOQUÉ,” meaning “unlocked.”",
+  "processed_at": "2026-09-20T10:57:02.643427+00:00"
+}

@@ -1,0 +1,179 @@
+{
+  "status": "ok",
+  "folder_number": 4,
+  "image_file": "71maVO4tSzL._AC_SX569_.jpg",
+  "ablation": "no_completeness",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A top is shown worn on a person. It has broad short sleeves, a straight loose body, and a visible side slit at the lower left hem.",
+      "relevancy": {
+        "total_claims": 4,
+        "relevant_claims": 4,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Top shown worn on a person",
+            "label": "R",
+            "reason": "This describes the garment's on-body presentation in the image."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Broad short sleeves",
+            "label": "R",
+            "reason": "This describes the top's sleeve configuration."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Straight loose body",
+            "label": "R",
+            "reason": "This describes the garment's loose, straight body silhouette."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Visible side slit at the lower left hem",
+            "label": "R",
+            "reason": "This describes a visible construction detail at the top's lower hem."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 4,
+          "relevant_claims": 4,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 4,
+          "relevant_novel_claims": 4,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 0,
+          "avoidable_redundancy_claims": 0,
+          "novelty_rate": 1.0,
+          "raw_novelty_rate": 1.0,
+          "unavoidable_repetition_rate": 0.0,
+          "avoidable_redundancy_rate": 0.0,
+          "redundancy_rate": 0.0
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Top shown worn on a person",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Broad short sleeves",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Straight loose body",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Visible side slit at the lower left hem",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Top shown worn on a person",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM identifies the product as a women's top but does not state or otherwise represent that it is shown being worn by a person."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Broad short sleeves",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Sleeve Type",
+                "value": "Short Sleeve"
+              }
+            ],
+            "reason": "The DOM specifies short sleeves, but it does not describe the sleeves themselves as broad. Sleeve breadth is therefore semantic information absent from the DOM."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Straight loose body",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Fitting type",
+                "value": "Loose Fit"
+              },
+              {
+                "field": "feature_bullets[0]",
+                "value": "This women's t-shirt features an ultra-wide fit and dropped shoulders."
+              }
+            ],
+            "reason": "The DOM establishes a loose, wide fit, but it does not describe the garment body as straight. The straight-body silhouette is absent from the available product information."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Visible side slit at the lower left hem",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Its minimalist design with a side slit makes it a modern and versatile staple."
+              }
+            ],
+            "reason": "The DOM states that the garment has a side slit, but it does not specify that it is visible at the lower left hem. The stated side and visible hem placement are absent."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 4,
+        "subjective_claims": 0,
+        "total_claims": 4,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "A top is shown worn on a person.",
+            "label": "OBJECTIVE",
+            "reason": "The image visibly shows a person wearing the garment."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "It has broad short sleeves.",
+            "label": "OBJECTIVE",
+            "reason": "The sleeves are visibly wide and end above the elbows, making their broad, short-sleeved shape directly observable."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "It has a straight loose body.",
+            "label": "OBJECTIVE",
+            "reason": "The garment visibly hangs away from the wearer's torso with a largely straight-sided, loose silhouette."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "It has a visible side slit at the lower left hem.",
+            "label": "OBJECTIVE",
+            "reason": "A vertical opening is visibly present at the lower hem on the image's left side."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 27,
+        "relevant_novel_claims": 4,
+        "efficiency_per_100_words": 14.814814814814813
+      }
+    }
+  },
+  "processed_at": "2026-09-20T10:51:37.719752+00:00"
+}

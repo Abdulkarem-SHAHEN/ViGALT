@@ -1,0 +1,92 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 4156,
+  "token_usage": {
+    "prompt_tokens": 3056,
+    "completion_tokens": 537,
+    "total_tokens": 3593
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"Tracksuit\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c2\",\"text\":\"Bright red hoodie\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"Black trousers\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"Lightning McQueen’s face on the hoodie\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"Blue eyes on the hoodie\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c6\",\"text\":\"Number 95 on the hoodie\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c7\",\"text\":\"Yellow “VROOM! VROOM!” lettering on the hoodie\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c8\",\"text\":\"White side stripes on the trousers\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n1\",\"text\":\"Disney Pixar Cars logo on the trousers\",\"source\":\"ADDED\",\"action\":\"ADDED\"},{\"claim_id\":\"c9\",\"text\":\"Gray ankle cuffs on the trousers\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c10\",\"text\":\"Gray drawstring on the trousers\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"}],\"edit_log\":[\"Retained all ten original claims as accurate.\",\"Added Disney Pixar Cars logo on the trousers per Completeness (n1).\",\"Grouped hoodie details and trouser details by garment area.\"],\"final_alt_text\":\"A tracksuit with a bright red hoodie and black trousers. The hoodie features Lightning McQueen’s face, blue eyes, number 95, and yellow “VROOM! VROOM!” lettering; the trousers have white side stripes, a Disney Pixar Cars logo, gray ankle cuffs, and a gray drawstring.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Tracksuit",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Bright red hoodie",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Black trousers",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Lightning McQueen’s face on the hoodie",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Blue eyes on the hoodie",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Number 95 on the hoodie",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c7",
+        "text": "Yellow “VROOM! VROOM!” lettering on the hoodie",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c8",
+        "text": "White side stripes on the trousers",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "Disney Pixar Cars logo on the trousers",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "c9",
+        "text": "Gray ankle cuffs on the trousers",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c10",
+        "text": "Gray drawstring on the trousers",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Retained all ten original claims as accurate.",
+      "Added Disney Pixar Cars logo on the trousers per Completeness (n1).",
+      "Grouped hoodie details and trouser details by garment area."
+    ],
+    "final_alt_text": "A tracksuit with a bright red hoodie and black trousers. The hoodie features Lightning McQueen’s face, blue eyes, number 95, and yellow “VROOM! VROOM!” lettering; the trousers have white side stripes, a Disney Pixar Cars logo, gray ankle cuffs, and a gray drawstring."
+  },
+  "final_alt_text": "A tracksuit with a bright red hoodie and black trousers. The hoodie features Lightning McQueen’s face, blue eyes, number 95, and yellow “VROOM! VROOM!” lettering; the trousers have white side stripes, a Disney Pixar Cars logo, gray ankle cuffs, and a gray drawstring.",
+  "processed_at": "2026-09-20T11:29:35.741073+00:00"
+}

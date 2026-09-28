@@ -1,0 +1,84 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "Sweatshirt",
+      "claim": "Sweatshirt",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The image clearly shows a long-sleeved sweatshirt with a ribbed collar, cuffs, and hem."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "Central space-themed graphic",
+      "claim": "Central space-themed graphic",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A space-themed illustration is visibly printed in the center of the sweatshirt."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "White-outlined astronaut",
+      "claim": "White-outlined astronaut",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The central graphic visibly contains an astronaut drawn primarily with white outlines."
+    },
+    {
+      "claim_id": "c4",
+      "original_claim": "Multicolored planet held by the astronaut",
+      "claim": "Multicolored planet held by the astronaut",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The astronaut is visibly holding a multicolored round planetary object."
+    },
+    {
+      "claim_id": "c5",
+      "original_claim": "Stars surrounding the astronaut",
+      "claim": "Stars surrounding the astronaut",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Small star-like marks and points are visibly scattered around the astronaut in the graphic."
+    },
+    {
+      "claim_id": "c6",
+      "original_claim": "Ringed planets surrounding the astronaut",
+      "claim": "Ringed planets surrounding the astronaut",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Multiple ringed planets are visibly depicted around the astronaut, including a large one above and smaller ones to the side."
+    },
+    {
+      "claim_id": "c7",
+      "original_claim": "Colorful pools beneath the astronaut",
+      "claim": "Colorful pools beneath the astronaut",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Colorful pool-like shapes are visibly depicted beneath the astronaut at the midsection and feet."
+    },
+    {
+      "claim_id": "c8",
+      "original_claim": "Additional small planets above",
+      "claim": "Additional small planets above",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Several small planetary circles are visibly depicted above and around the astronaut."
+    },
+    {
+      "claim_id": "c9",
+      "original_claim": "Moon-like circle above",
+      "claim": "Moon-like circle above",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A small crater-marked, moon-like circle is clearly visible above the astronaut."
+    }
+  ],
+  "summary": {
+    "total_claims": 9,
+    "accurate_claims": 9,
+    "corrected_claims": 0,
+    "deleted_claims": 0,
+    "error_rate": 0.0
+  }
+}

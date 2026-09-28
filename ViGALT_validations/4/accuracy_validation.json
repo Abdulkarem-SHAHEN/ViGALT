@@ -1,0 +1,52 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "A top is shown worn on a person",
+      "claim": "A top is shown worn on a person",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The image visibly shows a top being worn by a person."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "Round crew neckline",
+      "claim": "Round crew neckline",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A rounded crew-style neckline is clearly visible at the top of the garment."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "Broad short sleeves",
+      "claim": "Broad short sleeves",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The garment visibly has wide, short sleeves extending to the upper arms."
+    },
+    {
+      "claim_id": "c4",
+      "original_claim": "Straight loose body",
+      "claim": "Straight loose body",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The top visibly hangs in a loose, relatively straight shape over the torso."
+    },
+    {
+      "claim_id": "c5",
+      "original_claim": "Visible side slit at the lower left hem",
+      "claim": "Visible side slit at the lower left hem",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A side opening is visibly present at the lower left side of the top's hem."
+    }
+  ],
+  "summary": {
+    "total_claims": 5,
+    "accurate_claims": 5,
+    "corrected_claims": 0,
+    "deleted_claims": 0,
+    "error_rate": 0.0
+  }
+}

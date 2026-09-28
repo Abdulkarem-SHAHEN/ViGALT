@@ -1,0 +1,48 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Sweatshirt",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM repeatedly identifies the product as a sweatshirt, and this claim adds no visual grounding, disambiguation, or new attribute."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Small graphic on the left chest",
+      "label": "NOVEL",
+      "reason": "Although the DOM mentions a pink ribbon, it does not specify that the graphic is small or positioned on the left chest; those visual placement and size details are new."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Much larger version of the graphic centered across the back",
+      "label": "NOVEL",
+      "reason": "The DOM mentions a pink ribbon but does not describe a larger version centered across the back; the size comparison and back placement add new visual information."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Large divided hand pocket on the front",
+      "label": "NOVEL",
+      "reason": "The DOM mentions pockets but does not specify a large divided hand pocket on the front; its size, divided construction, and front placement add visual information."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Ribbed cuffs on the sleeves",
+      "label": "NOVEL",
+      "reason": "The DOM does not describe sleeve cuffs or their ribbed construction, so this claim adds a new visible construction detail."
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Ribbed waistband at the hem",
+      "label": "NOVEL",
+      "reason": "The DOM does not describe a waistband at the hem or its ribbed construction, so this claim adds a new visible construction detail."
+    }
+  ],
+  "summary": {
+    "total_claims": 6,
+    "novel_claims": 5,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.1667
+  }
+}

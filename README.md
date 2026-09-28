@@ -28,7 +28,7 @@ Every product is classified as **CLOTHING** or **FURNITURE**. Stages 4–6 run i
 ├── src/viglat/              Python package (pipeline + evaluators)
 ├── prompts/               Stage prompts and evaluation rubrics
 ├── evaluation_dataset/    Published per-image results (30 folders + summary.json)
-├── docs/                  Architecture documentation
+├── docs/                  Architecture documentation + validator ablation report
 ├── output/                Generated runs (created when you execute the pipeline)
 ├── pyproject.toml         Package metadata
 ├── requirements.txt       Pinned dependencies
@@ -263,7 +263,7 @@ The `evaluation_dataset/` folder contains everything needed to **verify** the pa
 | `alt_text_and_claims.txt` | ViGALT and ASSETS24 alt text + plain claims |
 | `evaluation.json` | Relevancy, redundancy, objectivity, efficiency metrics |
 
-Top-level `evaluation_dataset/summary.json` holds averaged metrics across all 30 products.
+Top-level `evaluation_dataset/summary.json` holds macro-averaged metrics across all 30 products (each product weighted equally).
 
 - **30 products:** folders `1/` … `30/` (15 clothing, 15 furniture)
 - Product JSONs live at `evaluation_dataset/N/dom.json` — not in a separate `data/` folder
@@ -282,13 +282,45 @@ To process all 30 products, run the pipeline once per folder (or use a shell loo
 
 Compare your outputs to the pre-computed files in `evaluation_dataset/N/evaluation.json` and the averages in `evaluation_dataset/summary.json`. No re-run is required to check the paper numbers.
 
+Recompute relevancy scores from existing R/S/V claim labels (same formula as `prompts/evaluators/relevancy.txt`) and refresh summaries:
+
+```bash
+python -m viglat.refresh_relevancy_metrics
+```
+
+Regenerate paper figures (matplotlib; requires `pip install -e ".[viz]"`):
+
+```bash
+python -m viglat.generate_paper_figures
+```
+
+### Validator ablation (fusion stage)
+
+Run fusion without one validator input (requires prior `ViGALT_validations/` artifacts):
+
+```bash
+python -m viglat.run_validator_ablation --products 1-30 --skip-existing
+```
+
+Regenerate the ablation study section (for insertion into your main report) and machine-readable aggregates:
+
+```bash
+python -m viglat.build_ablation_report
+```
+
+Outputs:
+
+- [`docs/validator_ablation_report.md`](docs/validator_ablation_report.md) — fusion-stage ablation only (setup, results, illustrative cases)
+- [`evaluation_dataset/ablation_summary.json`](evaluation_dataset/ablation_summary.json) — reproducible summary statistics
+- Per-product raw ablation artifacts: `evaluation_dataset/N/ablations/{no_accuracy,no_completeness,no_redundancy}/`
+
 ---
 
 ## Evaluation Metrics
 
 | Metric | Description |
 |---|---|
-| Relevancy | Whether each atomic claim is relevant (R), supplementary (S), or visual-only (V) |
+| Relevancy | Per product: classify each claim as R, S, or V, then score with `100 × (R + 0.5·S) / (R + S + 2·V)` (see `prompts/evaluators/relevancy.txt`). `evaluation.json` stores `relevancy_score` (0–100); `summary.json` stores `avg_relevancy_score` on a 0–1 scale (macro mean over 30 products). |
 | Redundancy | Novel vs. avoidable repetition relative to product DOM |
 | Objectivity | Objective vs. subjective claim labels |
 | Efficiency | `(relevant_novel_claims / ALT word count) × 100` |

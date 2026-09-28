@@ -1,0 +1,93 @@
+{
+  "status": "ok",
+  "ablation": "no_accuracy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_accuracy.txt",
+  "duration_ms": 7567,
+  "token_usage": {
+    "prompt_tokens": 2923,
+    "completion_tokens": 1073,
+    "total_tokens": 3996
+  },
+  "raw_response": "{\n  \"stage\": \"fusion\",\n  \"master_claims\": [\n    {\n      \"claim_id\": \"c1\",\n      \"text\": \"The chair has a high, rounded back\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c2\",\n      \"text\": \"The chair has integrated curved arms\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c3\",\n      \"text\": \"The chair features vertical channel stitching\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c4\",\n      \"text\": \"The chair has a separate rectangular seat cushion\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c5\",\n      \"text\": \"The chair rests on a white five-spoke wheeled base\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c6\",\n      \"text\": \"The wheeled base has black-and-white casters\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c7\",\n      \"text\": \"A desk is positioned behind the chair\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c8\",\n      \"text\": \"A laptop is positioned behind the chair\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"n1\",\n      \"text\": \"The chair is upholstered in white\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    },\n    {\n      \"claim_id\": \"n2\",\n      \"text\": \"A separate rectangular white cushion is placed against the backrest\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    },\n    {\n      \"claim_id\": \"n3\",\n      \"text\": \"A black adjustment lever extends beneath the seat on the left side\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    }\n  ],\n  \"edit_log\": [\n    \"Retained all original claims because each received a NOVEL redundancy verdict\",\n    \"Added chair upholstery color per Completeness (n1)\",\n    \"Added the separate backrest cushion per Completeness (n2)\",\n    \"Added the black adjustment lever per Completeness (n3)\"\n  ],\n  \"final_alt_text\": \"The chair has a high, rounded back and integrated curved arms, with vertical channel stitching and a separate rectangular seat cushion. The chair is upholstered in white, with a separate rectangular white cushion placed against the backrest, and rests on a white five-spoke wheeled base with black-and-white casters; a black adjustment lever extends beneath the seat on the left side. A desk and laptop are positioned behind the chair.\"\n}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "The chair has a high, rounded back",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "The chair has integrated curved arms",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "The chair features vertical channel stitching",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "The chair has a separate rectangular seat cushion",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "The chair rests on a white five-spoke wheeled base",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "The wheeled base has black-and-white casters",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c7",
+        "text": "A desk is positioned behind the chair",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c8",
+        "text": "A laptop is positioned behind the chair",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "The chair is upholstered in white",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "n2",
+        "text": "A separate rectangular white cushion is placed against the backrest",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "n3",
+        "text": "A black adjustment lever extends beneath the seat on the left side",
+        "source": "ADDED",
+        "action": "ADDED"
+      }
+    ],
+    "edit_log": [
+      "Retained all original claims because each received a NOVEL redundancy verdict",
+      "Added chair upholstery color per Completeness (n1)",
+      "Added the separate backrest cushion per Completeness (n2)",
+      "Added the black adjustment lever per Completeness (n3)"
+    ],
+    "final_alt_text": "The chair has a high, rounded back and integrated curved arms, with vertical channel stitching and a separate rectangular seat cushion. The chair is upholstered in white, with a separate rectangular white cushion placed against the backrest, and rests on a white five-spoke wheeled base with black-and-white casters; a black adjustment lever extends beneath the seat on the left side. A desk and laptop are positioned behind the chair."
+  },
+  "final_alt_text": "The chair has a high, rounded back and integrated curved arms, with vertical channel stitching and a separate rectangular seat cushion. The chair is upholstered in white, with a separate rectangular white cushion placed against the backrest, and rests on a white five-spoke wheeled base with black-and-white casters; a black adjustment lever extends beneath the seat on the left side. A desk and laptop are positioned behind the chair.",
+  "processed_at": "2026-09-20T11:42:11.080046+00:00"
+}

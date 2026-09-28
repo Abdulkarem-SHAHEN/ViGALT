@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "3",
+  "product_stem": "3",
+  "alt_text": "A sweater has a light-gray body with repeating vertical zigzag bands filled with small diamond texture and brown contrast panels along the outer lower sleeves. A short front placket opens from the collar and has a dark button near the upper chest.",
+  "final_alt_text": "A sweater has a light-gray body with repeating vertical zigzag bands filled with small diamond texture and brown contrast panels along the outer lower sleeves. A short front placket opens from the collar and has a dark button near the upper chest.",
+  "classification_category": "CLOTHING",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 2577,
+  "token_usage": {
+    "prompt_tokens": 1011,
+    "completion_tokens": 246,
+    "total_tokens": 1257
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"The sweater has a light-gray body\"},{\"claim_id\":\"c2\",\"claim\":\"The body has repeating vertical zigzag bands filled with small diamond texture\"},{\"claim_id\":\"c3\",\"claim\":\"Brown contrast panels are along the outer lower sleeves\"},{\"claim_id\":\"c4\",\"claim\":\"A short front placket opens from the collar\"},{\"claim_id\":\"c5\",\"claim\":\"A dark button is near the upper chest\"}],\"total_claims\":5}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "The sweater has a light-gray body"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "The body has repeating vertical zigzag bands filled with small diamond texture"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Brown contrast panels are along the outer lower sleeves"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "A short front placket opens from the collar"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "A dark button is near the upper chest"
+      }
+    ],
+    "total_claims": 5
+  },
+  "processed_at": "2026-09-20T10:49:58.529346+00:00"
+}

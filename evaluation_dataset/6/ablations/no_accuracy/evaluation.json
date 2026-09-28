@@ -1,0 +1,266 @@
+{
+  "status": "ok",
+  "folder_number": 6,
+  "image_file": "71bvy99CHpL._AC_SX679_.jpg",
+  "ablation": "no_accuracy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "The gray shirt body has a black contrasting collar and black buttons arranged down the center front. Its rounded lower edge and narrow cuffs at the ends of the sleeves are visible, including a black cuff at the end of the sleeve on the right side of the image.",
+      "relevancy": {
+        "total_claims": 6,
+        "relevant_claims": 6,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Gray shirt body",
+            "label": "R",
+            "reason": "Describes the gray color of the shirt itself."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Black contrasting collar",
+            "label": "R",
+            "reason": "Describes the black contrasting collar integrated into the shirt."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Black buttons arranged down the center front",
+            "label": "R",
+            "reason": "Describes the shirt's center-front button closure and button color."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Rounded lower edge",
+            "label": "R",
+            "reason": "Describes the rounded hem shape of the shirt."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Narrow cuffs at the ends of the sleeves",
+            "label": "R",
+            "reason": "Describes the sleeve cuff construction on the shirt."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Black cuff at the end of the sleeve on the right side of the image",
+            "label": "R",
+            "reason": "Describes the visible black contrasting cuff on the shirt's image-right sleeve."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 6,
+          "relevant_claims": 6,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 1,
+          "relevant_novel_claims": 1,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 4,
+          "avoidable_redundancy_claims": 1,
+          "novelty_rate": 0.16666666666666666,
+          "raw_novelty_rate": 0.16666666666666666,
+          "unavoidable_repetition_rate": 0.6666666666666666,
+          "avoidable_redundancy_rate": 0.16666666666666666,
+          "redundancy_rate": 0.8333333333333334
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Gray shirt body",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Black contrasting collar",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Black buttons arranged down the center front",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Rounded lower edge",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Narrow cuffs at the ends of the sleeves",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Black cuff at the end of the sleeve on the right side of the image",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Gray shirt body",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "Grey"
+              },
+              {
+                "field": "title",
+                "value": "Subliminal Mode Men's Long Sleeve Shirt | Regular Fit | Comfortable and Easy to Care | Ideal for Office and Casual Outing"
+              }
+            ],
+            "reason": "The DOM already identifies the product as a grey shirt. Referring to the shirt body adds no necessary semantic information."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Black contrasting collar",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Collar Style",
+                "value": "Classic"
+              },
+              {
+                "field": "description",
+                "value": "Its slim fit design highlights the masculine silhouette, while the colour contrasts add a modern touch."
+              }
+            ],
+            "reason": "The DOM establishes that the shirt has a collar and mentions colour contrasts, but it does not specify that the collar is black or that it is the contrasting element. Repeating the collar is needed to anchor the new black-contrast information."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Black buttons arranged down the center front",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Closure Type",
+                "value": "Button"
+              },
+              {
+                "field": "description",
+                "value": "Contrast buttons and adjustable cuffs add character to this refined shirt."
+              }
+            ],
+            "reason": "The DOM states that the shirt has a button closure and contrast buttons, but does not specify that the buttons are black or arranged down the center front. Mentioning buttons is needed to identify what the new color and placement information describes."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Rounded lower edge",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Hemline Form",
+                "value": "Straight"
+              }
+            ],
+            "reason": "The DOM does not represent a rounded lower edge; it instead lists the hemline form as straight. The claimed rounded-edge information is therefore not already represented."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Narrow cuffs at the ends of the sleeves",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Cuff Style",
+                "value": "French Cuff"
+              },
+              {
+                "field": "description",
+                "value": "Contrast buttons and adjustable cuffs add character to this refined shirt."
+              }
+            ],
+            "reason": "The DOM establishes that the shirt has cuffs, including adjustable French cuffs, but does not state that they are narrow. Repeating cuffs is necessary to anchor the new width information."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Black cuff at the end of the sleeve on the right side of the image",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Cuff Style",
+                "value": "French Cuff"
+              },
+              {
+                "field": "description",
+                "value": "Contrast buttons and adjustable cuffs add character to this refined shirt."
+              }
+            ],
+            "reason": "The DOM identifies cuffs but does not specify a black cuff, its sleeve-end placement, or its location on the right side of the image. Referring to the cuff is necessary to make the new color and image-position information understandable."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 7,
+        "subjective_claims": 0,
+        "total_claims": 7,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The shirt body is gray.",
+            "label": "OBJECTIVE",
+            "reason": "The main fabric of the shirt is visibly gray in the image."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The shirt has a black contrasting collar.",
+            "label": "OBJECTIVE",
+            "reason": "Black material is visibly present on the collar area, contrasting with the gray shirt body."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The shirt has black buttons.",
+            "label": "OBJECTIVE",
+            "reason": "The buttons visible on the front placket appear black."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The buttons are arranged down the center front.",
+            "label": "OBJECTIVE",
+            "reason": "The visible buttons run vertically along the shirt's central front opening."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The shirt has a rounded lower edge.",
+            "label": "OBJECTIVE",
+            "reason": "The bottom hem visibly curves upward at the sides, producing a rounded hem shape."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "The sleeves have narrow cuffs at their ends.",
+            "label": "OBJECTIVE",
+            "reason": "Cuff sections are visibly present at the sleeve ends and appear relatively narrow compared with the sleeves."
+          },
+          {
+            "claim_id": "C7",
+            "claim": "There is a black cuff at the end of the sleeve on the right side of the image.",
+            "label": "OBJECTIVE",
+            "reason": "A black cuff-like section is visibly shown at the end of the sleeve on the image's right side."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 49,
+        "relevant_novel_claims": 1,
+        "efficiency_per_100_words": 2.0408163265306123
+      }
+    }
+  },
+  "processed_at": "2026-09-20T10:54:09.501160+00:00"
+}

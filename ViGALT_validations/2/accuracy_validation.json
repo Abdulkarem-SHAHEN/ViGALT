@@ -1,0 +1,52 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "Black T-shirt",
+      "claim": "Black T-shirt",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The image visibly shows a black T-shirt."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "Irregular white outlined heart on the upper right chest",
+      "claim": "Irregular white outlined heart on the upper right chest",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A white, irregularly outlined heart is visibly located on the upper right side of the image's chest area."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "T-shirt is shown worn on a person",
+      "claim": "T-shirt is shown worn on a person",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The image visibly shows the T-shirt being worn by a person."
+    },
+    {
+      "claim_id": "c4",
+      "original_claim": "Straight body extending to the upper hips",
+      "claim": "Straight body extending to the upper hips",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The shirt visibly has a relatively straight body and its lower hem reaches the upper hip area."
+    },
+    {
+      "claim_id": "c5",
+      "original_claim": "Short sleeves ending above the elbows",
+      "claim": "Short sleeves ending above the elbows",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The short sleeves are clearly visible and end above the person's elbows."
+    }
+  ],
+  "summary": {
+    "total_claims": 5,
+    "accurate_claims": 5,
+    "corrected_claims": 0,
+    "deleted_claims": 0,
+    "error_rate": 0.0
+  }
+}

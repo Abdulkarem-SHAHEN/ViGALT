@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "1",
+  "product_stem": "1",
+  "alt_text": "A white T-shirt shown from the front, with short sleeves and a crew neckline. It has a small gray Under Armour logo on the wearer's upper left chest.",
+  "final_alt_text": "A white T-shirt shown from the front, with short sleeves and a crew neckline. It has a small gray Under Armour logo on the wearer's upper left chest.",
+  "classification_category": "CLOTHING",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 1973,
+  "token_usage": {
+    "prompt_tokens": 997,
+    "completion_tokens": 143,
+    "total_tokens": 1140
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"White T-shirt shown from the front\"},{\"claim_id\":\"c2\",\"claim\":\"Short sleeves\"},{\"claim_id\":\"c3\",\"claim\":\"Crew neckline\"},{\"claim_id\":\"c4\",\"claim\":\"Small gray Under Armour logo on the wearer's upper left chest\"}],\"total_claims\":4}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "White T-shirt shown from the front"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Short sleeves"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Crew neckline"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Small gray Under Armour logo on the wearer's upper left chest"
+      }
+    ],
+    "total_claims": 4
+  },
+  "processed_at": "2026-09-20T10:45:11.111974+00:00"
+}

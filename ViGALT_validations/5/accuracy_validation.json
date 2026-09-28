@@ -1,0 +1,60 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "Sweatshirt",
+      "claim": "Zip-up hooded sweatshirt",
+      "label": "CORRECTED",
+      "error_category": "ATTRIBUTE_OR_OCR",
+      "reason": "The garment is visibly a hooded sweatshirt with a full front zipper, so the original category is made more specific."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "Small graphic on the left chest",
+      "claim": "Small graphic on the left chest",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A small ribbon graphic is visibly present on the wearer's left chest."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "Much larger version of the graphic centered across the back",
+      "claim": "Much larger version of the graphic centered across the back",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The back view visibly shows a much larger ribbon graphic centered on the back."
+    },
+    {
+      "claim_id": "c4",
+      "original_claim": "Large divided hand pocket on the front",
+      "claim": "Large divided hand pocket on the front",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The front view visibly shows a large lower front pocket divided by the center zipper."
+    },
+    {
+      "claim_id": "c5",
+      "original_claim": "Ribbed cuffs on the sleeves",
+      "claim": "Ribbed cuffs on the sleeves",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Ribbed knit cuffs are visibly present at the sleeve ends."
+    },
+    {
+      "claim_id": "c6",
+      "original_claim": "Ribbed waistband at the hem",
+      "claim": "Ribbed waistband at the hem",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A ribbed waistband is visibly present along the lower hem."
+    }
+  ],
+  "summary": {
+    "total_claims": 6,
+    "accurate_claims": 5,
+    "corrected_claims": 1,
+    "deleted_claims": 0,
+    "error_rate": 0.1667
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "status": "ok",
+  "folder_number": 19,
+  "image_file": "51d-GNaHlOL._AC_SX679_.jpg",
+  "ablation": "no_accuracy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A chair with a coral-pink perforated lattice backrest and rounded seat covered in pale pink perforated mesh. A white central column supports a five-legged white base with black-and-pink casters. A black adjustment lever sits beneath the seat on the viewer’s left.",
+      "relevancy": {
+        "total_claims": 7,
+        "relevant_claims": 7,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Chair",
+            "label": "R",
+            "reason": "Identifies the furniture product shown."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Coral-pink perforated lattice backrest",
+            "label": "R",
+            "reason": "Describes the chair's pink open lattice backrest."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Rounded seat covered in pale pink perforated mesh",
+            "label": "R",
+            "reason": "Describes the chair's rounded pale pink textured mesh seat."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "White central column",
+            "label": "R",
+            "reason": "Describes the white support column integrated into the chair."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Five-legged white base",
+            "label": "R",
+            "reason": "Describes the chair's five-spoke white base."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Black-and-pink casters",
+            "label": "R",
+            "reason": "Describes the black and pink wheels attached to the chair base."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Black adjustment lever beneath the seat on the viewer’s left",
+            "label": "R",
+            "reason": "Describes the black adjustment lever integrated beneath the seat."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 7,
+          "relevant_claims": 7,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 4,
+          "relevant_novel_claims": 4,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 2,
+          "avoidable_redundancy_claims": 1,
+          "novelty_rate": 0.5714285714285714,
+          "raw_novelty_rate": 0.5714285714285714,
+          "unavoidable_repetition_rate": 0.2857142857142857,
+          "avoidable_redundancy_rate": 0.14285714285714285,
+          "redundancy_rate": 0.42857142857142855
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Chair",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Coral-pink perforated lattice backrest",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Rounded seat covered in pale pink perforated mesh",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "White central column",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Five-legged white base",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Black-and-pink casters",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Black adjustment lever beneath the seat on the viewer’s left",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Chair",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "MEUBLE COSY Ergonomic Office Chair"
+              },
+              {
+                "field": "product_details.Form Factor",
+                "value": "Desk Chair"
+              }
+            ],
+            "reason": "The DOM explicitly identifies the product as an office/desk chair, so repeating only that it is a chair adds no new information."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Coral-pink perforated lattice backrest",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "Pink Coral"
+              },
+              {
+                "field": "description",
+                "value": "This ergonomic office chair features a curved S-shaped backrest"
+              },
+              {
+                "field": "description",
+                "value": "covered with breathable mesh"
+              }
+            ],
+            "reason": "Although the DOM establishes a coral-pink chair with a backrest and mesh upholstery, it does not specify that the backrest itself has a perforated lattice construction."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Rounded seat covered in pale pink perforated mesh",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "description",
+                "value": "Its generously padded seat with high-density foam and covered with breathable mesh"
+              },
+              {
+                "field": "product_details.Colour",
+                "value": "Pink Coral"
+              }
+            ],
+            "reason": "The DOM states that the seat is mesh-covered and the chair is coral pink, but does not provide the seat's rounded shape, pale-pink seat color, or perforated-mesh appearance."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "White central column",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM does not mention a central column or specify that any such column is white."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Five-legged white base",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[4]",
+                "value": "reinforced metal base"
+              },
+              {
+                "field": "product_details.Leg Style",
+                "value": "Wheels"
+              }
+            ],
+            "reason": "The DOM establishes that the chair has a base with wheels, but not that it is white or five-legged. Referring to the base is necessary to anchor the novel color and five-leg configuration to the relevant chair component."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Black-and-pink casters",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[3]",
+                "value": "Swivel chair equipped with silent multi-directional casters"
+              },
+              {
+                "field": "product_details.Leg Style",
+                "value": "Wheels"
+              }
+            ],
+            "reason": "The DOM already identifies casters/wheels, while their black-and-pink coloration is new. Repeating the caster reference is necessary to identify which product component has those newly specified colors."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Black adjustment lever beneath the seat on the viewer’s left",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "Height Adjustable"
+              },
+              {
+                "field": "product_details.Special Features",
+                "value": "Adjustable Height"
+              }
+            ],
+            "reason": "The DOM states that the chair height is adjustable but does not mention an adjustment lever, its black color, its position beneath the seat, or its viewer-left placement."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 6,
+        "subjective_claims": 0,
+        "total_claims": 6,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The chair has a coral-pink perforated lattice backrest.",
+            "label": "OBJECTIVE",
+            "reason": "The backrest's pink color and its open lattice pattern with visible cutouts are directly observable in the image."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The chair has a rounded seat covered in pale pink perforated mesh.",
+            "label": "OBJECTIVE",
+            "reason": "The seat's rounded outline, pale pink color, and visibly fine perforated mesh-like surface are observable in the image."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "A white central column supports the seat.",
+            "label": "OBJECTIVE",
+            "reason": "A white vertical column is visibly positioned beneath the seat and connects it to the base."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The chair has a five-legged white base.",
+            "label": "OBJECTIVE",
+            "reason": "The white base visibly extends into five legs."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The base has black-and-pink casters.",
+            "label": "OBJECTIVE",
+            "reason": "The wheels at the ends of the base legs visibly have black tires or centers with pink accents."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "A black adjustment lever sits beneath the seat on the viewer's left.",
+            "label": "OBJECTIVE",
+            "reason": "A black lever is visibly protruding from beneath the left side of the seat from the viewer's perspective."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 42,
+        "relevant_novel_claims": 4,
+        "efficiency_per_100_words": 9.523809523809524
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:40:47.402183+00:00"
+}

@@ -1,0 +1,53 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "8",
+  "product_stem": "8",
+  "alt_text": "Crew neckline and short sleeves. The front graphic has large orange “NIVEAU” lettering above a cream video-game controller, a cream “40,” multicolored stars, and a green banner reading “DÉBLOQUÉ,” meaning “unlocked.”",
+  "final_alt_text": "Crew neckline and short sleeves. The front graphic has large orange “NIVEAU” lettering above a cream video-game controller, a cream “40,” multicolored stars, and a green banner reading “DÉBLOQUÉ,” meaning “unlocked.”",
+  "classification_category": "CLOTHING",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 2703,
+  "token_usage": {
+    "prompt_tokens": 1017,
+    "completion_tokens": 265,
+    "total_tokens": 1282
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Crew neckline\"},{\"claim_id\":\"c2\",\"claim\":\"Short sleeves\"},{\"claim_id\":\"c3\",\"claim\":\"Large orange “NIVEAU” lettering on the front\"},{\"claim_id\":\"c4\",\"claim\":\"A cream video-game controller on the front\"},{\"claim_id\":\"c5\",\"claim\":\"A cream “40” on the front\"},{\"claim_id\":\"c6\",\"claim\":\"Multicolored stars on the front\"},{\"claim_id\":\"c7\",\"claim\":\"A green banner on the front reading “DÉBLOQUÉ,” meaning “unlocked”\"}],\"total_claims\":7}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Crew neckline"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Short sleeves"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Large orange “NIVEAU” lettering on the front"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "A cream video-game controller on the front"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "A cream “40” on the front"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "Multicolored stars on the front"
+      },
+      {
+        "claim_id": "c7",
+        "claim": "A green banner on the front reading “DÉBLOQUÉ,” meaning “unlocked”"
+      }
+    ],
+    "total_claims": 7
+  },
+  "processed_at": "2026-09-20T10:57:44.045717+00:00"
+}

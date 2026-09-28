@@ -1,0 +1,37 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "28",
+  "product_stem": "28",
+  "alt_text": "A mirror has a narrow border and straight, slightly angled side edges. A separate support extends behind the mirror on the right, holding it upright on the floor.",
+  "final_alt_text": "A mirror has a narrow border and straight, slightly angled side edges. A separate support extends behind the mirror on the right, holding it upright on the floor.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 2159,
+  "token_usage": {
+    "prompt_tokens": 996,
+    "completion_tokens": 176,
+    "total_tokens": 1172
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"The mirror has a narrow border\"},{\"claim_id\":\"c2\",\"claim\":\"The mirror has straight, slightly angled side edges\"},{\"claim_id\":\"c3\",\"claim\":\"A separate support extends behind the mirror on the right, holding it upright on the floor\"}],\"total_claims\":3}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "The mirror has a narrow border"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "The mirror has straight, slightly angled side edges"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "A separate support extends behind the mirror on the right, holding it upright on the floor"
+      }
+    ],
+    "total_claims": 3
+  },
+  "processed_at": "2026-09-20T11:56:48.436793+00:00"
+}

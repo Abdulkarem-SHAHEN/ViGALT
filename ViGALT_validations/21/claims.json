@@ -1,0 +1,34 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Bed"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Rounded, raised side rails"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Wide headboard that curves around the sides"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Cyan LED strip follows the front and right-side edges of the base and rises beside the headboard"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Mattress inside the frame"
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Pillows inside the frame"
+    },
+    {
+      "claim_id": "c7",
+      "claim": "Blankets inside the frame"
+    }
+  ],
+  "total_claims": 7
+}

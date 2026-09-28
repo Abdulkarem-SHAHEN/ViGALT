@@ -1,0 +1,304 @@
+{
+  "status": "ok",
+  "folder_number": 21,
+  "image_file": "71ZScCnweOL._AC_SX679_.jpg",
+  "ablation": "no_redundancy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "Bed with a dark upholstered bed frame with rounded corners, rounded, raised side rails, and a wide headboard that curves around the sides. A cyan LED strip follows the front and right-side edges of the base and rises beside the headboard; a mattress, pillows, and blankets are inside the frame.",
+      "relevancy": {
+        "total_claims": 7,
+        "relevant_claims": 4,
+        "supplementary_claims": 0,
+        "visual_only_claims": 3,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Dark upholstered bed frame with rounded corners",
+            "label": "R",
+            "reason": "This describes the bed frame's color, upholstery, and rounded construction."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Rounded, raised side rails",
+            "label": "R",
+            "reason": "This describes an integrated structural feature of the bed frame."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Wide headboard that curves around the sides",
+            "label": "R",
+            "reason": "This describes the headboard's shape and configuration on the bed frame."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "A cyan LED strip follows the front and right-side edges of the base and rises beside the headboard",
+            "label": "R",
+            "reason": "This describes integrated illuminated trim along the bed frame."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "A mattress is inside the frame",
+            "label": "V",
+            "reason": "The mattress is a separately described staging item rather than a feature of the bed frame."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Pillows are inside the frame",
+            "label": "V",
+            "reason": "The pillows are secondary props described individually rather than collectively for scale or layout."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Blankets are inside the frame",
+            "label": "V",
+            "reason": "The blankets are secondary staging props described individually."
+          }
+        ],
+        "relevancy_score": 40.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 7,
+          "relevant_claims": 4,
+          "irrelevant_claims": 3,
+          "raw_novel_claims": 6,
+          "relevant_novel_claims": 3,
+          "irrelevant_novel_claims": 3,
+          "unavoidable_repetition_claims": 1,
+          "avoidable_redundancy_claims": 0,
+          "novelty_rate": 0.42857142857142855,
+          "raw_novelty_rate": 0.8571428571428571,
+          "unavoidable_repetition_rate": 0.14285714285714285,
+          "avoidable_redundancy_rate": 0.0,
+          "redundancy_rate": 0.14285714285714285
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Dark upholstered bed frame with rounded corners",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Rounded, raised side rails",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Wide headboard that curves around the sides",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "A cyan LED strip follows the front and right-side edges of the base and rises beside the headboard",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "A mattress is inside the frame",
+            "relevance_code": "V"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Pillows are inside the frame",
+            "relevance_code": "V"
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Blankets are inside the frame",
+            "relevance_code": "V"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Dark upholstered bed frame with rounded corners",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "Black"
+              },
+              {
+                "field": "product_details.Upholstery Fabric Type",
+                "value": "Faux Leather"
+              },
+              {
+                "field": "description",
+                "value": "The unique ergonomic design of the curved bed"
+              }
+            ],
+            "reason": "The DOM establishes a black faux-leather padded bed and generally describes a curved design, but it does not specify that the bed frame has rounded corners."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Rounded, raised side rails",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "description",
+                "value": "The unique ergonomic design of the curved bed"
+              },
+              {
+                "field": "feature_bullets[3]",
+                "value": "This bed features a unique curved design"
+              }
+            ],
+            "reason": "The DOM mentions an overall curved bed design but does not describe side rails, their raised construction, or their rounded form."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Wide headboard that curves around the sides",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[3]",
+                "value": "The well-designed headboard provides great support so you can lean back comfortably."
+              },
+              {
+                "field": "description",
+                "value": "The unique ergonomic design of the curved bed"
+              }
+            ],
+            "reason": "The DOM identifies a supportive headboard and a generally curved bed design, but does not state that the headboard is wide or that it wraps around the sides."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "A cyan LED strip follows the front and right-side edges of the base and rises beside the headboard",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "The bed is surrounded by LED lights"
+              },
+              {
+                "field": "product_details.Special Features",
+                "value": "LED Mood Light"
+              }
+            ],
+            "reason": "The DOM already establishes that the bed has surrounding LED lighting. Repeating that the feature is an LED strip is necessary to anchor the new visual details: its cyan color and its specific route along the base and beside the headboard."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "A mattress is inside the frame",
+            "relevance_code": "V",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "PU (without Mattress) (Black, 140 x 200 cm)"
+              }
+            ],
+            "reason": "The DOM states that the product is without a mattress; it does not represent the claimed semantic information that a mattress is present inside the frame."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Pillows are inside the frame",
+            "relevance_code": "V",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM contains no information about pillows being present inside the bed frame."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Blankets are inside the frame",
+            "relevance_code": "V",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM contains no information about blankets being present inside the bed frame."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 11,
+        "subjective_claims": 0,
+        "total_claims": 11,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The bed has a dark upholstered frame.",
+            "label": "OBJECTIVE",
+            "reason": "The frame appears dark and has a visibly padded, fabric-covered surface, both of which are observable in the image."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The bed frame has rounded corners.",
+            "label": "OBJECTIVE",
+            "reason": "The front corners and the transitions around the frame are visibly curved rather than sharply angled."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The bed has rounded, raised side rails.",
+            "label": "OBJECTIVE",
+            "reason": "The side edges of the frame are visibly elevated around the mattress area and have rounded outer profiles."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The bed has a wide headboard.",
+            "label": "OBJECTIVE",
+            "reason": "The headboard visibly spans the width of the bed."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The headboard curves around the sides.",
+            "label": "OBJECTIVE",
+            "reason": "The dark headboard visibly bends forward along both sides of the bed."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "A cyan LED strip follows the front edge of the base.",
+            "label": "OBJECTIVE",
+            "reason": "A bright cyan illuminated strip is visibly present along the front lower edge of the bed base."
+          },
+          {
+            "claim_id": "C7",
+            "claim": "The cyan LED strip follows the right-side edge of the base.",
+            "label": "OBJECTIVE",
+            "reason": "The illuminated cyan strip visibly continues along the right side of the base."
+          },
+          {
+            "claim_id": "C8",
+            "claim": "The cyan LED strip rises beside the headboard.",
+            "label": "OBJECTIVE",
+            "reason": "The cyan illumination visibly turns upward at the right rear side beside the headboard."
+          },
+          {
+            "claim_id": "C9",
+            "claim": "A mattress is inside the frame.",
+            "label": "OBJECTIVE",
+            "reason": "A mattress is visibly positioned within the raised edges of the bed frame."
+          },
+          {
+            "claim_id": "C10",
+            "claim": "Pillows are inside the frame.",
+            "label": "OBJECTIVE",
+            "reason": "Several pillows are visibly placed on the mattress within the bed frame."
+          },
+          {
+            "claim_id": "C11",
+            "claim": "Blankets are inside the frame.",
+            "label": "OBJECTIVE",
+            "reason": "Layered blankets are visibly draped across the mattress within the frame."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 50,
+        "relevant_novel_claims": 3,
+        "efficiency_per_100_words": 6.0
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:45:55.598704+00:00"
+}

@@ -1,0 +1,63 @@
+{
+  "stage": "completeness_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "A top is shown worn on a person",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Round crew neckline",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Broad short sleeves",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Straight loose body",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Visible side slit at the lower left hem",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "n1",
+      "claim": "Black color",
+      "label": "ADDED",
+      "addition_type": "VISUAL_GAP",
+      "reason": "The top is visibly black."
+    },
+    {
+      "claim_id": "n2",
+      "claim": "Visible side slit at the lower right hem",
+      "label": "ADDED",
+      "addition_type": "VISUAL_GAP",
+      "reason": "A second vertical side slit is clearly visible at the lower right hem."
+    }
+  ],
+  "summary": {
+    "input_claims": 5,
+    "retained_claims": 5,
+    "added_claims": 2,
+    "added_visual_gap": 2,
+    "added_non_english_text": 0,
+    "added_known_entity": 0,
+    "omission_score": 0.2857142857142857
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "stage": "completeness_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "A mirror is opened into three rectangular panels arranged at angles.",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c2",
+      "claim": "The mirror has black plastic borders.",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Two black over-door hooks extend above the mirror.",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c4",
+      "claim": "The reflections show front, side, and rear views of a person trimming his hair.",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "n1",
+      "claim": "The black rear panel displays the JUSRON brand name and logo.",
+      "label": "ADDED",
+      "addition_type": "KNOWN_ENTITY",
+      "reason": "The JUSRON name and accompanying logo are clearly visible on the black rear panel."
+    }
+  ],
+  "summary": {
+    "input_claims": 4,
+    "retained_claims": 4,
+    "added_claims": 1,
+    "added_visual_gap": 0,
+    "added_non_english_text": 0,
+    "added_known_entity": 1,
+    "omission_score": 0.2
+  }
+}

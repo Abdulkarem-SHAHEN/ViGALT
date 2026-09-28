@@ -1,0 +1,105 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 6805,
+  "token_usage": {
+    "prompt_tokens": 3096,
+    "completion_tokens": 1082,
+    "total_tokens": 4178
+  },
+  "raw_response": "{\n  \"stage\": \"fusion\",\n  \"master_claims\": [\n    {\n      \"claim_id\": \"c1\",\n      \"text\": \"Sweatshirt\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"n1\",\n      \"text\": \"Dark navy color\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    },\n    {\n      \"claim_id\": \"n2\",\n      \"text\": \"Long sleeves\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    },\n    {\n      \"claim_id\": \"n3\",\n      \"text\": \"Ribbed crew neckline, cuffs, and waistband\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    },\n    {\n      \"claim_id\": \"c2\",\n      \"text\": \"Central space-themed graphic\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c3\",\n      \"text\": \"White-outlined astronaut\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c4\",\n      \"text\": \"Multicolored planet held by the astronaut\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"n4\",\n      \"text\": \"Colorful liquid streaming from the held planet into the pools\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    },\n    {\n      \"claim_id\": \"c7\",\n      \"text\": \"Colorful pools beneath the astronaut\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c5\",\n      \"text\": \"Stars surrounding the astronaut\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c6\",\n      \"text\": \"Ringed planets surrounding the astronaut\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c8\",\n      \"text\": \"Additional small planets above\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c9\",\n      \"text\": \"Moon-like circle above\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    }\n  ],\n  \"edit_log\": [\n    \"- Added dark navy color (n1)\",\n    \"- Added long sleeves (n2)\",\n    \"- Added ribbed crew neckline, cuffs, and waistband (n3)\",\n    \"- Added colorful liquid streaming from the held planet into the pools (n4)\"\n  ],\n  \"final_alt_text\": \"A dark navy sweatshirt has long sleeves and a ribbed crew neckline, cuffs, and waistband. Its central space-themed graphic shows a white-outlined astronaut holding a multicolored planet, with colorful liquid streaming into pools beneath, plus surrounding stars, ringed planets, additional small planets above, and a moon-like circle above.\"\n}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Sweatshirt",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "Dark navy color",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "n2",
+        "text": "Long sleeves",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "n3",
+        "text": "Ribbed crew neckline, cuffs, and waistband",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Central space-themed graphic",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "White-outlined astronaut",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Multicolored planet held by the astronaut",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n4",
+        "text": "Colorful liquid streaming from the held planet into the pools",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "c7",
+        "text": "Colorful pools beneath the astronaut",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Stars surrounding the astronaut",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Ringed planets surrounding the astronaut",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c8",
+        "text": "Additional small planets above",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c9",
+        "text": "Moon-like circle above",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "- Added dark navy color (n1)",
+      "- Added long sleeves (n2)",
+      "- Added ribbed crew neckline, cuffs, and waistband (n3)",
+      "- Added colorful liquid streaming from the held planet into the pools (n4)"
+    ],
+    "final_alt_text": "A dark navy sweatshirt has long sleeves and a ribbed crew neckline, cuffs, and waistband. Its central space-themed graphic shows a white-outlined astronaut holding a multicolored planet, with colorful liquid streaming into pools beneath, plus surrounding stars, ringed planets, additional small planets above, and a moon-like circle above."
+  },
+  "final_alt_text": "A dark navy sweatshirt has long sleeves and a ribbed crew neckline, cuffs, and waistband. Its central space-themed graphic shows a white-outlined astronaut holding a multicolored planet, with colorful liquid streaming into pools beneath, plus surrounding stars, ringed planets, additional small planets above, and a moon-like circle above.",
+  "processed_at": "2026-09-20T11:27:34.357662+00:00"
+}

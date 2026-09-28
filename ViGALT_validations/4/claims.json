@@ -1,0 +1,26 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "A top is shown worn on a person"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Round crew neckline"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Broad short sleeves"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Straight loose body"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Visible side slit at the lower left hem"
+    }
+  ],
+  "total_claims": 5
+}

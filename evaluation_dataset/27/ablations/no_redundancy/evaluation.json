@@ -1,0 +1,287 @@
+{
+  "status": "ok",
+  "folder_number": 27,
+  "image_file": "61r1Xkm9NuL._AC_SX679_.jpg",
+  "ablation": "no_redundancy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A mirror is opened into three rectangular panels arranged at angles, with black borders and two black hooks extending above it. The black rear panel displays the JUSRON brand name and logo; reflections show front, side, and rear views of a person trimming his hair.",
+      "relevancy": {
+        "total_claims": 7,
+        "relevant_claims": 6,
+        "supplementary_claims": 0,
+        "visual_only_claims": 1,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "A mirror is opened into three rectangular panels arranged at angles",
+            "label": "R",
+            "reason": "This describes the mirror's three-panel folding construction and layout."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The mirror has black borders",
+            "label": "R",
+            "reason": "This describes the black trim integrated around the mirror panels."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Two black hooks extend above the mirror",
+            "label": "R",
+            "reason": "The hooks are integrated components attached to the mirror."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The rear panel is black",
+            "label": "R",
+            "reason": "This describes the color of the mirror's rear panel."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "The rear panel displays the JUSRON brand name",
+            "label": "R",
+            "reason": "This describes visible brand text printed on the product."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "The rear panel displays the JUSRON logo",
+            "label": "R",
+            "reason": "This describes a visible logo displayed on the product."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Reflections show front, side, and rear views of a person trimming his hair",
+            "label": "V",
+            "reason": "This focuses on the depicted person and grooming activity rather than the mirror's physical attributes."
+          }
+        ],
+        "relevancy_score": 75.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 7,
+          "relevant_claims": 6,
+          "irrelevant_claims": 1,
+          "raw_novel_claims": 1,
+          "relevant_novel_claims": 1,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 5,
+          "avoidable_redundancy_claims": 1,
+          "novelty_rate": 0.14285714285714285,
+          "raw_novelty_rate": 0.14285714285714285,
+          "unavoidable_repetition_rate": 0.7142857142857143,
+          "avoidable_redundancy_rate": 0.14285714285714285,
+          "redundancy_rate": 0.8571428571428571
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "A mirror is opened into three rectangular panels arranged at angles",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The mirror has black borders",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Two black hooks extend above the mirror",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The rear panel is black",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "The rear panel displays the JUSRON brand name",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "The rear panel displays the JUSRON logo",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Reflections show front, side, and rear views of a person trimming his hair",
+            "relevance_code": "V"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "A mirror is opened into three rectangular panels arranged at angles",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "Cosmetic Mirror Foldable in 3 Sections"
+              },
+              {
+                "field": "product_details.Item Shape",
+                "value": "Rectangular"
+              },
+              {
+                "field": "feature_bullets[2]",
+                "value": "the three-part folding mirror"
+              }
+            ],
+            "reason": "The DOM already identifies a rectangular mirror that folds into three sections, but it does not describe the shown open configuration with panels arranged at angles. Repeating the panel structure is necessary to anchor that new arrangement detail."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The mirror has black borders",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "Black Blk"
+              },
+              {
+                "field": "product_details.Frame Color",
+                "value": "Black"
+              }
+            ],
+            "reason": "The DOM already specifies the mirror's color and frame color as black. The claim adds no necessary semantic detail beyond that existing information."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Two black hooks extend above the mirror",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[0]",
+                "value": "the 360-degree mirror features an adjustable retractable hook that can be attached to a door, wall, bathroom, closet, or placed side by side on a table"
+              },
+              {
+                "field": "product_details.Mounting Type",
+                "value": "Hanging"
+              }
+            ],
+            "reason": "The DOM establishes that the mirror has a hanging hook, but does not specify two hooks, their black color, or their visible position above the mirror. Referring to hooks is needed to anchor those new visual details."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The rear panel is black",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "Black Blk"
+              },
+              {
+                "field": "product_details.Frame Color",
+                "value": "Black"
+              }
+            ],
+            "reason": "The DOM states that the product is black, but it does not identify the rear panel or state that this particular surface is black. The repeated color is necessary to convey the new rear-panel-specific detail."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "The rear panel displays the JUSRON brand name",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "brand",
+                "value": "JUSRON"
+              },
+              {
+                "field": "product_details.Brand Name",
+                "value": "JUSRON"
+              }
+            ],
+            "reason": "The brand name JUSRON is already available in the DOM, but the DOM does not state that it is printed on the rear panel. Repeating the brand name is necessary to identify what the newly described rear-panel marking says."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "The rear panel displays the JUSRON logo",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM provides the JUSRON brand name but contains no information about a logo or about a logo displayed on the rear panel."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Reflections show front, side, and rear views of a person trimming his hair",
+            "relevance_code": "V",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "with a 360-degree viewing angle, which can easily see all angles of the head and face. The hairdressing mirror can transform you into your own hairdresser"
+              },
+              {
+                "field": "title",
+                "value": "for Makeup, Shaving, Hairdressing"
+              }
+            ],
+            "reason": "The DOM establishes all-angle viewing and hair-cutting use, but does not describe reflections depicting a person, the specific front/side/rear views, or the depicted act of trimming hair. The overlapping all-angle and hairdressing concepts are needed to make the new visual demonstration understandable."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 6,
+        "subjective_claims": 0,
+        "total_claims": 6,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "A mirror is opened into three rectangular panels arranged at angles.",
+            "label": "OBJECTIVE",
+            "reason": "The image visibly shows a three-panel mirror, with rectangular panels positioned at angles to one another."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The panels have black borders.",
+            "label": "OBJECTIVE",
+            "reason": "Dark black edging is visibly present around the mirror panels."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "Two black hooks extend above the mirror.",
+            "label": "OBJECTIVE",
+            "reason": "Two black hook-shaped components are visibly attached above the panels."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The black rear panel displays the JUSRON brand name and logo.",
+            "label": "OBJECTIVE",
+            "reason": "A black outer panel visibly shows the readable text 'JUSRON' alongside a logo mark."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The reflections show front, side, and rear views of a person.",
+            "label": "OBJECTIVE",
+            "reason": "The mirrors visibly show the person's face/front, profile/side, and back of the head from different reflected angles."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "The person is trimming his hair.",
+            "label": "OBJECTIVE",
+            "reason": "The person is visibly holding hair clippers against the back of his head, making the grooming action directly observable."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 45,
+        "relevant_novel_claims": 1,
+        "efficiency_per_100_words": 2.2222222222222223
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:56:13.769840+00:00"
+}

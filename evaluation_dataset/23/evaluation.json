@@ -9,7 +9,6 @@
         "relevant_claims": 4,
         "supplementary_claims": 0,
         "visual_only_claims": 0,
-        "relevancy_rate": 1.0,
         "claims": [
           {
             "claim_id": "C1",
@@ -31,7 +30,8 @@
             "claim": "The footboard includes a lower horizontal rail beneath the mattress.",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 100.0
       },
       "redundancy": {
         "metrics": {
@@ -193,7 +193,6 @@
         "relevant_claims": 5,
         "supplementary_claims": 0,
         "visual_only_claims": 8,
-        "relevancy_rate": 0.38461538461538464,
         "claims": [
           {
             "claim_id": "C1",
@@ -260,7 +259,8 @@
             "claim": "A potted plant on the left nightstand",
             "label": "V"
           }
-        ]
+        ],
+        "relevancy_score": 23.81
       },
       "redundancy": {
         "metrics": {

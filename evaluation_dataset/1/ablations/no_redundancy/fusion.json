@@ -1,0 +1,56 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 3920,
+  "token_usage": {
+    "prompt_tokens": 2090,
+    "completion_tokens": 450,
+    "total_tokens": 2540
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"T-shirt shown from the front\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c2\",\"text\":\"White T-shirt\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n1\",\"text\":\"Short sleeves\",\"source\":\"ADDED\",\"action\":\"ADDED\"},{\"claim_id\":\"n2\",\"text\":\"Crew neckline\",\"source\":\"ADDED\",\"action\":\"ADDED\"},{\"claim_id\":\"c3\",\"text\":\"Small gray Under Armour logo on the wearer's upper left chest\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"}],\"edit_log\":[\"Added short sleeves per Completeness (n1)\",\"Added crew neckline per Completeness (n2)\",\"Combined retained claims into two concise sentences\"],\"final_alt_text\":\"A white T-shirt shown from the front, with short sleeves and a crew neckline. It has a small gray Under Armour logo on the wearer's upper left chest.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "T-shirt shown from the front",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "White T-shirt",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "Short sleeves",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "n2",
+        "text": "Crew neckline",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Small gray Under Armour logo on the wearer's upper left chest",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Added short sleeves per Completeness (n1)",
+      "Added crew neckline per Completeness (n2)",
+      "Combined retained claims into two concise sentences"
+    ],
+    "final_alt_text": "A white T-shirt shown from the front, with short sleeves and a crew neckline. It has a small gray Under Armour logo on the wearer's upper left chest."
+  },
+  "final_alt_text": "A white T-shirt shown from the front, with short sleeves and a crew neckline. It has a small gray Under Armour logo on the wearer's upper left chest.",
+  "processed_at": "2026-09-20T10:45:09.135761+00:00"
+}

@@ -1,0 +1,38 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "T-shirt"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Crew neckline"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Short sleeves"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Large orange “NIVEAU” lettering on the front, above a cream video-game controller"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Cream video-game controller on the front"
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Cream “40” on the front"
+    },
+    {
+      "claim_id": "c7",
+      "claim": "Multicolored stars on the front"
+    },
+    {
+      "claim_id": "c8",
+      "claim": "Green banner on the front reading “DÉBLOQUÉ,” meaning “unlocked”"
+    }
+  ],
+  "total_claims": 8
+}

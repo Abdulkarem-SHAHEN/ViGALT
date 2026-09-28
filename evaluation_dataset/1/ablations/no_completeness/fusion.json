@@ -1,0 +1,44 @@
+{
+  "status": "ok",
+  "ablation": "no_completeness",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_completeness.txt",
+  "duration_ms": 4082,
+  "token_usage": {
+    "prompt_tokens": 2060,
+    "completion_tokens": 442,
+    "total_tokens": 2502
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"T-shirt shown from the front\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c2\",\"text\":\"\",\"source\":\"ORIGINAL\",\"action\":\"DROPPED_REDUNDANT\"},{\"claim_id\":\"c3\",\"text\":\"Small gray Under Armour logo on the wearer's upper left chest\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"}],\"edit_log\":[\"Dropped redundant white color claim (c2)\",\"Retained front orientation (c1)\",\"Retained logo placement and appearance (c3)\"],\"final_alt_text\":\"A T-shirt is shown from the front. It has a small gray Under Armour logo on the wearer's upper left chest.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "T-shirt shown from the front",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "",
+        "source": "ORIGINAL",
+        "action": "DROPPED_REDUNDANT"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Small gray Under Armour logo on the wearer's upper left chest",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Dropped redundant white color claim (c2)",
+      "Retained front orientation (c1)",
+      "Retained logo placement and appearance (c3)"
+    ],
+    "final_alt_text": "A T-shirt is shown from the front. It has a small gray Under Armour logo on the wearer's upper left chest."
+  },
+  "final_alt_text": "A T-shirt is shown from the front. It has a small gray Under Armour logo on the wearer's upper left chest.",
+  "processed_at": "2026-09-20T10:44:52.004971+00:00"
+}

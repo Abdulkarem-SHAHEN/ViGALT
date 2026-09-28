@@ -1,0 +1,57 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "25",
+  "product_stem": "25",
+  "alt_text": "A wood-grain top is marked by irregular dark distressed streaks. Horizontal supports run near the floor, with diagonal braces along the side frames; a monitor, laptop, keyboard, and mouse are arranged across the surface.",
+  "final_alt_text": "A wood-grain top is marked by irregular dark distressed streaks. Horizontal supports run near the floor, with diagonal braces along the side frames; a monitor, laptop, keyboard, and mouse are arranged across the surface.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 2898,
+  "token_usage": {
+    "prompt_tokens": 1008,
+    "completion_tokens": 295,
+    "total_tokens": 1303
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Wood-grain top\"},{\"claim_id\":\"c2\",\"claim\":\"Irregular dark distressed streaks mark the top\"},{\"claim_id\":\"c3\",\"claim\":\"Horizontal supports run near the floor\"},{\"claim_id\":\"c4\",\"claim\":\"Diagonal braces run along the side frames\"},{\"claim_id\":\"c5\",\"claim\":\"A monitor is arranged across the surface\"},{\"claim_id\":\"c6\",\"claim\":\"A laptop is arranged across the surface\"},{\"claim_id\":\"c7\",\"claim\":\"A keyboard is arranged across the surface\"},{\"claim_id\":\"c8\",\"claim\":\"A mouse is arranged across the surface\"}],\"total_claims\":8}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Wood-grain top"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Irregular dark distressed streaks mark the top"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Horizontal supports run near the floor"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Diagonal braces run along the side frames"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "A monitor is arranged across the surface"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "A laptop is arranged across the surface"
+      },
+      {
+        "claim_id": "c7",
+        "claim": "A keyboard is arranged across the surface"
+      },
+      {
+        "claim_id": "c8",
+        "claim": "A mouse is arranged across the surface"
+      }
+    ],
+    "total_claims": 8
+  },
+  "processed_at": "2026-09-20T11:51:56.320499+00:00"
+}

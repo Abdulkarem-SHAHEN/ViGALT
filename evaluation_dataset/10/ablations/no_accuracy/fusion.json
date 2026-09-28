@@ -1,0 +1,75 @@
+{
+  "status": "ok",
+  "ablation": "no_accuracy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_accuracy.txt",
+  "duration_ms": 7792,
+  "token_usage": {
+    "prompt_tokens": 2519,
+    "completion_tokens": 860,
+    "total_tokens": 3379
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"Turquoise-blue rash guard body\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c2\",\"text\":\"White upper sections\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"Navy-blue bands around the sleeve hems\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"A large white flowing wave or dragon-like graphic spans the front\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"Turquoise-bound crew neckline\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c6\",\"text\":\"Straight hem\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n1\",\"text\":\"Short sleeves\",\"source\":\"ADDED\",\"action\":\"ADDED\"},{\"claim_id\":\"n2\",\"text\":\"Quiksilver logo on the left sleeve\",\"source\":\"ADDED\",\"action\":\"ADDED\"}],\"edit_log\":[\"Retained all original claims per Redundancy verdicts.\",\"Added short sleeves per Completeness (n1).\",\"Added Quiksilver logo on the left sleeve per Completeness (n2).\",\"Grouped sleeve details and separated the front graphic into a second sentence.\"],\"final_alt_text\":\"A rash guard with a turquoise-blue body, white upper sections, short sleeves with navy-blue bands around the sleeve hems, and a Quiksilver logo on the left sleeve. A large white flowing wave or dragon-like graphic spans the front, with a turquoise-bound crew neckline and a straight hem.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Turquoise-blue rash guard body",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "White upper sections",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Navy-blue bands around the sleeve hems",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "A large white flowing wave or dragon-like graphic spans the front",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Turquoise-bound crew neckline",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Straight hem",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "Short sleeves",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "n2",
+        "text": "Quiksilver logo on the left sleeve",
+        "source": "ADDED",
+        "action": "ADDED"
+      }
+    ],
+    "edit_log": [
+      "Retained all original claims per Redundancy verdicts.",
+      "Added short sleeves per Completeness (n1).",
+      "Added Quiksilver logo on the left sleeve per Completeness (n2).",
+      "Grouped sleeve details and separated the front graphic into a second sentence."
+    ],
+    "final_alt_text": "A rash guard with a turquoise-blue body, white upper sections, short sleeves with navy-blue bands around the sleeve hems, and a Quiksilver logo on the left sleeve. A large white flowing wave or dragon-like graphic spans the front, with a turquoise-bound crew neckline and a straight hem."
+  },
+  "final_alt_text": "A rash guard with a turquoise-blue body, white upper sections, short sleeves with navy-blue bands around the sleeve hems, and a Quiksilver logo on the left sleeve. A large white flowing wave or dragon-like graphic spans the front, with a turquoise-bound crew neckline and a straight hem.",
+  "processed_at": "2026-09-20T11:00:38.334247+00:00"
+}

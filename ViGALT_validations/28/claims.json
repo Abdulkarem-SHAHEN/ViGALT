@@ -1,0 +1,26 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "A mirror has a narrow border."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "The mirror has straight vertical sides."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "The mirror has a rounded arch across the top."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "A separate support extends behind the mirror on the right."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "The support holds the mirror upright on the floor."
+    }
+  ],
+  "total_claims": 5
+}

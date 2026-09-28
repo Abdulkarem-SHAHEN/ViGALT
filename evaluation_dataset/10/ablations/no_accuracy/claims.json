@@ -1,0 +1,61 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "10",
+  "product_stem": "10",
+  "alt_text": "A rash guard with a turquoise-blue body, white upper sections, short sleeves with navy-blue bands around the sleeve hems, and a Quiksilver logo on the left sleeve. A large white flowing wave or dragon-like graphic spans the front, with a turquoise-bound crew neckline and a straight hem.",
+  "final_alt_text": "A rash guard with a turquoise-blue body, white upper sections, short sleeves with navy-blue bands around the sleeve hems, and a Quiksilver logo on the left sleeve. A large white flowing wave or dragon-like graphic spans the front, with a turquoise-bound crew neckline and a straight hem.",
+  "classification_category": "CLOTHING",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 2598,
+  "token_usage": {
+    "prompt_tokens": 1023,
+    "completion_tokens": 250,
+    "total_tokens": 1273
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Rash guard\"},{\"claim_id\":\"c2\",\"claim\":\"Turquoise-blue body\"},{\"claim_id\":\"c3\",\"claim\":\"White upper sections\"},{\"claim_id\":\"c4\",\"claim\":\"Short sleeves\"},{\"claim_id\":\"c5\",\"claim\":\"Navy-blue bands around the sleeve hems\"},{\"claim_id\":\"c6\",\"claim\":\"Quiksilver logo on the left sleeve\"},{\"claim_id\":\"c7\",\"claim\":\"Large white flowing wave or dragon-like graphic spanning the front\"},{\"claim_id\":\"c8\",\"claim\":\"Turquoise-bound crew neckline\"},{\"claim_id\":\"c9\",\"claim\":\"Straight hem\"}],\"total_claims\":9}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Rash guard"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Turquoise-blue body"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "White upper sections"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Short sleeves"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "Navy-blue bands around the sleeve hems"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "Quiksilver logo on the left sleeve"
+      },
+      {
+        "claim_id": "c7",
+        "claim": "Large white flowing wave or dragon-like graphic spanning the front"
+      },
+      {
+        "claim_id": "c8",
+        "claim": "Turquoise-bound crew neckline"
+      },
+      {
+        "claim_id": "c9",
+        "claim": "Straight hem"
+      }
+    ],
+    "total_claims": 9
+  },
+  "processed_at": "2026-09-20T11:00:40.935124+00:00"
+}

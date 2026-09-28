@@ -1,0 +1,63 @@
+{
+  "status": "ok",
+  "ablation": "no_completeness",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_completeness.txt",
+  "duration_ms": 4607,
+  "token_usage": {
+    "prompt_tokens": 2601,
+    "completion_tokens": 539,
+    "total_tokens": 3140
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"Light-gray sweater body\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c2\",\"text\":\"Repeating vertical zigzag bands filled with small diamond texture\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"Brown contrast panels along the outer lower sleeves\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"\",\"source\":\"ORIGINAL\",\"action\":\"DROPPED_REDUNDANT\"},{\"claim_id\":\"c5\",\"text\":\"Short front placket opening from the collar\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c6\",\"text\":\"Dark button near the upper chest\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"}],\"edit_log\":[\"Retained light-gray sweater body, zigzag bands, and diamond texture (c1, c2)\",\"Retained brown sleeve panels (c3)\",\"Dropped raised collar as avoidable redundancy (c4)\",\"Retained front placket and dark upper-chest button (c5, c6)\"],\"final_alt_text\":\"A sweater has a light-gray body with repeating vertical zigzag bands filled with small diamond texture and brown contrast panels along the outer lower sleeves. A short front placket opens from the collar and has a dark button near the upper chest.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Light-gray sweater body",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Repeating vertical zigzag bands filled with small diamond texture",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Brown contrast panels along the outer lower sleeves",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "",
+        "source": "ORIGINAL",
+        "action": "DROPPED_REDUNDANT"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Short front placket opening from the collar",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Dark button near the upper chest",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Retained light-gray sweater body, zigzag bands, and diamond texture (c1, c2)",
+      "Retained brown sleeve panels (c3)",
+      "Dropped raised collar as avoidable redundancy (c4)",
+      "Retained front placket and dark upper-chest button (c5, c6)"
+    ],
+    "final_alt_text": "A sweater has a light-gray body with repeating vertical zigzag bands filled with small diamond texture and brown contrast panels along the outer lower sleeves. A short front placket opens from the collar and has a dark button near the upper chest."
+  },
+  "final_alt_text": "A sweater has a light-gray body with repeating vertical zigzag bands filled with small diamond texture and brown contrast panels along the outer lower sleeves. A short front placket opens from the collar and has a dark button near the upper chest.",
+  "processed_at": "2026-09-20T10:49:55.949293+00:00"
+}

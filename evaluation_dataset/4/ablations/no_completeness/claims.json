@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "4",
+  "product_stem": "4",
+  "alt_text": "A top is shown worn on a person. It has broad short sleeves, a straight loose body, and a visible side slit at the lower left hem.",
+  "final_alt_text": "A top is shown worn on a person. It has broad short sleeves, a straight loose body, and a visible side slit at the lower left hem.",
+  "classification_category": "CLOTHING",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 1301,
+  "token_usage": {
+    "prompt_tokens": 995,
+    "completion_tokens": 81,
+    "total_tokens": 1076
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Top shown worn on a person\"},{\"claim_id\":\"c2\",\"claim\":\"Broad short sleeves\"},{\"claim_id\":\"c3\",\"claim\":\"Straight loose body\"},{\"claim_id\":\"c4\",\"claim\":\"Visible side slit at the lower left hem\"}],\"total_claims\":4}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Top shown worn on a person"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Broad short sleeves"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Straight loose body"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Visible side slit at the lower left hem"
+      }
+    ],
+    "total_claims": 4
+  },
+  "processed_at": "2026-09-20T10:51:21.571477+00:00"
+}

@@ -1,0 +1,54 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "A sofa bed is arranged as a single bed",
+      "label": "NOVEL",
+      "reason": "The DOM identifies the product as a sofa bed and single bed, but does not describe its visible configuration as currently arranged in the single-bed position."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "An L-shaped frame surrounds the head and right side",
+      "label": "NOVEL",
+      "reason": "Although the DOM mentions an L-shaped tray and a reversible backrest, it does not provide this frame configuration or the spatial relationship around the head and right side."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Open shelving is illuminated by cyan LEDs",
+      "label": "NOVEL",
+      "reason": "The DOM separately mentions open niches and LED lighting, but does not specify that the visible shelving is illuminated by cyan light."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "A laptop sits on the work surface",
+      "label": "NOVEL",
+      "reason": "The DOM describes an integrated work surface and storage for laptops, but does not state that a laptop is visibly positioned on the surface."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "The work surface extends across the foot and right side",
+      "label": "NOVEL",
+      "reason": "The DOM identifies an integrated work surface and gives dimensions, but does not describe its visible placement extending across the bed's foot and right side."
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Storage compartments beneath the mattress are pulled open on the left",
+      "label": "NOVEL",
+      "reason": "The DOM mentions drawers and storage beneath the mattress, but does not describe their visible open state or their placement on the left."
+    },
+    {
+      "claim_id": "c7",
+      "claim": "Fabric organizer pockets hang from the near side",
+      "label": "NOVEL",
+      "reason": "The DOM mentions storage pockets but does not specify their fabric construction, hanging configuration, or visible attachment to the near side."
+    }
+  ],
+  "summary": {
+    "total_claims": 7,
+    "novel_claims": 7,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 0,
+    "redundancy_score": 0.0
+  }
+}

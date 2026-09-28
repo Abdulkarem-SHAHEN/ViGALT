@@ -1,0 +1,26 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Black T-shirt"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Irregular white outlined heart on the upper right chest"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "T-shirt is shown worn on a person"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Straight body extending to the upper hips"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Short sleeves ending above the elbows"
+    }
+  ],
+  "total_claims": 5
+}

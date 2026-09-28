@@ -1,0 +1,81 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 5632,
+  "token_usage": {
+    "prompt_tokens": 2697,
+    "completion_tokens": 772,
+    "total_tokens": 3469
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"Bed\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c2\",\"text\":\"Peaked roof-shaped frame\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"Four corner posts\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"Raised guard panels made of vertical slats along the sides and foot end\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"Opening at the front\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c6\",\"text\":\"Low-set sleeping surface\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c7\",\"text\":\"White mattress with a lightly quilted cover\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n1\",\"text\":\"White-painted bed frame\",\"source\":\"ADDED\",\"action\":\"ADDED\"},{\"claim_id\":\"n2\",\"text\":\"Solid back panel behind the sleeping surface\",\"source\":\"ADDED\",\"action\":\"ADDED\"}],\"edit_log\":[\"Retained all seven original claims per Accuracy.\",\"Added white-painted bed frame per Completeness (n1).\",\"Added solid back panel behind the sleeping surface per Completeness (n2).\",\"Reordered claims and healed grammar into three concise sentences.\"],\"final_alt_text\":\"A bed with a white-painted, peaked roof-shaped frame, four corner posts, and raised guard panels made of vertical slats along the sides and foot end. A solid back panel is behind the low-set sleeping surface, with an opening at the front. The sleeping surface contains a white mattress with a lightly quilted cover.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Bed",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Peaked roof-shaped frame",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Four corner posts",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Raised guard panels made of vertical slats along the sides and foot end",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Opening at the front",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Low-set sleeping surface",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c7",
+        "text": "White mattress with a lightly quilted cover",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "White-painted bed frame",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "n2",
+        "text": "Solid back panel behind the sleeping surface",
+        "source": "ADDED",
+        "action": "ADDED"
+      }
+    ],
+    "edit_log": [
+      "Retained all seven original claims per Accuracy.",
+      "Added white-painted bed frame per Completeness (n1).",
+      "Added solid back panel behind the sleeping surface per Completeness (n2).",
+      "Reordered claims and healed grammar into three concise sentences."
+    ],
+    "final_alt_text": "A bed with a white-painted, peaked roof-shaped frame, four corner posts, and raised guard panels made of vertical slats along the sides and foot end. A solid back panel is behind the low-set sleeping surface, with an opening at the front. The sleeping surface contains a white mattress with a lightly quilted cover."
+  },
+  "final_alt_text": "A bed with a white-painted, peaked roof-shaped frame, four corner posts, and raised guard panels made of vertical slats along the sides and foot end. A solid back panel is behind the low-set sleeping surface, with an opening at the front. The sleeping surface contains a white mattress with a lightly quilted cover.",
+  "processed_at": "2026-09-20T11:50:31.560058+00:00"
+}

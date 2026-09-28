@@ -1,0 +1,53 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "5",
+  "product_stem": "5",
+  "alt_text": "Pink awareness ribbon graphics appear as a small graphic on the left chest and a much larger version of the graphic centered across the back. An attached hood, full-length front zipper, large divided hand pocket on the front, ribbed cuffs on the sleeves, and ribbed waistband at the hem are visible.",
+  "final_alt_text": "Pink awareness ribbon graphics appear as a small graphic on the left chest and a much larger version of the graphic centered across the back. An attached hood, full-length front zipper, large divided hand pocket on the front, ribbed cuffs on the sleeves, and ribbed waistband at the hem are visible.",
+  "classification_category": "CLOTHING",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 2604,
+  "token_usage": {
+    "prompt_tokens": 1024,
+    "completion_tokens": 270,
+    "total_tokens": 1294
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Pink awareness ribbon graphic on the left chest\"},{\"claim_id\":\"c2\",\"claim\":\"Much larger pink awareness ribbon graphic centered across the back\"},{\"claim_id\":\"c3\",\"claim\":\"Attached hood\"},{\"claim_id\":\"c4\",\"claim\":\"Full-length front zipper\"},{\"claim_id\":\"c5\",\"claim\":\"Large divided hand pocket on the front\"},{\"claim_id\":\"c6\",\"claim\":\"Ribbed cuffs on the sleeves\"},{\"claim_id\":\"c7\",\"claim\":\"Ribbed waistband at the hem\"}],\"total_claims\":7}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Pink awareness ribbon graphic on the left chest"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Much larger pink awareness ribbon graphic centered across the back"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Attached hood"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Full-length front zipper"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "Large divided hand pocket on the front"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "Ribbed cuffs on the sleeves"
+      },
+      {
+        "claim_id": "c7",
+        "claim": "Ribbed waistband at the hem"
+      }
+    ],
+    "total_claims": 7
+  },
+  "processed_at": "2026-09-20T10:52:18.550709+00:00"
+}

@@ -1,0 +1,30 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Bar table set"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Four backless, square stools arranged around the tabletop"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Rectangular tabletop"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "White surfaces with gray marble-like veining"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Silver-gray rectangular frames"
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Horizontal footrests near the floor"
+    }
+  ],
+  "total_claims": 6
+}

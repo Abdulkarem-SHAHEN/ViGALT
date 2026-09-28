@@ -1,0 +1,318 @@
+{
+  "status": "ok",
+  "folder_number": 12,
+  "image_file": "61maUree5pL._AC_SY741_.jpg",
+  "ablation": "no_completeness",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A bright red hoodie and black trousers. The hoodie features Lightning McQueen’s face, blue eyes, number 95, and yellow “VROOM! VROOM!” lettering; the trousers have white side stripes, gray ankle cuffs, and a gray drawstring.",
+      "relevancy": {
+        "total_claims": 8,
+        "relevant_claims": 8,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Bright red hoodie",
+            "label": "R",
+            "reason": "Describes the color and type of the hoodie in the product set."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Black trousers",
+            "label": "R",
+            "reason": "Describes the color and type of the trousers in the product set."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Lightning McQueen’s face with blue eyes on the hoodie",
+            "label": "R",
+            "reason": "Describes the character face graphic printed on the hoodie."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Number 95 on the hoodie",
+            "label": "R",
+            "reason": "Describes a number graphic integrated into the hoodie design."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Yellow “VROOM! VROOM!” lettering on the hoodie",
+            "label": "R",
+            "reason": "Describes visible printed text and its color on the hoodie."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "White side stripes on the trousers",
+            "label": "R",
+            "reason": "Describes the contrasting stripe detail along the trousers' sides."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Gray ankle cuffs on the trousers",
+            "label": "R",
+            "reason": "Describes the contrasting cuffs at the trouser ankles."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "Gray drawstring on the trousers",
+            "label": "R",
+            "reason": "Describes the visible drawstring integrated into the trouser waistband."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 8,
+          "relevant_claims": 8,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 0,
+          "relevant_novel_claims": 0,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 8,
+          "avoidable_redundancy_claims": 0,
+          "novelty_rate": 0.0,
+          "raw_novelty_rate": 0.0,
+          "unavoidable_repetition_rate": 1.0,
+          "avoidable_redundancy_rate": 0.0,
+          "redundancy_rate": 1.0
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Bright red hoodie",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Black trousers",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Lightning McQueen’s face with blue eyes on the hoodie",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Number 95 on the hoodie",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Yellow “VROOM! VROOM!” lettering on the hoodie",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "White side stripes on the trousers",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Gray ankle cuffs on the trousers",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c8",
+            "claim": "Gray drawstring on the trousers",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Bright red hoodie",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Children's jogging set with hoodie and trousers - complete tracksuit including a hoodie and matching jogging bottoms"
+              }
+            ],
+            "reason": "The DOM already establishes that the set includes a hoodie, but it does not provide its bright red color. Repeating “hoodie” is necessary to anchor the new color information to the correct garment."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Black trousers",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Children's jogging set with hoodie and trousers - complete tracksuit including a hoodie and matching jogging bottoms"
+              }
+            ],
+            "reason": "The trousers are already identified in the DOM, while their black color is absent. Referring to the trousers is necessary to specify which item the new color describes."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Lightning McQueen’s face with blue eyes on the hoodie",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[0]",
+                "value": "Official Disney Cars Boys Tracksuit - Children's Tracksuit Set with Lightning McQueen or Martin"
+              },
+              {
+                "field": "feature_bullets[3]",
+                "value": "Large Lightning McQueen or Martin print with bright colors"
+              }
+            ],
+            "reason": "The DOM identifies Lightning McQueen as a possible large design, but does not state that his face or blue eyes appear on the hoodie. Repeating the character and hoodie provides the necessary anchor for those new visual details."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Number 95 on the hoodie",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Children's jogging set with hoodie and trousers - complete tracksuit including a hoodie and matching jogging bottoms"
+              }
+            ],
+            "reason": "The DOM establishes the hoodie as part of the set but contains no information about a number 95. Mentioning the hoodie is needed to locate the new graphic detail."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Yellow “VROOM! VROOM!” lettering on the hoodie",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Children's jogging set with hoodie and trousers - complete tracksuit including a hoodie and matching jogging bottoms"
+              },
+              {
+                "field": "feature_bullets[3]",
+                "value": "Large Lightning McQueen or Martin print with bright colors"
+              }
+            ],
+            "reason": "Although the DOM mentions a colorful character print and a hoodie, it does not specify yellow lettering or the phrase “VROOM! VROOM!”. Repeating the hoodie is necessary to anchor the new lettering detail."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "White side stripes on the trousers",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Children's jogging set with hoodie and trousers - complete tracksuit including a hoodie and matching jogging bottoms"
+              }
+            ],
+            "reason": "The DOM identifies matching trousers but does not mention white side stripes. The repeated reference to trousers is necessary to identify the location of the new stripe detail."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Gray ankle cuffs on the trousers",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Children's jogging set with hoodie and trousers - complete tracksuit including a hoodie and matching jogging bottoms"
+              }
+            ],
+            "reason": "The trousers are already represented in the DOM, but gray ankle cuffs are not. Referring to the trousers is necessary to ground the new cuff description."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "Gray drawstring on the trousers",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Children's jogging set with hoodie and trousers - complete tracksuit including a hoodie and matching jogging bottoms"
+              },
+              {
+                "field": "feature_bullets[2]",
+                "value": "Pleasant soft fabric with elastic waistband for a comfortable fit"
+              }
+            ],
+            "reason": "The DOM establishes trousers and an elastic waistband, but it does not mention a gray drawstring. Repeating the trousers is necessary to specify where the new drawstring detail appears."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 9,
+        "subjective_claims": 0,
+        "total_claims": 9,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The set includes a bright red hoodie.",
+            "label": "OBJECTIVE",
+            "reason": "A hoodie in a vivid red color is directly visible in the image."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The set includes black trousers.",
+            "label": "OBJECTIVE",
+            "reason": "Black trousers are directly visible beneath the hoodie."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The hoodie features Lightning McQueen’s face.",
+            "label": "OBJECTIVE",
+            "reason": "The visible front graphic depicts the recognizable face of the Lightning McQueen character."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The hoodie graphic has blue eyes.",
+            "label": "OBJECTIVE",
+            "reason": "Blue eyes are visibly depicted in the character graphic on the hoodie."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The hoodie features the number 95.",
+            "label": "OBJECTIVE",
+            "reason": "The number 95 is visibly printed on the character graphic."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "The hoodie has yellow “VROOM! VROOM!” lettering.",
+            "label": "OBJECTIVE",
+            "reason": "Yellow text reading “VROOM! VROOM!” is visibly printed above the graphic."
+          },
+          {
+            "claim_id": "C7",
+            "claim": "The trousers have white side stripes.",
+            "label": "OBJECTIVE",
+            "reason": "Alternating white rectangular stripe details are visibly present along both outer trouser legs."
+          },
+          {
+            "claim_id": "C8",
+            "claim": "The trousers have gray ankle cuffs.",
+            "label": "OBJECTIVE",
+            "reason": "Gray cuff sections are visibly present at the lower ends of both trouser legs."
+          },
+          {
+            "claim_id": "C9",
+            "claim": "The trousers have a gray drawstring.",
+            "label": "OBJECTIVE",
+            "reason": "A gray drawstring is visibly shown at the waistband."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 36,
+        "relevant_novel_claims": 0,
+        "efficiency_per_100_words": 0.0
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:29:28.573785+00:00"
+}

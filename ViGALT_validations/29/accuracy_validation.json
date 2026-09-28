@@ -1,0 +1,44 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically.",
+      "claim": "A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically.",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The image visibly shows a vertically mounted mirror with a broad rounded top, curved sides, and a tapered lower end."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "The mirror is above a vessel sink.",
+      "claim": "The mirror is above a vessel sink.",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A freestanding vessel sink is clearly visible directly below the mirror."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "The mirror is positioned between two vertical wall sconces.",
+      "claim": "The mirror is positioned between two vertical wall sconces.",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Two vertical wall sconces are visibly mounted on the wall, one on each side of the mirror."
+    },
+    {
+      "claim_id": "c4",
+      "original_claim": "The mirror is in a bathroom vanity area.",
+      "claim": "The mirror is in a bathroom vanity area.",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The image visibly shows the mirror above a sink and countertop in a bathroom vanity setting."
+    }
+  ],
+  "summary": {
+    "total_claims": 4,
+    "accurate_claims": 4,
+    "corrected_claims": 0,
+    "deleted_claims": 0,
+    "error_rate": 0.0
+  }
+}

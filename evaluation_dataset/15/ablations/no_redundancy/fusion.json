@@ -1,0 +1,62 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 2743,
+  "token_usage": {
+    "prompt_tokens": 2527,
+    "completion_tokens": 368,
+    "total_tokens": 2895
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"White T-shirt\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c2\",\"text\":\"Round crew neckline\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"Short sleeves\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"Large black “I” in the front graphic\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"Red heart to the right of the large black “I” in the front graphic\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c6\",\"text\":\"The word “BARCELONA” in black capital letters beneath the large black “I” and red heart in the front graphic\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"}],\"edit_log\":[\"Retained white T-shirt, round crew neckline, and short sleeves (c1–c3)\",\"Retained the front graphic elements and their relative positions (c4–c6)\",\"No corrections, deletions, or completeness additions required\"],\"final_alt_text\":\"A white T-shirt with a round crew neckline and short sleeves. The front graphic has a large black “I,” a red heart to its right, and the word “BARCELONA” in black capital letters beneath.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "White T-shirt",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Round crew neckline",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Short sleeves",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Large black “I” in the front graphic",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Red heart to the right of the large black “I” in the front graphic",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "The word “BARCELONA” in black capital letters beneath the large black “I” and red heart in the front graphic",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Retained white T-shirt, round crew neckline, and short sleeves (c1–c3)",
+      "Retained the front graphic elements and their relative positions (c4–c6)",
+      "No corrections, deletions, or completeness additions required"
+    ],
+    "final_alt_text": "A white T-shirt with a round crew neckline and short sleeves. The front graphic has a large black “I,” a red heart to its right, and the word “BARCELONA” in black capital letters beneath."
+  },
+  "final_alt_text": "A white T-shirt with a round crew neckline and short sleeves. The front graphic has a large black “I,” a red heart to its right, and the word “BARCELONA” in black capital letters beneath.",
+  "processed_at": "2026-09-20T11:34:14.342014+00:00"
+}

@@ -1,0 +1,62 @@
+{
+  "status": "ok",
+  "ablation": "no_accuracy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_accuracy.txt",
+  "duration_ms": 4616,
+  "token_usage": {
+    "prompt_tokens": 2384,
+    "completion_tokens": 504,
+    "total_tokens": 2888
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"A mirror has a narrow border.\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c2\",\"text\":\"The mirror has straight vertical sides.\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"\",\"source\":\"ORIGINAL\",\"action\":\"DROPPED_REDUNDANT\"},{\"claim_id\":\"c4\",\"text\":\"A separate support extends behind the mirror on the right.\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"The support holds the mirror upright on the floor.\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n1\",\"text\":\"The mirror has a dark-colored frame.\",\"source\":\"ADDED\",\"action\":\"ADDED\"}],\"edit_log\":[\"Dropped rounded arch claim per Redundancy (c3).\",\"Added dark-colored frame per Completeness (n1).\",\"Grouped the border, sides, and frame before the support description for macro-to-micro order.\"],\"final_alt_text\":\"A mirror with a narrow border, straight vertical sides, and a dark-colored frame. A separate support extends behind it on the right, holding it upright on the floor.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "A mirror has a narrow border.",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "The mirror has straight vertical sides.",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "",
+        "source": "ORIGINAL",
+        "action": "DROPPED_REDUNDANT"
+      },
+      {
+        "claim_id": "c4",
+        "text": "A separate support extends behind the mirror on the right.",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "The support holds the mirror upright on the floor.",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "The mirror has a dark-colored frame.",
+        "source": "ADDED",
+        "action": "ADDED"
+      }
+    ],
+    "edit_log": [
+      "Dropped rounded arch claim per Redundancy (c3).",
+      "Added dark-colored frame per Completeness (n1).",
+      "Grouped the border, sides, and frame before the support description for macro-to-micro order."
+    ],
+    "final_alt_text": "A mirror with a narrow border, straight vertical sides, and a dark-colored frame. A separate support extends behind it on the right, holding it upright on the floor."
+  },
+  "final_alt_text": "A mirror with a narrow border, straight vertical sides, and a dark-colored frame. A separate support extends behind it on the right, holding it upright on the floor.",
+  "processed_at": "2026-09-20T11:56:21.394816+00:00"
+}

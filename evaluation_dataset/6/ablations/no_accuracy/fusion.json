@@ -1,0 +1,75 @@
+{
+  "status": "ok",
+  "ablation": "no_accuracy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_accuracy.txt",
+  "duration_ms": 5219,
+  "token_usage": {
+    "prompt_tokens": 2522,
+    "completion_tokens": 668,
+    "total_tokens": 3190
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"\",\"source\":\"ORIGINAL\",\"action\":\"DROPPED_REDUNDANT\"},{\"claim_id\":\"c2\",\"text\":\"Black contrasting collar\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"Black buttons arranged down the center front\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"Rounded lower edge\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"\",\"source\":\"ORIGINAL\",\"action\":\"DROPPED_REDUNDANT\"},{\"claim_id\":\"c6\",\"text\":\"Narrow cuffs at the ends of the sleeves\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n1\",\"text\":\"Gray shirt body\",\"source\":\"ADDED\",\"action\":\"ADDED\"},{\"claim_id\":\"n2\",\"text\":\"A black cuff is visible at the end of the sleeve on the right side of the image\",\"source\":\"ADDED\",\"action\":\"ADDED\"}],\"edit_log\":[\"Dropped shirt category per Redundancy (c1)\",\"Dropped long sleeves per Redundancy (c5)\",\"Added gray shirt body per Completeness (n1)\",\"Added black right-side cuff per Completeness (n2)\"],\"final_alt_text\":\"The gray shirt body has a black contrasting collar and black buttons arranged down the center front. Its rounded lower edge and narrow cuffs at the ends of the sleeves are visible, including a black cuff at the end of the sleeve on the right side of the image.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "",
+        "source": "ORIGINAL",
+        "action": "DROPPED_REDUNDANT"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Black contrasting collar",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Black buttons arranged down the center front",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Rounded lower edge",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "",
+        "source": "ORIGINAL",
+        "action": "DROPPED_REDUNDANT"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Narrow cuffs at the ends of the sleeves",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "Gray shirt body",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "n2",
+        "text": "A black cuff is visible at the end of the sleeve on the right side of the image",
+        "source": "ADDED",
+        "action": "ADDED"
+      }
+    ],
+    "edit_log": [
+      "Dropped shirt category per Redundancy (c1)",
+      "Dropped long sleeves per Redundancy (c5)",
+      "Added gray shirt body per Completeness (n1)",
+      "Added black right-side cuff per Completeness (n2)"
+    ],
+    "final_alt_text": "The gray shirt body has a black contrasting collar and black buttons arranged down the center front. Its rounded lower edge and narrow cuffs at the ends of the sleeves are visible, including a black cuff at the end of the sleeve on the right side of the image."
+  },
+  "final_alt_text": "The gray shirt body has a black contrasting collar and black buttons arranged down the center front. Its rounded lower edge and narrow cuffs at the ends of the sleeves are visible, including a black cuff at the end of the sleeve on the right side of the image.",
+  "processed_at": "2026-09-20T10:53:47.598848+00:00"
+}

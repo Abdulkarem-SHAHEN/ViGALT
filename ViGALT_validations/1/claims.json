@@ -1,0 +1,18 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "T-shirt shown from the front"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "White T-shirt"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Small gray Under Armour logo on the wearer's upper left chest"
+    }
+  ],
+  "total_claims": 3
+}

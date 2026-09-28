@@ -1,0 +1,277 @@
+{
+  "status": "ok",
+  "folder_number": 16,
+  "image_file": "71IRNgOKLfL._AC_SY300_SX300_QL70_ML2_.jpg",
+  "ablation": "no_completeness",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "Illuminated vertical strips are along both front arm edges, and circular cup holders are built into the armrests. A control panel is mounted on the outside of the left arm. Open compartments are beneath and in front of the seating, containing a blanket, cushion, and books; one front compartment has its hinged lid raised.",
+      "relevancy": {
+        "total_claims": 8,
+        "relevant_claims": 5,
+        "supplementary_claims": 0,
+        "visual_only_claims": 3,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Illuminated vertical strips are along both front arm edges.",
+            "label": "R",
+            "reason": "The illuminated strips are integrated features on the sofa arms."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Circular cup holders are built into the armrests.",
+            "label": "R",
+            "reason": "The cup holders are built-in product features of the armrests."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "A control panel is mounted on the outside of the left arm.",
+            "label": "R",
+            "reason": "The control panel is an integrated feature mounted on the sofa."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Open compartments are beneath and in front of the seating.",
+            "label": "R",
+            "reason": "The storage compartments are part of the sofa's construction and layout."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "The open compartments contain a blanket.",
+            "label": "V",
+            "reason": "This individually describes a secondary stored prop rather than the furniture itself."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "The open compartments contain a cushion.",
+            "label": "V",
+            "reason": "This individually describes a secondary stored prop rather than the furniture itself."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "The open compartments contain books.",
+            "label": "V",
+            "reason": "This focuses on a secondary prop rather than collectively conveying storage capacity."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "One front compartment has its hinged lid raised.",
+            "label": "R",
+            "reason": "The raised hinged lid describes the furniture's integrated storage feature."
+          }
+        ],
+        "relevancy_score": 45.45
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 8,
+          "relevant_claims": 5,
+          "irrelevant_claims": 3,
+          "raw_novel_claims": 8,
+          "relevant_novel_claims": 5,
+          "irrelevant_novel_claims": 3,
+          "unavoidable_repetition_claims": 0,
+          "avoidable_redundancy_claims": 0,
+          "novelty_rate": 0.625,
+          "raw_novelty_rate": 1.0,
+          "unavoidable_repetition_rate": 0.0,
+          "avoidable_redundancy_rate": 0.0,
+          "redundancy_rate": 0.0
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Illuminated vertical strips are along both front arm edges.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Circular cup holders are built into the armrests.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "A control panel is mounted on the outside of the left arm.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Open compartments are beneath and in front of the seating.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "The open compartments contain a blanket.",
+            "relevance_code": "V"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "The open compartments contain a cushion.",
+            "relevance_code": "V"
+          },
+          {
+            "claim_id": "c7",
+            "claim": "The open compartments contain books.",
+            "relevance_code": "V"
+          },
+          {
+            "claim_id": "c8",
+            "claim": "One front compartment has its hinged lid raised.",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Illuminated vertical strips are along both front arm edges.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "LED mood lighting makes the space more warm and luxurious, creating an exclusive atmosphere"
+              }
+            ],
+            "reason": "The DOM mentions LED mood lighting generally, but does not specify illuminated vertical strips or their placement along both front arm edges."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Circular cup holders are built into the armrests.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM contains no information about cup holders, their circular shape, or their integration into the armrests."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "A control panel is mounted on the outside of the left arm.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[3]",
+                "value": "Equipped with a 12V USB/Type-C port"
+              }
+            ],
+            "reason": "Although the DOM states that the sofa has a USB/Type-C port, it does not describe a control panel or its location on the outside of the left arm."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Open compartments are beneath and in front of the seating.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "equipped with side pockets, a storage bench, and 2 large-capacity roller drawers"
+              },
+              {
+                "field": "product_details.Number of Drawers",
+                "value": "2"
+              }
+            ],
+            "reason": "The DOM describes storage pockets, a storage bench, and roller drawers, but not open compartments positioned beneath and in front of the seating."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "The open compartments contain a blanket.",
+            "relevance_code": "V",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM does not state that any compartments contain a blanket."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "The open compartments contain a cushion.",
+            "relevance_code": "V",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM does not state that any compartments contain a cushion."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "The open compartments contain books.",
+            "relevance_code": "V",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "2 large-capacity roller drawers, perfect for storing books and everyday items"
+              }
+            ],
+            "reason": "The DOM says the roller drawers are suitable for storing books, but does not state that open compartments contain books."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "One front compartment has its hinged lid raised.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "equipped with side pockets, a storage bench, and 2 large-capacity roller drawers"
+              }
+            ],
+            "reason": "The DOM mentions a storage bench and drawers but provides no information about a front compartment, a hinged lid, or the lid being raised."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 6,
+        "subjective_claims": 0,
+        "total_claims": 6,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "Illuminated vertical strips are along both front arm edges.",
+            "label": "OBJECTIVE",
+            "reason": "Vertical light strips are visibly positioned along the front-facing outer edges of both armrests."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "Circular cup holders are built into the armrests.",
+            "label": "OBJECTIVE",
+            "reason": "Circular recessed holders are visibly present on the tops of the armrests."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "A control panel is mounted on the outside of the left arm.",
+            "label": "OBJECTIVE",
+            "reason": "A small panel with visible controls appears on the exterior side of the left armrest."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "Open compartments are beneath and in front of the seating.",
+            "label": "OBJECTIVE",
+            "reason": "An open pull-out storage area is visible below the sofa seat, and another open storage compartment is visible in front of the seating."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The open compartments contain a blanket, cushion, and books.",
+            "label": "OBJECTIVE",
+            "reason": "Visible items in the storage areas include folded textile items and a cushion-like item in the lower compartment, plus books in the front compartment."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "One front compartment has its hinged lid raised.",
+            "label": "OBJECTIVE",
+            "reason": "The lid of the front storage compartment is visibly open and angled upward on a hinge."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 54,
+        "relevant_novel_claims": 5,
+        "efficiency_per_100_words": 9.25925925925926
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:36:08.636015+00:00"
+}

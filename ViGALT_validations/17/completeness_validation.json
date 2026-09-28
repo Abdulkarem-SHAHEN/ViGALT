@@ -1,0 +1,56 @@
+{
+  "stage": "completeness_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Bar table set",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Four backless, square stools arranged around the tabletop",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Rectangular tabletop",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c4",
+      "claim": "White surfaces with gray marble-like veining",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Silver-gray rectangular frames",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Horizontal footrests near the floor",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    }
+  ],
+  "summary": {
+    "input_claims": 6,
+    "retained_claims": 6,
+    "added_claims": 0,
+    "added_visual_gap": 0,
+    "added_non_english_text": 0,
+    "added_known_entity": 0,
+    "omission_score": 0.0
+  }
+}

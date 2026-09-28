@@ -1,0 +1,105 @@
+{
+  "stage": "completeness_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Sweatshirt",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Central space-themed graphic",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c3",
+      "claim": "White-outlined astronaut",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Multicolored planet held by the astronaut",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Stars surrounding the astronaut",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Ringed planets surrounding the astronaut",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c7",
+      "claim": "Colorful pools beneath the astronaut",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c8",
+      "claim": "Additional small planets above",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c9",
+      "claim": "Moon-like circle above",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "n1",
+      "claim": "Dark navy color",
+      "label": "ADDED",
+      "addition_type": "VISUAL_GAP",
+      "reason": "The sweatshirt body and sleeves are visibly dark navy."
+    },
+    {
+      "claim_id": "n2",
+      "claim": "Long sleeves",
+      "label": "ADDED",
+      "addition_type": "VISUAL_GAP",
+      "reason": "Long sleeves are clearly visible extending from the shoulders to the cuffs."
+    },
+    {
+      "claim_id": "n3",
+      "claim": "Ribbed crew neckline, cuffs, and waistband",
+      "label": "ADDED",
+      "addition_type": "VISUAL_GAP",
+      "reason": "The neckline, sleeve ends, and lower hem visibly have ribbed bands."
+    },
+    {
+      "claim_id": "n4",
+      "claim": "Colorful liquid streaming from the held planet into the pools",
+      "label": "ADDED",
+      "addition_type": "VISUAL_GAP",
+      "reason": "A multicolored stream is clearly visible flowing from the planet held by the astronaut into the pools below."
+    }
+  ],
+  "summary": {
+    "input_claims": 9,
+    "retained_claims": 9,
+    "added_claims": 4,
+    "added_visual_gap": 4,
+    "added_non_english_text": 0,
+    "added_known_entity": 0,
+    "omission_score": 0.3076923076923077
+  }
+}

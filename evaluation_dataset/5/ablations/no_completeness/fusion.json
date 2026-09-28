@@ -1,0 +1,62 @@
+{
+  "status": "ok",
+  "ablation": "no_completeness",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_completeness.txt",
+  "duration_ms": 4759,
+  "token_usage": {
+    "prompt_tokens": 2571,
+    "completion_tokens": 593,
+    "total_tokens": 3164
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"Zip-up hooded sweatshirt\",\"source\":\"ORIGINAL\",\"action\":\"CORRECTED\"},{\"claim_id\":\"c2\",\"text\":\"Small graphic on the left chest\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"Much larger version of the graphic centered across the back\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"Large divided hand pocket on the front\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"Ribbed cuffs on the sleeves\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c6\",\"text\":\"Ribbed waistband at the hem\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"}],\"edit_log\":[\"Corrected sweatshirt to zip-up hooded sweatshirt (c1)\",\"Retained the chest and back graphic details (c2, c3)\",\"Retained the front pocket and ribbed construction details (c4, c5, c6)\"],\"final_alt_text\":\"Zip-up hooded sweatshirt with a small graphic on the left chest and a much larger version of the graphic centered across the back. It has a large divided hand pocket on the front. Ribbed cuffs on the sleeves and a ribbed waistband at the hem finish the garment.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Zip-up hooded sweatshirt",
+        "source": "ORIGINAL",
+        "action": "CORRECTED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Small graphic on the left chest",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Much larger version of the graphic centered across the back",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Large divided hand pocket on the front",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Ribbed cuffs on the sleeves",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Ribbed waistband at the hem",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Corrected sweatshirt to zip-up hooded sweatshirt (c1)",
+      "Retained the chest and back graphic details (c2, c3)",
+      "Retained the front pocket and ribbed construction details (c4, c5, c6)"
+    ],
+    "final_alt_text": "Zip-up hooded sweatshirt with a small graphic on the left chest and a much larger version of the graphic centered across the back. It has a large divided hand pocket on the front. Ribbed cuffs on the sleeves and a ribbed waistband at the hem finish the garment."
+  },
+  "final_alt_text": "Zip-up hooded sweatshirt with a small graphic on the left chest and a much larger version of the graphic centered across the back. It has a large divided hand pocket on the front. Ribbed cuffs on the sleeves and a ribbed waistband at the hem finish the garment.",
+  "processed_at": "2026-09-20T10:52:43.397607+00:00"
+}

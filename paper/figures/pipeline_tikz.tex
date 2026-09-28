@@ -1,0 +1,57 @@
+% ViGALT generation pipeline (single-column, vector).
+% Requires: \usepackage{tikz} and \usetikzlibrary{positioning,arrows.meta,calc,fit,backgrounds}
+\begin{tikzpicture}[
+  font=\scriptsize,
+  node distance=3.2mm and 2.4mm,
+  stage/.style={draw=black!70, rounded corners=1.5pt, fill=blue!6, align=center,
+                minimum height=8.5mm, inner sep=2pt, text width=#1},
+  stage/.default=19mm,
+  valid/.style={draw=black!70, rounded corners=1.5pt, fill=orange!10, align=center,
+                minimum height=10mm, inner sep=2pt, text width=21.5mm},
+  fuse/.style={draw=black!80, very thick, rounded corners=1.5pt, fill=green!8, align=center,
+               minimum height=8.5mm, inner sep=2pt, text width=40mm},
+  io/.style={draw=black!50, dashed, rounded corners=1.5pt, align=center,
+             minimum height=8.5mm, inner sep=2pt, text width=#1},
+  io/.default=17mm,
+  arr/.style={-{Stealth[length=1.6mm]}, black!75, semithick},
+  num/.style={circle, fill=black, text=white, font=\tiny\bfseries, inner sep=0.6pt, minimum size=3mm}
+]
+% Row 1
+\node[io]                            (in)  {Product image\\+ product page};
+\node[stage, right=of in]            (cat) {Categorizer\\{\tiny clothing / furniture}};
+\node[stage, right=of cat]           (dom) {DOM extractor\\{\tiny deterministic, JSON}};
+% Row 2
+\node[stage=26mm, below=5mm of cat.south west, anchor=north west, xshift=-9mm] (gen) {Generator (VLM)\\{\tiny image + DOM JSON}};
+\node[stage=26mm, right=5mm of gen]  (atom) {Atomic claim\\separation};
+% Row 3 validators
+\node[valid, below=6mm of gen.south west, anchor=north west, xshift=-8.5mm] (red) {Redundancy\\validator\\{\tiny claims + DOM}};
+\node[valid, right=1.6mm of red]     (acc) {Accuracy\\validator\\{\tiny claims + image}};
+\node[valid, right=1.6mm of acc]     (com) {Completeness\\validator\\{\tiny image + claims + DOM}};
+% Row 4
+\node[fuse, below=5mm of acc]        (fus) {Fuser / constrained writer\\{\tiny no new facts; applies validator verdicts}};
+\node[io=22mm, minimum height=5.5mm, below=3mm of fus] (out) {Final alt text};
+
+% numbers
+\node[num] at (cat.north west) {1};
+\node[num] at (dom.north west) {2};
+\node[num] at (gen.north west) {3};
+\node[num] at (atom.north west) {4};
+\node[num] at (red.north west) {5};
+\node[num] at (acc.north west) {6};
+\node[num] at (com.north west) {7};
+\node[num] at (fus.north west) {8};
+
+% edges
+\draw[arr] (in) -- (cat);
+\draw[arr] (cat) -- (dom);
+\draw[arr] (dom.south) |- ($(gen.north)+(0,2.2mm)$) -- (gen.north);
+\draw[arr] (gen) -- (atom);
+\draw[arr] (atom.south) -- ++(0,-2.4mm) -| (red.north);
+\draw[arr] (atom.south) -- ++(0,-2.4mm) -| (acc.north);
+\draw[arr] (atom.south) -- ++(0,-2.4mm) -| (com.north);
+\draw[arr] (red.south) |- ($(fus.north)+(-8mm,1.8mm)$) -- ($(fus.north)+(-8mm,0)$);
+\draw[arr] (acc.south) -- (fus.north);
+\draw[arr] (com.south) |- ($(fus.north)+(8mm,1.8mm)$) -- ($(fus.north)+(8mm,0)$);
+\draw[arr] (fus) -- (out);
+\draw[arr, dashed, black!55] (atom.east) -| ($(com.east)+(1.6mm,0)$) |- (fus.east);
+\end{tikzpicture}

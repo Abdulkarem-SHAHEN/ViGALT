@@ -1,0 +1,42 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Sofa"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Illuminated vertical strips along both front arm edges"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Circular cup holders built into the armrests"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "A control panel mounted on the outside of the left arm"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Open compartments beneath and in front of the seating"
+    },
+    {
+      "claim_id": "c6",
+      "claim": "A blanket in the compartments"
+    },
+    {
+      "claim_id": "c7",
+      "claim": "A cushion in the compartments"
+    },
+    {
+      "claim_id": "c8",
+      "claim": "Books in the compartments"
+    },
+    {
+      "claim_id": "c9",
+      "claim": "One front compartment has its hinged lid raised"
+    }
+  ],
+  "total_claims": 9
+}

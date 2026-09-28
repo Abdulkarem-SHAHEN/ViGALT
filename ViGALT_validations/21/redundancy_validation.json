@@ -1,0 +1,54 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Bed",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM repeatedly identifies the product as a bed, and this claim adds no visual grounding, disambiguation, or new visual fact."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Rounded, raised side rails",
+      "label": "NOVEL",
+      "reason": "Although the DOM mentions a curved design, it does not sufficiently represent the specific rounded, raised side-rail configuration; this claim adds visible construction details."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Wide headboard that curves around the sides",
+      "label": "NOVEL",
+      "reason": "The DOM mentions a well-designed headboard and a curved bed, but does not specify a wide headboard extending or curving around the sides; this adds a new structural relationship."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Cyan LED strip follows the front and right-side edges of the base and rises beside the headboard",
+      "label": "NOVEL",
+      "reason": "The DOM identifies LED mood lighting but does not describe its cyan appearance or its path along the front and right-side base edges and beside the headboard; these are new visual and spatial details."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Mattress inside the frame",
+      "label": "NOVEL",
+      "reason": "The DOM states that the product is supplied without a mattress and only gives a recommended mattress thickness; it does not represent a mattress visibly placed inside the frame."
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Pillows inside the frame",
+      "label": "NOVEL",
+      "reason": "The DOM contains no information about pillows or their placement inside the bed frame, so this contributes new visible content and spatial context."
+    },
+    {
+      "claim_id": "c7",
+      "claim": "Blankets inside the frame",
+      "label": "NOVEL",
+      "reason": "The DOM contains no information about blankets or their placement inside the bed frame, so this contributes new visible content and spatial context."
+    }
+  ],
+  "summary": {
+    "total_claims": 7,
+    "novel_claims": 6,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.14285714285714285
+  }
+}

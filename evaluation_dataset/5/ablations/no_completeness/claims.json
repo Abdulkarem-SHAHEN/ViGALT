@@ -1,0 +1,49 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "5",
+  "product_stem": "5",
+  "alt_text": "Zip-up hooded sweatshirt with a small graphic on the left chest and a much larger version of the graphic centered across the back. It has a large divided hand pocket on the front. Ribbed cuffs on the sleeves and a ribbed waistband at the hem finish the garment.",
+  "final_alt_text": "Zip-up hooded sweatshirt with a small graphic on the left chest and a much larger version of the graphic centered across the back. It has a large divided hand pocket on the front. Ribbed cuffs on the sleeves and a ribbed waistband at the hem finish the garment.",
+  "classification_category": "CLOTHING",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 2351,
+  "token_usage": {
+    "prompt_tokens": 1019,
+    "completion_tokens": 206,
+    "total_tokens": 1225
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Zip-up hooded sweatshirt\"},{\"claim_id\":\"c2\",\"claim\":\"Small graphic on the left chest\"},{\"claim_id\":\"c3\",\"claim\":\"Much larger version of the graphic centered across the back\"},{\"claim_id\":\"c4\",\"claim\":\"Large divided hand pocket on the front\"},{\"claim_id\":\"c5\",\"claim\":\"Ribbed cuffs on the sleeves\"},{\"claim_id\":\"c6\",\"claim\":\"Ribbed waistband at the hem\"}],\"total_claims\":6}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Zip-up hooded sweatshirt"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Small graphic on the left chest"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Much larger version of the graphic centered across the back"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Large divided hand pocket on the front"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "Ribbed cuffs on the sleeves"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "Ribbed waistband at the hem"
+      }
+    ],
+    "total_claims": 6
+  },
+  "processed_at": "2026-09-20T10:52:45.751129+00:00"
+}

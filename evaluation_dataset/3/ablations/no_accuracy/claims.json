@@ -1,0 +1,53 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "3",
+  "product_stem": "3",
+  "alt_text": "A light-gray sweater body has repeating vertical zigzag bands filled with small diamond texture. Brown contrast panels run along the outer lower sleeves, which end in ribbed knit cuffs, and a ribbed knit hem runs along the bottom edge. A short front placket opens from the collar and has a dark button near the upper chest.",
+  "final_alt_text": "A light-gray sweater body has repeating vertical zigzag bands filled with small diamond texture. Brown contrast panels run along the outer lower sleeves, which end in ribbed knit cuffs, and a ribbed knit hem runs along the bottom edge. A short front placket opens from the collar and has a dark button near the upper chest.",
+  "classification_category": "CLOTHING",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 2437,
+  "token_usage": {
+    "prompt_tokens": 1030,
+    "completion_tokens": 230,
+    "total_tokens": 1260
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Light-gray sweater body\"},{\"claim_id\":\"c2\",\"claim\":\"Repeating vertical zigzag bands filled with small diamond texture\"},{\"claim_id\":\"c3\",\"claim\":\"Brown contrast panels along the outer lower sleeves\"},{\"claim_id\":\"c4\",\"claim\":\"Ribbed knit cuffs at the sleeve ends\"},{\"claim_id\":\"c5\",\"claim\":\"Ribbed knit hem along the bottom edge\"},{\"claim_id\":\"c6\",\"claim\":\"Short front placket opening from the collar\"},{\"claim_id\":\"c7\",\"claim\":\"Dark button near the upper chest\"}],\"total_claims\":7}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Light-gray sweater body"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Repeating vertical zigzag bands filled with small diamond texture"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Brown contrast panels along the outer lower sleeves"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Ribbed knit cuffs at the sleeve ends"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "Ribbed knit hem along the bottom edge"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "Short front placket opening from the collar"
+      },
+      {
+        "claim_id": "c7",
+        "claim": "Dark button near the upper chest"
+      }
+    ],
+    "total_claims": 7
+  },
+  "processed_at": "2026-09-20T10:49:26.617355+00:00"
+}

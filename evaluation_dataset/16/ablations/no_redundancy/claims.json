@@ -1,0 +1,69 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "16",
+  "product_stem": "16",
+  "alt_text": "A sofa with dark gray vertically ribbed upholstery. The right seat is reclined with its footrest extended. Illuminated vertical strips run along both front arm edges, and circular cup holders are built into the armrests; a control panel is mounted on the outside of the left arm. Open compartments beneath and in front of the seating contain a blanket, cushion, and books; one front compartment has its hinged lid raised.",
+  "final_alt_text": "A sofa with dark gray vertically ribbed upholstery. The right seat is reclined with its footrest extended. Illuminated vertical strips run along both front arm edges, and circular cup holders are built into the armrests; a control panel is mounted on the outside of the left arm. Open compartments beneath and in front of the seating contain a blanket, cushion, and books; one front compartment has its hinged lid raised.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 3658,
+  "token_usage": {
+    "prompt_tokens": 1048,
+    "completion_tokens": 390,
+    "total_tokens": 1438
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"A sofa with dark gray vertically ribbed upholstery\"},{\"claim_id\":\"c2\",\"claim\":\"The right seat is reclined\"},{\"claim_id\":\"c3\",\"claim\":\"The footrest is extended\"},{\"claim_id\":\"c4\",\"claim\":\"Illuminated vertical strips run along both front arm edges\"},{\"claim_id\":\"c5\",\"claim\":\"Circular cup holders are built into the armrests\"},{\"claim_id\":\"c6\",\"claim\":\"A control panel is mounted on the outside of the left arm\"},{\"claim_id\":\"c7\",\"claim\":\"Open compartments are beneath and in front of the seating\"},{\"claim_id\":\"c8\",\"claim\":\"A blanket is inside the compartments\"},{\"claim_id\":\"c9\",\"claim\":\"A cushion is inside the compartments\"},{\"claim_id\":\"c10\",\"claim\":\"Books are inside the compartments\"},{\"claim_id\":\"c11\",\"claim\":\"One front compartment has its hinged lid raised\"}],\"total_claims\":11}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "A sofa with dark gray vertically ribbed upholstery"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "The right seat is reclined"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "The footrest is extended"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Illuminated vertical strips run along both front arm edges"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "Circular cup holders are built into the armrests"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "A control panel is mounted on the outside of the left arm"
+      },
+      {
+        "claim_id": "c7",
+        "claim": "Open compartments are beneath and in front of the seating"
+      },
+      {
+        "claim_id": "c8",
+        "claim": "A blanket is inside the compartments"
+      },
+      {
+        "claim_id": "c9",
+        "claim": "A cushion is inside the compartments"
+      },
+      {
+        "claim_id": "c10",
+        "claim": "Books are inside the compartments"
+      },
+      {
+        "claim_id": "c11",
+        "claim": "One front compartment has its hinged lid raised"
+      }
+    ],
+    "total_claims": 11
+  },
+  "processed_at": "2026-09-20T11:36:22.093233+00:00"
+}

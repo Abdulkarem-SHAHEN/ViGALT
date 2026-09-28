@@ -1,0 +1,36 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "A bed",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM identifies the product as a bed base/bed frame, so stating that it is a bed adds no new visual or semantic information and is not needed to ground another claim."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Rounded rectangular tubular frames at the head and foot",
+      "label": "NOVEL",
+      "reason": "The DOM mentions a headboard and footboard and a rectangular form, but it does not specify that their frames are rounded, rectangular tubular structures at both ends."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Each frame has three vertical rods with ringed ornamental sections",
+      "label": "NOVEL",
+      "reason": "Although the DOM generally describes the headboard and footboard as decorated, it does not provide the specific count of three vertical rods per frame or their ringed ornamental sections."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "The footboard includes a lower horizontal rail beneath the mattress",
+      "label": "NOVEL",
+      "reason": "The DOM identifies a footboard but does not describe its lower horizontal rail or its position beneath the mattress, adding specific visible construction and spatial information."
+    }
+  ],
+  "summary": {
+    "total_claims": 4,
+    "novel_claims": 3,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.25
+  }
+}

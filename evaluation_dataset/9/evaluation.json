@@ -9,7 +9,6 @@
         "relevant_claims": 8,
         "supplementary_claims": 0,
         "visual_only_claims": 0,
-        "relevancy_rate": 1.0,
         "claims": [
           {
             "claim_id": "C1",
@@ -51,7 +50,8 @@
             "claim": "Ribbed hem",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 100.0
       },
       "redundancy": {
         "metrics": {
@@ -303,7 +303,6 @@
         "relevant_claims": 9,
         "supplementary_claims": 0,
         "visual_only_claims": 1,
-        "relevancy_rate": 0.9,
         "claims": [
           {
             "claim_id": "C1",
@@ -355,7 +354,8 @@
             "claim": "Ribbed cuffs",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 81.82
       },
       "redundancy": {
         "metrics": {

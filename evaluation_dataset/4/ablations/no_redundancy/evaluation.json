@@ -1,0 +1,238 @@
+{
+  "status": "ok",
+  "folder_number": 4,
+  "image_file": "71maVO4tSzL._AC_SX569_.jpg",
+  "ablation": "no_redundancy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A black top is shown worn on a person. It has a round crew neckline, broad short sleeves, and a straight loose body, with visible side slits at the lower left and lower right hem.",
+      "relevancy": {
+        "total_claims": 5,
+        "relevant_claims": 5,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Black top",
+            "label": "R",
+            "reason": "This describes the garment's black color and core product type."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Round crew neckline",
+            "label": "R",
+            "reason": "This describes the top's visible neckline construction."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Broad short sleeves",
+            "label": "R",
+            "reason": "This describes the garment's sleeve shape and length."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Straight loose body",
+            "label": "R",
+            "reason": "This describes the top's visible relaxed, straight body silhouette."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Visible side slits at the lower left and lower right hem",
+            "label": "R",
+            "reason": "This describes side-slit detailing at the garment's lower hem."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 5,
+          "relevant_claims": 5,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 0,
+          "relevant_novel_claims": 0,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 3,
+          "avoidable_redundancy_claims": 2,
+          "novelty_rate": 0.0,
+          "raw_novelty_rate": 0.0,
+          "unavoidable_repetition_rate": 0.6,
+          "avoidable_redundancy_rate": 0.4,
+          "redundancy_rate": 1.0
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Black top",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Round crew neckline",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Broad short sleeves",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Straight loose body",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Visible side slits at the lower left and lower right hem",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Black top",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "Black-1"
+              },
+              {
+                "field": "product_details.Shirt Form Type",
+                "value": "T-Shirt"
+              }
+            ],
+            "reason": "The DOM already identifies the product as a black T-shirt/top. The claim adds no further distinguishing information."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Round crew neckline",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Neck Style",
+                "value": "Round Neck"
+              },
+              {
+                "field": "product_details.Collar Style",
+                "value": "Round Collar"
+              },
+              {
+                "field": "product_details.Bikini top style",
+                "value": "Oversized loose T-shirt with crew neck and short sleeves"
+              }
+            ],
+            "reason": "Round and crew neck styling is already explicitly represented in the DOM, so the claim repeats existing neckline information without adding meaning."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Broad short sleeves",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Sleeve Type",
+                "value": "Short Sleeve"
+              },
+              {
+                "field": "description",
+                "value": "short sleeves with dropped shoulders"
+              },
+              {
+                "field": "feature_bullets[0]",
+                "value": "This women's t-shirt features an ultra-wide fit and dropped shoulders"
+              }
+            ],
+            "reason": "The DOM establishes that the sleeves are short, while the claim adds the sleeve-width characterization of broad. Repeating that they are short anchors the new width information to the product's sleeves."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Straight loose body",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Fitting type",
+                "value": "Loose Fit"
+              },
+              {
+                "field": "description",
+                "value": "loose, lightweight and so comfortable"
+              },
+              {
+                "field": "feature_bullets[0]",
+                "value": "This women's t-shirt features an ultra-wide fit"
+              }
+            ],
+            "reason": "The loose fit is already stated in the DOM, but the claim additionally characterizes the body shape as straight. Repeating the loose fit is needed to express the combined body silhouette."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Visible side slits at the lower left and lower right hem",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Its minimalist design with a side slit makes it a modern and versatile staple."
+              }
+            ],
+            "reason": "The DOM mentions a side slit, but does not specify visibility, bilateral slits, or their placement at the lower left and right hem. Referring to side slits anchors those new placement details to the existing garment feature."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 5,
+        "subjective_claims": 0,
+        "total_claims": 5,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "A black top is shown worn on a person.",
+            "label": "OBJECTIVE",
+            "reason": "The image visibly shows a person wearing a black top."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "It has a round crew neckline.",
+            "label": "OBJECTIVE",
+            "reason": "The neckline is visibly rounded and close to the base of the neck, consistent with a crew neckline."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "It has broad short sleeves.",
+            "label": "OBJECTIVE",
+            "reason": "The sleeves are visibly wide and end above the elbows."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "It has a straight loose body.",
+            "label": "OBJECTIVE",
+            "reason": "The garment visibly hangs with a broad, non-fitted silhouette through the torso; this loose, straight appearance is observable."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "It has visible side slits at the lower left and lower right hem.",
+            "label": "OBJECTIVE",
+            "reason": "Open splits are visibly present at both side seams near the bottom hem."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 35,
+        "relevant_novel_claims": 0,
+        "efficiency_per_100_words": 0.0
+      }
+    }
+  },
+  "processed_at": "2026-09-20T10:52:04.361173+00:00"
+}

@@ -1,0 +1,70 @@
+{
+  "stage": "completeness_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Light-gray sweater body",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Repeating vertical zigzag bands filled with small diamond texture",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Brown contrast panels along the outer lower sleeves",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Raised collar",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Short front placket opening from the collar",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Dark button near the upper chest",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "n1",
+      "claim": "Ribbed knit cuffs at the sleeve ends",
+      "label": "ADDED",
+      "addition_type": "VISUAL_GAP",
+      "reason": "Clearly visible ribbed bands finish both sleeve ends."
+    },
+    {
+      "claim_id": "n2",
+      "claim": "Ribbed knit hem along the bottom edge",
+      "label": "ADDED",
+      "addition_type": "VISUAL_GAP",
+      "reason": "A prominent ribbed band is clearly visible across the lower edge of the sweater."
+    }
+  ],
+  "summary": {
+    "input_claims": 6,
+    "retained_claims": 6,
+    "added_claims": 2,
+    "added_visual_gap": 2,
+    "added_non_english_text": 0,
+    "added_known_entity": 0,
+    "omission_score": 0.25
+  }
+}

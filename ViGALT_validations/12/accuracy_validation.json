@@ -1,0 +1,92 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "Tracksuit",
+      "claim": "Tracksuit",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The image visibly shows a matching hoodie and trousers as a two-piece tracksuit."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "Bright red hoodie",
+      "claim": "Bright red hoodie",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The upper garment is visibly a bright red hooded sweatshirt."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "Black trousers",
+      "claim": "Black trousers",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The lower garment is visibly black trousers."
+    },
+    {
+      "claim_id": "c4",
+      "original_claim": "Lightning McQueen’s face on the hoodie",
+      "claim": "Lightning McQueen’s face on the hoodie",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A printed Lightning McQueen face is clearly visible on the front of the hoodie."
+    },
+    {
+      "claim_id": "c5",
+      "original_claim": "Blue eyes on the hoodie",
+      "claim": "Blue eyes on the hoodie",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The hoodie graphic visibly includes two blue eyes."
+    },
+    {
+      "claim_id": "c6",
+      "original_claim": "Number 95 on the hoodie",
+      "claim": "Number 95 on the hoodie",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The number 95 is visibly printed on the car graphic on the hoodie."
+    },
+    {
+      "claim_id": "c7",
+      "original_claim": "Yellow “VROOM! VROOM!” lettering on the hoodie",
+      "claim": "Yellow “VROOM! VROOM!” lettering on the hoodie",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Yellow lettering reading “VROOM! VROOM!” is visibly printed above the car graphic."
+    },
+    {
+      "claim_id": "c8",
+      "original_claim": "White side stripes on the trousers",
+      "claim": "White side stripes on the trousers",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "White segmented side stripes are visibly present along both trouser legs."
+    },
+    {
+      "claim_id": "c9",
+      "original_claim": "Gray ankle cuffs on the trousers",
+      "claim": "Gray ankle cuffs on the trousers",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Gray cuffs are visibly present at the ankles of both trouser legs."
+    },
+    {
+      "claim_id": "c10",
+      "original_claim": "Gray drawstring on the trousers",
+      "claim": "Gray drawstring on the trousers",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A gray drawstring is visibly present at the trouser waistband."
+    }
+  ],
+  "summary": {
+    "total_claims": 10,
+    "accurate_claims": 10,
+    "corrected_claims": 0,
+    "deleted_claims": 0,
+    "error_rate": 0.0
+  }
+}

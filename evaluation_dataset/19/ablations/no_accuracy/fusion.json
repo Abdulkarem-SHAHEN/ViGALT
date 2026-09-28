@@ -1,0 +1,68 @@
+{
+  "status": "ok",
+  "ablation": "no_accuracy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_accuracy.txt",
+  "duration_ms": 5743,
+  "token_usage": {
+    "prompt_tokens": 2508,
+    "completion_tokens": 794,
+    "total_tokens": 3302
+  },
+  "raw_response": "{\n  \"stage\": \"fusion\",\n  \"master_claims\": [\n    {\n      \"claim_id\": \"c1\",\n      \"text\": \"Coral-pink perforated lattice backrest\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c2\",\n      \"text\": \"Rounded seat\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c3\",\n      \"text\": \"A white central column supports the base\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c4\",\n      \"text\": \"Five-legged white base\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c5\",\n      \"text\": \"Black-and-pink casters on the base\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c6\",\n      \"text\": \"Black adjustment lever beneath the seat on the viewer’s left\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"n1\",\n      \"text\": \"Pale pink perforated mesh seat\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    }\n  ],\n  \"edit_log\": [\n    \"Retained all six original claims per Redundancy.\",\n    \"Added pale pink perforated mesh seat per Completeness (n1).\",\n    \"Integrated the added seat detail with the rounded-seat description.\"\n  ],\n  \"final_alt_text\": \"A chair with a coral-pink perforated lattice backrest and rounded seat covered in pale pink perforated mesh. A white central column supports a five-legged white base with black-and-pink casters. A black adjustment lever sits beneath the seat on the viewer’s left.\"\n}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Coral-pink perforated lattice backrest",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Rounded seat",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "A white central column supports the base",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Five-legged white base",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Black-and-pink casters on the base",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Black adjustment lever beneath the seat on the viewer’s left",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "Pale pink perforated mesh seat",
+        "source": "ADDED",
+        "action": "ADDED"
+      }
+    ],
+    "edit_log": [
+      "Retained all six original claims per Redundancy.",
+      "Added pale pink perforated mesh seat per Completeness (n1).",
+      "Integrated the added seat detail with the rounded-seat description."
+    ],
+    "final_alt_text": "A chair with a coral-pink perforated lattice backrest and rounded seat covered in pale pink perforated mesh. A white central column supports a five-legged white base with black-and-pink casters. A black adjustment lever sits beneath the seat on the viewer’s left."
+  },
+  "final_alt_text": "A chair with a coral-pink perforated lattice backrest and rounded seat covered in pale pink perforated mesh. A white central column supports a five-legged white base with black-and-pink casters. A black adjustment lever sits beneath the seat on the viewer’s left.",
+  "processed_at": "2026-09-20T11:40:25.949738+00:00"
+}

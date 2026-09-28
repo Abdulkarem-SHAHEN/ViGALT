@@ -1,0 +1,49 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "21",
+  "product_stem": "21",
+  "alt_text": "Rounded, raised side rails and a wide headboard that curves around the sides are visible. A cyan LED strip follows the front and right-side edges of the base and rises beside the headboard. A mattress, pillows, and blankets are shown inside the frame.",
+  "final_alt_text": "Rounded, raised side rails and a wide headboard that curves around the sides are visible. A cyan LED strip follows the front and right-side edges of the base and rises beside the headboard. A mattress, pillows, and blankets are shown inside the frame.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 1581,
+  "token_usage": {
+    "prompt_tokens": 1016,
+    "completion_tokens": 132,
+    "total_tokens": 1148
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Rounded, raised side rails\"},{\"claim_id\":\"c2\",\"claim\":\"A wide headboard that curves around the sides\"},{\"claim_id\":\"c3\",\"claim\":\"A cyan LED strip follows the front and right-side edges of the base and rises beside the headboard\"},{\"claim_id\":\"c4\",\"claim\":\"A mattress is inside the frame\"},{\"claim_id\":\"c5\",\"claim\":\"Pillows are inside the frame\"},{\"claim_id\":\"c6\",\"claim\":\"Blankets are inside the frame\"}],\"total_claims\":6}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Rounded, raised side rails"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "A wide headboard that curves around the sides"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "A cyan LED strip follows the front and right-side edges of the base and rises beside the headboard"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "A mattress is inside the frame"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "Pillows are inside the frame"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "Blankets are inside the frame"
+      }
+    ],
+    "total_claims": 6
+  },
+  "processed_at": "2026-09-20T11:44:58.227721+00:00"
+}

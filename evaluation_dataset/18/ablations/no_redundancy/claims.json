@@ -1,0 +1,57 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "18",
+  "product_stem": "18",
+  "alt_text": "A furniture set shows two matching chairs flanking a rectangular table. All three pieces have open slatted surfaces and a warm brown wood-toned finish. The chairs have three horizontal back rails and crossed support legs. The table has crossed legs beneath its slatted top.",
+  "final_alt_text": "A furniture set shows two matching chairs flanking a rectangular table. All three pieces have open slatted surfaces and a warm brown wood-toned finish. The chairs have three horizontal back rails and crossed support legs. The table has crossed legs beneath its slatted top.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 6473,
+  "token_usage": {
+    "prompt_tokens": 1017,
+    "completion_tokens": 789,
+    "total_tokens": 1806
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Two matching chairs\"},{\"claim_id\":\"c2\",\"claim\":\"A rectangular table\"},{\"claim_id\":\"c3\",\"claim\":\"The two chairs flank the table\"},{\"claim_id\":\"c4\",\"claim\":\"All three pieces have open slatted surfaces\"},{\"claim_id\":\"c5\",\"claim\":\"All three pieces have a warm brown wood-toned finish\"},{\"claim_id\":\"c6\",\"claim\":\"The chairs have three horizontal back rails\"},{\"claim_id\":\"c7\",\"claim\":\"The chairs have crossed support legs\"},{\"claim_id\":\"c8\",\"claim\":\"The table has crossed legs beneath its slatted top\"}],\"total_claims\":8}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Two matching chairs"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "A rectangular table"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "The two chairs flank the table"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "All three pieces have open slatted surfaces"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "All three pieces have a warm brown wood-toned finish"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "The chairs have three horizontal back rails"
+      },
+      {
+        "claim_id": "c7",
+        "claim": "The chairs have crossed support legs"
+      },
+      {
+        "claim_id": "c8",
+        "claim": "The table has crossed legs beneath its slatted top"
+      }
+    ],
+    "total_claims": 8
+  },
+  "processed_at": "2026-09-20T11:40:01.513861+00:00"
+}

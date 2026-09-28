@@ -9,7 +9,6 @@
         "relevant_claims": 8,
         "supplementary_claims": 0,
         "visual_only_claims": 3,
-        "relevancy_rate": 0.7272727272727273,
         "claims": [
           {
             "claim_id": "C1",
@@ -66,7 +65,8 @@
             "claim": "One front compartment has its hinged lid raised",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 57.14
       },
       "redundancy": {
         "metrics": {
@@ -352,7 +352,6 @@
         "relevant_claims": 11,
         "supplementary_claims": 0,
         "visual_only_claims": 4,
-        "relevancy_rate": 0.7333333333333333,
         "claims": [
           {
             "claim_id": "C1",
@@ -429,7 +428,8 @@
             "claim": "The rug is over wood flooring",
             "label": "V"
           }
-        ]
+        ],
+        "relevancy_score": 57.89
       },
       "redundancy": {
         "metrics": {

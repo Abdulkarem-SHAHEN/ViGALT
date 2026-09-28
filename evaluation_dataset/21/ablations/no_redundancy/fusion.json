@@ -1,0 +1,74 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 5718,
+  "token_usage": {
+    "prompt_tokens": 2704,
+    "completion_tokens": 853,
+    "total_tokens": 3557
+  },
+  "raw_response": "{\n  \"stage\": \"fusion\",\n  \"master_claims\": [\n    {\n      \"claim_id\": \"c1\",\n      \"text\": \"Bed\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c2\",\n      \"text\": \"Rounded, raised side rails\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c3\",\n      \"text\": \"Wide headboard that curves around the sides\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c4\",\n      \"text\": \"Cyan LED strip follows the front and right-side edges of the base and rises beside the headboard\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c5\",\n      \"text\": \"Mattress inside the frame\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c6\",\n      \"text\": \"Pillows inside the frame\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c7\",\n      \"text\": \"Blankets inside the frame\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"n1\",\n      \"text\": \"Dark upholstered bed frame with rounded corners\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    }\n  ],\n  \"edit_log\": [\n    \"Retained all seven original claims per Accuracy.\",\n    \"Added dark upholstered bed frame with rounded corners per Completeness (n1).\",\n    \"Grouped the added frame description with the bed silhouette and organized features from macro to micro.\"\n  ],\n  \"final_alt_text\": \"Bed with a dark upholstered bed frame with rounded corners, rounded, raised side rails, and a wide headboard that curves around the sides. A cyan LED strip follows the front and right-side edges of the base and rises beside the headboard; a mattress, pillows, and blankets are inside the frame.\"\n}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Bed",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Rounded, raised side rails",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Wide headboard that curves around the sides",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Cyan LED strip follows the front and right-side edges of the base and rises beside the headboard",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Mattress inside the frame",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Pillows inside the frame",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c7",
+        "text": "Blankets inside the frame",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "Dark upholstered bed frame with rounded corners",
+        "source": "ADDED",
+        "action": "ADDED"
+      }
+    ],
+    "edit_log": [
+      "Retained all seven original claims per Accuracy.",
+      "Added dark upholstered bed frame with rounded corners per Completeness (n1).",
+      "Grouped the added frame description with the bed silhouette and organized features from macro to micro."
+    ],
+    "final_alt_text": "Bed with a dark upholstered bed frame with rounded corners, rounded, raised side rails, and a wide headboard that curves around the sides. A cyan LED strip follows the front and right-side edges of the base and rises beside the headboard; a mattress, pillows, and blankets are inside the frame."
+  },
+  "final_alt_text": "Bed with a dark upholstered bed frame with rounded corners, rounded, raised side rails, and a wide headboard that curves around the sides. A cyan LED strip follows the front and right-side edges of the base and rises beside the headboard; a mattress, pillows, and blankets are inside the frame.",
+  "processed_at": "2026-09-20T11:45:27.677837+00:00"
+}

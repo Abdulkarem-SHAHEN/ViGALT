@@ -1,0 +1,49 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "18",
+  "product_stem": "18",
+  "alt_text": "Two matching chairs flank the table. The furniture has a warm brown wood-toned finish, and all three pieces have open slatted surfaces. The chairs have three horizontal back rails and crossed support legs, while the table has crossed legs beneath its slatted top.",
+  "final_alt_text": "Two matching chairs flank the table. The furniture has a warm brown wood-toned finish, and all three pieces have open slatted surfaces. The chairs have three horizontal back rails and crossed support legs, while the table has crossed legs beneath its slatted top.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 4703,
+  "token_usage": {
+    "prompt_tokens": 1016,
+    "completion_tokens": 485,
+    "total_tokens": 1501
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Two matching chairs flank the table\"},{\"claim_id\":\"c2\",\"claim\":\"The furniture has a warm brown wood-toned finish\"},{\"claim_id\":\"c3\",\"claim\":\"All three pieces have open slatted surfaces\"},{\"claim_id\":\"c4\",\"claim\":\"The chairs have three horizontal back rails\"},{\"claim_id\":\"c5\",\"claim\":\"The chairs have crossed support legs\"},{\"claim_id\":\"c6\",\"claim\":\"The table has crossed legs beneath its slatted top\"}],\"total_claims\":6}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Two matching chairs flank the table"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "The furniture has a warm brown wood-toned finish"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "All three pieces have open slatted surfaces"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "The chairs have three horizontal back rails"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "The chairs have crossed support legs"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "The table has crossed legs beneath its slatted top"
+      }
+    ],
+    "total_claims": 6
+  },
+  "processed_at": "2026-09-20T11:38:56.286062+00:00"
+}

@@ -1,0 +1,163 @@
+{
+  "status": "ok",
+  "folder_number": 28,
+  "image_file": "81cpwsq3BrL._AC_SX679_.jpg",
+  "ablation": "no_completeness",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A mirror has a narrow border and straight, slightly angled side edges. A separate support extends behind the mirror on the right, holding it upright on the floor.",
+      "relevancy": {
+        "total_claims": 3,
+        "relevant_claims": 3,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "The mirror has a narrow border",
+            "label": "R",
+            "reason": "The narrow dark border is an integrated visual feature of the mirror."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The mirror has straight, slightly angled side edges",
+            "label": "R",
+            "reason": "The angled straight side edges describe the mirror's overall shape."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "A separate support extends behind the mirror on the right, holding it upright on the floor",
+            "label": "R",
+            "reason": "The rear support is a visible structural component of the freestanding mirror."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 3,
+          "relevant_claims": 3,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 1,
+          "relevant_novel_claims": 1,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 2,
+          "avoidable_redundancy_claims": 0,
+          "novelty_rate": 0.3333333333333333,
+          "raw_novelty_rate": 0.3333333333333333,
+          "unavoidable_repetition_rate": 0.6666666666666666,
+          "avoidable_redundancy_rate": 0.0,
+          "redundancy_rate": 0.6666666666666666
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "The mirror has a narrow border",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The mirror has straight, slightly angled side edges",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "A separate support extends behind the mirror on the right, holding it upright on the floor",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "The mirror has a narrow border",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Frame Type",
+                "value": "Arched metal edging"
+              },
+              {
+                "field": "product_details.Frame Material",
+                "value": "Aluminium"
+              }
+            ],
+            "reason": "The DOM establishes that the mirror has a frame/edging, but does not state that it is narrow. Referring to the border is needed to anchor the new narrowness attribute to the existing frame."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The mirror has straight, slightly angled side edges",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM describes an arched or semicircular overall shape and frame, but contains no information about straight or slightly angled side edges."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "A separate support extends behind the mirror on the right, holding it upright on the floor",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Mounting Type",
+                "value": "Floor Mount"
+              },
+              {
+                "field": "product_details.Surface Recommendation",
+                "value": "Freestanding, Wall-mounted"
+              },
+              {
+                "field": "feature_bullets[0]",
+                "value": "Whether it is on the floor or fixed to the wall"
+              }
+            ],
+            "reason": "The DOM already establishes floor-standing/freestanding use, while the claim adds the novel details of a separate rear support and its position on the right. Repeating the floor-upright function is needed to explain what the support does."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 4,
+        "subjective_claims": 0,
+        "total_claims": 4,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "A mirror has a narrow border.",
+            "label": "OBJECTIVE",
+            "reason": "A thin dark frame surrounding the reflective surface is directly visible in the image."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The mirror has straight, slightly angled side edges.",
+            "label": "OBJECTIVE",
+            "reason": "The mirror's side edges visibly run mostly straight and slant inward slightly toward the rounded top."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "A separate support extends behind the mirror on the right.",
+            "label": "OBJECTIVE",
+            "reason": "A dark support piece is visibly positioned behind and to the right of the mirror."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The support holds the mirror upright on the floor.",
+            "label": "OBJECTIVE",
+            "reason": "The support and mirror visibly rest on the floor in an upright freestanding configuration."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 28,
+        "relevant_novel_claims": 1,
+        "efficiency_per_100_words": 3.571428571428571
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:57:03.704399+00:00"
+}

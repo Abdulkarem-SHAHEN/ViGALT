@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "29",
+  "product_stem": "29",
+  "alt_text": "A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically, and a narrow visible edge outlines the mirror's perimeter. The mirror is above a vessel sink, positioned between two vertical wall sconces in a bathroom vanity area.",
+  "final_alt_text": "A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically, and a narrow visible edge outlines the mirror's perimeter. The mirror is above a vessel sink, positioned between two vertical wall sconces in a bathroom vanity area.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 3983,
+  "token_usage": {
+    "prompt_tokens": 1016,
+    "completion_tokens": 385,
+    "total_tokens": 1401
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically.\"},{\"claim_id\":\"c2\",\"claim\":\"A narrow visible edge outlines the mirror's perimeter.\"},{\"claim_id\":\"c3\",\"claim\":\"The mirror is above a vessel sink.\"},{\"claim_id\":\"c4\",\"claim\":\"The mirror is positioned between two vertical wall sconces in a bathroom vanity area.\"}],\"total_claims\":4}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically."
+      },
+      {
+        "claim_id": "c2",
+        "claim": "A narrow visible edge outlines the mirror's perimeter."
+      },
+      {
+        "claim_id": "c3",
+        "claim": "The mirror is above a vessel sink."
+      },
+      {
+        "claim_id": "c4",
+        "claim": "The mirror is positioned between two vertical wall sconces in a bathroom vanity area."
+      }
+    ],
+    "total_claims": 4
+  },
+  "processed_at": "2026-09-20T11:57:40.536450+00:00"
+}

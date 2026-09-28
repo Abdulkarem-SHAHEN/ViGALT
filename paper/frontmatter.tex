@@ -1,0 +1,19 @@
+\title{ViGALT: Visual Gap-Aware Alt Text Generation for Blind and Low-Vision E-Commerce Shoppers}
+
+\author{
+\IEEEauthorblockN{AbdulAziz Snoubra}
+\IEEEauthorblockA{abdulaziz.snoubra@etud.univ-evry.fr}
+\and
+\IEEEauthorblockN{Abdulkarem Shahen}
+\IEEEauthorblockA{abdulkarem.shahen@etud.univ-evry.fr}
+}
+
+\maketitle
+
+\begin{abstract}
+Product images on e-commerce platforms often carry alt text that repeats the product title or is missing altogether, leaving blind and low-vision (BLV) shoppers without the visual details they need to decide whether to buy. Context-aware description systems already use webpage context to improve image descriptions, but they are not designed around what a shopper still needs to know after the page text has been read. We present ViGALT (Visual Gap-Aware Alt Text Generation), a multi-stage pipeline that treats the product page as information the user already has and writes alt text that fills the remaining visual gap. ViGALT combines category routing, deterministic extraction of product attributes from the page, generation with a vision language model, decomposition into atomic claims, three generation-time validators for redundancy, accuracy, and completeness, and a constrained fuser. On a paired set of 30 Amazon.fr products, with the same model backend for both systems, ViGALT raised claim-level relevancy from 48.12 to 90.10 percent over a reproduced ASSETS 2024 context-aware baseline, a gain that remains significant after correction for multiple comparisons. Objectivity and relevant novelty improved in the same direction. A fusion-stage ablation shows that the completeness and accuracy validators make distinct, traceable contributions to the final text.
+\end{abstract}
+
+\begin{IEEEkeywords}
+accessibility, alternative text, blind and low vision, e-commerce, vision language models, large language models, image description
+\end{IEEEkeywords}

@@ -1,0 +1,62 @@
+{
+  "status": "ok",
+  "ablation": "no_completeness",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_completeness.txt",
+  "duration_ms": 5729,
+  "token_usage": {
+    "prompt_tokens": 2557,
+    "completion_tokens": 664,
+    "total_tokens": 3221
+  },
+  "raw_response": "{\n  \"stage\": \"fusion\",\n  \"master_claims\": [\n    {\n      \"claim_id\": \"c1\",\n      \"text\": \"Turquoise-blue rash guard body\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c2\",\n      \"text\": \"White upper sections\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c3\",\n      \"text\": \"Navy-blue bands around the sleeve hems\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c4\",\n      \"text\": \"A large white flowing wave or dragon-like graphic spans the front\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c5\",\n      \"text\": \"Turquoise-bound crew neckline\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c6\",\n      \"text\": \"Straight hem\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    }\n  ],\n  \"edit_log\": [\n    \"Retained turquoise-blue body and white upper sections (c1-c2)\",\n    \"Retained navy-blue sleeve-hem bands (c3)\",\n    \"Retained front graphic, turquoise-bound crew neckline, and straight hem (c4-c6)\"\n  ],\n  \"final_alt_text\": \"A rash guard with a turquoise-blue body, white upper sections, and navy-blue bands around the sleeve hems. A large white flowing wave or dragon-like graphic spans the front, with a turquoise-bound crew neckline and a straight hem.\"\n}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Turquoise-blue rash guard body",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "White upper sections",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Navy-blue bands around the sleeve hems",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "A large white flowing wave or dragon-like graphic spans the front",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Turquoise-bound crew neckline",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Straight hem",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Retained turquoise-blue body and white upper sections (c1-c2)",
+      "Retained navy-blue sleeve-hem bands (c3)",
+      "Retained front graphic, turquoise-bound crew neckline, and straight hem (c4-c6)"
+    ],
+    "final_alt_text": "A rash guard with a turquoise-blue body, white upper sections, and navy-blue bands around the sleeve hems. A large white flowing wave or dragon-like graphic spans the front, with a turquoise-bound crew neckline and a straight hem."
+  },
+  "final_alt_text": "A rash guard with a turquoise-blue body, white upper sections, and navy-blue bands around the sleeve hems. A large white flowing wave or dragon-like graphic spans the front, with a turquoise-bound crew neckline and a straight hem.",
+  "processed_at": "2026-09-20T11:01:17.034018+00:00"
+}

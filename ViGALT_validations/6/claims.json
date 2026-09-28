@@ -1,0 +1,30 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Shirt"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Black contrasting collar"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Black buttons arranged down the center front"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Rounded lower edge"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Long sleeves"
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Narrow cuffs at the ends of the sleeves"
+    }
+  ],
+  "total_claims": 6
+}

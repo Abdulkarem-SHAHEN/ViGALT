@@ -23,7 +23,8 @@ import shutil
 import sys
 from pathlib import Path
 
-from ..evaluation.utils import IMAGE_EXTENSIONS, RELEVANT_CODES
+from ..evaluation.dataset_summary import SUMMARY_METRICS, build_main_dataset_summary
+from ..evaluation.utils import IMAGE_EXTENSIONS, build_relevancy_block
 from ..paths import resolve_path
 
 DEFAULT_SOURCE = "Dataset"
@@ -43,18 +44,6 @@ SOURCE_CLAIM_FILES: dict[str, str] = {
     "AAAA": "CLAIM_RELEVANCY_AAAA_{n}.txt",
     "ASSETS24": "CLAIM_RELEVANCY_ASSETS_{n}.txt",
 }
-
-SUMMARY_METRICS = (
-    "relevancy_rate",
-    "objectivity_score",
-    "efficiency_per_100_words",
-    "novelty_rate",
-    "raw_novelty_rate",
-    "avoidable_redundancy_rate",
-    "unavoidable_repetition_rate",
-    "redundancy_rate",
-)
-
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -136,22 +125,6 @@ def parse_claims(path: Path) -> list[dict]:
     return claims
 
 
-def relevancy_block(claims: list[dict]) -> dict:
-    total = len(claims)
-    relevant = sum(1 for claim in claims if claim["label"] in RELEVANT_CODES)
-    supplementary = sum(1 for claim in claims if claim["label"] == "S")
-    visual_only = sum(1 for claim in claims if claim["label"] == "V")
-
-    return {
-        "total_claims": total,
-        "relevant_claims": relevant,
-        "supplementary_claims": supplementary,
-        "visual_only_claims": visual_only,
-        "relevancy_rate": (relevant / total) if total else None,
-        "claims": claims,
-    }
-
-
 def format_alt_text_and_claims(
     alt_texts: dict[str, str],
     claims_by_method: dict[str, list[dict]],
@@ -181,7 +154,7 @@ def build_method_eval(
     objectivity_data: dict,
     redundancy_data: dict,
 ) -> dict:
-    relevancy = relevancy_block(claims)
+    relevancy = build_relevancy_block(claims)
     redundancy_metrics = redundancy_data.get("metrics", {})
     objectivity_claims = objectivity_data.get("llm_output", {}).get("claims", [])
     redundancy_claims = redundancy_data.get("llm_output", {}).get("claims", [])
@@ -241,56 +214,6 @@ def build_folder_evaluation(
         "image_file": image_file,
         "methods": methods,
     }
-
-
-def metric_value(method_eval: dict, metric: str) -> float | None:
-    if metric == "relevancy_rate":
-        return method_eval["relevancy"].get("relevancy_rate")
-    if metric == "objectivity_score":
-        return method_eval["objectivity"].get("objectivity_score")
-    if metric == "efficiency_per_100_words":
-        return method_eval["efficiency"].get("efficiency_per_100_words")
-    if metric in {
-        "novelty_rate",
-        "raw_novelty_rate",
-        "avoidable_redundancy_rate",
-        "unavoidable_repetition_rate",
-        "redundancy_rate",
-    }:
-        return method_eval["redundancy"]["metrics"].get(metric)
-    raise ValueError(f"Unknown summary metric: {metric}")
-
-
-def average(values: list[float]) -> float | None:
-    if not values:
-        return None
-    return sum(values) / len(values)
-
-
-def build_summary(all_evaluations: list[dict]) -> dict:
-    summary: dict = {"folders_counted": len(all_evaluations), "methods": {}}
-
-    for method in SOURCE_METHODS.values():
-        method_values: dict[str, list[float]] = {metric: [] for metric in SUMMARY_METRICS}
-        total_claims = 0
-
-        for evaluation in all_evaluations:
-            method_eval = evaluation["methods"][method]
-            total_claims += method_eval["relevancy"]["total_claims"]
-            for metric in SUMMARY_METRICS:
-                value = metric_value(method_eval, metric)
-                if value is not None:
-                    method_values[metric].append(float(value))
-
-        summary["methods"][method] = {
-            "total_claims": total_claims,
-            **{
-                f"avg_{metric}": average(method_values[metric])
-                for metric in SUMMARY_METRICS
-            },
-        }
-
-    return summary
 
 
 def write_json(path: Path, payload: dict) -> None:
@@ -379,7 +302,7 @@ def run(args: argparse.Namespace) -> int:
         evaluations.append(evaluation)
         print(f"[{folder_number}] wrote {output_folder.name}/")
 
-    summary = build_summary(evaluations)
+    summary = build_main_dataset_summary(evaluations)
     summary_path = output_root / "summary.json"
     write_json(summary_path, summary)
 
@@ -390,7 +313,7 @@ def run(args: argparse.Namespace) -> int:
     print(f"Folders: {summary['folders_counted']}")
     for method, metrics in summary["methods"].items():
         print(f"  {method}:")
-        print(f"    avg_relevancy_rate:          {metrics['avg_relevancy_rate']:.4f}")
+        print(f"    avg_relevancy_score:         {metrics['avg_relevancy_score']:.4f}")
         print(f"    avg_objectivity_score:       {metrics['avg_objectivity_score']:.4f}")
         print(f"    avg_efficiency_per_100_words:{metrics['avg_efficiency_per_100_words']:.4f}")
         print(f"    avg_novelty_rate:            {metrics['avg_novelty_rate']:.4f}")

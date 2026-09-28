@@ -1,0 +1,57 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "11",
+  "product_stem": "11",
+  "alt_text": "A central space-themed graphic features a white-outlined astronaut holding a multicolored planet, with stars and ringed planets surrounding the astronaut. Colorful pools appear beneath the astronaut, with additional small planets and a moon-like circle above.",
+  "final_alt_text": "A central space-themed graphic features a white-outlined astronaut holding a multicolored planet, with stars and ringed planets surrounding the astronaut. Colorful pools appear beneath the astronaut, with additional small planets and a moon-like circle above.",
+  "classification_category": "CLOTHING",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 3230,
+  "token_usage": {
+    "prompt_tokens": 1011,
+    "completion_tokens": 321,
+    "total_tokens": 1332
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"A central space-themed graphic\"},{\"claim_id\":\"c2\",\"claim\":\"A white-outlined astronaut\"},{\"claim_id\":\"c3\",\"claim\":\"A multicolored planet held by the astronaut\"},{\"claim_id\":\"c4\",\"claim\":\"Stars surrounding the astronaut\"},{\"claim_id\":\"c5\",\"claim\":\"Ringed planets surrounding the astronaut\"},{\"claim_id\":\"c6\",\"claim\":\"Colorful pools beneath the astronaut\"},{\"claim_id\":\"c7\",\"claim\":\"Additional small planets above the astronaut\"},{\"claim_id\":\"c8\",\"claim\":\"A moon-like circle above the astronaut\"}],\"total_claims\":8}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "A central space-themed graphic"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "A white-outlined astronaut"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "A multicolored planet held by the astronaut"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Stars surrounding the astronaut"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "Ringed planets surrounding the astronaut"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "Colorful pools beneath the astronaut"
+      },
+      {
+        "claim_id": "c7",
+        "claim": "Additional small planets above the astronaut"
+      },
+      {
+        "claim_id": "c8",
+        "claim": "A moon-like circle above the astronaut"
+      }
+    ],
+    "total_claims": 8
+  },
+  "processed_at": "2026-09-20T11:27:05.451876+00:00"
+}

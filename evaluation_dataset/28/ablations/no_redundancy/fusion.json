@@ -1,0 +1,61 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 6167,
+  "token_usage": {
+    "prompt_tokens": 2391,
+    "completion_tokens": 828,
+    "total_tokens": 3219
+  },
+  "raw_response": "{\n  \"stage\": \"fusion\",\n  \"master_claims\": [\n    {\n      \"claim_id\": \"c1\",\n      \"text\": \"A mirror has a narrow border.\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c2\",\n      \"text\": \"The mirror has straight, slightly angled side edges.\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"CORRECTED\"\n    },\n    {\n      \"claim_id\": \"c3\",\n      \"text\": \"The mirror has a rounded arch across the top.\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c4\",\n      \"text\": \"A separate support extends behind the mirror on the right.\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c5\",\n      \"text\": \"The support holds the mirror upright on the floor.\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"n1\",\n      \"text\": \"The mirror has a dark-colored frame.\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    }\n  ],\n  \"edit_log\": [\n    \"Corrected straight vertical sides to straight, slightly angled side edges (c2)\",\n    \"Added dark-colored frame per Completeness (n1)\"\n  ],\n  \"final_alt_text\": \"A mirror has a narrow border, a dark-colored frame, straight, slightly angled side edges, and a rounded arch across the top. A separate support extends behind the mirror on the right, holding it upright on the floor.\"\n}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "A mirror has a narrow border.",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "The mirror has straight, slightly angled side edges.",
+        "source": "ORIGINAL",
+        "action": "CORRECTED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "The mirror has a rounded arch across the top.",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "A separate support extends behind the mirror on the right.",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "The support holds the mirror upright on the floor.",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "The mirror has a dark-colored frame.",
+        "source": "ADDED",
+        "action": "ADDED"
+      }
+    ],
+    "edit_log": [
+      "Corrected straight vertical sides to straight, slightly angled side edges (c2)",
+      "Added dark-colored frame per Completeness (n1)"
+    ],
+    "final_alt_text": "A mirror has a narrow border, a dark-colored frame, straight, slightly angled side edges, and a rounded arch across the top. A separate support extends behind the mirror on the right, holding it upright on the floor."
+  },
+  "final_alt_text": "A mirror has a narrow border, a dark-colored frame, straight, slightly angled side edges, and a rounded arch across the top. A separate support extends behind the mirror on the right, holding it upright on the floor.",
+  "processed_at": "2026-09-20T11:57:12.885391+00:00"
+}

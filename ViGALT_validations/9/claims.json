@@ -1,0 +1,38 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "The jacket is shown open"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Black outer shell"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Tan plush lining visible through the body and hood"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Full-length front zipper"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Two angled chest pockets"
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Two vertical lower pockets"
+    },
+    {
+      "claim_id": "c7",
+      "claim": "Ribbed cuffs"
+    },
+    {
+      "claim_id": "c8",
+      "claim": "Ribbed hem"
+    }
+  ],
+  "total_claims": 8
+}

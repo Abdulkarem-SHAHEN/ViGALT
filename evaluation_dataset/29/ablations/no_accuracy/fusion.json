@@ -1,0 +1,55 @@
+{
+  "status": "ok",
+  "ablation": "no_accuracy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_accuracy.txt",
+  "duration_ms": 4233,
+  "token_usage": {
+    "prompt_tokens": 2248,
+    "completion_tokens": 559,
+    "total_tokens": 2807
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically.\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c2\",\"text\":\"The mirror is above a vessel sink.\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"The mirror is positioned between two vertical wall sconces.\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"The mirror is in a bathroom vanity area.\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n1\",\"text\":\"A narrow visible edge outlines the mirror's perimeter.\",\"source\":\"ADDED\",\"action\":\"ADDED\"}],\"edit_log\":[\"Added the narrow visible edge outlining the mirror's perimeter per Completeness (n1).\",\"Retained all original claims because Redundancy marked c1–c4 as NOVEL.\"],\"final_alt_text\":\"A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically, and a narrow visible edge outlines the mirror's perimeter. The mirror is above a vessel sink, positioned between two vertical wall sconces in a bathroom vanity area.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically.",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "The mirror is above a vessel sink.",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "The mirror is positioned between two vertical wall sconces.",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "The mirror is in a bathroom vanity area.",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "A narrow visible edge outlines the mirror's perimeter.",
+        "source": "ADDED",
+        "action": "ADDED"
+      }
+    ],
+    "edit_log": [
+      "Added the narrow visible edge outlining the mirror's perimeter per Completeness (n1).",
+      "Retained all original claims because Redundancy marked c1–c4 as NOVEL."
+    ],
+    "final_alt_text": "A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically, and a narrow visible edge outlines the mirror's perimeter. The mirror is above a vessel sink, positioned between two vertical wall sconces in a bathroom vanity area."
+  },
+  "final_alt_text": "A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically, and a narrow visible edge outlines the mirror's perimeter. The mirror is above a vessel sink, positioned between two vertical wall sconces in a bathroom vanity area.",
+  "processed_at": "2026-09-20T11:57:36.550596+00:00"
+}

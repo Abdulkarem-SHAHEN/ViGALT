@@ -1,0 +1,250 @@
+{
+  "status": "ok",
+  "folder_number": 29,
+  "image_file": "71U0guXcKhL._AC_SX679_.jpg",
+  "ablation": "no_redundancy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically. A narrow visible edge outlines the mirror's perimeter. The mirror is above a vessel sink and positioned between two vertical wall sconces in a bathroom vanity area.",
+      "relevancy": {
+        "total_claims": 6,
+        "relevant_claims": 3,
+        "supplementary_claims": 0,
+        "visual_only_claims": 3,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "The mirror has a broad rounded top, curved sides, and a tapered lower end.",
+            "label": "R",
+            "reason": "This describes the mirror's visible shape."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The mirror is installed vertically.",
+            "label": "R",
+            "reason": "This describes the product's displayed orientation."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "A narrow visible edge outlines the mirror's perimeter.",
+            "label": "R",
+            "reason": "This describes a visible construction detail at the mirror's edge."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The mirror is above a vessel sink.",
+            "label": "V",
+            "reason": "The sink is a staging fixture and this placement does not convey the mirror's scale, capacity, or layout."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "The mirror is positioned between two vertical wall sconces.",
+            "label": "V",
+            "reason": "The wall sconces are individually identified background fixtures rather than scale or layout context for the product."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "The mirror is in a bathroom vanity area.",
+            "label": "V",
+            "reason": "This describes the surrounding environment rather than the mirror itself."
+          }
+        ],
+        "relevancy_score": 33.33
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 6,
+          "relevant_claims": 3,
+          "irrelevant_claims": 3,
+          "raw_novel_claims": 6,
+          "relevant_novel_claims": 3,
+          "irrelevant_novel_claims": 3,
+          "unavoidable_repetition_claims": 0,
+          "avoidable_redundancy_claims": 0,
+          "novelty_rate": 0.5,
+          "raw_novelty_rate": 1.0,
+          "unavoidable_repetition_rate": 0.0,
+          "avoidable_redundancy_rate": 0.0,
+          "redundancy_rate": 0.0
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "The mirror has a broad rounded top, curved sides, and a tapered lower end.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The mirror is installed vertically.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "A narrow visible edge outlines the mirror's perimeter.",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The mirror is above a vessel sink.",
+            "relevance_code": "V"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "The mirror is positioned between two vertical wall sconces.",
+            "relevance_code": "V"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "The mirror is in a bathroom vanity area.",
+            "relevance_code": "V"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "The mirror has a broad rounded top, curved sides, and a tapered lower end.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "Modern Irregular Asymmetric Petal Shaped Mirror"
+              },
+              {
+                "field": "feature_bullets[0]",
+                "value": "Petal-inspired shape... soft and original lines"
+              },
+              {
+                "field": "product_details.Special Features",
+                "value": "Petal shape design, frameless"
+              }
+            ],
+            "reason": "The DOM identifies a petal-inspired, irregular asymmetric shape, but does not specify the broad rounded top, curved sides, or tapered lower-end contour."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "The mirror is installed vertically.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[4]",
+                "value": "The 3 hooks on the back make it easy to attach this artistic mirror to the wall, both horizontally and vertically"
+              },
+              {
+                "field": "product_details.Installation Type",
+                "value": "Wall mounted"
+              }
+            ],
+            "reason": "The DOM states that the mirror can be wall-mounted in either horizontal or vertical orientation, but does not state that it is actually installed vertically."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "A narrow visible edge outlines the mirror's perimeter.",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Special Features",
+                "value": "Petal shape design, frameless"
+              },
+              {
+                "field": "product_details.Frame Material Type",
+                "value": "Glass"
+              }
+            ],
+            "reason": "The DOM describes the mirror as frameless but does not describe a narrow visible perimeter edge."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "The mirror is above a vessel sink.",
+            "relevance_code": "V",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM contains no information about the mirror being displayed or positioned above a vessel sink."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "The mirror is positioned between two vertical wall sconces.",
+            "relevance_code": "V",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM contains no information about wall sconces or the mirror's placement between them."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "The mirror is in a bathroom vanity area.",
+            "relevance_code": "V",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "Decorative Frameless Entrance Bedroom Bathroom Mirror"
+              },
+              {
+                "field": "product_details.Included Components",
+                "value": "1 x bathroom mirror"
+              }
+            ],
+            "reason": "The DOM identifies the item as a bathroom mirror and mentions bathroom use, but does not state that the depicted mirror is situated in a bathroom vanity area."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 6,
+        "subjective_claims": 0,
+        "total_claims": 6,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The mirror has a broad rounded top, curved sides, and a tapered lower end.",
+            "label": "OBJECTIVE",
+            "reason": "The mirror’s asymmetrical outline, including its rounded upper portion, curved sides, and narrower lower point, is directly visible."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The mirror is installed vertically.",
+            "label": "OBJECTIVE",
+            "reason": "The mirror is visibly oriented with its longer dimension running from top to bottom on the wall."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "A narrow visible edge outlines the mirror's perimeter.",
+            "label": "OBJECTIVE",
+            "reason": "A thin darker border or edge is visibly present around the mirror against the wall."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The mirror is above a vessel sink.",
+            "label": "OBJECTIVE",
+            "reason": "The image visibly shows the mirror mounted on the wall above a raised, bowl-like sink."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The mirror is positioned between two vertical wall sconces.",
+            "label": "OBJECTIVE",
+            "reason": "Two vertically oriented wall-mounted light fixtures are visibly located on opposite sides of the mirror."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "The mirror is in a bathroom vanity area.",
+            "label": "OBJECTIVE",
+            "reason": "The visible sink, faucet, countertop, wall mirror, and sconces directly show a bathroom vanity setting."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 44,
+        "relevant_novel_claims": 3,
+        "efficiency_per_100_words": 6.8181818181818175
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:58:54.242123+00:00"
+}

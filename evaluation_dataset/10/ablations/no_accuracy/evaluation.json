@@ -1,0 +1,334 @@
+{
+  "status": "ok",
+  "folder_number": 10,
+  "image_file": "511Xxi6WIpL._AC_SX679_.jpg",
+  "ablation": "no_accuracy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A rash guard with a turquoise-blue body, white upper sections, short sleeves with navy-blue bands around the sleeve hems, and a Quiksilver logo on the left sleeve. A large white flowing wave or dragon-like graphic spans the front, with a turquoise-bound crew neckline and a straight hem.",
+      "relevancy": {
+        "total_claims": 9,
+        "relevant_claims": 9,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Rash guard",
+            "label": "R",
+            "reason": "Identifies the garment type shown."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Turquoise-blue body",
+            "label": "R",
+            "reason": "Describes the garment's turquoise-blue main body."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "White upper sections",
+            "label": "R",
+            "reason": "Describes the white panels across the upper chest and shoulders."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Short sleeves",
+            "label": "R",
+            "reason": "Describes the garment's short sleeve construction."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Navy-blue bands around the sleeve hems",
+            "label": "R",
+            "reason": "Describes the navy bands integrated around both sleeve hems."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Quiksilver logo on the left sleeve",
+            "label": "R",
+            "reason": "Describes the white logo printed on the garment's left sleeve."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Large white flowing wave or dragon-like graphic spanning the front",
+            "label": "R",
+            "reason": "Describes the large white flowing graphic printed across the front."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "Turquoise-bound crew neckline",
+            "label": "R",
+            "reason": "Describes the turquoise-trimmed crew neckline."
+          },
+          {
+            "claim_id": "c9",
+            "claim": "Straight hem",
+            "label": "R",
+            "reason": "Describes the garment's straight lower hem."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 9,
+          "relevant_claims": 9,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 7,
+          "relevant_novel_claims": 7,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 0,
+          "avoidable_redundancy_claims": 2,
+          "novelty_rate": 0.7777777777777778,
+          "raw_novelty_rate": 0.7777777777777778,
+          "unavoidable_repetition_rate": 0.0,
+          "avoidable_redundancy_rate": 0.2222222222222222,
+          "redundancy_rate": 0.2222222222222222
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Rash guard",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Turquoise-blue body",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "White upper sections",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Short sleeves",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Navy-blue bands around the sleeve hems",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Quiksilver logo on the left sleeve",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Large white flowing wave or dragon-like graphic spanning the front",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c8",
+            "claim": "Turquoise-bound crew neckline",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c9",
+            "claim": "Straight hem",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Rash guard",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Swimwear Form Type",
+                "value": "Rash Guard"
+              },
+              {
+                "field": "product_details.Swimwear Top Form",
+                "value": "Rash Guard Top"
+              },
+              {
+                "field": "title",
+                "value": "Men's Short Sleeve Swimsuit UPF 50+ UV Protection T-Shirt Rash Guard Quick Dry Lightweight Elastic Loose for Surfing Fishing Diving Beach L-2XL"
+              }
+            ],
+            "reason": "The DOM explicitly identifies the product as a rash guard/rash guard top. Repeating the product type adds no new semantic information."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Turquoise-blue body",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "description",
+                "value": "Colour: blue."
+              }
+            ],
+            "reason": "The DOM gives only a general blue color. It does not specify a turquoise shade or that this color applies to the garment body."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "White upper sections",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM does not describe white coloring or distinct upper sections of the garment."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Short sleeves",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Sleeve Type",
+                "value": "Short Sleeve"
+              },
+              {
+                "field": "product_details.Sleeve Length Description",
+                "value": "Short Sleeve"
+              },
+              {
+                "field": "title",
+                "value": "Men's Short Sleeve Swimsuit UPF 50+ UV Protection T-Shirt Rash Guard Quick Dry Lightweight Elastic Loose for Surfing Fishing Diving Beach L-2XL"
+              }
+            ],
+            "reason": "The DOM explicitly states that the product has short sleeves. The claim supplies no additional sleeve-related information."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Navy-blue bands around the sleeve hems",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "description",
+                "value": "Colour: blue."
+              }
+            ],
+            "reason": "Although the DOM generally identifies the product color as blue, it does not describe navy-blue bands, their placement around sleeve hems, or contrasting trim."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Quiksilver logo on the left sleeve",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "brand",
+                "value": "Brand: AYESY"
+              }
+            ],
+            "reason": "The DOM does not mention a Quiksilver logo or any logo positioned on the left sleeve."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "Large white flowing wave or dragon-like graphic spanning the front",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "description",
+                "value": "Stylish printed design, crisp pattern, vibrant colors."
+              },
+              {
+                "field": "feature_bullets[3]",
+                "value": "This anti-UV men's swimsuit features an original print that stands out from classic models."
+              }
+            ],
+            "reason": "The DOM indicates that the garment has a printed design, but it does not identify a large white wave- or dragon-like graphic or specify that it spans the front."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "Turquoise-bound crew neckline",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "description",
+                "value": "Colour: blue."
+              }
+            ],
+            "reason": "The DOM does not describe the neckline shape, turquoise binding, or the location of any colored trim at the neck."
+          },
+          {
+            "claim_id": "c9",
+            "claim": "Straight hem",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM contains no information about the garment's hem shape."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 8,
+        "subjective_claims": 0,
+        "total_claims": 8,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The rash guard has a turquoise-blue body.",
+            "label": "OBJECTIVE",
+            "reason": "The main lower and central portion of the garment is visibly turquoise blue."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The rash guard has white upper sections.",
+            "label": "OBJECTIVE",
+            "reason": "White fabric is visibly present across the upper chest, shoulders, and upper sleeves."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The rash guard has short sleeves.",
+            "label": "OBJECTIVE",
+            "reason": "The sleeves visibly end above the elbows."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The sleeves have navy-blue bands around the sleeve hems.",
+            "label": "OBJECTIVE",
+            "reason": "Dark navy-blue horizontal bands are visibly positioned near both sleeve openings."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "A Quiksilver logo appears on the left sleeve.",
+            "label": "OBJECTIVE",
+            "reason": "A small white Quiksilver-style wave logo is visibly printed on the sleeve at the left side of the image."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "A large white flowing wave or dragon-like graphic spans the front.",
+            "label": "OBJECTIVE",
+            "reason": "A large white, flowing illustrative graphic is visibly printed across the front; its precise motif is described with visible alternatives rather than an unsupported functional or quality claim."
+          },
+          {
+            "claim_id": "C7",
+            "claim": "The rash guard has a turquoise-bound crew neckline.",
+            "label": "OBJECTIVE",
+            "reason": "The neckline is visibly round and bordered with turquoise trim."
+          },
+          {
+            "claim_id": "C8",
+            "claim": "The rash guard has a straight hem.",
+            "label": "OBJECTIVE",
+            "reason": "The bottom edge of the garment appears horizontally straight in the image."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 47,
+        "relevant_novel_claims": 7,
+        "efficiency_per_100_words": 14.893617021276595
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:01:08.289460+00:00"
+}

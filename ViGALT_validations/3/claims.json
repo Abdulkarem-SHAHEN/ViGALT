@@ -1,0 +1,30 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Light-gray sweater body"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Repeating vertical zigzag bands filled with small diamond texture"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Brown contrast panels along the outer lower sleeves"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Raised collar"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Short front placket opening from the collar"
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Dark button near the upper chest"
+    }
+  ],
+  "total_claims": 6
+}

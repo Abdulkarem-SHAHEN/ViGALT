@@ -1,0 +1,44 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "Round bathroom mirror",
+      "claim": "Round mirror",
+      "label": "CORRECTED",
+      "error_category": "NONEXISTENT",
+      "reason": "A round mirror is clearly visible, but the image does not unambiguously establish that it is a bathroom mirror."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "Black outer rim",
+      "claim": "Black outer rim",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The mirror visibly has a black outer rim."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "Continuous warm-white illuminated ring just inside the black outer rim",
+      "claim": "Continuous warm-white illuminated ring just inside the black outer rim",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A continuous warm-white illuminated ring is visibly positioned just inside the black outer rim."
+    },
+    {
+      "claim_id": "c4",
+      "original_claim": "Three touch-control icons near the lower center of the reflective surface",
+      "claim": "Three icons near the lower center of the reflective surface",
+      "label": "CORRECTED",
+      "error_category": "NONEXISTENT",
+      "reason": "Three icons are clearly visible near the lower center of the reflective surface, but their touch-control functionality cannot be established from the pixels alone."
+    }
+  ],
+  "summary": {
+    "total_claims": 4,
+    "accurate_claims": 2,
+    "corrected_claims": 2,
+    "deleted_claims": 0,
+    "error_rate": 0.5
+  }
+}

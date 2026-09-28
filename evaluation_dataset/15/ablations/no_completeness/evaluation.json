@@ -1,0 +1,217 @@
+{
+  "status": "ok",
+  "folder_number": 15,
+  "image_file": "A1dbsmzbGeL._CLa_2140_2000_71o3XvXi3gL.png_0_0_2140_2000-0.0_0.0_2140.0_2000.0_AC_SX679_.jpg",
+  "ablation": "no_completeness",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A white T-shirt with a round crew neckline. The front graphic has a large black “I,” a red heart to its right, and the word “BARCELONA” in black capital letters beneath.",
+      "relevancy": {
+        "total_claims": 5,
+        "relevant_claims": 5,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "White T-shirt",
+            "label": "R",
+            "reason": "Describes the garment's product type and color."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Round crew neckline",
+            "label": "R",
+            "reason": "Describes the shirt's visible neckline construction."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Large black “I” in the front graphic",
+            "label": "R",
+            "reason": "Describes a visible on-product graphic element."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Red heart to the right of the black “I” in the front graphic",
+            "label": "R",
+            "reason": "Describes a visible colored graphic element and its placement on the shirt."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "The word “BARCELONA” in black capital letters beneath the front graphic",
+            "label": "R",
+            "reason": "Describes visible translated text and its placement on the garment."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 5,
+          "relevant_claims": 5,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 3,
+          "relevant_novel_claims": 3,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 2,
+          "avoidable_redundancy_claims": 0,
+          "novelty_rate": 0.6,
+          "raw_novelty_rate": 0.6,
+          "unavoidable_repetition_rate": 0.4,
+          "avoidable_redundancy_rate": 0.0,
+          "redundancy_rate": 0.4
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "White T-shirt",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Round crew neckline",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Large black “I” in the front graphic",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Red heart to the right of the black “I” in the front graphic",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "The word “BARCELONA” in black capital letters beneath the front graphic",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "White T-shirt",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM identifies the product as a T-shirt and lists its colour as Black, but it does not represent a white T-shirt."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Round crew neckline",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "product_details.Collar Style",
+                "value": "V-Neck"
+              }
+            ],
+            "reason": "The DOM specifies a V-neck collar, but contains no information representing a round crew neckline."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Large black “I” in the front graphic",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "description",
+                "value": "I Love Barcelona. Red heart."
+              },
+              {
+                "field": "title",
+                "value": "I Love Barcelona T-Shirt"
+              }
+            ],
+            "reason": "Although the DOM names the I Love Barcelona design, it does not specify a large black letter I or identify it as part of a front graphic."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Red heart to the right of the black “I” in the front graphic",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "description",
+                "value": "Red heart."
+              },
+              {
+                "field": "feature_bullets[1]",
+                "value": "Red heart."
+              }
+            ],
+            "reason": "The DOM already establishes that the design includes a red heart, but repeating the heart is necessary to express the new spatial relationship to the black I within the front graphic."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "The word “BARCELONA” in black capital letters beneath the front graphic",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "I Love Barcelona T-Shirt"
+              },
+              {
+                "field": "description",
+                "value": "I Love Barcelona. Red heart."
+              }
+            ],
+            "reason": "The DOM already supplies the word Barcelona as part of the product/design name, but repeating it is necessary to anchor the new information that it appears in black capital letters beneath the front graphic."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 5,
+        "subjective_claims": 0,
+        "total_claims": 5,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The T-shirt is white.",
+            "label": "OBJECTIVE",
+            "reason": "The shirt's white color is directly visible in the image."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "The T-shirt has a round crew neckline.",
+            "label": "OBJECTIVE",
+            "reason": "A round, close-fitting crew-style neckline is visibly shown at the top of the shirt."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The front has a large black “I” graphic.",
+            "label": "OBJECTIVE",
+            "reason": "A large black letter I is directly visible on the front of the shirt."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "A red heart appears to the right of the black “I.”",
+            "label": "OBJECTIVE",
+            "reason": "The red heart graphic and its position to the right of the letter I are directly observable."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "The word “BARCELONA” appears in black capital letters beneath the graphics.",
+            "label": "OBJECTIVE",
+            "reason": "The visible front print reads “BARCELONA” in black uppercase letters below the I and heart graphics."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 31,
+        "relevant_novel_claims": 3,
+        "efficiency_per_100_words": 9.67741935483871
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:34:08.589737+00:00"
+}

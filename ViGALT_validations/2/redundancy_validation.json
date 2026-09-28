@@ -1,0 +1,42 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Black T-shirt",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM already identifies the item as a T-shirt and specifies its colour as black. Repeating both facts adds no new visual information, grounding, or disambiguation."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Irregular white outlined heart on the upper right chest",
+      "label": "NOVEL",
+      "reason": "The DOM mentions a heart print, but it does not specify that the heart is irregular, white, outlined, or positioned on the upper right chest. These visual details add appearance and placement information."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "T-shirt is shown worn on a person",
+      "label": "NOVEL",
+      "reason": "The DOM does not state that the T-shirt is being modeled or shown worn on a person. This adds information about the product's presentation in the image."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Straight body extending to the upper hips",
+      "label": "NOVEL",
+      "reason": "Although the DOM gives fit and tunic-related product information, it does not sufficiently specify a straight body shape extending to the upper hips. This adds visual information about the shirt's silhouette and length."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Short sleeves ending above the elbows",
+      "label": "NOVEL",
+      "reason": "The DOM identifies the shirt as having short sleeves, but it does not specify that the sleeves end above the elbows. The endpoint adds a new visual detail about sleeve length."
+    }
+  ],
+  "summary": {
+    "total_claims": 5,
+    "novel_claims": 4,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.2
+  }
+}

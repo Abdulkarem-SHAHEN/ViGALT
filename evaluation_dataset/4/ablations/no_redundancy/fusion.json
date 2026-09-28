@@ -1,0 +1,68 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 5388,
+  "token_usage": {
+    "prompt_tokens": 2379,
+    "completion_tokens": 723,
+    "total_tokens": 3102
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"A top is shown worn on a person\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n1\",\"text\":\"Black color\",\"source\":\"ADDED\",\"action\":\"ADDED\"},{\"claim_id\":\"c2\",\"text\":\"Round crew neckline\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"Broad short sleeves\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"Straight loose body\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"Visible side slit at the lower left hem\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n2\",\"text\":\"Visible side slit at the lower right hem\",\"source\":\"ADDED\",\"action\":\"ADDED\"}],\"edit_log\":[\"Added black color per Completeness (n1)\",\"Added the lower right hem side slit per Completeness (n2)\",\"Grouped the neckline, sleeves, body, and side slits into a concise garment description\"],\"final_alt_text\":\"A black top is shown worn on a person. It has a round crew neckline, broad short sleeves, and a straight loose body, with visible side slits at the lower left and lower right hem.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "A top is shown worn on a person",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "Black color",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Round crew neckline",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Broad short sleeves",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Straight loose body",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Visible side slit at the lower left hem",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n2",
+        "text": "Visible side slit at the lower right hem",
+        "source": "ADDED",
+        "action": "ADDED"
+      }
+    ],
+    "edit_log": [
+      "Added black color per Completeness (n1)",
+      "Added the lower right hem side slit per Completeness (n2)",
+      "Grouped the neckline, sleeves, body, and side slits into a concise garment description"
+    ],
+    "final_alt_text": "A black top is shown worn on a person. It has a round crew neckline, broad short sleeves, and a straight loose body, with visible side slits at the lower left and lower right hem."
+  },
+  "final_alt_text": "A black top is shown worn on a person. It has a round crew neckline, broad short sleeves, and a straight loose body, with visible side slits at the lower left and lower right hem.",
+  "processed_at": "2026-09-20T10:51:46.117757+00:00"
+}

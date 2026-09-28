@@ -1,0 +1,51 @@
+{
+  "status": "ok",
+  "ablation": "no_completeness",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_completeness.txt",
+  "duration_ms": 5843,
+  "token_usage": {
+    "prompt_tokens": 2317,
+    "completion_tokens": 749,
+    "total_tokens": 3066
+  },
+  "raw_response": "{\n  \"stage\": \"fusion\",\n  \"master_claims\": [\n    {\n      \"claim_id\": \"c1\",\n      \"text\": \"A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically.\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c4\",\n      \"text\": \"The mirror is in a bathroom vanity area.\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c2\",\n      \"text\": \"The mirror is above a vessel sink.\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c3\",\n      \"text\": \"The mirror is positioned between two vertical wall sconces.\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    }\n  ],\n  \"edit_log\": [\n    \"- Retained mirror shape and vertical installation (c1)\",\n    \"- Retained bathroom vanity setting (c4)\",\n    \"- Retained vessel sink placement (c2)\",\n    \"- Retained wall sconce arrangement (c3)\"\n  ],\n  \"final_alt_text\": \"A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically above a vessel sink. It is positioned between two vertical wall sconces in a bathroom vanity area.\"\n}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically.",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "The mirror is in a bathroom vanity area.",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "The mirror is above a vessel sink.",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "The mirror is positioned between two vertical wall sconces.",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "- Retained mirror shape and vertical installation (c1)",
+      "- Retained bathroom vanity setting (c4)",
+      "- Retained vessel sink placement (c2)",
+      "- Retained wall sconce arrangement (c3)"
+    ],
+    "final_alt_text": "A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically above a vessel sink. It is positioned between two vertical wall sconces in a bathroom vanity area."
+  },
+  "final_alt_text": "A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically above a vessel sink. It is positioned between two vertical wall sconces in a bathroom vanity area.",
+  "processed_at": "2026-09-20T11:58:05.403265+00:00"
+}

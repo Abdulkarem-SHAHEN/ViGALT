@@ -1,0 +1,48 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Dining table",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM explicitly identifies the product as a dining table, and repeating that product category adds no visual grounding or new semantic information."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Brown wood-grain top composed of several angular panels",
+      "label": "NOVEL",
+      "reason": "The DOM already provides the brown color and wood material, but it does not describe the visible wood-grain appearance or the tabletop's composition from several angular panels."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Central pedestal base",
+      "label": "NOVEL",
+      "reason": "The DOM identifies the item as a dining table and its legs as wood, but does not specify that the base is a centrally located pedestal."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Broad vertical panels form the pedestal",
+      "label": "NOVEL",
+      "reason": "The DOM does not describe the pedestal's construction from broad vertical panels, which adds visible structural information."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Horizontal cross braces connect the vertical panels",
+      "label": "NOVEL",
+      "reason": "The DOM does not mention horizontal cross braces or their connecting relationship between the pedestal panels."
+    },
+    {
+      "claim_id": "c6",
+      "claim": "The table has a central pedestal rather than separate corner legs",
+      "label": "NOVEL",
+      "reason": "The DOM does not specify the base configuration or contrast a central pedestal with separate corner legs, so this adds a new visible structural relationship."
+    }
+  ],
+  "summary": {
+    "total_claims": 6,
+    "novel_claims": 5,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.16666666666666666
+  }
+}

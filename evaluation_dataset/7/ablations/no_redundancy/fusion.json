@@ -1,0 +1,75 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 5088,
+  "token_usage": {
+    "prompt_tokens": 2487,
+    "completion_tokens": 659,
+    "total_tokens": 3146
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"Blue-gray shirt\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c2\",\"text\":\"Intersecting white and dark-blue stripes\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n1\",\"text\":\"Long sleeves\",\"source\":\"ADDED\",\"action\":\"ADDED\"},{\"claim_id\":\"n2\",\"text\":\"Pointed turn-down collar\",\"source\":\"ADDED\",\"action\":\"ADDED\"},{\"claim_id\":\"c3\",\"text\":\"Chest pocket on the wearer’s left with diagonally oriented stripes\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"Striped front placket\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n3\",\"text\":\"White buttons down the front\",\"source\":\"ADDED\",\"action\":\"ADDED\"},{\"claim_id\":\"c5\",\"text\":\"Gently curved hem\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"}],\"edit_log\":[\"Retained all five accurate original claims.\",\"Added long sleeves per Completeness (n1).\",\"Added pointed turn-down collar per Completeness (n2).\",\"Added white buttons down the front per Completeness (n3).\"],\"final_alt_text\":\"A blue-gray shirt with intersecting white and dark-blue stripes. It has long sleeves, a pointed turn-down collar, a chest pocket on the wearer’s left with diagonally oriented stripes, a striped front placket, white buttons down the front, and a gently curved hem.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Blue-gray shirt",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Intersecting white and dark-blue stripes",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "Long sleeves",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "n2",
+        "text": "Pointed turn-down collar",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Chest pocket on the wearer’s left with diagonally oriented stripes",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Striped front placket",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n3",
+        "text": "White buttons down the front",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Gently curved hem",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Retained all five accurate original claims.",
+      "Added long sleeves per Completeness (n1).",
+      "Added pointed turn-down collar per Completeness (n2).",
+      "Added white buttons down the front per Completeness (n3)."
+    ],
+    "final_alt_text": "A blue-gray shirt with intersecting white and dark-blue stripes. It has long sleeves, a pointed turn-down collar, a chest pocket on the wearer’s left with diagonally oriented stripes, a striped front placket, white buttons down the front, and a gently curved hem."
+  },
+  "final_alt_text": "A blue-gray shirt with intersecting white and dark-blue stripes. It has long sleeves, a pointed turn-down collar, a chest pocket on the wearer’s left with diagonally oriented stripes, a striped front placket, white buttons down the front, and a gently curved hem.",
+  "processed_at": "2026-09-20T10:56:24.608170+00:00"
+}

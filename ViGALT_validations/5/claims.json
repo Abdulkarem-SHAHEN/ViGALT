@@ -1,0 +1,30 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Sweatshirt"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Small graphic on the left chest"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Much larger version of the graphic centered across the back"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Large divided hand pocket on the front"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Ribbed cuffs on the sleeves"
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Ribbed waistband at the hem"
+    }
+  ],
+  "total_claims": 6
+}

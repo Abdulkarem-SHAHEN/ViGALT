@@ -1,0 +1,61 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "14",
+  "product_stem": "14",
+  "alt_text": "Burgundy shirt with narrow navy vertical stripes and short sleeves, yellow “BARÇA” lettering across the shirt's chest, football graphics, and an FC Barcelona crest. Matching navy shorts have vertical yellow “BARÇA” lettering on one leg and an FC Barcelona crest on the other leg.",
+  "final_alt_text": "Burgundy shirt with narrow navy vertical stripes and short sleeves, yellow “BARÇA” lettering across the shirt's chest, football graphics, and an FC Barcelona crest. Matching navy shorts have vertical yellow “BARÇA” lettering on one leg and an FC Barcelona crest on the other leg.",
+  "classification_category": "CLOTHING",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 3046,
+  "token_usage": {
+    "prompt_tokens": 1022,
+    "completion_tokens": 287,
+    "total_tokens": 1309
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Burgundy shirt\"},{\"claim_id\":\"c2\",\"claim\":\"Narrow navy vertical stripes on the shirt\"},{\"claim_id\":\"c3\",\"claim\":\"Short sleeves on the shirt\"},{\"claim_id\":\"c4\",\"claim\":\"Yellow “BARÇA” lettering across the shirt's chest\"},{\"claim_id\":\"c5\",\"claim\":\"Football graphics on the shirt\"},{\"claim_id\":\"c6\",\"claim\":\"An FC Barcelona crest on the shirt\"},{\"claim_id\":\"c7\",\"claim\":\"Matching navy shorts\"},{\"claim_id\":\"c8\",\"claim\":\"Vertical yellow “BARÇA” lettering on one leg of the shorts\"},{\"claim_id\":\"c9\",\"claim\":\"An FC Barcelona crest on the other leg of the shorts\"}],\"total_claims\":9}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Burgundy shirt"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Narrow navy vertical stripes on the shirt"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Short sleeves on the shirt"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Yellow “BARÇA” lettering across the shirt's chest"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "Football graphics on the shirt"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "An FC Barcelona crest on the shirt"
+      },
+      {
+        "claim_id": "c7",
+        "claim": "Matching navy shorts"
+      },
+      {
+        "claim_id": "c8",
+        "claim": "Vertical yellow “BARÇA” lettering on one leg of the shorts"
+      },
+      {
+        "claim_id": "c9",
+        "claim": "An FC Barcelona crest on the other leg of the shorts"
+      }
+    ],
+    "total_claims": 9
+  },
+  "processed_at": "2026-09-20T11:31:14.467952+00:00"
+}

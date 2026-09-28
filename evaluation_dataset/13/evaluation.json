@@ -9,7 +9,6 @@
         "relevant_claims": 4,
         "supplementary_claims": 0,
         "visual_only_claims": 0,
-        "relevancy_rate": 1.0,
         "claims": [
           {
             "claim_id": "C1",
@@ -31,7 +30,8 @@
             "claim": "Straight lower hem",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 100.0
       },
       "redundancy": {
         "metrics": {
@@ -182,7 +182,6 @@
         "relevant_claims": 3,
         "supplementary_claims": 0,
         "visual_only_claims": 3,
-        "relevancy_rate": 0.5,
         "claims": [
           {
             "claim_id": "C1",
@@ -214,7 +213,8 @@
             "claim": "The model is wearing blue athletic shorts.",
             "label": "V"
           }
-        ]
+        ],
+        "relevancy_score": 33.33
       },
       "redundancy": {
         "metrics": {

@@ -1,0 +1,42 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "A top is shown worn on a person",
+      "label": "NOVEL",
+      "reason": "The DOM identifies the product as a top but does not state that it is being worn by a person; the claim adds the visual presentation context."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Round crew neckline",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM explicitly describes the garment as having a round neck, round collar, and crew neck. Repeating the neckline type adds no new visual grounding or disambiguation."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Broad short sleeves",
+      "label": "NOVEL",
+      "reason": "Although the DOM states that the garment has short sleeves, it does not specify their broad width; the claim adds a visual sleeve-shape attribute."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Straight loose body",
+      "label": "NOVEL",
+      "reason": "The DOM describes the fit as loose or oversized but does not fully represent the straight body silhouette; the claim adds visual information about the garment's overall shape."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Visible side slit at the lower left hem",
+      "label": "UNAVOIDABLE_REPETITION",
+      "reason": "The DOM already states that the top has a side slit, but repeating the slit is necessary to anchor the new spatial detail that it is visible at the lower-left hem."
+    }
+  ],
+  "summary": {
+    "total_claims": 5,
+    "novel_claims": 3,
+    "unavoidable_repetition_claims": 1,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Sweatshirt"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Central space-themed graphic"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "White-outlined astronaut"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Multicolored planet held by the astronaut"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Stars surrounding the astronaut"
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Ringed planets surrounding the astronaut"
+    },
+    {
+      "claim_id": "c7",
+      "claim": "Colorful pools beneath the astronaut"
+    },
+    {
+      "claim_id": "c8",
+      "claim": "Additional small planets above"
+    },
+    {
+      "claim_id": "c9",
+      "claim": "Moon-like circle above"
+    }
+  ],
+  "total_claims": 9
+}

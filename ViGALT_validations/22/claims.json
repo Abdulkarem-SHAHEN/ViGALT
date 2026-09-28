@@ -1,0 +1,34 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "A sofa bed is arranged as a single bed"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "An L-shaped frame surrounds the head and right side"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Open shelving is illuminated by cyan LEDs"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "A laptop sits on the work surface"
+    },
+    {
+      "claim_id": "c5",
+      "claim": "The work surface extends across the foot and right side"
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Storage compartments beneath the mattress are pulled open on the left"
+    },
+    {
+      "claim_id": "c7",
+      "claim": "Fabric organizer pockets hang from the near side"
+    }
+  ],
+  "total_claims": 7
+}

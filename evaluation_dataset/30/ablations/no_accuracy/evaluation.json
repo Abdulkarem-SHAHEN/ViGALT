@@ -1,0 +1,194 @@
+{
+  "status": "ok",
+  "folder_number": 30,
+  "image_file": "71rBw3HHr1L._AC_SX679_.jpg",
+  "ablation": "no_accuracy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A continuous warm-white illuminated ring is just inside the black outer rim. Diffuse warm glow radiates from behind the mirror around its outer edge. Three touch-control icons are near the lower center of the reflective surface.",
+      "relevancy": {
+        "total_claims": 4,
+        "relevant_claims": 4,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Continuous warm-white illuminated ring just inside the outer rim",
+            "label": "R",
+            "reason": "Describes the mirror's integrated illuminated ring."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Black outer rim",
+            "label": "R",
+            "reason": "Describes the mirror's visible outer frame finish."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Diffuse warm glow radiates from behind the mirror around its outer edge",
+            "label": "R",
+            "reason": "Describes the product's integrated backlit edge illumination."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Three touch-control icons near the lower center of the reflective surface",
+            "label": "R",
+            "reason": "Describes visible controls integrated into the mirror surface."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 4,
+          "relevant_claims": 4,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 2,
+          "relevant_novel_claims": 2,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 1,
+          "avoidable_redundancy_claims": 1,
+          "novelty_rate": 0.5,
+          "raw_novelty_rate": 0.5,
+          "unavoidable_repetition_rate": 0.25,
+          "avoidable_redundancy_rate": 0.25,
+          "redundancy_rate": 0.5
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Continuous warm-white illuminated ring just inside the outer rim",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Black outer rim",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Diffuse warm glow radiates from behind the mirror around its outer edge",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Three touch-control icons near the lower center of the reflective surface",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Continuous warm-white illuminated ring just inside the outer rim",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Choose between warm white light (3000K), neutral white light (4000K) and cool white light (6500K)."
+              },
+              {
+                "field": "title",
+                "value": "Mirror-LED with 3 Light Colours"
+              }
+            ],
+            "reason": "The DOM establishes that warm-white lighting is available, but it does not describe a continuous illuminated ring or place the lighting just inside the outer rim."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Black outer rim",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Frame Color",
+                "value": "Black"
+              },
+              {
+                "field": "feature_bullets[0]",
+                "value": "has a black coating on the edges"
+              },
+              {
+                "field": "title",
+                "value": "Black Mirror"
+              }
+            ],
+            "reason": "The DOM already specifies a black frame and black coating on the mirror edges, which sufficiently conveys a black outer rim without adding new information."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Diffuse warm glow radiates from behind the mirror around its outer edge",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[1]",
+                "value": "Choose between warm white light (3000K), neutral white light (4000K) and cool white light (6500K)."
+              },
+              {
+                "field": "feature_bullets[0]",
+                "value": "A soft glow around the buttons illuminates the bathroom at night."
+              }
+            ],
+            "reason": "Although the DOM mentions warm-white lighting and a glow around the control buttons, it does not state that light radiates diffusely from behind the mirror around its outer edge."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Three touch-control icons near the lower center of the reflective surface",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[0]",
+                "value": "3 separate buttons for lighting, anti-fog and Bluetooth."
+              },
+              {
+                "field": "feature_bullets[0]",
+                "value": "Stylish Design and Smart Touch"
+              }
+            ],
+            "reason": "The DOM already establishes three touch-operated controls, while the claim adds their visual placement near the lower center of the reflective surface. Referring to the three controls anchors the newly supplied location to the specific existing control group."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 3,
+        "subjective_claims": 0,
+        "total_claims": 3,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "A continuous warm-white illuminated ring is just inside the black outer rim.",
+            "label": "OBJECTIVE",
+            "reason": "The image visibly shows a continuous pale warm-white light ring positioned immediately inside a thin black circular rim."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "Diffuse warm glow radiates from behind the mirror around its outer edge.",
+            "label": "OBJECTIVE",
+            "reason": "A soft yellowish-white halo is visibly present on the wall surrounding the mirror's outer edge, indicating light emitted behind it."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "Three touch-control icons are near the lower center of the reflective surface.",
+            "label": "OBJECTIVE",
+            "reason": "Three small circular control symbols are visibly shown near the lower center of the mirror surface."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 36,
+        "relevant_novel_claims": 2,
+        "efficiency_per_100_words": 5.555555555555555
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:59:29.045349+00:00"
+}

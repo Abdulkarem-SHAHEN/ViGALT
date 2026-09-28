@@ -1,0 +1,48 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Shirt",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM identifies the product as a shirt in the title and description. Repeating the product category adds no new visual information or grounding."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Black contrasting collar",
+      "label": "NOVEL",
+      "reason": "The DOM mentions a collar and general colour contrasts but does not specify a black contrasting collar. This claim adds the collar's specific contrasting color and appearance."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Black buttons arranged down the center front",
+      "label": "UNAVOIDABLE_REPETITION",
+      "reason": "The DOM already identifies the shirt as having buttons and contrast buttons, but repeating buttons is necessary to anchor the novel facts that they are black and arranged down the center front of the shirt."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Rounded lower edge",
+      "label": "NOVEL",
+      "reason": "The DOM does not provide the lower edge's rounded shape. This claim adds a visual construction detail about the hem."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Long sleeves",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM explicitly identifies the garment as having long sleeves in the title and structured sleeve attributes. Repeating this information adds no new visual grounding."
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Narrow cuffs at the ends of the sleeves",
+      "label": "UNAVOIDABLE_REPETITION",
+      "reason": "The DOM identifies cuffs and their style but does not specify that they are narrow. Repeating cuffs and their position at the sleeve ends is necessary to ground the novel narrowness attribute to the correct garment component."
+    }
+  ],
+  "summary": {
+    "total_claims": 6,
+    "novel_claims": 2,
+    "unavoidable_repetition_claims": 2,
+    "avoidable_redundancy_claims": 2,
+    "redundancy_score": 0.3333333333333333
+  }
+}

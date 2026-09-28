@@ -1,0 +1,48 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "White T-shirt",
+      "label": "NOVEL",
+      "reason": "The DOM identifies the shirt as black, not white, so equivalent information is not represented in the DOM; the claimed garment color therefore contributes distinct information."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Round crew neckline",
+      "label": "NOVEL",
+      "reason": "The DOM specifies a V-neck, not a round crew neckline, so the claimed neckline shape is not represented as equivalent DOM information."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Short sleeves",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM explicitly lists the sleeve length as short sleeve, and repeating it adds no new visual grounding, disambiguation, or relationship."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Large black “I” in the front graphic",
+      "label": "NOVEL",
+      "reason": "Although the DOM mentions “I Love Barcelona,” it does not specify a large black I as a component of the front graphic; size, color, and graphic presentation add visual information."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Red heart to the right of the large black “I” in the front graphic",
+      "label": "UNAVOIDABLE_REPETITION",
+      "reason": "The DOM already states that the product has a red heart, but repeating the heart identifies the object involved in the new right-of-the-I spatial relationship and anchors that visual relation."
+    },
+    {
+      "claim_id": "c6",
+      "claim": "The word “BARCELONA” in black capital letters beneath the large black “I” and red heart in the front graphic",
+      "label": "UNAVOIDABLE_REPETITION",
+      "reason": "The DOM mentions Barcelona in the product wording, but repeating the word identifies which visual text is being described while anchoring its new black-capital lettering and below-the-graphic spatial placement."
+    }
+  ],
+  "summary": {
+    "total_claims": 6,
+    "novel_claims": 3,
+    "unavoidable_repetition_claims": 2,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.1666666667
+  }
+}

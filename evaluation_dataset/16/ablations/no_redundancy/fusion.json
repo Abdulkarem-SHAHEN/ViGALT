@@ -1,0 +1,92 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 6788,
+  "token_usage": {
+    "prompt_tokens": 3073,
+    "completion_tokens": 1024,
+    "total_tokens": 4097
+  },
+  "raw_response": "{\n  \"stage\": \"fusion\",\n  \"master_claims\": [\n    {\n      \"claim_id\": \"c1\",\n      \"text\": \"Sofa\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"n1\",\n      \"text\": \"Dark gray vertically ribbed upholstery\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    },\n    {\n      \"claim_id\": \"n2\",\n      \"text\": \"The right seat is reclined with its footrest extended\",\n      \"source\": \"ADDED\",\n      \"action\": \"ADDED\"\n    },\n    {\n      \"claim_id\": \"c2\",\n      \"text\": \"Illuminated vertical strips along both front arm edges\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c3\",\n      \"text\": \"Circular cup holders built into the armrests\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c4\",\n      \"text\": \"A control panel mounted on the outside of the left arm\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c5\",\n      \"text\": \"Open compartments beneath and in front of the seating\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c6\",\n      \"text\": \"A blanket in the compartments\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c7\",\n      \"text\": \"A cushion in the compartments\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c8\",\n      \"text\": \"Books in the compartments\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c9\",\n      \"text\": \"One front compartment has its hinged lid raised\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    }\n  ],\n  \"edit_log\": [\n    \"Added dark gray vertically ribbed upholstery per Completeness (n1)\",\n    \"Added reclined right seat and extended footrest per Completeness (n2)\",\n    \"Reordered claims from product silhouette to upholstery, seating function, arm features, and storage details\"\n  ],\n  \"final_alt_text\": \"A sofa with dark gray vertically ribbed upholstery. The right seat is reclined with its footrest extended. Illuminated vertical strips run along both front arm edges, and circular cup holders are built into the armrests; a control panel is mounted on the outside of the left arm. Open compartments beneath and in front of the seating contain a blanket, cushion, and books; one front compartment has its hinged lid raised.\"\n}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Sofa",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "Dark gray vertically ribbed upholstery",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "n2",
+        "text": "The right seat is reclined with its footrest extended",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Illuminated vertical strips along both front arm edges",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Circular cup holders built into the armrests",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "A control panel mounted on the outside of the left arm",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Open compartments beneath and in front of the seating",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "A blanket in the compartments",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c7",
+        "text": "A cushion in the compartments",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c8",
+        "text": "Books in the compartments",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c9",
+        "text": "One front compartment has its hinged lid raised",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Added dark gray vertically ribbed upholstery per Completeness (n1)",
+      "Added reclined right seat and extended footrest per Completeness (n2)",
+      "Reordered claims from product silhouette to upholstery, seating function, arm features, and storage details"
+    ],
+    "final_alt_text": "A sofa with dark gray vertically ribbed upholstery. The right seat is reclined with its footrest extended. Illuminated vertical strips run along both front arm edges, and circular cup holders are built into the armrests; a control panel is mounted on the outside of the left arm. Open compartments beneath and in front of the seating contain a blanket, cushion, and books; one front compartment has its hinged lid raised."
+  },
+  "final_alt_text": "A sofa with dark gray vertically ribbed upholstery. The right seat is reclined with its footrest extended. Illuminated vertical strips run along both front arm edges, and circular cup holders are built into the armrests; a control panel is mounted on the outside of the left arm. Open compartments beneath and in front of the seating contain a blanket, cushion, and books; one front compartment has its hinged lid raised.",
+  "processed_at": "2026-09-20T11:36:18.432766+00:00"
+}

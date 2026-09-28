@@ -1,0 +1,36 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "T-shirt shown from the front",
+      "claim": "T-shirt shown from the front",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The T-shirt's front neckline, sleeves, and chest are clearly visible."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "White T-shirt",
+      "claim": "White T-shirt",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The T-shirt fabric is visibly white."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "Small gray Under Armour logo on the wearer's upper left chest",
+      "claim": "Small gray Under Armour logo on the wearer's upper left chest",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A small gray Under Armour logo is clearly visible on the wearer's upper left chest."
+    }
+  ],
+  "summary": {
+    "total_claims": 3,
+    "accurate_claims": 3,
+    "corrected_claims": 0,
+    "deleted_claims": 0,
+    "error_rate": 0.0
+  }
+}

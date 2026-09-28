@@ -1,0 +1,60 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "The chair has a high, rounded back",
+      "label": "NOVEL",
+      "reason": "The DOM identifies a solid, medium back but does not provide the back's rounded shape or the claimed high profile; these visual properties add semantic information."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "The chair has integrated curved arms",
+      "label": "NOVEL",
+      "reason": "The DOM lists the chair as armless and does not describe integrated arm structures or their curved form; the claim introduces visual configuration information."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "The chair features vertical channel stitching",
+      "label": "NOVEL",
+      "reason": "The DOM does not describe stitching, channels, or their vertical arrangement, so this adds a visible surface-construction detail."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "The chair has a separate rectangular seat cushion",
+      "label": "NOVEL",
+      "reason": "Although the DOM mentions a boxed-edge cushion style, it does not establish a separate rectangular seat cushion as a visible component; the claim adds component separation and shape."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "The chair rests on a white five-spoke wheeled base",
+      "label": "NOVEL",
+      "reason": "The DOM mentions tapered legs, swiveling, and a white chair but does not specify a five-spoke base or wheels; this adds the base's visible structure and wheel support."
+    },
+    {
+      "claim_id": "c6",
+      "claim": "The wheeled base has black-and-white casters",
+      "label": "NOVEL",
+      "reason": "The DOM does not describe caster appearance or color, so the claim adds the casters' visible black-and-white coloring."
+    },
+    {
+      "claim_id": "c7",
+      "claim": "A desk is positioned behind the chair",
+      "label": "NOVEL",
+      "reason": "The DOM does not mention a desk or its spatial relationship to the chair; the claim adds an environmental object and its placement."
+    },
+    {
+      "claim_id": "c8",
+      "claim": "A laptop is positioned behind the chair",
+      "label": "NOVEL",
+      "reason": "The DOM does not mention a laptop or its position relative to the chair; the claim adds an environmental object and spatial relationship."
+    }
+  ],
+  "summary": {
+    "total_claims": 8,
+    "novel_claims": 8,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 0,
+    "redundancy_score": 0.0
+  }
+}

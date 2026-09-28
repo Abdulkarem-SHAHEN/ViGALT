@@ -1,0 +1,36 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Round bathroom mirror",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM explicitly identifies the product as a round bathroom mirror through the title, item shape, and room type. Repeating this information adds no new visual grounding or disambiguation."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Black outer rim",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM already specifies a black frame, black frame color, and black coating on the edges. This claim restates that information without adding a new visual relationship or grounding function."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Continuous warm-white illuminated ring just inside the black outer rim",
+      "label": "NOVEL",
+      "reason": "Although the DOM covers lighting, warm-white lighting, and black edges, it does not sufficiently represent the continuous ring configuration or its spatial placement just inside the rim. These visual arrangement details add new semantic information."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Three touch-control icons near the lower center of the reflective surface",
+      "label": "NOVEL",
+      "reason": "The DOM mentions three touch-control buttons, but it does not specify that they appear as visible icons near the lower center of the reflective surface. The claim adds their visual form and spatial placement."
+    }
+  ],
+  "summary": {
+    "total_claims": 4,
+    "novel_claims": 2,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 2,
+    "redundancy_score": 0.5
+  }
+}

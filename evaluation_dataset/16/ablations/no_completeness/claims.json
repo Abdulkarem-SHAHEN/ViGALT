@@ -1,0 +1,57 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "16",
+  "product_stem": "16",
+  "alt_text": "Illuminated vertical strips are along both front arm edges, and circular cup holders are built into the armrests. A control panel is mounted on the outside of the left arm. Open compartments are beneath and in front of the seating, containing a blanket, cushion, and books; one front compartment has its hinged lid raised.",
+  "final_alt_text": "Illuminated vertical strips are along both front arm edges, and circular cup holders are built into the armrests. A control panel is mounted on the outside of the left arm. Open compartments are beneath and in front of the seating, containing a blanket, cushion, and books; one front compartment has its hinged lid raised.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 3617,
+  "token_usage": {
+    "prompt_tokens": 1029,
+    "completion_tokens": 384,
+    "total_tokens": 1413
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Illuminated vertical strips are along both front arm edges.\"},{\"claim_id\":\"c2\",\"claim\":\"Circular cup holders are built into the armrests.\"},{\"claim_id\":\"c3\",\"claim\":\"A control panel is mounted on the outside of the left arm.\"},{\"claim_id\":\"c4\",\"claim\":\"Open compartments are beneath and in front of the seating.\"},{\"claim_id\":\"c5\",\"claim\":\"The open compartments contain a blanket.\"},{\"claim_id\":\"c6\",\"claim\":\"The open compartments contain a cushion.\"},{\"claim_id\":\"c7\",\"claim\":\"The open compartments contain books.\"},{\"claim_id\":\"c8\",\"claim\":\"One front compartment has its hinged lid raised.\"}],\"total_claims\":8}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Illuminated vertical strips are along both front arm edges."
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Circular cup holders are built into the armrests."
+      },
+      {
+        "claim_id": "c3",
+        "claim": "A control panel is mounted on the outside of the left arm."
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Open compartments are beneath and in front of the seating."
+      },
+      {
+        "claim_id": "c5",
+        "claim": "The open compartments contain a blanket."
+      },
+      {
+        "claim_id": "c6",
+        "claim": "The open compartments contain a cushion."
+      },
+      {
+        "claim_id": "c7",
+        "claim": "The open compartments contain books."
+      },
+      {
+        "claim_id": "c8",
+        "claim": "One front compartment has its hinged lid raised."
+      }
+    ],
+    "total_claims": 8
+  },
+  "processed_at": "2026-09-20T11:35:45.216254+00:00"
+}

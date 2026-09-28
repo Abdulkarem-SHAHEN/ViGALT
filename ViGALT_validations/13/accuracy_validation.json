@@ -1,0 +1,36 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "Black T-shirt",
+      "claim": "Black T-shirt",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The image visibly shows a black short-sleeved T-shirt."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "Small white adidas three-stripe logo on the left chest",
+      "claim": "Small white adidas three-stripe logo on the left chest",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A small white adidas three-stripe logo is visibly located on the wearer's left chest."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "Straight lower hem",
+      "claim": "Straight lower hem",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The shirt visibly has a straight horizontal lower hem."
+    }
+  ],
+  "summary": {
+    "total_claims": 3,
+    "accurate_claims": 3,
+    "corrected_claims": 0,
+    "deleted_claims": 0,
+    "error_rate": 0.0
+  }
+}

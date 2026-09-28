@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "ablation": "no_completeness",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_completeness.txt",
+  "duration_ms": 4180,
+  "token_usage": {
+    "prompt_tokens": 2688,
+    "completion_tokens": 539,
+    "total_tokens": 3227
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"Two matching chairs\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c2\",\"text\":\"\",\"source\":\"ORIGINAL\",\"action\":\"DROPPED_REDUNDANT\"},{\"claim_id\":\"c3\",\"text\":\"The chairs flank the table\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"All three pieces have open slatted surfaces\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"The chairs have three horizontal back rails\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c6\",\"text\":\"The chairs have crossed support legs\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c7\",\"text\":\"The table has crossed legs beneath its slatted top\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"}],\"edit_log\":[\"Dropped the rectangular table claim as avoidable redundancy (c2).\"],\"final_alt_text\":\"Two matching chairs flank the table. All three pieces have open slatted surfaces; the chairs have three horizontal back rails and crossed support legs, while the table has crossed legs beneath its slatted top.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Two matching chairs",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "",
+        "source": "ORIGINAL",
+        "action": "DROPPED_REDUNDANT"
+      },
+      {
+        "claim_id": "c3",
+        "text": "The chairs flank the table",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "All three pieces have open slatted surfaces",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "The chairs have three horizontal back rails",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "The chairs have crossed support legs",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c7",
+        "text": "The table has crossed legs beneath its slatted top",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Dropped the rectangular table claim as avoidable redundancy (c2)."
+    ],
+    "final_alt_text": "Two matching chairs flank the table. All three pieces have open slatted surfaces; the chairs have three horizontal back rails and crossed support legs, while the table has crossed legs beneath its slatted top."
+  },
+  "final_alt_text": "Two matching chairs flank the table. All three pieces have open slatted surfaces; the chairs have three horizontal back rails and crossed support legs, while the table has crossed legs beneath its slatted top.",
+  "processed_at": "2026-09-20T11:39:26.276652+00:00"
+}

@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "30",
+  "product_stem": "30",
+  "alt_text": "A round mirror has a black outer rim and a continuous warm-white illuminated ring just inside it. Diffuse warm glow radiates from behind the mirror around its outer edge, with three icons near the lower center of the reflective surface.",
+  "final_alt_text": "A round mirror has a black outer rim and a continuous warm-white illuminated ring just inside it. Diffuse warm glow radiates from behind the mirror around its outer edge, with three icons near the lower center of the reflective surface.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 1898,
+  "token_usage": {
+    "prompt_tokens": 1010,
+    "completion_tokens": 196,
+    "total_tokens": 1206
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Round mirror\"},{\"claim_id\":\"c2\",\"claim\":\"Black outer rim\"},{\"claim_id\":\"c3\",\"claim\":\"Continuous warm-white illuminated ring just inside the outer rim\"},{\"claim_id\":\"c4\",\"claim\":\"Diffuse warm glow radiating from behind the mirror around its outer edge\"},{\"claim_id\":\"c5\",\"claim\":\"Three icons near the lower center of the reflective surface\"}],\"total_claims\":5}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Round mirror"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Black outer rim"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Continuous warm-white illuminated ring just inside the outer rim"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Diffuse warm glow radiating from behind the mirror around its outer edge"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "Three icons near the lower center of the reflective surface"
+      }
+    ],
+    "total_claims": 5
+  },
+  "processed_at": "2026-09-20T12:00:04.382987+00:00"
+}

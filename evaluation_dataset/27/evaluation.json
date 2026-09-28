@@ -9,7 +9,6 @@
         "relevant_claims": 5,
         "supplementary_claims": 0,
         "visual_only_claims": 1,
-        "relevancy_rate": 0.8333333333333334,
         "claims": [
           {
             "claim_id": "C1",
@@ -41,7 +40,8 @@
             "claim": "The black rear panel displays the JUSRON logo.",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 71.43
       },
       "redundancy": {
         "metrics": {
@@ -249,7 +249,6 @@
         "relevant_claims": 3,
         "supplementary_claims": 0,
         "visual_only_claims": 2,
-        "relevancy_rate": 0.6,
         "claims": [
           {
             "claim_id": "C1",
@@ -276,7 +275,8 @@
             "claim": "The man uses electric clippers to cut the back of his hair",
             "label": "V"
           }
-        ]
+        ],
+        "relevancy_score": 42.86
       },
       "redundancy": {
         "metrics": {

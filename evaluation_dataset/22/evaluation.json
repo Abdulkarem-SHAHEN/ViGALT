@@ -9,7 +9,6 @@
         "relevant_claims": 6,
         "supplementary_claims": 0,
         "visual_only_claims": 1,
-        "relevancy_rate": 0.8571428571428571,
         "claims": [
           {
             "claim_id": "C1",
@@ -46,7 +45,8 @@
             "claim": "Fabric organizer pockets hang from the near side",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 75.0
       },
       "redundancy": {
         "metrics": {
@@ -264,7 +264,6 @@
         "relevant_claims": 16,
         "supplementary_claims": 7,
         "visual_only_claims": 12,
-        "relevancy_rate": 0.5714285714285714,
         "claims": [
           {
             "claim_id": "C1",
@@ -406,7 +405,8 @@
             "claim": "The diagrams show alternate desk configurations",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 31.25
       },
       "redundancy": {
         "metrics": {

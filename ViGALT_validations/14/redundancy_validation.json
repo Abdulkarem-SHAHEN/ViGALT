@@ -1,0 +1,66 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Two-piece pajama set",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM explicitly identifies the product as a two-piece pajama set and lists the included short-sleeve top and matching shorts; repeating this adds no visual grounding or new information."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Burgundy shirt",
+      "label": "NOVEL",
+      "reason": "Although the DOM lists burgundy and navy as the product colors, it does not assign burgundy specifically to the shirt. This claim adds the component-specific color appearance."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Narrow navy vertical stripes on the shirt",
+      "label": "NOVEL",
+      "reason": "The DOM mentions a striped pattern and lists navy as a product color, but it does not specify that the stripes are narrow, vertical, or located on the shirt."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Yellow “BARÇA” lettering across the shirt's chest",
+      "label": "NOVEL",
+      "reason": "The DOM does not describe yellow BARÇA lettering or its placement across the shirt's chest, so this adds graphic content, color, and spatial placement."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Football graphics on the shirt",
+      "label": "NOVEL",
+      "reason": "The DOM describes football merchandise and football themes but does not state that the shirt visibly contains football graphics."
+    },
+    {
+      "claim_id": "c6",
+      "claim": "FC Barcelona crest on the shirt",
+      "label": "NOVEL",
+      "reason": "The DOM identifies the Barcelona theme but does not describe an FC Barcelona crest or its placement on the shirt."
+    },
+    {
+      "claim_id": "c7",
+      "claim": "Matching navy shorts",
+      "label": "NOVEL",
+      "reason": "The DOM describes matching shorts and lists navy among the product colors, but it does not assign the navy color specifically to the shorts; this adds component-specific appearance."
+    },
+    {
+      "claim_id": "c8",
+      "claim": "Vertical yellow “BARÇA” lettering on one leg of the shorts",
+      "label": "NOVEL",
+      "reason": "The DOM does not describe BARÇA lettering on the shorts, its yellow color, vertical orientation, or placement on one leg."
+    },
+    {
+      "claim_id": "c9",
+      "claim": "FC Barcelona crest on the other leg of the shorts",
+      "label": "NOVEL",
+      "reason": "The DOM identifies the Barcelona theme but does not describe a crest on the shorts or specify its placement on the other leg."
+    }
+  ],
+  "summary": {
+    "total_claims": 9,
+    "novel_claims": 8,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.1111111111111111
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "11",
+  "product_stem": "11",
+  "alt_text": "A dark navy sweatshirt has long sleeves and a ribbed crew neckline, cuffs, and waistband. Its central space-themed graphic shows a white-outlined astronaut holding a multicolored planet, with colorful liquid streaming into pools beneath, plus surrounding stars, ringed planets, additional small planets above, and a moon-like circle above.",
+  "final_alt_text": "A dark navy sweatshirt has long sleeves and a ribbed crew neckline, cuffs, and waistband. Its central space-themed graphic shows a white-outlined astronaut holding a multicolored planet, with colorful liquid streaming into pools beneath, plus surrounding stars, ringed planets, additional small planets above, and a moon-like circle above.",
+  "classification_category": "CLOTHING",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 11004,
+  "token_usage": {
+    "prompt_tokens": 1029,
+    "completion_tokens": 1097,
+    "total_tokens": 2126
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Dark navy sweatshirt\"},{\"claim_id\":\"c2\",\"claim\":\"Long sleeves\"},{\"claim_id\":\"c3\",\"claim\":\"Ribbed crew neckline\"},{\"claim_id\":\"c4\",\"claim\":\"Ribbed cuffs\"},{\"claim_id\":\"c5\",\"claim\":\"Ribbed waistband\"},{\"claim_id\":\"c6\",\"claim\":\"Central space-themed graphic\"},{\"claim_id\":\"c7\",\"claim\":\"White-outlined astronaut\"},{\"claim_id\":\"c8\",\"claim\":\"Multicolored planet held by the astronaut\"},{\"claim_id\":\"c9\",\"claim\":\"Colorful liquid streaming into pools beneath\"},{\"claim_id\":\"c10\",\"claim\":\"Surrounding stars\"},{\"claim_id\":\"c11\",\"claim\":\"Ringed planets\"},{\"claim_id\":\"c12\",\"claim\":\"Additional small planets above\"},{\"claim_id\":\"c13\",\"claim\":\"Moon-like circle above\"}],\"total_claims\":13}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Dark navy sweatshirt"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Long sleeves"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Ribbed crew neckline"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Ribbed cuffs"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "Ribbed waistband"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "Central space-themed graphic"
+      },
+      {
+        "claim_id": "c7",
+        "claim": "White-outlined astronaut"
+      },
+      {
+        "claim_id": "c8",
+        "claim": "Multicolored planet held by the astronaut"
+      },
+      {
+        "claim_id": "c9",
+        "claim": "Colorful liquid streaming into pools beneath"
+      },
+      {
+        "claim_id": "c10",
+        "claim": "Surrounding stars"
+      },
+      {
+        "claim_id": "c11",
+        "claim": "Ringed planets"
+      },
+      {
+        "claim_id": "c12",
+        "claim": "Additional small planets above"
+      },
+      {
+        "claim_id": "c13",
+        "claim": "Moon-like circle above"
+      }
+    ],
+    "total_claims": 13
+  },
+  "processed_at": "2026-09-20T11:27:45.366140+00:00"
+}

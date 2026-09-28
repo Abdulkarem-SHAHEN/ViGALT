@@ -1,0 +1,60 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "The jacket is shown open",
+      "label": "NOVEL",
+      "reason": "The DOM states that the garment has a zipper but does not state its displayed open configuration; this adds a visual state."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Black outer shell",
+      "label": "UNAVOIDABLE_REPETITION",
+      "reason": "The DOM specifies the product color as black, so the color itself is repeated. Identifying the black outer shell is necessary to anchor that color to the exterior component when the contrasting tan lining is also visible."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Tan plush lining visible through the body and hood",
+      "label": "NOVEL",
+      "reason": "The DOM describes fur or plush lining and coverage of the hood, but does not provide its tan color or state that it is visibly exposed through the body and hood."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Full-length front zipper",
+      "label": "NOVEL",
+      "reason": "The DOM specifies a zipper closure but does not state that the zipper runs the full length of the front."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Two angled chest pockets",
+      "label": "NOVEL",
+      "reason": "The DOM mentions four pockets and describes side pockets as slant pockets, but does not identify two angled pockets positioned on the chest; this adds pocket placement and visible configuration."
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Two vertical lower pockets",
+      "label": "NOVEL",
+      "reason": "The DOM mentions two side zipper pockets, but does not specify their vertical orientation or lower-front placement; those visual attributes are new."
+    },
+    {
+      "claim_id": "c7",
+      "claim": "Ribbed cuffs",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM explicitly states that the garment has ribbed elastic cuffs, so this claim restates existing information without adding visual grounding or disambiguation."
+    },
+    {
+      "claim_id": "c8",
+      "claim": "Ribbed hem",
+      "label": "NOVEL",
+      "reason": "The DOM specifies ribbed cuffs but does not mention a ribbed hem; this adds a distinct visible construction detail."
+    }
+  ],
+  "summary": {
+    "total_claims": 8,
+    "novel_claims": 6,
+    "unavoidable_repetition_claims": 1,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.125
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 3933,
+  "token_usage": {
+    "prompt_tokens": 2360,
+    "completion_tokens": 470,
+    "total_tokens": 2830
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"Black T-shirt\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"T-shirt is shown worn on a person\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"Straight body extending to the upper hips\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"Short sleeves ending above the elbows\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"n1\",\"text\":\"V-neckline\",\"source\":\"ADDED\",\"action\":\"ADDED\"},{\"claim_id\":\"c2\",\"text\":\"Irregular white outlined heart on the upper right chest\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"}],\"edit_log\":[\"Retained all five original claims per Accuracy.\",\"Added V-neckline per Completeness (n1).\",\"Ordered claims from garment category and silhouette to construction details and chest graphic.\"],\"final_alt_text\":\"A black T-shirt is shown worn on a person, with a straight body extending to the upper hips, short sleeves ending above the elbows, and a V-neckline. It has an irregular white outlined heart on the upper right chest.\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Black T-shirt",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "T-shirt is shown worn on a person",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Straight body extending to the upper hips",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Short sleeves ending above the elbows",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "n1",
+        "text": "V-neckline",
+        "source": "ADDED",
+        "action": "ADDED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Irregular white outlined heart on the upper right chest",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Retained all five original claims per Accuracy.",
+      "Added V-neckline per Completeness (n1).",
+      "Ordered claims from garment category and silhouette to construction details and chest graphic."
+    ],
+    "final_alt_text": "A black T-shirt is shown worn on a person, with a straight body extending to the upper hips, short sleeves ending above the elbows, and a V-neckline. It has an irregular white outlined heart on the upper right chest."
+  },
+  "final_alt_text": "A black T-shirt is shown worn on a person, with a straight body extending to the upper hips, short sleeves ending above the elbows, and a V-neckline. It has an irregular white outlined heart on the upper right chest.",
+  "processed_at": "2026-09-20T10:48:54.817365+00:00"
+}

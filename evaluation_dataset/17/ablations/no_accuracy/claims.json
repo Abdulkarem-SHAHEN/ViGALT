@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "17",
+  "product_stem": "17",
+  "alt_text": "Four backless, square stools are arranged around a rectangular tabletop. The white surfaces show gray marble-like veining, and the frames are silver-gray and rectangular.",
+  "final_alt_text": "Four backless, square stools are arranged around a rectangular tabletop. The white surfaces show gray marble-like veining, and the frames are silver-gray and rectangular.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 4988,
+  "token_usage": {
+    "prompt_tokens": 996,
+    "completion_tokens": 471,
+    "total_tokens": 1467
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Four backless, square stools\"},{\"claim_id\":\"c2\",\"claim\":\"The stools are arranged around a tabletop\"},{\"claim_id\":\"c3\",\"claim\":\"The tabletop is rectangular\"},{\"claim_id\":\"c4\",\"claim\":\"The stool surfaces are white with gray marble-like veining\"},{\"claim_id\":\"c5\",\"claim\":\"The frames are silver-gray and rectangular\"}],\"total_claims\":5}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Four backless, square stools"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "The stools are arranged around a tabletop"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "The tabletop is rectangular"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "The stool surfaces are white with gray marble-like veining"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "The frames are silver-gray and rectangular"
+      }
+    ],
+    "total_claims": 5
+  },
+  "processed_at": "2026-09-20T11:37:16.639271+00:00"
+}

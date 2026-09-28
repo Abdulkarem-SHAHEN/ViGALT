@@ -1,0 +1,54 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Two matching chairs",
+      "label": "NOVEL",
+      "reason": "The DOM establishes that the set includes two chairs, but it does not state that they match; the matching relationship adds visual information."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "A rectangular table",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM identifies a table as an included component and specifies the item shape as rectangular. Repeating those facts adds no visual grounding or disambiguation."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "The chairs flank the table",
+      "label": "NOVEL",
+      "reason": "The DOM identifies the table and two chairs but does not describe their spatial arrangement; stating that the chairs flank the table adds a new visual relationship."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "All three pieces have open slatted surfaces",
+      "label": "NOVEL",
+      "reason": "The DOM does not describe slatted or open surfaces on the furniture pieces, so this adds visual construction information."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "The chairs have three horizontal back rails",
+      "label": "NOVEL",
+      "reason": "The DOM does not specify the number or horizontal arrangement of the chairs' back rails; this adds new visual construction detail."
+    },
+    {
+      "claim_id": "c6",
+      "claim": "The chairs have crossed support legs",
+      "label": "NOVEL",
+      "reason": "Although the DOM mentions folding chairs, it does not describe crossed support legs; the claim adds a visible structural feature."
+    },
+    {
+      "claim_id": "c7",
+      "claim": "The table has crossed legs beneath its slatted top",
+      "label": "NOVEL",
+      "reason": "The DOM identifies a table but does not describe either its crossed-leg structure or slatted tabletop, so the claim adds visual construction information."
+    }
+  ],
+  "summary": {
+    "total_claims": 7,
+    "novel_claims": 6,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.14285714285714285
+  }
+}

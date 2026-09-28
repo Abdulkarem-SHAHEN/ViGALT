@@ -1,0 +1,76 @@
+{
+  "stage": "accuracy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "original_claim": "The jacket is shown open",
+      "claim": "The jacket is shown open",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The front panels are visibly separated, exposing the lining, and the zipper is open."
+    },
+    {
+      "claim_id": "c2",
+      "original_claim": "Black outer shell",
+      "claim": "Black outer shell",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The visible exterior body and sleeves are black."
+    },
+    {
+      "claim_id": "c3",
+      "original_claim": "Tan plush lining visible through the body and hood",
+      "claim": "Tan plush lining visible through the body and hood",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Tan, visibly plush lining is exposed across the interior body and inside the hood."
+    },
+    {
+      "claim_id": "c4",
+      "original_claim": "Full-length front zipper",
+      "claim": "Full-length front zipper",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "A zipper is visibly positioned along the front opening and extends from near the collar to the lower hem."
+    },
+    {
+      "claim_id": "c5",
+      "original_claim": "Two angled chest pockets",
+      "claim": "Two angled chest pockets",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Two visible pockets are located on the upper chest, one on each side, with angled curved openings."
+    },
+    {
+      "claim_id": "c6",
+      "original_claim": "Two vertical lower pockets",
+      "claim": "Two vertical lower pockets",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "Two lower pockets with vertically oriented openings are visibly present on the left and right front panels."
+    },
+    {
+      "claim_id": "c7",
+      "original_claim": "Ribbed cuffs",
+      "claim": "Ribbed cuffs",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The sleeve ends visibly have dark ribbed knit cuffs."
+    },
+    {
+      "claim_id": "c8",
+      "original_claim": "Ribbed hem",
+      "claim": "Ribbed hem",
+      "label": "ACCURATE",
+      "error_category": null,
+      "reason": "The lower edge visibly includes a ribbed waistband section."
+    }
+  ],
+  "summary": {
+    "total_claims": 8,
+    "accurate_claims": 8,
+    "corrected_claims": 0,
+    "deleted_claims": 0,
+    "error_rate": 0.0
+  }
+}

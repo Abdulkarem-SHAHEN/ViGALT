@@ -9,7 +9,6 @@
         "relevant_claims": 4,
         "supplementary_claims": 0,
         "visual_only_claims": 3,
-        "relevancy_rate": 0.5714285714285714,
         "claims": [
           {
             "claim_id": "C1",
@@ -46,7 +45,8 @@
             "claim": "Blankets inside the bed frame",
             "label": "V"
           }
-        ]
+        ],
+        "relevancy_score": 40.0
       },
       "redundancy": {
         "metrics": {
@@ -255,7 +255,6 @@
         "relevant_claims": 2,
         "supplementary_claims": 0,
         "visual_only_claims": 14,
-        "relevancy_rate": 0.125,
         "claims": [
           {
             "claim_id": "C1",
@@ -337,7 +336,8 @@
             "claim": "Glasses are on the bedside tray",
             "label": "V"
           }
-        ]
+        ],
+        "relevancy_score": 6.67
       },
       "redundancy": {
         "metrics": {

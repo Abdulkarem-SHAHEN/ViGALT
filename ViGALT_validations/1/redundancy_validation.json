@@ -1,0 +1,30 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "T-shirt shown from the front",
+      "label": "NOVEL",
+      "reason": "The DOM identifies the item as a T-shirt but does not state the viewing orientation; this adds the visual fact that the shirt is shown from the front."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "White T-shirt",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM already specifies the product color as White/Gray, which sufficiently covers the white color. Repeating the T-shirt's white color adds no visual grounding or disambiguation."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Small gray Under Armour logo on the wearer's upper left chest",
+      "label": "NOVEL",
+      "reason": "Although the DOM identifies the Under Armour brand, it does not describe a logo's small size, gray color, or upper-left-chest placement. These visual details add the logo's appearance and spatial location."
+    }
+  ],
+  "summary": {
+    "total_claims": 3,
+    "novel_claims": 2,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.3333333333333333
+  }
+}

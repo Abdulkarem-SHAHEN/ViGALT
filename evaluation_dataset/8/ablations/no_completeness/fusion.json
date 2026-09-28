@@ -1,0 +1,74 @@
+{
+  "status": "ok",
+  "ablation": "no_completeness",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_completeness.txt",
+  "duration_ms": 9704,
+  "token_usage": {
+    "prompt_tokens": 2977,
+    "completion_tokens": 1081,
+    "total_tokens": 4058
+  },
+  "raw_response": "{\"stage\":\"fusion\",\"master_claims\":[{\"claim_id\":\"c1\",\"text\":\"\",\"source\":\"ORIGINAL\",\"action\":\"DROPPED_REDUNDANT\"},{\"claim_id\":\"c2\",\"text\":\"Crew neckline\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c3\",\"text\":\"Short sleeves\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c4\",\"text\":\"Large orange “NIVEAU” lettering on the front, above a cream video-game controller\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c5\",\"text\":\"Cream video-game controller on the front\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c6\",\"text\":\"Cream “40” on the front\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c7\",\"text\":\"Multicolored stars on the front\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"},{\"claim_id\":\"c8\",\"text\":\"Green banner on the front reading “DÉBLOQUÉ,” meaning “unlocked”\",\"source\":\"ORIGINAL\",\"action\":\"RETAINED\"}],\"edit_log\":[\"Dropped the redundant product category, T-shirt (c1).\",\"Retained the crew neckline and short sleeves (c2, c3).\",\"Retained the front graphic details, including the lettering, controller, number, stars, and banner (c4–c8).\"],\"final_alt_text\":\"Crew neckline and short sleeves. The front graphic has large orange “NIVEAU” lettering above a cream video-game controller, a cream “40,” multicolored stars, and a green banner reading “DÉBLOQUÉ,” meaning “unlocked.”\"}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "",
+        "source": "ORIGINAL",
+        "action": "DROPPED_REDUNDANT"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Crew neckline",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Short sleeves",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "Large orange “NIVEAU” lettering on the front, above a cream video-game controller",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Cream video-game controller on the front",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Cream “40” on the front",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c7",
+        "text": "Multicolored stars on the front",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c8",
+        "text": "Green banner on the front reading “DÉBLOQUÉ,” meaning “unlocked”",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Dropped the redundant product category, T-shirt (c1).",
+      "Retained the crew neckline and short sleeves (c2, c3).",
+      "Retained the front graphic details, including the lettering, controller, number, stars, and banner (c4–c8)."
+    ],
+    "final_alt_text": "Crew neckline and short sleeves. The front graphic has large orange “NIVEAU” lettering above a cream video-game controller, a cream “40,” multicolored stars, and a green banner reading “DÉBLOQUÉ,” meaning “unlocked.”"
+  },
+  "final_alt_text": "Crew neckline and short sleeves. The front graphic has large orange “NIVEAU” lettering above a cream video-game controller, a cream “40,” multicolored stars, and a green banner reading “DÉBLOQUÉ,” meaning “unlocked.”",
+  "processed_at": "2026-09-20T10:57:41.339400+00:00"
+}

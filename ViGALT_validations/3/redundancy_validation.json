@@ -1,0 +1,48 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Light-gray sweater body",
+      "label": "NOVEL",
+      "reason": "The DOM identifies the garment as gray and a sweater but does not specify the lighter gray shade or describe the body area as light gray, so the claim adds visual color detail."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Repeating vertical zigzag bands filled with small diamond texture",
+      "label": "NOVEL",
+      "reason": "Although the DOM mentions a jacquard knit or weave, it does not specify the repeating vertical zigzag arrangement or the small diamond texture; these are new visual pattern details."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Brown contrast panels along the outer lower sleeves",
+      "label": "NOVEL",
+      "reason": "The DOM identifies long sleeves but does not describe brown contrasting panels or their placement along the outer lower sleeves, so the claim adds color, construction, and spatial details."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Raised collar",
+      "label": "AVOIDABLE_REDUNDANCY",
+      "reason": "The DOM already describes the garment as having a stand-up collar and mock neck, which semantically covers a raised collar; repeating this collar description adds no new visual grounding or disambiguation."
+    },
+    {
+      "claim_id": "c5",
+      "claim": "Short front placket opening from the collar",
+      "label": "NOVEL",
+      "reason": "The DOM mentions a button closure and stand-up collar but does not specify a short front placket, its opening, or its extension from the collar; these are new construction and spatial details."
+    },
+    {
+      "claim_id": "c6",
+      "claim": "Dark button near the upper chest",
+      "label": "UNAVOIDABLE_REPETITION",
+      "reason": "The DOM already states that the garment has a button closure, but repeating the button is necessary to anchor the new visual facts that it is dark and positioned near the upper chest."
+    }
+  ],
+  "summary": {
+    "total_claims": 6,
+    "novel_claims": 4,
+    "unavoidable_repetition_claims": 1,
+    "avoidable_redundancy_claims": 1,
+    "redundancy_score": 0.16666666666666666
+  }
+}

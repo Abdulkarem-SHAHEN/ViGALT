@@ -1,0 +1,53 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "6",
+  "product_stem": "6",
+  "alt_text": "A shirt with a gray body and a gray collar with a black inner collar, black buttons arranged down the center front, and a rounded lower edge. It has long sleeves ending in narrow cuffs, including a black cuff visible at the end of the sleeve on the right side of the image.",
+  "final_alt_text": "A shirt with a gray body and a gray collar with a black inner collar, black buttons arranged down the center front, and a rounded lower edge. It has long sleeves ending in narrow cuffs, including a black cuff visible at the end of the sleeve on the right side of the image.",
+  "classification_category": "CLOTHING",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 4440,
+  "token_usage": {
+    "prompt_tokens": 1022,
+    "completion_tokens": 437,
+    "total_tokens": 1459
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Gray shirt body\"},{\"claim_id\":\"c2\",\"claim\":\"Gray collar with a black inner collar\"},{\"claim_id\":\"c3\",\"claim\":\"Black buttons arranged down the center front\"},{\"claim_id\":\"c4\",\"claim\":\"Rounded lower edge\"},{\"claim_id\":\"c5\",\"claim\":\"Long sleeves\"},{\"claim_id\":\"c6\",\"claim\":\"Narrow cuffs at the ends of the sleeves\"},{\"claim_id\":\"c7\",\"claim\":\"A black cuff visible at the end of the sleeve on the right side of the image\"}],\"total_claims\":7}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Gray shirt body"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Gray collar with a black inner collar"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Black buttons arranged down the center front"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Rounded lower edge"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "Long sleeves"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "Narrow cuffs at the ends of the sleeves"
+      },
+      {
+        "claim_id": "c7",
+        "claim": "A black cuff visible at the end of the sleeve on the right side of the image"
+      }
+    ],
+    "total_claims": 7
+  },
+  "processed_at": "2026-09-20T10:54:51.046159+00:00"
+}

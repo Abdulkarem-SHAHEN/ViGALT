@@ -1,0 +1,22 @@
+{
+  "stage": "claim_extraction",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Round bathroom mirror"
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Black outer rim"
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Continuous warm-white illuminated ring just inside the black outer rim"
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Three touch-control icons near the lower center of the reflective surface"
+    }
+  ],
+  "total_claims": 4
+}

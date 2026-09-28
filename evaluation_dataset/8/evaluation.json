@@ -9,7 +9,6 @@
         "relevant_claims": 9,
         "supplementary_claims": 0,
         "visual_only_claims": 0,
-        "relevancy_rate": 1.0,
         "claims": [
           {
             "claim_id": "C1",
@@ -56,7 +55,8 @@
             "claim": "Green banner on the front reading “DÉBLOQUÉ,” meaning “unlocked”",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 100.0
       },
       "redundancy": {
         "metrics": {
@@ -326,7 +326,6 @@
         "relevant_claims": 7,
         "supplementary_claims": 0,
         "visual_only_claims": 0,
-        "relevancy_rate": 1.0,
         "claims": [
           {
             "claim_id": "C1",
@@ -363,7 +362,8 @@
             "claim": "Teal banner reading “DÉBLOQUÉ” in black",
             "label": "R"
           }
-        ]
+        ],
+        "relevancy_score": 100.0
       },
       "redundancy": {
         "metrics": {

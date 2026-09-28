@@ -1,0 +1,36 @@
+{
+  "stage": "redundancy_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "A mirror with a broad rounded top, curved sides, and a tapered lower end is installed vertically.",
+      "label": "NOVEL",
+      "reason": "The DOM identifies the item as a mirror with a petal-inspired, irregular, asymmetric, and oval shape and states that it is wall-mounted, but it does not provide these specific contour details or indicate the displayed vertical orientation."
+    },
+    {
+      "claim_id": "c2",
+      "claim": "The mirror is above a vessel sink.",
+      "label": "NOVEL",
+      "reason": "The DOM identifies the product as a bathroom mirror but does not mention a sink or the mirror's spatial relationship to one; this adds a visual placement relationship."
+    },
+    {
+      "claim_id": "c3",
+      "claim": "The mirror is positioned between two vertical wall sconces.",
+      "label": "NOVEL",
+      "reason": "The DOM does not mention sconces or their placement relative to the mirror; this adds the number, orientation, and spatial arrangement of surrounding fixtures."
+    },
+    {
+      "claim_id": "c4",
+      "claim": "The mirror is in a bathroom vanity area.",
+      "label": "NOVEL",
+      "reason": "Although the DOM mentions a bathroom mirror, it does not identify a vanity area or place the mirror within that specific bathroom arrangement, so the claim adds visual scene context."
+    }
+  ],
+  "summary": {
+    "total_claims": 4,
+    "novel_claims": 4,
+    "unavoidable_repetition_claims": 0,
+    "avoidable_redundancy_claims": 0,
+    "redundancy_score": 0.0
+  }
+}

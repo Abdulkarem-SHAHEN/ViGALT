@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "15",
+  "product_stem": "15",
+  "alt_text": "A white T-shirt with a round crew neckline. The front graphic has a large black “I,” a red heart to its right, and the word “BARCELONA” in black capital letters beneath.",
+  "final_alt_text": "A white T-shirt with a round crew neckline. The front graphic has a large black “I,” a red heart to its right, and the word “BARCELONA” in black capital letters beneath.",
+  "classification_category": "CLOTHING",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 3255,
+  "token_usage": {
+    "prompt_tokens": 1005,
+    "completion_tokens": 292,
+    "total_tokens": 1297
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"White T-shirt\"},{\"claim_id\":\"c2\",\"claim\":\"Round crew neckline\"},{\"claim_id\":\"c3\",\"claim\":\"Large black “I” in the front graphic\"},{\"claim_id\":\"c4\",\"claim\":\"Red heart to the right of the black “I” in the front graphic\"},{\"claim_id\":\"c5\",\"claim\":\"The word “BARCELONA” in black capital letters beneath the front graphic\"}],\"total_claims\":5}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "White T-shirt"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "Round crew neckline"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "Large black “I” in the front graphic"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "Red heart to the right of the black “I” in the front graphic"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "The word “BARCELONA” in black capital letters beneath the front graphic"
+      }
+    ],
+    "total_claims": 5
+  },
+  "processed_at": "2026-09-20T11:33:55.234618+00:00"
+}

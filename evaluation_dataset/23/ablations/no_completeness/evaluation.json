@@ -1,0 +1,168 @@
+{
+  "status": "ok",
+  "folder_number": 23,
+  "image_file": "81v2MWCaIyL._AC_SX679_.jpg",
+  "ablation": "no_completeness",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "Rounded rectangular tubular frames at the head and foot. Each frame has three vertical rods with ringed ornamental sections, and the footboard includes a lower horizontal rail beneath the mattress.",
+      "relevancy": {
+        "total_claims": 3,
+        "relevant_claims": 3,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Rounded rectangular tubular frames at the head and foot",
+            "label": "R",
+            "reason": "This describes the bed's rounded tubular headboard and footboard frames."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Each frame has three vertical rods with ringed ornamental sections",
+            "label": "R",
+            "reason": "This describes the bed's integrated vertical rods and ringed decorative details."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The footboard includes a lower horizontal rail beneath the mattress",
+            "label": "R",
+            "reason": "This describes an integrated structural rail on the footboard."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 3,
+          "relevant_claims": 3,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 0,
+          "relevant_novel_claims": 0,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 3,
+          "avoidable_redundancy_claims": 0,
+          "novelty_rate": 0.0,
+          "raw_novelty_rate": 0.0,
+          "unavoidable_repetition_rate": 1.0,
+          "avoidable_redundancy_rate": 0.0,
+          "redundancy_rate": 1.0
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Rounded rectangular tubular frames at the head and foot",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Each frame has three vertical rods with ringed ornamental sections",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The footboard includes a lower horizontal rail beneath the mattress",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Rounded rectangular tubular frames at the head and foot",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Form Factor",
+                "value": "Rectangular (with head and foot)"
+              },
+              {
+                "field": "feature_bullets[0]",
+                "value": "This black metal bed frame with decorated headboard and footboard"
+              }
+            ],
+            "reason": "The DOM establishes that the bed has head and foot sections, but does not describe them as rounded rectangular tubular frames. Mentioning their position at the head and foot is needed to anchor the new structural description."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Each frame has three vertical rods with ringed ornamental sections",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[0]",
+                "value": "This black metal bed frame with decorated headboard and footboard"
+              },
+              {
+                "field": "description",
+                "value": "Its black finish and classic design headboard/footboard add a timeless touch."
+              }
+            ],
+            "reason": "The DOM indicates decorated headboard and footboard but provides no count of vertical rods or ringed ornamentation. Referring to each frame is needed to locate the newly described decorative structure on the head and foot sections."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "The footboard includes a lower horizontal rail beneath the mattress",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "feature_bullets[0]",
+                "value": "This black metal bed frame with decorated headboard and footboard"
+              },
+              {
+                "field": "product_details.Form Factor",
+                "value": "Rectangular (with head and foot)"
+              }
+            ],
+            "reason": "The DOM already establishes the presence of a footboard, but not a lower horizontal rail or its location beneath the mattress. Repeating the footboard reference is necessary to anchor the new rail detail."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 4,
+        "subjective_claims": 0,
+        "total_claims": 4,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The headboard and footboard have rounded rectangular tubular frames.",
+            "label": "OBJECTIVE",
+            "reason": "The image visibly shows dark tubular frames around both the headboard and footboard with rounded upper corners and an overall rectangular outline."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "Each frame has three vertical rods.",
+            "label": "OBJECTIVE",
+            "reason": "Three vertical rods are visibly present within the headboard frame and three within the footboard frame."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "The vertical rods have ringed ornamental sections.",
+            "label": "OBJECTIVE",
+            "reason": "Each visible vertical rod includes enlarged, ring-like decorative segments that can be directly seen in the image."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "The footboard includes a lower horizontal rail beneath the mattress.",
+            "label": "OBJECTIVE",
+            "reason": "A horizontal tubular rail is visibly positioned near the bottom of the footboard, below the mattress."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 30,
+        "relevant_novel_claims": 0,
+        "efficiency_per_100_words": 0.0
+      }
+    }
+  },
+  "processed_at": "2026-09-20T11:48:44.928613+00:00"
+}

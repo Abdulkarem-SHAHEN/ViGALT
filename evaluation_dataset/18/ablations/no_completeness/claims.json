@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "18",
+  "product_stem": "18",
+  "alt_text": "Two matching chairs flank the table. All three pieces have open slatted surfaces; the chairs have three horizontal back rails and crossed support legs, while the table has crossed legs beneath its slatted top.",
+  "final_alt_text": "Two matching chairs flank the table. All three pieces have open slatted surfaces; the chairs have three horizontal back rails and crossed support legs, while the table has crossed legs beneath its slatted top.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 3045,
+  "token_usage": {
+    "prompt_tokens": 1004,
+    "completion_tokens": 348,
+    "total_tokens": 1352
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"Two matching chairs flank the table\"},{\"claim_id\":\"c2\",\"claim\":\"All three pieces have open slatted surfaces\"},{\"claim_id\":\"c3\",\"claim\":\"The chairs have three horizontal back rails\"},{\"claim_id\":\"c4\",\"claim\":\"The chairs have crossed support legs\"},{\"claim_id\":\"c5\",\"claim\":\"The table has crossed legs beneath its slatted top\"}],\"total_claims\":5}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "Two matching chairs flank the table"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "All three pieces have open slatted surfaces"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "The chairs have three horizontal back rails"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "The chairs have crossed support legs"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "The table has crossed legs beneath its slatted top"
+      }
+    ],
+    "total_claims": 5
+  },
+  "processed_at": "2026-09-20T11:39:29.324759+00:00"
+}

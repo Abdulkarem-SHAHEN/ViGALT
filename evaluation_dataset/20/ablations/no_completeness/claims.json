@@ -1,0 +1,57 @@
+{
+  "status": "ok",
+  "source_kind": "ablation_fusion",
+  "stem": "20",
+  "product_stem": "20",
+  "alt_text": "A chair has a high, rounded back and integrated curved arms, with vertical channel stitching and a separate rectangular seat cushion. It rests on a white five-spoke wheeled base with black-and-white casters; a desk and laptop are positioned behind it.",
+  "final_alt_text": "A chair has a high, rounded back and integrated curved arms, with vertical channel stitching and a separate rectangular seat cushion. It rests on a white five-spoke wheeled base with black-and-white casters; a desk and laptop are positioned behind it.",
+  "classification_category": "FURNITURE",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "alt_to_list.txt",
+  "duration_ms": 2953,
+  "token_usage": {
+    "prompt_tokens": 1015,
+    "completion_tokens": 309,
+    "total_tokens": 1324
+  },
+  "raw_response": "{\"stage\":\"claim_extraction\",\"claims\":[{\"claim_id\":\"c1\",\"claim\":\"The chair has a high, rounded back\"},{\"claim_id\":\"c2\",\"claim\":\"The chair has integrated curved arms\"},{\"claim_id\":\"c3\",\"claim\":\"The chair has vertical channel stitching\"},{\"claim_id\":\"c4\",\"claim\":\"The chair has a separate rectangular seat cushion\"},{\"claim_id\":\"c5\",\"claim\":\"The chair rests on a white five-spoke wheeled base\"},{\"claim_id\":\"c6\",\"claim\":\"The chair has black-and-white casters\"},{\"claim_id\":\"c7\",\"claim\":\"A desk is positioned behind the chair\"},{\"claim_id\":\"c8\",\"claim\":\"A laptop is positioned behind the chair\"}],\"total_claims\":8}",
+  "parsed": {
+    "stage": "claim_extraction",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "claim": "The chair has a high, rounded back"
+      },
+      {
+        "claim_id": "c2",
+        "claim": "The chair has integrated curved arms"
+      },
+      {
+        "claim_id": "c3",
+        "claim": "The chair has vertical channel stitching"
+      },
+      {
+        "claim_id": "c4",
+        "claim": "The chair has a separate rectangular seat cushion"
+      },
+      {
+        "claim_id": "c5",
+        "claim": "The chair rests on a white five-spoke wheeled base"
+      },
+      {
+        "claim_id": "c6",
+        "claim": "The chair has black-and-white casters"
+      },
+      {
+        "claim_id": "c7",
+        "claim": "A desk is positioned behind the chair"
+      },
+      {
+        "claim_id": "c8",
+        "claim": "A laptop is positioned behind the chair"
+      }
+    ],
+    "total_claims": 8
+  },
+  "processed_at": "2026-09-20T11:42:55.351193+00:00"
+}

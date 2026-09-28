@@ -1,0 +1,61 @@
+{
+  "status": "ok",
+  "ablation": "no_redundancy",
+  "model": "gpt-5.6-luna",
+  "prompt_file": "fuser_no_redundancy.txt",
+  "duration_ms": 3961,
+  "token_usage": {
+    "prompt_tokens": 2414,
+    "completion_tokens": 552,
+    "total_tokens": 2966
+  },
+  "raw_response": "{\n  \"stage\": \"fusion\",\n  \"master_claims\": [\n    {\n      \"claim_id\": \"c1\",\n      \"text\": \"Bar table set\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c2\",\n      \"text\": \"Four backless, square stools arranged around the tabletop\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c3\",\n      \"text\": \"Rectangular tabletop\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c4\",\n      \"text\": \"White surfaces with gray marble-like veining\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c5\",\n      \"text\": \"Silver-gray rectangular frames\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    },\n    {\n      \"claim_id\": \"c6\",\n      \"text\": \"Horizontal footrests near the floor\",\n      \"source\": \"ORIGINAL\",\n      \"action\": \"RETAINED\"\n    }\n  ],\n  \"edit_log\": [\n    \"Retained all six claims as accurate (c1–c6)\",\n    \"Combined the table and stool claims into a concise two-sentence description\"\n  ],\n  \"final_alt_text\": \"Bar table set with four backless, square stools arranged around a rectangular tabletop. The white surfaces show gray marble-like veining, and the silver-gray rectangular frames have horizontal footrests near the floor.\"\n}",
+  "parsed": {
+    "stage": "fusion",
+    "master_claims": [
+      {
+        "claim_id": "c1",
+        "text": "Bar table set",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c2",
+        "text": "Four backless, square stools arranged around the tabletop",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c3",
+        "text": "Rectangular tabletop",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c4",
+        "text": "White surfaces with gray marble-like veining",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c5",
+        "text": "Silver-gray rectangular frames",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      },
+      {
+        "claim_id": "c6",
+        "text": "Horizontal footrests near the floor",
+        "source": "ORIGINAL",
+        "action": "RETAINED"
+      }
+    ],
+    "edit_log": [
+      "Retained all six claims as accurate (c1–c6)",
+      "Combined the table and stool claims into a concise two-sentence description"
+    ],
+    "final_alt_text": "Bar table set with four backless, square stools arranged around a rectangular tabletop. The white surfaces show gray marble-like veining, and the silver-gray rectangular frames have horizontal footrests near the floor."
+  },
+  "final_alt_text": "Bar table set with four backless, square stools arranged around a rectangular tabletop. The white surfaces show gray marble-like veining, and the silver-gray rectangular frames have horizontal footrests near the floor.",
+  "processed_at": "2026-09-20T11:38:14.847406+00:00"
+}

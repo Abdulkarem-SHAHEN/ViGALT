@@ -1,0 +1,309 @@
+{
+  "status": "ok",
+  "folder_number": 7,
+  "image_file": "71jyUStW2dL._AC_SY879_.jpg",
+  "ablation": "no_redundancy",
+  "models": {
+    "fuser": "gpt-5.6-luna",
+    "claim_extraction": "gpt-5.6-luna",
+    "evaluators": "gpt-5.6-terra"
+  },
+  "methods": {
+    "ViGALT_ablation": {
+      "alt_text": "A blue-gray shirt with intersecting white and dark-blue stripes. It has long sleeves, a pointed turn-down collar, a chest pocket on the wearer’s left with diagonally oriented stripes, a striped front placket, white buttons down the front, and a gently curved hem.",
+      "relevancy": {
+        "total_claims": 8,
+        "relevant_claims": 8,
+        "supplementary_claims": 0,
+        "visual_only_claims": 0,
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Blue-gray shirt",
+            "label": "R",
+            "reason": "This identifies the shirt and its visible blue-gray color."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Intersecting white and dark-blue stripes",
+            "label": "R",
+            "reason": "This describes the visible plaid-like stripe pattern on the shirt."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Long sleeves",
+            "label": "R",
+            "reason": "The shirt visibly has full-length sleeves."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Pointed turn-down collar",
+            "label": "R",
+            "reason": "This describes the shirt's visible pointed collar construction."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Chest pocket on the wearer’s left with diagonally oriented stripes",
+            "label": "R",
+            "reason": "This describes the visible left-chest pocket and its contrasting diagonal stripe orientation."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Striped front placket",
+            "label": "R",
+            "reason": "This describes the patterned button placket on the shirt front."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "White buttons down the front",
+            "label": "R",
+            "reason": "This describes the visible white buttons along the front closure."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "Gently curved hem",
+            "label": "R",
+            "reason": "This describes the visibly curved lower hem of the shirt."
+          }
+        ],
+        "relevancy_score": 100.0
+      },
+      "redundancy": {
+        "metrics": {
+          "total_claims": 8,
+          "relevant_claims": 8,
+          "irrelevant_claims": 0,
+          "raw_novel_claims": 1,
+          "relevant_novel_claims": 1,
+          "irrelevant_novel_claims": 0,
+          "unavoidable_repetition_claims": 5,
+          "avoidable_redundancy_claims": 2,
+          "novelty_rate": 0.125,
+          "raw_novelty_rate": 0.125,
+          "unavoidable_repetition_rate": 0.625,
+          "avoidable_redundancy_rate": 0.25,
+          "redundancy_rate": 0.875
+        },
+        "input_claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Blue-gray shirt",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Intersecting white and dark-blue stripes",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Long sleeves",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Pointed turn-down collar",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Chest pocket on the wearer’s left with diagonally oriented stripes",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Striped front placket",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c7",
+            "claim": "White buttons down the front",
+            "relevance_code": "R"
+          },
+          {
+            "claim_id": "c8",
+            "claim": "Gently curved hem",
+            "relevance_code": "R"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "claim": "Blue-gray shirt",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Colour",
+                "value": "Grey-blue"
+              }
+            ],
+            "reason": "The DOM already identifies the shirt color as Grey-blue, which is semantically equivalent to blue-gray. The claim adds no new information."
+          },
+          {
+            "claim_id": "c2",
+            "claim": "Intersecting white and dark-blue stripes",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Pattern",
+                "value": "Checkered"
+              },
+              {
+                "field": "title",
+                "value": "JupiterSecret Mens Casual Plaid Cotton Shirt Suit Shirt With Chest Pocket"
+              }
+            ],
+            "reason": "The DOM already establishes a checkered/plaid pattern, which overlaps with intersecting stripes, but it does not provide the white and dark-blue stripe colors. Repeating the stripe structure anchors those newly specified colors to the pattern."
+          },
+          {
+            "claim_id": "c3",
+            "claim": "Long sleeves",
+            "relevance_code": "R",
+            "label": "AVOIDABLE_REDUNDANCY",
+            "dom_evidence": [
+              {
+                "field": "product_details.Sleeve Type",
+                "value": "Long Sleeve"
+              },
+              {
+                "field": "feature_bullets[0]",
+                "value": "This lightweight long-sleeve shirt is made of 120% breathable cotton."
+              }
+            ],
+            "reason": "The DOM explicitly states that the shirt has long sleeves. The claim supplies no additional sleeve information."
+          },
+          {
+            "claim_id": "c4",
+            "claim": "Pointed turn-down collar",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Collar Style",
+                "value": "Button Down"
+              },
+              {
+                "field": "feature_bullets[1]",
+                "value": "This men's plaid shirt features a classic collar, adjustable cuffs, and an elegant chest pocket."
+              }
+            ],
+            "reason": "The DOM establishes that the garment has a button-down/classic collar, but does not state that it is pointed. Mentioning the collar is needed to anchor the new pointed turn-down detail."
+          },
+          {
+            "claim_id": "c5",
+            "claim": "Chest pocket on the wearer’s left with diagonally oriented stripes",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "title",
+                "value": "JupiterSecret Mens Casual Plaid Cotton Shirt Suit Shirt With Chest Pocket"
+              },
+              {
+                "field": "feature_bullets[1]",
+                "value": "This men's plaid shirt features a classic collar, adjustable cuffs, and an elegant chest pocket."
+              }
+            ],
+            "reason": "The DOM already states that there is a chest pocket, but does not specify its wearer-left placement or diagonal stripe orientation. Repeating the pocket reference is necessary to locate and describe those new details."
+          },
+          {
+            "claim_id": "c6",
+            "claim": "Striped front placket",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Pattern",
+                "value": "Checkered"
+              },
+              {
+                "field": "product_details.Closure Type",
+                "value": "Button"
+              }
+            ],
+            "reason": "The DOM provides a checkered pattern and button closure, but does not state that the front placket is striped. The overlapping pattern language is needed to specify where the newly described pattern treatment occurs."
+          },
+          {
+            "claim_id": "c7",
+            "claim": "White buttons down the front",
+            "relevance_code": "R",
+            "label": "UNAVOIDABLE_REPETITION",
+            "dom_evidence": [
+              {
+                "field": "product_details.Closure Type",
+                "value": "Button"
+              }
+            ],
+            "reason": "The DOM establishes a button closure, but does not provide the buttons' white color or explicitly describe their front placement. Referring to buttons is necessary to attach the new color detail to the closure."
+          },
+          {
+            "claim_id": "c8",
+            "claim": "Gently curved hem",
+            "relevance_code": "R",
+            "label": "NOVEL",
+            "dom_evidence": [],
+            "reason": "The DOM contains no information about the hem shape or curvature."
+          }
+        ]
+      },
+      "objectivity": {
+        "objectivity_score": 1.0,
+        "objective_claims": 7,
+        "subjective_claims": 0,
+        "total_claims": 7,
+        "claims": [
+          {
+            "claim_id": "C1",
+            "claim": "The shirt is blue-gray with intersecting white and dark-blue stripes.",
+            "label": "OBJECTIVE",
+            "reason": "The garment’s blue-gray base and intersecting white and dark-blue plaid stripes are directly visible in the image."
+          },
+          {
+            "claim_id": "C2",
+            "claim": "It has long sleeves.",
+            "label": "OBJECTIVE",
+            "reason": "The sleeves visibly extend from the shoulders to the cuffs."
+          },
+          {
+            "claim_id": "C3",
+            "claim": "It has a pointed turn-down collar.",
+            "label": "OBJECTIVE",
+            "reason": "The collar is visibly folded down and has pointed ends."
+          },
+          {
+            "claim_id": "C4",
+            "claim": "It has a chest pocket on the wearer’s left with diagonally oriented stripes.",
+            "label": "OBJECTIVE",
+            "reason": "A pocket is visibly present on the wearer’s left chest, and its plaid pattern is oriented diagonally relative to the shirt’s main pattern."
+          },
+          {
+            "claim_id": "C5",
+            "claim": "It has a striped front placket.",
+            "label": "OBJECTIVE",
+            "reason": "The center front placket is visible and has a striped plaid pattern."
+          },
+          {
+            "claim_id": "C6",
+            "claim": "It has white buttons down the front.",
+            "label": "OBJECTIVE",
+            "reason": "Multiple light-colored, visibly white buttons appear along the front placket."
+          },
+          {
+            "claim_id": "C7",
+            "claim": "It has a gently curved hem.",
+            "label": "OBJECTIVE",
+            "reason": "The bottom edge of the shirt visibly curves upward slightly at the sides."
+          }
+        ]
+      },
+      "efficiency": {
+        "word_count": 43,
+        "relevant_novel_claims": 1,
+        "efficiency_per_100_words": 2.3255813953488373
+      }
+    }
+  },
+  "processed_at": "2026-09-20T10:56:46.313847+00:00"
+}

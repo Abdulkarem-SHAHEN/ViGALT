@@ -1,0 +1,49 @@
+{
+  "stage": "completeness_validation",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim": "Round bathroom mirror",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c2",
+      "claim": "Black outer rim",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c3",
+      "claim": "Continuous warm-white illuminated ring just inside the black outer rim",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "c4",
+      "claim": "Three touch-control icons near the lower center of the reflective surface",
+      "label": "RETAINED",
+      "addition_type": null,
+      "reason": ""
+    },
+    {
+      "claim_id": "n1",
+      "claim": "Diffuse warm glow radiates from behind the mirror around its outer edge",
+      "label": "ADDED",
+      "addition_type": "VISUAL_GAP",
+      "reason": "A distinct warm halo is clearly visible behind and surrounding the mirror's outer edge, beyond the illuminated inner ring."
+    }
+  ],
+  "summary": {
+    "input_claims": 4,
+    "retained_claims": 4,
+    "added_claims": 1,
+    "added_visual_gap": 1,
+    "added_non_english_text": 0,
+    "added_known_entity": 0,
+    "omission_score": 0.2
+  }
+}
