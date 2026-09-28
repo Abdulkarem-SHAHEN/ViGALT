@@ -7,11 +7,10 @@ import re
 from pathlib import Path
 from typing import Any
 
-from .ablation import ABLATION_VARIANTS, SUMMARY_METRICS, metric_value
+from .ablation import ABLATION_VARIANTS, SUMMARY_METRICS, metric_value, pipeline_dir
 from .utils import utc_now_iso
 
 DEFAULT_DATASET_DIR = "evaluation_dataset"
-DEFAULT_VALIDATIONS_DIR = "ViGALT_validations"
 DEFAULT_SUMMARY_NAME = "ablation_summary.json"
 DEFAULT_REPORT_NAME = "validator_ablation_report.md"
 
@@ -94,7 +93,6 @@ def _avg_secondary(rows: list[dict[str, float | None]]) -> dict[str, float | Non
 def build_validator_impact_summary(
     *,
     dataset_dir: Path,
-    validations_dir: Path,
     product_ids: list[int] | None = None,
 ) -> dict[str, Any]:
     if product_ids is None:
@@ -129,9 +127,10 @@ def build_validator_impact_summary(
         baseline = _method_block(base_eval, ablation=False)
         secondary_baseline.append(_secondary_row(baseline))
 
-        comp_path = validations_dir / pid / "completeness_validation.json"
-        acc_path = validations_dir / pid / "accuracy_validation.json"
-        red_path = validations_dir / pid / "redundancy_validation.json"
+        pipeline = pipeline_dir(dataset_dir, product_id)
+        comp_path = pipeline / "completeness_validation.json"
+        acc_path = pipeline / "accuracy_validation.json"
+        red_path = pipeline / "redundancy_validation.json"
         completeness = _load_json(comp_path)
         accuracy = _load_json(acc_path)
         redundancy = _load_json(red_path)
@@ -317,7 +316,7 @@ def build_validator_impact_summary(
         baseline = _method_block(base_eval, ablation=False)
         no_acc = _method_block(na_eval, ablation=True)
         no_comp = _method_block(nc_eval, ablation=True)
-        comp_val = _load_json(validations_dir / pid / "completeness_validation.json")
+        comp_val = _load_json(pipeline_dir(dataset_dir, product_id) / "completeness_validation.json")
         added = [c.get("claim", "") for c in comp_val.get("claims", []) if c.get("label") == "ADDED"]
         summary["qualitative_examples"][str(product_id)] = {
             "completeness_added_claims": added,
@@ -367,7 +366,7 @@ def render_markdown_report(summary: dict[str, Any]) -> str:
         "",
         f"- **n = {n}** products (clothing 1–15, furniture 16–30); **90** ablation runs "
         f"({len(ABLATION_VARIANTS)} variants × {n}), all `status: ok`.",
-        "- **Held constant:** `ViGALT_validations/N/` artifacts (atomic claims, accuracy/completeness/redundancy JSON), "
+        "- **Held constant:** `evaluation_dataset/N/pipeline/` artifacts (atomic claims, accuracy/completeness/redundancy JSON), "
         "image, and DOM.",
         "- **Varied:** fuser prompt — `fuser_no_accuracy.txt`, `fuser_no_completeness.txt`, or "
         "`fuser_no_redundancy.txt` ([`src/viglat/evaluation/ablation.py`](src/viglat/evaluation/ablation.py)).",
@@ -563,14 +562,12 @@ def render_markdown_report(summary: dict[str, Any]) -> str:
 def write_ablation_report(
     *,
     dataset_dir: Path,
-    validations_dir: Path,
     summary_path: Path,
     report_path: Path,
     product_ids: list[int] | None = None,
 ) -> dict[str, Any]:
     summary = build_validator_impact_summary(
         dataset_dir=dataset_dir,
-        validations_dir=validations_dir,
         product_ids=product_ids,
     )
     summary_path.parent.mkdir(parents=True, exist_ok=True)

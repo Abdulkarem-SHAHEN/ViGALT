@@ -17,7 +17,6 @@ from ..evaluation.ablation_report import (
     DEFAULT_DATASET_DIR,
     DEFAULT_REPORT_NAME,
     DEFAULT_SUMMARY_NAME,
-    DEFAULT_VALIDATIONS_DIR,
     discover_product_ids,
     write_ablation_report,
 )
@@ -33,11 +32,6 @@ def parse_args() -> argparse.Namespace:
         "--dataset-dir",
         default=DEFAULT_DATASET_DIR,
         help=f"Evaluation dataset root (default: {DEFAULT_DATASET_DIR}).",
-    )
-    parser.add_argument(
-        "--validations-dir",
-        default=DEFAULT_VALIDATIONS_DIR,
-        help=f"Validation artifacts root (default: {DEFAULT_VALIDATIONS_DIR}).",
     )
     parser.add_argument(
         "--products",
@@ -62,12 +56,8 @@ def main() -> int:
     args = parse_args()
 
     dataset_dir = resolve_path(args.dataset_dir)
-    validations_dir = resolve_path(args.validations_dir)
     if not dataset_dir.is_dir():
         print(f"Error: dataset dir not found: {dataset_dir}", file=sys.stderr)
-        return 1
-    if not validations_dir.is_dir():
-        print(f"Error: validations dir not found: {validations_dir}", file=sys.stderr)
         return 1
 
     if args.products:
@@ -91,7 +81,6 @@ def main() -> int:
     try:
         summary = write_ablation_report(
             dataset_dir=dataset_dir,
-            validations_dir=validations_dir,
             summary_path=summary_path,
             report_path=report_path,
             product_ids=product_ids,

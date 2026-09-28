@@ -296,7 +296,7 @@ python -m viglat.generate_paper_figures
 
 ### Validator ablation (fusion stage)
 
-Run fusion without one validator input (requires prior `ViGALT_validations/` artifacts):
+Run fusion without one validator input (requires prior `evaluation_dataset/N/pipeline/` artifacts):
 
 ```bash
 python -m viglat.run_validator_ablation --products 1-30 --skip-existing
@@ -313,6 +313,7 @@ Outputs:
 - [`docs/validator_ablation_report.md`](docs/validator_ablation_report.md) — fusion-stage ablation only (setup, results, illustrative cases)
 - [`evaluation_dataset/ablation_summary.json`](evaluation_dataset/ablation_summary.json) — reproducible summary statistics
 - Per-product raw ablation artifacts: `evaluation_dataset/N/ablations/{no_accuracy,no_completeness,no_redundancy}/`
+- Pre-fusion pipeline inputs (for ablation reruns): `evaluation_dataset/N/pipeline/` (`generated_alt_text.txt`, `claims.json`, three validator JSON files)
 
 ---
 

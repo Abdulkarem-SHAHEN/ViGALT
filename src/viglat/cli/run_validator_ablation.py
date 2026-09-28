@@ -2,7 +2,7 @@
 """
 Run validator ablation study: fuse without one validator, then evaluate.
 
-For each product in ViGALT_validations/, runs 3 fusion ablations (no_accuracy,
+For each product with pipeline/ artifacts under evaluation_dataset/, runs 3 fusion ablations (no_accuracy,
 no_completeness, no_redundancy) with Luna, then evaluates each result with
 Relevancy, Redundancy, Objectivity, and Efficiency using Terra.
 
@@ -23,7 +23,6 @@ from openai import OpenAI
 from ..backend.config import DEFAULT_EVALUATION_MODEL, DEFAULT_OPENAI_MODEL
 from ..evaluation.ablation import (
     DEFAULT_DATASET_DIR,
-    DEFAULT_VALIDATIONS_DIR,
     parse_product_ids,
     parse_variants,
     run_ablation_batch,
@@ -37,14 +36,9 @@ def parse_args() -> argparse.Namespace:
         description="Run validator ablation fusion + evaluation batch study."
     )
     parser.add_argument(
-        "--validations-dir",
-        default=DEFAULT_VALIDATIONS_DIR,
-        help=f"Directory with per-product validation artifacts (default: {DEFAULT_VALIDATIONS_DIR}).",
-    )
-    parser.add_argument(
         "--dataset-dir",
         default=DEFAULT_DATASET_DIR,
-        help=f"Evaluation dataset root for output (default: {DEFAULT_DATASET_DIR}).",
+        help=f"Evaluation dataset root (reads pipeline/, writes ablations/) (default: {DEFAULT_DATASET_DIR}).",
     )
     parser.add_argument(
         "--products",
@@ -107,18 +101,13 @@ def main() -> int:
         print(f"Error: {exc}", file=sys.stderr)
         return 1
 
-    validations_dir = resolve_path(args.validations_dir)
     dataset_dir = resolve_path(args.dataset_dir)
-    if not validations_dir.is_dir():
-        print(f"Error: validations dir not found: {validations_dir}", file=sys.stderr)
-        return 1
     if not dataset_dir.is_dir():
         print(f"Error: dataset dir not found: {dataset_dir}", file=sys.stderr)
         return 1
 
     client = OpenAI(api_key=api_key)
     summary = run_ablation_batch(
-        validations_dir=validations_dir,
         dataset_dir=dataset_dir,
         product_ids=product_ids,
         variants=variants,

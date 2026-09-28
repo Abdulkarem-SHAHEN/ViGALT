@@ -1,13 +1,13 @@
 ## Fusion-stage validator ablation
 
-<!-- generated: 2026-09-28T09:46:45.447624+00:00; regenerate with python -m viglat.build_ablation_report -->
+<!-- generated: 2026-09-28T14:28:23.132626+00:00; regenerate with python -m viglat.build_ablation_report -->
 
 We isolate the contribution of each parallel validator at **fusion** by re-compiling alt text from fixed validator outputs while omitting one validator channel (`no_accuracy`, `no_completeness`, `no_redundancy`). Validators still run; only the fuser input changes. The ablation baseline is full ViGALT (`evaluation_dataset/N/evaluation.json`), not the CAID comparison in the main evaluation.
 
 ### Setup
 
 - **n = 30** products (clothing 1–15, furniture 16–30); **90** ablation runs (3 variants × 30), all `status: ok`.
-- **Held constant:** `ViGALT_validations/N/` artifacts (atomic claims, accuracy/completeness/redundancy JSON), image, and DOM.
+- **Held constant:** `evaluation_dataset/N/pipeline/` artifacts (atomic claims, accuracy/completeness/redundancy JSON), image, and DOM.
 - **Varied:** fuser prompt — `fuser_no_accuracy.txt`, `fuser_no_completeness.txt`, or `fuser_no_redundancy.txt` ([`src/viglat/evaluation/ablation.py`](src/viglat/evaluation/ablation.py)).
 - **Primary evidence:** validator-native structural outcomes (claims added/lost, corrections/deletions). Post-hoc DOM metrics on ablated outputs are reported separately and are not used to claim overall system superiority.
 

@@ -35,7 +35,7 @@ from .utils import (
 AblationVariant = Literal["no_accuracy", "no_completeness", "no_redundancy"]
 
 PROMPTS_DIR = "prompts"
-DEFAULT_VALIDATIONS_DIR = "ViGALT_validations"
+PIPELINE_SUBDIR = "pipeline"
 DEFAULT_DATASET_DIR = "evaluation_dataset"
 
 ABLATION_VARIANTS: tuple[AblationVariant, ...] = (
@@ -64,9 +64,12 @@ ABLATION_CONFIG: dict[AblationVariant, dict] = {
 class AblationJob:
     product_id: int
     variant: AblationVariant
-    validations_dir: Path
     dataset_dir: Path
     output_dir: Path
+
+
+def pipeline_dir(dataset_dir: Path, product_id: int) -> Path:
+    return dataset_dir / str(product_id) / PIPELINE_SUBDIR
 
 
 def parse_product_ids(value: str | None, *, max_product: int = 30) -> list[int]:
@@ -116,10 +119,11 @@ def load_json(path: Path) -> dict:
     return data
 
 
-def load_validation_inputs(validations_dir: Path, product_id: int) -> dict:
-    folder = validations_dir / str(product_id)
+def load_validation_inputs(dataset_dir: Path, product_id: int) -> dict:
+    product_folder = dataset_dir / str(product_id)
+    folder = pipeline_dir(dataset_dir, product_id)
     if not folder.is_dir():
-        raise FileNotFoundError(f"Validation folder not found: {folder}")
+        raise FileNotFoundError(f"Pipeline artifacts folder not found: {folder}")
 
     alt_text_path = folder / "generated_alt_text.txt"
     if not alt_text_path.exists():
@@ -129,7 +133,7 @@ def load_validation_inputs(validations_dir: Path, product_id: int) -> dict:
     accuracy = load_json(folder / "accuracy_validation.json")
     completeness = load_json(folder / "completeness_validation.json")
     redundancy = load_json(folder / "redundancy_validation.json")
-    image_path = find_validation_image(folder)
+    image_path = find_validation_image(product_folder)
 
     atomic_claims = claims.get("claims")
     if not isinstance(atomic_claims, list) or not atomic_claims:
@@ -547,7 +551,7 @@ def run_single_ablation(
     products_dir = job.dataset_dir / str(job.product_id)
 
     try:
-        inputs = load_validation_inputs(job.validations_dir, job.product_id)
+        inputs = load_validation_inputs(job.dataset_dir, job.product_id)
         category = category_for_product(job.product_id)
         image_file = inputs["image_path"].name
 
@@ -617,7 +621,6 @@ def run_single_ablation(
 
 def run_ablation_batch(
     *,
-    validations_dir: Path,
     dataset_dir: Path,
     product_ids: list[int],
     variants: list[AblationVariant],
@@ -639,7 +642,6 @@ def run_ablation_batch(
                 AblationJob(
                     product_id=product_id,
                     variant=variant,
-                    validations_dir=validations_dir,
                     dataset_dir=dataset_dir,
                     output_dir=output_dir,
                 )

@@ -45,7 +45,6 @@ except ImportError:
 
 DEFAULT_DATASET_DIR = "evaluation_dataset"
 DEFAULT_OUTPUT_DIR = "docs/figures"
-DEFAULT_VALIDATIONS_DIR = "ViGALT_validations"
 
 METHOD_OUR = "ViGALT"
 METHOD_BASELINE = "CAID"
@@ -104,11 +103,6 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=None,
         help="Furniture product folder ID (16–30) for case study (default: auto-rank).",
-    )
-    parser.add_argument(
-        "--validations-dir",
-        default=DEFAULT_VALIDATIONS_DIR,
-        help=f"Folder with per-product images (default: {DEFAULT_VALIDATIONS_DIR}).",
     )
     parser.add_argument(
         "--skip-case-study",
@@ -607,13 +601,11 @@ def latex_includegraphics_path(filename: str) -> str:
 
 def resolve_product_image(
     dataset_dir: Path,
-    validations_dir: Path,
     folder: int,
     image_file: str,
 ) -> Path:
     candidates = (
         dataset_dir / str(folder) / image_file,
-        validations_dir / str(folder) / image_file,
         dataset_dir / str(folder) / "image.jpg",
     )
     for path in candidates:
@@ -628,7 +620,6 @@ def resolve_product_image(
 def copy_case_study_images(
     evaluations: list[dict],
     dataset_dir: Path,
-    validations_dir: Path,
     output_dir: Path,
 ) -> list[Path]:
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -642,7 +633,7 @@ def copy_case_study_images(
             continue
         seen_names.add(image_file)
 
-        source = resolve_product_image(dataset_dir, validations_dir, folder, image_file)
+        source = resolve_product_image(dataset_dir, folder, image_file)
         destination = output_dir / image_file
         shutil.copy2(source, destination)
         copied.append(destination)
@@ -726,8 +717,6 @@ def main() -> int:
 
     dataset_dir = resolve_path(args.dataset_dir)
     output_dir = resolve_path(args.output_dir)
-    validations_dir = resolve_path(args.validations_dir)
-
     summary = load_summary(dataset_dir)
     evaluations = discover_evaluations(dataset_dir)
     breakdown = micro_redundancy_breakdown(evaluations)
@@ -780,7 +769,6 @@ def main() -> int:
         copied_images = copy_case_study_images(
             [clothing_eval, furniture_eval],
             dataset_dir,
-            validations_dir,
             output_dir,
         )
         print(f"Wrote {tex_path}", file=sys.stderr)
