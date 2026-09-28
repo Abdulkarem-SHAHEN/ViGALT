@@ -4,14 +4,14 @@ Batch-run claim extraction on ALT texts via GPT 5.6 and alt_to_list.txt.
 
 Sources:
   pipeline — final_alt_text from output/*_pipeline.json
-  asset24  — ASSEST24 column from data/viglat_Dataset.xlsx
+  caid     — CAID column from data/viglat_Dataset.xlsx (legacy ASSEST24 header)
 
 Usage:
   python -m viglat.alt_to_list_batch --source pipeline --all
-  python -m viglat.alt_to_list_batch --source asset24 --all
+  python -m viglat.alt_to_list_batch --source caid --all
   python -m viglat.alt_to_list_batch --source pipeline --pipeline output/1_clothing_pipeline.json
-  python -m viglat.alt_to_list_batch --source asset24 --index 5
-  python -m viglat.alt_to_list_batch --source asset24 --all --skip-existing
+  python -m viglat.alt_to_list_batch --source caid --index 5
+  python -m viglat.alt_to_list_batch --source caid --all --skip-existing
 """
 
 from __future__ import annotations
@@ -28,6 +28,7 @@ from pathlib import Path
 import openpyxl
 from openai import OpenAI
 
+from .methods import DEFAULT_CAID_CLAIMS_DIR, DEFAULT_VIGALT_CLAIMS_DIR, LEGACY_CAID_EXCEL_COLUMN
 from ..backend.config import DEFAULT_OPENAI_MODEL
 from ..backend.openai import run_stage_openai
 from ..paths import project_root, resolve_path
@@ -35,10 +36,8 @@ from ..pipeline.types import StageConfig, StageResult
 
 PROMPTS_DIR = "prompts"
 DEFAULT_PIPELINE_DIR = "output"
-DEFAULT_PIPELINE_OUTPUT_DIR = "output/final_alt_claim_lists"
-DEFAULT_ASSET24_EXCEL = "data/viglat_Dataset.xlsx"
-DEFAULT_ASSET24_OUTPUT_DIR = "output/ASSEST24_claim_lists"
-ASSET24_COLUMN = "ASSEST24 GENERATED SHORT CONTEXT-Aware ALT TEXT"
+DEFAULT_PIPELINE_OUTPUT_DIR = DEFAULT_VIGALT_CLAIMS_DIR
+DEFAULT_CAID_EXCEL = "data/viglat_Dataset.xlsx"
 PROMPT_FILE = "alt_to_list.txt"
 
 CLAIM_EXTRACTION_STAGE = StageConfig(
@@ -65,7 +64,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--source",
-        choices=["pipeline", "asset24"],
+        choices=["pipeline", "caid"],
         default="pipeline",
         help="ALT text source: pipeline JSON outputs or viglat Dataset.xlsx (default: pipeline).",
     )
@@ -84,7 +83,7 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=None,
         metavar="N",
-        help="Process one item by 1-based index (asset24 source only).",
+        help="Process one item by 1-based index (caid source only).",
     )
     parser.add_argument(
         "--pipeline-dir",
@@ -93,13 +92,13 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--excel-file",
-        default=DEFAULT_ASSET24_EXCEL,
-        help=f"viglat Dataset workbook (default: {DEFAULT_ASSET24_EXCEL}).",
+        default=DEFAULT_CAID_EXCEL,
+        help=f"viglat Dataset workbook (default: {DEFAULT_CAID_EXCEL}).",
     )
     parser.add_argument(
         "--output-dir",
         default=None,
-        help="Output directory (defaults by source: final_alt_claim_lists or ASSEST24_claim_lists).",
+        help="Output directory (defaults by source: ViGALT_claim_lists or CAID_claim_lists).",
     )
     parser.add_argument(
         "--model",
@@ -139,8 +138,8 @@ def utc_now_iso() -> str:
 
 
 def default_output_dir(source: str) -> str:
-    if source == "asset24":
-        return DEFAULT_ASSET24_OUTPUT_DIR
+    if source == "caid":
+        return DEFAULT_CAID_CLAIMS_DIR
     return DEFAULT_PIPELINE_OUTPUT_DIR
 
 
@@ -178,7 +177,7 @@ def _cell_str(value) -> str:
     return str(value).strip()
 
 
-def load_asset24_jobs(excel_file: Path) -> list[AltJob]:
+def load_caid_jobs(excel_file: Path) -> list[AltJob]:
     if not excel_file.exists():
         raise FileNotFoundError(f"Excel file not found: {excel_file}")
 
@@ -190,10 +189,10 @@ def load_asset24_jobs(excel_file: Path) -> list[AltJob]:
 
     headers = [_cell_str(cell) for cell in header_row]
     try:
-        alt_col = headers.index(ASSET24_COLUMN)
+        alt_col = headers.index(LEGACY_CAID_EXCEL_COLUMN)
     except ValueError as exc:
         raise ValueError(
-            f"Column {ASSET24_COLUMN!r} not found in {excel_file}. "
+            f"Column {LEGACY_CAID_EXCEL_COLUMN!r} not found in {excel_file}. "
             f"Available: {headers[:8]}"
         ) from exc
 
@@ -230,7 +229,7 @@ def load_asset24_jobs(excel_file: Path) -> list[AltJob]:
 
     wb.close()
     if not jobs:
-        raise ValueError(f"No ASSEST24 ALT texts found in column {ASSET24_COLUMN!r}")
+        raise ValueError(f"No CAID ALT texts found in column {LEGACY_CAID_EXCEL_COLUMN!r}")
     return jobs
 
 
@@ -271,18 +270,18 @@ def resolve_pipeline_jobs(args: argparse.Namespace) -> list[AltJob]:
 
 
 def resolve_jobs(args: argparse.Namespace) -> list[AltJob]:
-    if args.source == "asset24":
-        jobs = load_asset24_jobs(resolve_path(args.excel_file))
+    if args.source == "caid":
+        jobs = load_caid_jobs(resolve_path(args.excel_file))
         if args.index is not None:
             if args.index < 1 or args.index > len(jobs):
                 raise ValueError(f"--index must be between 1 and {len(jobs)}")
             return [jobs[args.index - 1]]
         if not args.all:
-            raise ValueError("asset24 source requires --all or --index N")
+            raise ValueError("caid source requires --all or --index N")
         return jobs
 
     if args.index is not None:
-        raise ValueError("--index is only supported with --source asset24")
+        raise ValueError("--index is only supported with --source caid")
 
     if args.pipeline or args.all:
         return resolve_pipeline_jobs(args)
@@ -329,8 +328,8 @@ def build_record(
     if source_kind == "pipeline":
         record["product_stem"] = job.metadata.get("product_stem", job.stem)
         record["final_alt_text"] = job.alt_text
-    if source_kind == "asset24":
-        record["asset24_alt_text"] = job.alt_text
+    if source_kind == "caid":
+        record["caid_alt_text"] = job.alt_text
 
     if result is not None:
         record["status"] = result.status
@@ -436,7 +435,7 @@ def run(args: argparse.Namespace) -> int:
         print(f"Error: {exc}", file=sys.stderr)
         return 1
 
-    title = "ALT-to-List Batch (ASSEST24)" if args.source == "asset24" else "ALT-to-List Batch (pipeline final ALT)"
+    title = "ALT-to-List Batch (CAID)" if args.source == "caid" else "ALT-to-List Batch (pipeline final ALT)"
     print("=" * 60)
     print(title)
     print("=" * 60)
@@ -450,7 +449,7 @@ def run(args: argparse.Namespace) -> int:
 
     for i, job in enumerate(jobs, start=1):
         label = job.stem
-        if args.source == "asset24" and "excel_row" in job.metadata:
+        if args.source == "caid" and "excel_row" in job.metadata:
             label = f"{job.stem} (row {job.metadata['excel_row']})"
         print(f"[{i}/{len(jobs)}] {label}")
 

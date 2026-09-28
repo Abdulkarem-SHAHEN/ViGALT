@@ -361,7 +361,7 @@ def render_markdown_report(summary: dict[str, Any]) -> str:
         "We isolate the contribution of each parallel validator at **fusion** by re-compiling alt text from "
         "fixed validator outputs while omitting one validator channel (`no_accuracy`, `no_completeness`, "
         "`no_redundancy`). Validators still run; only the fuser input changes. The ablation baseline is "
-        "full ViGALT (`evaluation_dataset/N/evaluation.json`), not the ASSETS24 comparison in the main evaluation.",
+        "full ViGALT (`evaluation_dataset/N/evaluation.json`), not the CAID comparison in the main evaluation.",
         "",
         "### Setup",
         "",

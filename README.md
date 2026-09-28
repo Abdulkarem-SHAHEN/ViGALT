@@ -2,7 +2,7 @@
 
 Research codebase for **ViGALT**, a multi-stage pipeline that generates high-quality, screen-reader-friendly alt text for e-commerce product images. The system takes a product image plus surrounding page text and produces objective, hallucination-filtered alt text through a 7-stage generate → deconstruct → validate → fuse pipeline.
 
-This repository is the public release accompanying our research paper. It includes the full source code, prompts, and the consolidated evaluation dataset with published results for **ViGALT** vs. the **ASSETS24** baseline.
+This repository is the public release accompanying our research paper. It includes the full source code, prompts, and the consolidated evaluation dataset with published results for **ViGALT** vs. **CAID** (Mohanbabu and Pavel, ASSETS '24).
 
 ## Pipeline Overview
 
@@ -203,8 +203,8 @@ Output: `output/runs/B077XM3DV5/final_alt_claim_lists/B077XM3DV5_claims.json`
 
 ```bash
 python -m viglat.relevancy_evaluator_batch \
-  --algorithm our \
-  --our-claims-dir output/runs/B077XM3DV5/final_alt_claim_lists \
+  --algorithm ViGALT \
+  --vigalt-claims-dir output/runs/B077XM3DV5/final_alt_claim_lists \
   --products-dir output/runs/B077XM3DV5 \
   --images-dir output/runs/B077XM3DV5 \
   --output output/runs/B077XM3DV5/relevancy_evaluations.json
@@ -216,7 +216,7 @@ Prompt: `prompts/evaluators/relevancy.txt`
 
 ```bash
 python -m viglat.redundancy_evaluator_batch \
-  --algorithm our \
+  --algorithm ViGALT \
   --relevancy-input output/runs/B077XM3DV5/relevancy_evaluations.json \
   --products-dir output/runs/B077XM3DV5 \
   --output output/runs/B077XM3DV5/redundancy_evaluations.json
@@ -228,7 +228,7 @@ Prompt: `prompts/evaluators/redundancy.txt`
 
 ```bash
 python -m viglat.objectivity_evaluator_batch \
-  --algorithm our \
+  --algorithm ViGALT \
   --relevancy-input output/runs/B077XM3DV5/relevancy_evaluations.json \
   --products-dir output/runs/B077XM3DV5 \
   --images-dir output/runs/B077XM3DV5 \
@@ -243,7 +243,7 @@ Deterministic metric (no LLM): `(relevant_novel_claims / ALT word count) × 100`
 
 ```bash
 python -m viglat.efficiency_evaluator_batch \
-  --algorithm our \
+  --algorithm ViGALT \
   --redundancy-input output/runs/B077XM3DV5/redundancy_evaluations.json \
   --relevancy-input output/runs/B077XM3DV5/relevancy_evaluations.json \
   --output output/runs/B077XM3DV5/efficiency_evaluations.json
@@ -260,7 +260,7 @@ The `evaluation_dataset/` folder contains everything needed to **verify** the pa
 | File per folder (`1/` … `30/`) | Contents |
 |---|---|
 | `dom.json` | Product metadata (title, brand, features, `main_image` URL, …) |
-| `alt_text_and_claims.txt` | ViGALT and ASSETS24 alt text + plain claims |
+| `alt_text_and_claims.txt` | ViGALT and CAID alt text + plain claims |
 | `evaluation.json` | Relevancy, redundancy, objectivity, efficiency metrics |
 
 Top-level `evaluation_dataset/summary.json` holds macro-averaged metrics across all 30 products (each product weighted equally).

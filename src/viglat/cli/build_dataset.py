@@ -7,7 +7,7 @@ and writes evaluation_dataset/N/ with alt_text_and_claims.txt (alt text +
 plain claims, no relevancy labels), evaluation.json, plus a top-level
 summary.json with averaged metrics.
 
-Renames the AAAA method to ViGALT everywhere.
+Builds consolidated ViGALT vs CAID evaluation records from raw Dataset/ folders.
 
 Usage:
   python -m viglat.build_dataset
@@ -24,26 +24,38 @@ import sys
 from pathlib import Path
 
 from ..evaluation.dataset_summary import SUMMARY_METRICS, build_main_dataset_summary
+from ..evaluation.methods import METHOD_CAID, METHOD_VIGALT, resolve_method_key
 from ..evaluation.utils import IMAGE_EXTENSIONS, build_relevancy_block
 from ..paths import resolve_path
 
 DEFAULT_SOURCE = "Dataset"
 DEFAULT_OUTPUT = "evaluation_dataset"
 
-SOURCE_METHODS: dict[str, str] = {
-    "AAAA": "ViGALT",
-    "ASSETS24": "ASSETS24",
+OUTPUT_METHODS: tuple[str, ...] = (METHOD_VIGALT, METHOD_CAID)
+
+ALT_FILE_CANDIDATES: dict[str, tuple[str, ...]] = {
+    METHOD_VIGALT: ("ViGALT_{n}.txt", "AAAA_{n}.txt"),
+    METHOD_CAID: ("CAID_{n}.txt", "ASSETS24_{n}.txt"),
 }
 
-SOURCE_ALT_FILES: dict[str, str] = {
-    "AAAA": "AAAA_{n}.txt",
-    "ASSETS24": "ASSETS24_{n}.txt",
+CLAIM_FILE_CANDIDATES: dict[str, tuple[str, ...]] = {
+    METHOD_VIGALT: ("CLAIM_RELEVANCY_ViGALT_{n}.txt", "CLAIM_RELEVANCY_AAAA_{n}.txt"),
+    METHOD_CAID: ("CLAIM_RELEVANCY_CAID_{n}.txt", "CLAIM_RELEVANCY_ASSETS_{n}.txt"),
 }
 
-SOURCE_CLAIM_FILES: dict[str, str] = {
-    "AAAA": "CLAIM_RELEVANCY_AAAA_{n}.txt",
-    "ASSETS24": "CLAIM_RELEVANCY_ASSETS_{n}.txt",
-}
+
+def first_existing_file(folder: Path, templates: tuple[str, ...], folder_number: int) -> Path:
+    for template in templates:
+        candidate = folder / template.format(n=folder_number)
+        if candidate.exists():
+            return candidate
+    names = ", ".join(template.format(n=folder_number) for template in templates)
+    raise FileNotFoundError(f"None of [{names}] found in {folder}")
+
+
+def json_section(data: dict, method: str) -> dict:
+    key = resolve_method_key(data, method)
+    return data[key]
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -130,7 +142,7 @@ def format_alt_text_and_claims(
     claims_by_method: dict[str, list[dict]],
 ) -> str:
     sections: list[str] = []
-    for method in SOURCE_METHODS.values():
+    for method in OUTPUT_METHODS:
         alt_text = alt_texts[method]
         claim_lines = [claim["claim"] for claim in claims_by_method[method]]
         body = alt_text
@@ -196,18 +208,18 @@ def build_folder_evaluation(
 ) -> dict:
     methods: dict[str, dict] = {}
 
-    for source_key, output_key in SOURCE_METHODS.items():
-        methods[output_key] = build_method_eval(
-            source_key=source_key,
-            output_key=output_key,
-            alt_text=alt_texts[output_key],
-            claims=claims_by_method[output_key],
-            efficiency_data=efficiency_json["results"][source_key],
-            objectivity_data=objectivity_json[source_key],
-            redundancy_data=redundancy_json[source_key],
+    for method in OUTPUT_METHODS:
+        methods[method] = build_method_eval(
+            source_key=method,
+            output_key=method,
+            alt_text=alt_texts[method],
+            claims=claims_by_method[method],
+            efficiency_data=json_section(efficiency_json["results"], method),
+            objectivity_data=json_section(objectivity_json, method),
+            redundancy_data=json_section(redundancy_json, method),
         )
-        methods[output_key].pop("_source_method_key", None)
-        methods[output_key].pop("_output_method_key", None)
+        methods[method].pop("_source_method_key", None)
+        methods[method].pop("_output_method_key", None)
 
     return {
         "folder_number": folder_number,
@@ -232,11 +244,11 @@ def process_folder(source_folder: Path, output_folder: Path) -> dict:
     alt_texts: dict[str, str] = {}
     claims_by_method: dict[str, list[dict]] = {}
 
-    for source_key, output_key in SOURCE_METHODS.items():
-        alt_path = source_folder / SOURCE_ALT_FILES[source_key].format(n=folder_number)
-        claim_path = source_folder / SOURCE_CLAIM_FILES[source_key].format(n=folder_number)
-        alt_texts[output_key] = read_text(alt_path)
-        claims_by_method[output_key] = parse_claims(claim_path)
+    for method in OUTPUT_METHODS:
+        alt_path = first_existing_file(source_folder, ALT_FILE_CANDIDATES[method], folder_number)
+        claim_path = first_existing_file(source_folder, CLAIM_FILE_CANDIDATES[method], folder_number)
+        alt_texts[method] = read_text(alt_path)
+        claims_by_method[method] = parse_claims(claim_path)
 
     efficiency_json = load_json(efficiency_path)
     objectivity_json = load_json(objectivity_path)

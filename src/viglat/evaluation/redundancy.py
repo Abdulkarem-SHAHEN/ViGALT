@@ -8,7 +8,7 @@ DOM:    data/products/{product_stem}.json via build_product_dom()
 Usage:
   python -m viglat.redundancy_evaluator_batch
   python -m viglat.redundancy_evaluator_batch --skip-existing
-  python -m viglat.redundancy_evaluator_batch --algorithm our
+  python -m viglat.redundancy_evaluator_batch --algorithm ViGALT
 """
 
 from __future__ import annotations
@@ -22,6 +22,7 @@ from pathlib import Path
 
 from openai import OpenAI
 
+from .methods import METHOD_CAID, METHOD_VIGALT
 from .utils import (
     calculate_redundancy_rates,
     claims_with_relevance_from_relevancy,
@@ -72,7 +73,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--algorithm",
-        choices=["our", "asset24", "both"],
+        choices=[METHOD_VIGALT, METHOD_CAID, "both"],
         default="both",
         help="Which algorithm results to evaluate (default: both).",
     )
@@ -123,12 +124,12 @@ def discover_jobs(
 ) -> list[RedundancyJob]:
     jobs: list[RedundancyJob] = []
 
-    if algorithm in ("our", "both"):
-        for result in load_relevancy_results(relevancy_input, algorithm="our"):
+    if algorithm in (METHOD_VIGALT, "both"):
+        for result in load_relevancy_results(relevancy_input, algorithm=METHOD_VIGALT):
             jobs.append(_job_from_relevancy(result, products_dir))
 
-    if algorithm in ("asset24", "both"):
-        for result in load_relevancy_results(relevancy_input, algorithm="asset24"):
+    if algorithm in (METHOD_CAID, "both"):
+        for result in load_relevancy_results(relevancy_input, algorithm=METHOD_CAID):
             jobs.append(_job_from_relevancy(result, products_dir))
 
     if not jobs:

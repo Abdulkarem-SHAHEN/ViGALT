@@ -15,7 +15,7 @@ Ringed planets surrounding the astronaut
 Additional small planets surrounding the astronaut
 A moon-like circle surrounding the astronaut
 
-=== ASSETS24 ===
+=== CAID ===
 Front-facing navy blue long-sleeved sweatshirt with a ribbed crew neck, cuffs, and waistband. The chest features a colorful space-themed graphic of an astronaut standing on a ringed platform, surrounded by planets, moons, stars, and other celestial objects.
 
 Front-facing navy blue sweatshirt

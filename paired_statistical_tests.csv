@@ -1,4 +1,4 @@
-metric,vigalt_macro_mean,assets24_macro_mean,paired_mean_difference_vigalt_minus_assets,ci95_low,ci95_high,wilcoxon_W,p_raw,rank_biserial_r,vigalt_higher_images,assets24_higher_images,ties,higher_is_better,p_holm,significant_after_holm_0.05
+metric,vigalt_macro_mean,caid_macro_mean,paired_mean_difference_vigalt_minus_caid,ci95_low,ci95_high,wilcoxon_W,p_raw,rank_biserial_r,vigalt_higher_images,caid_higher_images,ties,higher_is_better,p_holm,significant_after_holm_0.05
 Relevancy,0.9010333333333335,0.48115333333333327,0.41988,0.3094641666666666,0.5320844999999998,1.0,9.29995815933252e-06,0.9943019943019943,25,1,4,True,4.6499790796662606e-05,True
 Objectivity,0.9770875420875421,0.9298859936359937,0.047201548451548454,0.01158965571465572,0.0841099629537129,20.0,0.022985131771226776,0.6666666666666667,12,3,15,True,0.06895539531368033,False
 Relevant Novelty,0.3612222962222962,0.2228670403670404,0.13835525585525585,0.03126245282495282,0.24166017778517776,88.0,0.015240526814933765,0.5343915343915344,20,7,3,True,0.06096210725973506,False

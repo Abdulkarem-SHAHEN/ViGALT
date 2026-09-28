@@ -229,7 +229,7 @@ def run(args: argparse.Namespace) -> int:
 
     eval_base = [
         "--algorithm",
-        "our",
+        "ViGALT",
         "--products-dir",
         str(paths.work_dir),
         "--timeout",
@@ -251,7 +251,7 @@ def run(args: argparse.Namespace) -> int:
         "-m",
         "viglat.evaluation.relevancy",
         *eval_with_image,
-        "--our-claims-dir",
+        "--vigalt-claims-dir",
         str(paths.work_dir),
         "--output",
         str(paths.relevancy_json),
@@ -290,7 +290,7 @@ def run(args: argparse.Namespace) -> int:
         "-m",
         "viglat.evaluation.efficiency",
         "--algorithm",
-        "our",
+        "ViGALT",
         "--redundancy-input",
         str(paths.redundancy_json),
         "--relevancy-input",

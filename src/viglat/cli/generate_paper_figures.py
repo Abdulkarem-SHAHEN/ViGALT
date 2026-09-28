@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate publication figures for the ViGALT vs ASSETS24 paper evaluation.
+Generate publication figures for the ViGALT vs CAID paper evaluation.
 
 Requires visualization extras:
   pip install -e ".[viz]"
@@ -48,9 +48,9 @@ DEFAULT_OUTPUT_DIR = "docs/figures"
 DEFAULT_VALIDATIONS_DIR = "ViGALT_validations"
 
 METHOD_OUR = "ViGALT"
-METHOD_BASELINE = "ASSETS24"
+METHOD_BASELINE = "CAID"
 DISPLAY_OUR = "Our Pipeline"
-DISPLAY_BASELINE = "ASSETS24"
+DISPLAY_BASELINE = "CAID"
 
 COLOR_OUR = "#0173B2"
 COLOR_BASELINE = "#949494"
@@ -397,7 +397,7 @@ def plot_efficiency_relevancy_scatter(summary: dict, writer: FigureWriter) -> No
 
 
 def score_case_study(evaluation: dict) -> tuple[int, int]:
-    """Prefer ASSETS24 visual-only noise with a fully relevant ViGALT output."""
+    """Prefer CAID visual-only noise with a fully relevant ViGALT output."""
     assets = evaluation["methods"][METHOD_BASELINE]["relevancy"]
     vig = evaluation["methods"][METHOD_OUR]["relevancy"]
     if vig.get("relevancy_score") != 100.0:
@@ -669,7 +669,7 @@ def render_case_study_subfigure(
     \\\\[0.3em]
     {{\\scriptsize
     \\begin{{minipage}}[t]{{0.48\\linewidth}}
-    \\textbf{{ASSETS24:}}\\par
+    \\textbf{{CAID:}}\\par
     \\vspace{{0.2em}}
     {assets_highlighted}
     \\end{{minipage}}\\hfill
@@ -708,7 +708,7 @@ def generate_case_study_latex(
 
   \\vspace{{0.7em}}
 {furniture_block}
-  \\caption{{Qualitative comparison on clothing and furniture listings. \\textcolor{{red}}{{Red}} highlights purchase-irrelevant detail in ASSETS24; our pipeline text is unmarked.}}
+  \\caption{{Qualitative comparison on clothing and furniture listings. \\textcolor{{red}}{{Red}} highlights purchase-irrelevant detail in CAID; our pipeline text is unmarked.}}
   \\label{{fig:case-study-clothing-{cloth_id}-furniture-{furn_id}}}
 \\end{{figure}}
 """
@@ -767,7 +767,7 @@ def main() -> int:
             non_relevant = count_non_relevant_claims(base_claims)
             print(
                 f"Case study {label}: product {folder} "
-                f"(score={score}, ASSETS24 non-relevant highlighted spans={non_relevant})",
+                f"(score={score}, CAID non-relevant highlighted spans={non_relevant})",
                 file=sys.stderr,
             )
 

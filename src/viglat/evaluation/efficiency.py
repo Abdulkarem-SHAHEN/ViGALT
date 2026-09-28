@@ -21,6 +21,7 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 
+from .methods import METHOD_CAID, METHOD_VIGALT, normalize_method_id
 from .utils import (
     alt_text_from_relevancy,
     calculate_efficiency,
@@ -56,7 +57,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--algorithm",
-        choices=["our", "asset24", "both"],
+        choices=[METHOD_VIGALT, METHOD_CAID, "both"],
         default="both",
         help="Which algorithm results to evaluate (default: both).",
     )
@@ -100,7 +101,7 @@ def load_redundancy_results(path: Path, algorithm: str | None = None) -> list[di
             continue
         if not isinstance(item.get("evaluation"), dict):
             continue
-        if algorithm and item.get("algorithm") != algorithm:
+        if algorithm and normalize_method_id(item.get("algorithm")) != algorithm:
             continue
         filtered.append(item)
     return filtered
@@ -122,7 +123,7 @@ def discover_jobs(
     alt_lookup = build_alt_text_lookup(relevancy_input)
     jobs: list[EfficiencyJob] = []
 
-    algorithms = ["our", "asset24"] if algorithm == "both" else [algorithm]
+    algorithms = [METHOD_VIGALT, METHOD_CAID] if algorithm == "both" else [algorithm]
     for algo in algorithms:
         for result in load_redundancy_results(redundancy_input, algorithm=algo):
             product_stem = str(result["product_stem"])

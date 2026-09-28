@@ -33,16 +33,17 @@ METRICS: tuple[tuple[str, str, bool], ...] = (
 
 def load_paired_series(dataset_dir: Path, metric_key: str) -> tuple[np.ndarray, np.ndarray]:
     vigalt: list[float] = []
-    assets: list[float] = []
+    caid: list[float] = []
     folders = sorted(
         (p for p in dataset_dir.iterdir() if p.is_dir() and p.name.isdigit()),
         key=lambda p: int(p.name),
     )
     for folder in folders:
         evaluation = json.loads((folder / "evaluation.json").read_text(encoding="utf-8"))
-        vigalt.append(float(metric_value(evaluation["methods"]["ViGALT"], metric_key)))
-        assets.append(float(metric_value(evaluation["methods"]["ASSETS24"], metric_key)))
-    return np.array(vigalt), np.array(assets)
+        methods = evaluation["methods"]
+        vigalt.append(float(metric_value(methods["ViGALT"], metric_key)))
+        caid.append(float(metric_value(methods["CAID"], metric_key)))
+    return np.array(vigalt), np.array(caid)
 
 
 def bootstrap_mean_ci(differences: np.ndarray, *, n_boot: int = 10_000, seed: int = 42) -> tuple[float, float]:
@@ -76,33 +77,33 @@ def holm_correction(p_values: list[float]) -> list[float]:
 
 def analyze_metric(
     vigalt: np.ndarray,
-    assets: np.ndarray,
+    caid: np.ndarray,
     *,
     higher_is_better: bool,
 ) -> dict[str, float | int | bool]:
-    differences = vigalt - assets
+    differences = vigalt - caid
     if higher_is_better:
-        _, p_directional = stats.wilcoxon(vigalt, assets, alternative="greater", zero_method="wilcox")
+        _, p_directional = stats.wilcoxon(vigalt, caid, alternative="greater", zero_method="wilcox")
     else:
-        _, p_directional = stats.wilcoxon(vigalt, assets, alternative="less", zero_method="wilcox")
+        _, p_directional = stats.wilcoxon(vigalt, caid, alternative="less", zero_method="wilcox")
 
-    w_stat, p_raw = stats.wilcoxon(vigalt, assets, zero_method="wilcox")
+    w_stat, p_raw = stats.wilcoxon(vigalt, caid, zero_method="wilcox")
     ci_low, ci_high = bootstrap_mean_ci(differences)
     vigalt_higher = int((differences > 0).sum())
-    assets_higher = int((differences < 0).sum())
+    caid_higher = int((differences < 0).sum())
     ties = int((differences == 0).sum())
 
     return {
         "vigalt_macro_mean": float(vigalt.mean()),
-        "assets24_macro_mean": float(assets.mean()),
-        "paired_mean_difference_vigalt_minus_assets": float(differences.mean()),
+        "caid_macro_mean": float(caid.mean()),
+        "paired_mean_difference_vigalt_minus_caid": float(differences.mean()),
         "ci95_low": ci_low,
         "ci95_high": ci_high,
         "wilcoxon_W": float(w_stat),
         "p_raw": float(p_raw),
         "rank_biserial_r": rank_biserial(float(w_stat), differences),
         "vigalt_higher_images": vigalt_higher,
-        "assets24_higher_images": assets_higher,
+        "caid_higher_images": caid_higher,
         "ties": ties,
         "higher_is_better": higher_is_better,
         "p_directional": float(p_directional),
@@ -113,15 +114,15 @@ def write_csv(rows: list[dict], output_path: Path) -> None:
     fieldnames = [
         "metric",
         "vigalt_macro_mean",
-        "assets24_macro_mean",
-        "paired_mean_difference_vigalt_minus_assets",
+        "caid_macro_mean",
+        "paired_mean_difference_vigalt_minus_caid",
         "ci95_low",
         "ci95_high",
         "wilcoxon_W",
         "p_raw",
         "rank_biserial_r",
         "vigalt_higher_images",
-        "assets24_higher_images",
+        "caid_higher_images",
         "ties",
         "higher_is_better",
         "p_holm",
@@ -144,8 +145,8 @@ def main() -> int:
     analyzed: list[dict] = []
     p_raw_values: list[float] = []
     for name, key, higher in METRICS:
-        vigalt, assets = load_paired_series(dataset_dir, key)
-        result = analyze_metric(vigalt, assets, higher_is_better=higher)
+        vigalt, caid = load_paired_series(dataset_dir, key)
+        result = analyze_metric(vigalt, caid, higher_is_better=higher)
         result["metric"] = name
         analyzed.append(result)
         p_raw_values.append(float(result["p_raw"]))
@@ -165,8 +166,8 @@ def main() -> int:
         if row["metric"] == "Relevancy":
             print(
                 f"  Relevancy: ViGALT {row['vigalt_macro_mean']*100:.2f}% vs "
-                f"ASSETS24 {row['assets24_macro_mean']*100:.2f}% "
-                f"(delta={row['paired_mean_difference_vigalt_minus_assets']*100:.2f} pp, "
+                f"CAID {row['caid_macro_mean']*100:.2f}% "
+                f"(delta={row['paired_mean_difference_vigalt_minus_caid']*100:.2f} pp, "
                 f"p_Holm={row['p_holm']:.2e})"
             )
     return 0

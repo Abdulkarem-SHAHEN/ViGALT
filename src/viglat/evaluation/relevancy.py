@@ -3,16 +3,12 @@
 Batch-run the Relevancy Evaluator on claim lists from both ALT algorithms.
 
 Sources:
-  our      — output/final_alt_claim_lists/*_claims.json
-  asset24  — output/ASSEST24_claim_lists/*_claims.json
-
-Each run sends the product image, category, and atomic claims to the relevancy
-prompt and writes all 60 evaluations into one combined JSON file.
+  ViGALT — output/ViGALT_claim_lists/*_claims.json (or per-run final_alt_claim_lists)
+  CAID   — output/CAID_claim_lists/*_claims.json
 
 Usage:
   python -m viglat.relevancy_evaluator_batch
-  python -m viglat.relevancy_evaluator_batch --output output/relevancy_evaluations.json
-  python -m viglat.relevancy_evaluator_batch --algorithm our
+  python -m viglat.relevancy_evaluator_batch --algorithm ViGALT
   python -m viglat.relevancy_evaluator_batch --skip-existing
 """
 
@@ -28,6 +24,13 @@ from pathlib import Path
 
 from openai import OpenAI
 
+from .methods import (
+    DEFAULT_CAID_CLAIMS_DIR,
+    DEFAULT_VIGALT_CLAIMS_DIR,
+    LEGACY_CAID_CLAIMS_DIR,
+    METHOD_CAID,
+    METHOD_VIGALT,
+)
 from .utils import (
     configure_stdout,
     discover_claim_files,
@@ -45,8 +48,6 @@ from ..pipeline.types import StageConfig, StageResult
 PROMPTS_DIR = "prompts"
 PRODUCTS_DIR = "data/products"
 DEFAULT_IMAGES_DIR = "data/images"
-DEFAULT_OUR_CLAIMS_DIR = "output/final_alt_claim_lists"
-DEFAULT_ASSET24_CLAIMS_DIR = "output/ASSEST24_claim_lists"
 DEFAULT_OUTPUT_FILE = "output/relevancy_evaluations.json"
 PROMPT_FILE = "evaluators/relevancy.txt"
 
@@ -72,23 +73,23 @@ class RelevancyJob:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Run relevancy evaluation on our and ASSEST24 claim lists."
+        description="Run relevancy evaluation on ViGALT and CAID claim lists."
     )
     parser.add_argument(
         "--algorithm",
-        choices=["our", "asset24", "both"],
+        choices=[METHOD_VIGALT, METHOD_CAID, "both"],
         default="both",
         help="Which claim-list source to evaluate (default: both).",
     )
     parser.add_argument(
-        "--our-claims-dir",
-        default=DEFAULT_OUR_CLAIMS_DIR,
-        help=f"Directory with our claim lists (default: {DEFAULT_OUR_CLAIMS_DIR}).",
+        "--vigalt-claims-dir",
+        default=DEFAULT_VIGALT_CLAIMS_DIR,
+        help=f"Directory with ViGALT claim lists (default: {DEFAULT_VIGALT_CLAIMS_DIR}).",
     )
     parser.add_argument(
-        "--asset24-claims-dir",
-        default=DEFAULT_ASSET24_CLAIMS_DIR,
-        help=f"Directory with ASSEST24 claim lists (default: {DEFAULT_ASSET24_CLAIMS_DIR}).",
+        "--caid-claims-dir",
+        default=DEFAULT_CAID_CLAIMS_DIR,
+        help=f"Directory with CAID claim lists (default: {DEFAULT_CAID_CLAIMS_DIR}).",
     )
     parser.add_argument(
         "--images-dir",
@@ -199,9 +200,9 @@ def load_claims_from_file(claim_file: Path) -> list[dict]:
     return claims
 
 
-def discover_our_jobs(claims_dir: Path, products_dir: Path) -> list[RelevancyJob]:
+def discover_vigalt_jobs(claims_dir: Path, products_dir: Path) -> list[RelevancyJob]:
     if not claims_dir.exists():
-        raise FileNotFoundError(f"Our claim-list directory not found: {claims_dir}")
+        raise FileNotFoundError(f"ViGALT claim-list directory not found: {claims_dir}")
 
     jobs: list[RelevancyJob] = []
     for claim_file in discover_claim_files(claims_dir):
@@ -209,9 +210,10 @@ def discover_our_jobs(claims_dir: Path, products_dir: Path) -> list[RelevancyJob
         product_stem = str(record.get("product_stem") or claim_file.stem.removesuffix("_claims"))
         category = resolve_category(product_stem, record)
         claims = load_claims_from_file(claim_file)
+        final_alt = record.get("final_alt_text") or record.get("vigalt_alt_text")
         metadata = {
             "source_pipeline": record.get("source_pipeline"),
-            "final_alt_text": record.get("final_alt_text"),
+            "vigalt_alt_text": final_alt,
         }
         if record.get("product_file"):
             metadata["product_file"] = record.get("product_file")
@@ -219,7 +221,7 @@ def discover_our_jobs(claims_dir: Path, products_dir: Path) -> list[RelevancyJob
             metadata["classification_category"] = record.get("classification_category")
         jobs.append(
             RelevancyJob(
-                algorithm="our",
+                algorithm=METHOD_VIGALT,
                 claim_file=claim_file.resolve(),
                 product_stem=product_stem,
                 category=category,
@@ -233,16 +235,16 @@ def discover_our_jobs(claims_dir: Path, products_dir: Path) -> list[RelevancyJob
     return jobs
 
 
-def _asset24_sort_key(path: Path) -> int:
+def _caid_sort_key(path: Path) -> int:
     return int(path.stem.split("_", 1)[0])
 
 
-def discover_asset24_jobs(claims_dir: Path, products_dir: Path) -> list[RelevancyJob]:
+def discover_caid_jobs(claims_dir: Path, products_dir: Path) -> list[RelevancyJob]:
     if not claims_dir.exists():
-        raise FileNotFoundError(f"ASSEST24 claim-list directory not found: {claims_dir}")
+        raise FileNotFoundError(f"CAID claim-list directory not found: {claims_dir}")
 
     jobs: list[RelevancyJob] = []
-    for claim_file in sorted(claims_dir.glob("*_claims.json"), key=_asset24_sort_key):
+    for claim_file in sorted(claims_dir.glob("*_claims.json"), key=_caid_sort_key):
         record = json.loads(claim_file.read_text(encoding="utf-8"))
         index = record.get("index")
         if index is None:
@@ -252,9 +254,10 @@ def discover_asset24_jobs(claims_dir: Path, products_dir: Path) -> list[Relevanc
         type_value = record.get("type")
         category = category_from_type(type_value) if type_value else category_from_stem(product_stem)
         claims = load_claims_from_file(claim_file)
+        caid_alt = record.get("caid_alt_text") or record.get("asset24_alt_text") or record.get("alt_text")
         jobs.append(
             RelevancyJob(
-                algorithm="asset24",
+                algorithm=METHOD_CAID,
                 claim_file=claim_file.resolve(),
                 product_stem=product_stem,
                 category=category,
@@ -262,7 +265,7 @@ def discover_asset24_jobs(claims_dir: Path, products_dir: Path) -> list[Relevanc
                 metadata={
                     "index": int(index),
                     "excel_row": record.get("excel_row"),
-                    "asset24_alt_text": record.get("asset24_alt_text") or record.get("alt_text"),
+                    "caid_alt_text": caid_alt,
                 },
             )
         )
@@ -270,6 +273,16 @@ def discover_asset24_jobs(claims_dir: Path, products_dir: Path) -> list[Relevanc
     if not jobs:
         raise FileNotFoundError(f"No claim files found in: {claims_dir}")
     return jobs
+
+
+def resolve_caid_claims_dir(requested: str) -> Path:
+    path = resolve_path(requested)
+    if path.exists():
+        return path
+    legacy = resolve_path(LEGACY_CAID_CLAIMS_DIR)
+    if legacy.exists():
+        return legacy
+    return path
 
 
 def job_key(job: RelevancyJob) -> str:
@@ -362,8 +375,8 @@ def run(args: argparse.Namespace) -> int:
         return 1
 
     root = project_root()
-    our_claims_dir = resolve_path(args.our_claims_dir)
-    asset24_claims_dir = resolve_path(args.asset24_claims_dir)
+    vigalt_claims_dir = resolve_path(args.vigalt_claims_dir)
+    caid_claims_dir = resolve_caid_claims_dir(args.caid_claims_dir)
     images_dir = resolve_path(args.images_dir)
     products_dir = resolve_path(args.products_dir)
     output_path = resolve_path(args.output)
@@ -372,10 +385,10 @@ def run(args: argparse.Namespace) -> int:
 
     jobs: list[RelevancyJob] = []
     try:
-        if args.algorithm in ("our", "both"):
-            jobs.extend(discover_our_jobs(our_claims_dir, products_dir))
-        if args.algorithm in ("asset24", "both"):
-            jobs.extend(discover_asset24_jobs(asset24_claims_dir, products_dir))
+        if args.algorithm in (METHOD_VIGALT, "both"):
+            jobs.extend(discover_vigalt_jobs(vigalt_claims_dir, products_dir))
+        if args.algorithm in (METHOD_CAID, "both"):
+            jobs.extend(discover_caid_jobs(caid_claims_dir, products_dir))
     except (ValueError, FileNotFoundError) as exc:
         print(f"Error: {exc}", file=sys.stderr)
         return 1

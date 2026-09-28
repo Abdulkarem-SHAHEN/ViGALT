@@ -30,7 +30,7 @@ def main() -> None:
         "Avoidable\nredundancy\n(lower is better)",
     ]
     v = [float(rows[m]["vigalt_macro_mean"]) * 100 for m in mets]
-    b = [float(rows[m]["assets24_macro_mean"]) * 100 for m in mets]
+    b = [float(rows[m]["caid_macro_mean"]) * 100 for m in mets]
     sig = [rows[m]["significant_after_holm_0.05"] == "True" for m in mets]
 
     plt.rcParams.update(
@@ -41,7 +41,7 @@ def main() -> None:
     w = 0.36
     gap = 0.02
     bv = ax.bar(x - w / 2 - gap / 2, v, w, color="#2a78d6", label="ViGALT", zorder=3)
-    bb = ax.bar(x + w / 2 + gap / 2, b, w, color="#eb6834", label="ASSETS24", zorder=3)
+    bb = ax.bar(x + w / 2 + gap / 2, b, w, color="#eb6834", label="CAID", zorder=3)
     for rect, val in list(zip(bv, v)) + list(zip(bb, b)):
         ax.text(
             rect.get_x() + rect.get_width() / 2,

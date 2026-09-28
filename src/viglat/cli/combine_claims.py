@@ -4,8 +4,8 @@ Combine claim lists from both ALT algorithms with relevancy evaluations
 into one text file per product/algorithm pair.
 
 Sources:
-  our      — output/final_alt_claim_lists/*_claims.json
-  asset24  — output/ASSEST24_claim_lists/*_claims.json
+  ViGALT — output/ViGALT_claim_lists/*_claims.json
+  CAID   — output/CAID_claim_lists/*_claims.json
   relevancy — output/relevancy_evaluations.json
 
 Usage:
@@ -21,14 +21,19 @@ import re
 import sys
 from pathlib import Path
 
+from ..evaluation.methods import (
+    DEFAULT_CAID_CLAIMS_DIR,
+    DEFAULT_VIGALT_CLAIMS_DIR,
+    METHOD_CAID,
+    METHOD_VIGALT,
+    normalize_method_id,
+)
 from ..paths import resolve_path
 
-DEFAULT_OUR_CLAIMS_DIR = "output/final_alt_claim_lists"
-DEFAULT_ASSET24_CLAIMS_DIR = "output/ASSEST24_claim_lists"
 DEFAULT_RELEVANCY_FILE = "output/relevancy_evaluations.json"
 DEFAULT_OUTPUT_DIR = "output/claims_with_labels"
 
-ALGORITHM_ORDER = {"our": 0, "asset24": 1}
+ALGORITHM_ORDER = {METHOD_VIGALT: 0, METHOD_CAID: 1}
 
 
 def parse_args() -> argparse.Namespace:
@@ -36,14 +41,14 @@ def parse_args() -> argparse.Namespace:
         description="Export claim labels into one minimal text file per product/algorithm."
     )
     parser.add_argument(
-        "--our-claims-dir",
-        default=DEFAULT_OUR_CLAIMS_DIR,
-        help=f"Directory with our claim lists (default: {DEFAULT_OUR_CLAIMS_DIR}).",
+        "--vigalt-claims-dir",
+        default=DEFAULT_VIGALT_CLAIMS_DIR,
+        help=f"Directory with ViGALT claim lists (default: {DEFAULT_VIGALT_CLAIMS_DIR}).",
     )
     parser.add_argument(
-        "--asset24-claims-dir",
-        default=DEFAULT_ASSET24_CLAIMS_DIR,
-        help=f"Directory with ASSEST24 claim lists (default: {DEFAULT_ASSET24_CLAIMS_DIR}).",
+        "--caid-claims-dir",
+        default=DEFAULT_CAID_CLAIMS_DIR,
+        help=f"Directory with CAID claim lists (default: {DEFAULT_CAID_CLAIMS_DIR}).",
     )
     parser.add_argument(
         "--relevancy",
@@ -144,8 +149,8 @@ def merge_claims(
 
 def build_blocks(
     results: list[dict],
-    our_claims: dict[str, dict],
-    asset24_claims: dict[str, dict],
+    vigalt_claims: dict[str, dict],
+    caid_claims: dict[str, dict],
 ) -> tuple[list[dict], list[str]]:
     warnings: list[str] = []
     blocks: list[dict] = []
@@ -154,10 +159,15 @@ def build_blocks(
         if not isinstance(result, dict):
             continue
 
-        algorithm = str(result.get("algorithm", ""))
+        algorithm = normalize_method_id(str(result.get("algorithm", "")))
         claim_list_file = Path(str(result.get("claim_list_file", "")))
         claim_filename = claim_list_file.name
-        claim_record = our_claims.get(claim_filename) if algorithm == "our" else asset24_claims.get(claim_filename)
+        if algorithm == METHOD_VIGALT:
+            claim_record = vigalt_claims.get(claim_filename)
+        elif algorithm == METHOD_CAID:
+            claim_record = caid_claims.get(claim_filename)
+        else:
+            claim_record = None
 
         if claim_record is None:
             warnings.append(f"No source claim file found for {algorithm}:{claim_filename}.")
@@ -231,20 +241,20 @@ def write_block_files(output_dir: Path, blocks: list[dict]) -> list[Path]:
 
 
 def find_unmatched_claim_files(
-    our_claims: dict[str, dict],
-    asset24_claims: dict[str, dict],
+    vigalt_claims: dict[str, dict],
+    caid_claims: dict[str, dict],
     blocks: list[dict],
 ) -> list[str]:
     warnings: list[str] = []
     matched = {(block["algorithm"], block["claim_filename"]) for block in blocks}
 
-    for filename in our_claims:
-        if ("our", filename) not in matched:
-            warnings.append(f"No relevancy result found for our claim file {filename}.")
+    for filename in vigalt_claims:
+        if (METHOD_VIGALT, filename) not in matched:
+            warnings.append(f"No relevancy result found for ViGALT claim file {filename}.")
 
-    for filename in asset24_claims:
-        if ("asset24", filename) not in matched:
-            warnings.append(f"No relevancy result found for asset24 claim file {filename}.")
+    for filename in caid_claims:
+        if (METHOD_CAID, filename) not in matched:
+            warnings.append(f"No relevancy result found for CAID claim file {filename}.")
 
     return warnings
 
@@ -253,8 +263,8 @@ def main() -> int:
     configure_stdout()
     args = parse_args()
 
-    our_claims_dir = resolve_path(args.our_claims_dir)
-    asset24_claims_dir = resolve_path(args.asset24_claims_dir)
+    vigalt_claims_dir = resolve_path(args.vigalt_claims_dir)
+    caid_claims_dir = resolve_path(args.caid_claims_dir)
     relevancy_path = resolve_path(args.relevancy)
     output_dir = resolve_path(args.output)
 
@@ -268,11 +278,11 @@ def main() -> int:
         print(f"Invalid relevancy file (missing results list): {relevancy_path}", file=sys.stderr)
         return 1
 
-    our_claims = load_claim_files(our_claims_dir)
-    asset24_claims = load_claim_files(asset24_claims_dir)
+    vigalt_claims = load_claim_files(vigalt_claims_dir)
+    caid_claims = load_claim_files(caid_claims_dir)
 
-    blocks, warnings = build_blocks(results, our_claims, asset24_claims)
-    warnings.extend(find_unmatched_claim_files(our_claims, asset24_claims, blocks))
+    blocks, warnings = build_blocks(results, vigalt_claims, caid_claims)
+    warnings.extend(find_unmatched_claim_files(vigalt_claims, caid_claims, blocks))
 
     written = write_block_files(output_dir, blocks)
 

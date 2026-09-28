@@ -223,8 +223,11 @@ def load_relevancy_results(
             continue
         if not isinstance(item.get("evaluation"), dict):
             continue
-        if algorithm and item.get("algorithm") != algorithm:
-            continue
+        if algorithm:
+            from .methods import normalize_method_id
+
+            if normalize_method_id(item.get("algorithm")) != algorithm:
+                continue
         filtered.append(item)
     return filtered
 
@@ -255,13 +258,20 @@ def claims_with_relevance_from_relevancy(relevancy_result: dict) -> list[dict]:
 
 
 def alt_text_from_relevancy(relevancy_result: dict) -> str:
-    algorithm = relevancy_result.get("algorithm")
-    if algorithm == "our":
-        alt_text = relevancy_result.get("final_alt_text")
-    elif algorithm == "asset24":
-        alt_text = relevancy_result.get("asset24_alt_text")
-    else:
-        alt_text = None
+    from .methods import METHOD_CAID, METHOD_VIGALT, normalize_method_id
+
+    algorithm = normalize_method_id(relevancy_result.get("algorithm"))
+    alt_text = None
+    if algorithm == METHOD_VIGALT:
+        alt_text = (
+            relevancy_result.get("vigalt_alt_text")
+            or relevancy_result.get("final_alt_text")
+        )
+    elif algorithm == METHOD_CAID:
+        alt_text = (
+            relevancy_result.get("caid_alt_text")
+            or relevancy_result.get("asset24_alt_text")
+        )
 
     if not alt_text or not str(alt_text).strip():
         raise ValueError(

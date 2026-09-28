@@ -3,13 +3,13 @@
 Batch-run the Objectivity Evaluator on relevancy evaluation results.
 
 Source: output/relevancy_evaluations.json (status ok)
-ALT text: final_alt_text (our) or asset24_alt_text (asset24)
+ALT text: vigalt_alt_text (ViGALT) or caid_alt_text (CAID)
 Image:    data/images/ with data/products/ fallback
 
 Usage:
   python -m viglat.objectivity_evaluator_batch
   python -m viglat.objectivity_evaluator_batch --skip-existing
-  python -m viglat.objectivity_evaluator_batch --algorithm asset24
+  python -m viglat.objectivity_evaluator_batch --algorithm CAID
 """
 
 from __future__ import annotations
@@ -23,6 +23,7 @@ from pathlib import Path
 
 from openai import OpenAI
 
+from .methods import METHOD_CAID, METHOD_VIGALT
 from .utils import (
     alt_text_from_relevancy,
     calculate_objectivity_score,
@@ -72,7 +73,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--algorithm",
-        choices=["our", "asset24", "both"],
+        choices=[METHOD_VIGALT, METHOD_CAID, "both"],
         default="both",
         help="Which algorithm results to evaluate (default: both).",
     )
@@ -124,12 +125,12 @@ def parse_args() -> argparse.Namespace:
 def discover_jobs(relevancy_input: Path, algorithm: str) -> list[ObjectivityJob]:
     jobs: list[ObjectivityJob] = []
 
-    if algorithm in ("our", "both"):
-        for result in load_relevancy_results(relevancy_input, algorithm="our"):
+    if algorithm in (METHOD_VIGALT, "both"):
+        for result in load_relevancy_results(relevancy_input, algorithm=METHOD_VIGALT):
             jobs.append(_job_from_relevancy(result))
 
-    if algorithm in ("asset24", "both"):
-        for result in load_relevancy_results(relevancy_input, algorithm="asset24"):
+    if algorithm in (METHOD_CAID, "both"):
+        for result in load_relevancy_results(relevancy_input, algorithm=METHOD_CAID):
             jobs.append(_job_from_relevancy(result))
 
     if not jobs:

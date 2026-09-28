@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-MAIN_DATASET_METHODS = ("ViGALT", "ASSETS24")
+MAIN_DATASET_METHODS = ("ViGALT", "CAID")
 
 SUMMARY_METRICS = (
     "relevancy_score",

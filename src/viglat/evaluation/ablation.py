@@ -280,12 +280,12 @@ def run_evaluations(
     product_dom = load_product_dom(product_stem, products_dir)
 
     relevancy_job = RelevancyJob(
-        algorithm="our",
+        algorithm="ViGALT",
         claim_file=job.output_dir / "claims.json",
         product_stem=product_stem,
         category=category,
         claims=claims,
-        metadata={"final_alt_text": final_alt_text},
+        metadata={"vigalt_alt_text": final_alt_text, "final_alt_text": final_alt_text},
     )
     image_url, image_reference = _resolve_image(eval_image_dir, products_dir, product_stem)
     relevancy_result = run_stage_openai(
@@ -308,7 +308,7 @@ def run_evaluations(
         raise RuntimeError(relevancy_record.get("error") or "Relevancy evaluation failed")
 
     redundancy_job = RedundancyJob(
-        algorithm="our",
+        algorithm="ViGALT",
         product_stem=product_stem,
         category=category,
         input_claims=_claims_with_relevance(relevancy_record),
@@ -337,7 +337,7 @@ def run_evaluations(
         raise RuntimeError(redundancy_record.get("error") or "Redundancy evaluation failed")
 
     objectivity_job = ObjectivityJob(
-        algorithm="our",
+        algorithm="ViGALT",
         product_stem=product_stem,
         category=category,
         alt_text=final_alt_text,
@@ -369,7 +369,7 @@ def run_evaluations(
     efficiency_score = calculate_efficiency(relevant_novel_claims, word_count)
     efficiency_record = {
         "status": "ok",
-        "algorithm": "our",
+        "algorithm": "ViGALT",
         "product_stem": product_stem,
         "category": category,
         "alt_text": final_alt_text,
