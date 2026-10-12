@@ -1,4 +1,3 @@
-[README.md]
 # ViGALT: Visual Gap-Aware Alt Text Generation
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
